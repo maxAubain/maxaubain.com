@@ -6,8 +6,7 @@ import Footer from "./Footer"
 import Projects from "./Projects"
 import About from "./About"
 
-import { BrowserRouter } from 'react-router-dom'
-import { Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './css/tailwind.css'
 
 const App = () => {
