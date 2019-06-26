@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Hello from "./Hello"
+import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
 import Projects from "./Projects"
@@ -16,7 +16,7 @@ const App = () => {
                 <Header />
                 <div className="content-wrapper">
                     <Switch>
-                        <Route exact path='/' component={Hello}></Route>
+                        <Route exact path='/' component={Home}></Route>
                         <Route exact path='/about' component={About}></Route>
                         <Route exact path='/projects' component={Projects}></Route>
                     </Switch>
