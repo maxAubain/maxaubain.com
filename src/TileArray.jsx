@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import axios from "axios"
-import ProjectCard from "./Tile"
+import Tile from "./Tile"
 
-class Projects extends Component {
+class TileArray extends Component {
     constructor() {
         super();
         this.state = {
@@ -27,7 +27,7 @@ class Projects extends Component {
             projectsList = projects.map(project => {
                 return (
                     <div key={project.id} className="min-h-900 my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-                        <ProjectCard project={project} />
+                        <Tile project={project} />
                     </div>
                 )
             })
@@ -35,11 +35,11 @@ class Projects extends Component {
 
         return (
             <div>
-                <h1 className="content-text">My Projects</h1>
+                <h1 className="content-text">Tile Array</h1>
                 {projectsList}
             </div>
         )
     }
 };
 
-export default Projects
+export default TileArray
