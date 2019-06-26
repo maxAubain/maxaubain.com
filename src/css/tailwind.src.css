@@ -40,3 +40,5 @@
 .content-text {
     @apply text-grey-dark;
 }
+
+/** Refactored tags **/
