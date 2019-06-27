@@ -3,14 +3,14 @@
         "id": 1,
         "name": "Lab 1",
         "image": "./src/img/DSC_1615_sm.JPG",
-        "description": "Watch out for sand worms",
+        "description": "Watch out for sand worms.  Walk without rhythm.",
         "navlink": "/lab1"
     },
     {
         "id": 2,
         "name": "Lab 2",
         "image": "./src/img/DSC_1637_sm.JPG",
-        "description": "Or black-hole sun?",
+        "description": "Black-hole sun?",
         "navlink": "/lab2"
     },
     {

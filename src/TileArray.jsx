@@ -9,7 +9,6 @@ class TileArray extends Component {
         this.state = {
             projects: []
         };
-        this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
@@ -42,12 +41,13 @@ class TileArray extends Component {
         }
 
         return (
-            <NavLink to='/about'><div>
-                <div>
-                    {projectsList}
-                </div>
-            </div></NavLink>
-            
+            <div >
+                <NavLink to='/about'><div>
+                    <div >
+                        {projectsList}
+                    </div>
+                </div></NavLink>
+            </div>
         )
     }
 };
