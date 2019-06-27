@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 import Tile from "./Tile"
+import { NavLink, Link } from 'react-router-dom';
 
 class TileArray extends Component {
     constructor() {
@@ -41,14 +42,12 @@ class TileArray extends Component {
         }
 
         return (
-            <>
-                <div style={{ textAlign: 'center'}}>
-                    <h1 onClick={this.handleClick} className="content-text">Experiments</h1>
-                    <div>
-                        {projectsList}
-                    </div>
+            <NavLink to='/about'><div style={{ textAlign: 'center'}}>
+                <h1 onClick={this.handleClick} className="content-text">Experiments</h1>
+                <div>
+                    {projectsList}
                 </div>
-            </>
+            </div></NavLink>
             
         )
     }
