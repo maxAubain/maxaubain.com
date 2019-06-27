@@ -14,7 +14,7 @@
 
 /** Header **/
 .header {
-    @apply flex items-center justify-between flex-wrap bg-blue-darkest p-6;
+    @apply flex fixed w-full items-center justify-between flex-wrap bg-blue-darkest p-6;
 }
 
 .header-title {
@@ -34,7 +34,7 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter;
+    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16;
 }
 
 .content-text {
