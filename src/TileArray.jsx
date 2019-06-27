@@ -8,6 +8,11 @@ class TileArray extends Component {
         this.state = {
             projects: []
         };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log('Click happened');
     }
 
     componentDidMount() {
@@ -23,6 +28,8 @@ class TileArray extends Component {
         const projects = this.state.projects
         let projectsList 
 
+        
+
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
@@ -35,9 +42,9 @@ class TileArray extends Component {
 
         return (
             <>
-                <div style={{ /* border: '2px solid black', */ textAlign: 'center'}}>
-                    <h1 className="content-text">Experiments</h1>
-                    <div style={{ /* border: '2px solid green' */}}>
+                <div style={{ textAlign: 'center'}}>
+                    <h1 onClick={this.handleClick} className="content-text">Experiments</h1>
+                    <div>
                         {projectsList}
                     </div>
                 </div>
