@@ -7,7 +7,7 @@ const Tile = (props) => {
         <div key={project.id} className="">
             <img src={project.image} className="w-full" style={{ height: '100px', objectFit: 'cover' }} />
 
-            <div className="px-6 py-4" style={{ minHeight: '150px' }} >
+            <div className="px-6 py-4" style={{ minHeight: '100px' }} >
                 <div className="font-bold text-xl mb-2">{project.name}</div>
                 <p className="text-grey-darker text-base">
                     {project.description}
