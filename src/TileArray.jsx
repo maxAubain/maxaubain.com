@@ -43,7 +43,7 @@ class TileArray extends Component {
 
         return (
             <NavLink to='/about'><div style={{ textAlign: 'center'}}>
-                <h1 onClick={this.handleClick} className="content-text">Experiments</h1>
+                <h1 onClick={this.handleClick} className="content-text"></h1>
                 <div>
                     {projectsList}
                 </div>

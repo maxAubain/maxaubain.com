@@ -9,7 +9,7 @@
     @apply min-h-screen;
 }
 .page-content {
-    @apply flex flex-col w-full fixed pin-l pin-y;
+    @apply flex flex-col w-full pin-l pin-y;
 }
 
 /** Header **/
@@ -24,7 +24,7 @@
 /** Footer **/
 
 .footer-wrapper {
-    @apply border-t px-8 py-4;
+    @apply bg-grey-lighter px-8 py-4;
 }
 
 .footer-content {

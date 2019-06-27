@@ -1,20 +1,23 @@
 [
     {
         "id": 1,
-        "name": "Algodones Dunes",
-        "image": "./src/img/DSC_1615.JPG",
-        "description": "Watch out for sand worms"
+        "name": "Lab 1",
+        "image": "./src/img/DSC_1615_sm.JPG",
+        "description": "Watch out for sand worms",
+        "navlink": "/lab1"
     },
     {
         "id": 2,
-        "name": "Blood Red Sun",
-        "image": "./src/img/DSC_1637.JPG",
-        "description": "Or black-hole sun?"
+        "name": "Lab 2",
+        "image": "./src/img/DSC_1637_sm.JPG",
+        "description": "Or black-hole sun?",
+        "navlink": "/lab2"
     },
     {
         "id": 3,
-        "name": "The Virgin River",
-        "image": "./src/img/DSC_2062.JPG",
-        "description": "Just below Angel's Landing..."
+        "name": "Lab 3",
+        "image": "./src/img/DSC_2062_sm.JPG",
+        "description": "Just below Angel's Landing...",
+        "navlink": "/lab3"
     }
 ]

@@ -12,9 +12,9 @@ import './css/tailwind.css'
 const App = () => {
     return (
         <div className="page-wrapper">
-            <div className="page-content">
+            <div className="page-content" style={{ position: 'relative', minHeight: '100vh' }}>
                 <Header />
-                <div className="content-wrapper" style={{ /* border: '2px solid blue' */ }}>
+                <div className="content-wrapper">
                     <Switch>
                         <Route exact path='/' component={TileArray}></Route>
                         <Route exact path='/about' component={About}></Route> 
