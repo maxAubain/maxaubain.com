@@ -17,8 +17,8 @@ const App = () => {
                 <div className="content-wrapper" style={{ /* border: '2px solid blue' */ }}>
                     <Switch>
                         <Route exact path='/' component={TileArray}></Route>
-                        {/* <Route exact path='/about' component={About}></Route> */}
-                        {/* <Route exact path='/projects' component={Projects}></Route> */}
+                        {/* <Route exact path='/project1' component={Project1}></Route> */}
+                        {/* EXAMPLE: <Route exact path='/projects' component={Projects}></Route> */}
                     </Switch>
                 </div>
                 <Footer />

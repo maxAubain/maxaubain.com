@@ -26,7 +26,7 @@ class TileArray extends Component {
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    <div key={project.id} style={{ /* border: '2px solid red' */ float: 'left', margin: '20px'}} className="min-h-900 my-1 px-1 w-64 shadow-2xl">
+                    <div key={project.id} style={{ /* border: '2px solid red' */ float: 'left', margin: '20px'}} className="w-64 shadow-2xl">
                         <Tile project={project} />
                     </div>
                 )
