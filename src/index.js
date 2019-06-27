@@ -14,7 +14,7 @@ const App = () => {
         <div className="page-wrapper">
             <div className="page-content">
                 <Header />
-                <div className="content-wrapper" style={{border: '2px solid blue'}}>
+                <div className="content-wrapper" style={{ /* border: '2px solid blue' */ }}>
                     <Switch>
                         <Route exact path='/' component={TileArray}></Route>
                         {/* <Route exact path='/about' component={About}></Route> */}
