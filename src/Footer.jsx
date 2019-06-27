@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className="footer-wrapper" style={{bottom: '0'}}>
             <div className="footer-content">
-                <p>&middot; A place to practice inspiration &middot;</p>
+                <p>&middot; Inspiration in practice &middot;</p>
             </div>
         </div>
     )

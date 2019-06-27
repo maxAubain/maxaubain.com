@@ -5,14 +5,14 @@ const Tile = (props) => {
     return (
 
         <div key={project.id}>
+        
+            <img src={project.image} className="w-60 rounded-lg m-2" style={{ height: '100px', objectFit: 'cover' }} />
             
-            <div className="font-bold text-xl text-red-dark mb-2 mt-2">{project.name}</div>
-            
-            <img src={project.image} className="w-full" style={{ height: '100px', objectFit: 'cover' }} />
+            <div className="font-bold text-xl text-red-dark px-2">{project.name}</div>
 
-            <div className="px-6 py-4" style={{ minHeight: '150px' }} >
+            <div className="px-2 py-4" style={{ minHeight: '150px' }} >
                 
-                <p className="text-black text-base">
+                <p className="text-black">
                     {project.description}
                 </p>
             </div>
