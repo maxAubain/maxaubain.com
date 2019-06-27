@@ -11,15 +11,11 @@ class TileArray extends Component {
         };
     }
 
-    handleClick() {
-        console.log('Click happened');
-    }
-
     componentDidMount() {
         axios.get('./src/data/projects.json')
             .then(response => {
                 this.setState({
-                    projects: response.data
+                    projects: response.data  
                 })
             })
     }
@@ -28,26 +24,23 @@ class TileArray extends Component {
         const projects = this.state.projects
         let projectsList 
 
-        
+        console.log(projects)
 
+        
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64 shadow-2xl">
+                    <div key={project.id} className="float-left bg-white m-6 w-64">
                         <Tile project={project} />
                     </div>
                 )
             })
         }
 
+        console.log(projectsList)
+        
         return (
-            <div >
-                <NavLink to='/about'><div>
-                    <div >
-                        {projectsList}
-                    </div>
-                </div></NavLink>
-            </div>
+            <div>{projectsList} </div>
         )
     }
 };

@@ -4,20 +4,20 @@
         "name": "Lab 1",
         "image": "./src/img/DSC_1615_sm.JPG",
         "description": "Watch out for sand worms.  Walk without rhythm.",
-        "navlink": "/lab1"
+        "navlink": "/about"
     },
     {
         "id": 2,
         "name": "Lab 2",
         "image": "./src/img/DSC_1637_sm.JPG",
         "description": "Black-hole sun?",
-        "navlink": "/lab2"
+        "navlink": "/about"
     },
     {
         "id": 3,
         "name": "Lab 3",
         "image": "./src/img/DSC_2062_sm.JPG",
         "description": "Just below Angel's Landing... the river runs through the valley.",
-        "navlink": "/lab3"
+        "navlink": "/about"
     }
 ]
