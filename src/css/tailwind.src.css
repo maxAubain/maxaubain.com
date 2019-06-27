@@ -28,17 +28,17 @@
 }
 
 .footer-content {
-    @apply flex justify-center text-grey;
+    @apply flex justify-center text-red-dark;
 }
 
 /** Content section **/
 
 .content-wrapper {
-    @apply px-4 pt-4 flex-1 overflow-y-scroll;
+    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter;
 }
 
 .content-text {
-    @apply text-grey-dark;
+    @apply text-red-dark;
 }
 
 /** Refactored tags **/

@@ -5,21 +5,17 @@ const Tile = (props) => {
     return (
 
         <div key={project.id} className="">
+            
+            <div className="font-bold text-xl text-red-dark mb-2 mt-2">{project.name}</div>
+            
             <img src={project.image} className="w-full" style={{ height: '100px', objectFit: 'cover' }} />
 
             <div className="px-6 py-4" style={{ minHeight: '100px' }} >
-                <div className="font-bold text-xl mb-2">{project.name}</div>
-                <p className="text-grey-darker text-base">
+                
+                <p className="text-black text-base">
                     {project.description}
                 </p>
             </div>
-
-            <div className="flex items-center justify-between leading-none p-2 md:p-4">
-                <button className="bg-blue-darkest hover:bg-blue-dark text-white text-xs py-1 px-2 rounded-full">
-                    Details
-                </button>
-            </div>
-
         </div>
     )
 }
