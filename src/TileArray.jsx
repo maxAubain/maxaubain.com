@@ -24,9 +24,6 @@ class TileArray extends Component {
         const projects = this.state.projects
         let projectsList 
 
-        console.log(projects)
-
-        
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
@@ -37,8 +34,6 @@ class TileArray extends Component {
             })
         }
 
-        console.log(projectsList)
-        
         return (
             <div>{projectsList} </div>
         )

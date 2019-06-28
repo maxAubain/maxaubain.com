@@ -1,5 +1,6 @@
 import React from "react"
 import { NavLink, Link } from 'react-router-dom';
+import './css/tailwind.src.css';
 
 const Tile = (props) => {
     let project = props.project

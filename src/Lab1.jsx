@@ -1,25 +1,24 @@
 import React, { Component } from "react"
+import posed from 'react-pose'
 
-
-{/* const Lab1 = () => {
-    return (
-        <p>This is the const return.</p>
-    )
-
-} */}
+const Box = posed.div({
+    visible: { opacity: 1 },
+    hidden: { opacity: 0 }
+})
 
 class Lab1 extends Component {
-    constructor() {
-        super();
-    }
+    state = { isVisible: true };
     
-    render() {
-        return (
-            <div>
-                <p>This is the class return.</p>
-            </div>
-        )
-    }
-}; 
+    componentDidMount() {
+        setInterval(() => {
+          this.setState({ isVisible: !this.state.isVisible });
+        }, 1000);
+      }
+    
+      render() {
+        const { isVisible } = this.state;
+        return <Box className="box" pose={isVisible ? 'visible' : 'hidden'} />;
+      }
+};
 
 export default Lab1
