@@ -43,9 +43,12 @@
 
 /** Custom tags **/
 
-.box {
-    width: 100px;
-    height: 100px;
-    background: #ff1c68;
-    transform-origin: 50% 50%;
+.up-triangle {
+    margin-right: 150px; 
+    margin-top: 20px;
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
   }
