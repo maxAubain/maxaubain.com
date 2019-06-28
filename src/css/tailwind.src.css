@@ -34,7 +34,7 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16;
+    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16 mr-auto ml-auto;
 }
 
 .content-text {
