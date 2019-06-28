@@ -4,7 +4,11 @@ import ReactDOM from "react-dom"
 import Header from "./Header"
 import Footer from "./Footer"
 import TileArray from "./TileArray"
-import About from "./About"
+{/* import About from "./About" */}
+import Lab1 from "./Lab1"
+import Lab2 from "./Lab2"
+import Lab3 from "./Lab3"
+import Lab4 from "./Lab4"
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './css/tailwind.css'
@@ -17,8 +21,10 @@ const App = () => {
                 <div className="content-wrapper">
                     <Switch>
                         <Route exact path='/' component={TileArray} ></Route>
-                        <Route exact path='/about' component={About}></Route> 
-                        {/* EXAMPLE: <Route exact path='/projects' component={Projects}></Route> */}
+                        <Route exact path='/Lab1' component={Lab1}></Route> 
+                        <Route exact path='/Lab2' component={Lab2}></Route> 
+                        <Route exact path='/Lab3' component={Lab3}></Route> 
+                        <Route exact path='/Lab4' component={Lab4}></Route> 
                     </Switch>
                 </div>
                 <Footer />

@@ -3,28 +3,28 @@
         "id": 1,
         "name": "Lab 1: Going Home",
         "image": "./src/img/home.PNG",
-        "description": "Directions for how to return to this home page.",
-        "navlink": "/about"
+        "description": "Don't leave home without knowing how to get back.",
+        "navlink": "/Lab1"
     },
     {
         "id": 2,
         "name": "Lab 2",
         "image": "./src/img/DSC_1637_sm.JPG",
         "description": "Black-hole sun?",
-        "navlink": "/about"
+        "navlink": "/Lab2"
     },
     {
         "id": 3,
         "name": "Lab 3",
         "image": "./src/img/DSC_2062_sm.JPG",
         "description": "Just below Angel's Landing... the river runs through the valley.",
-        "navlink": "/about"
+        "navlink": "/Lab3"
     },
     {
         "id": 4,
         "name": "Lab 4",
         "image": "./src/img/DSC_2062_sm.JPG",
         "description": "Just below Angel's Landing... the river runs through the valley.",
-        "navlink": "/about"
+        "navlink": "/Lab4"
     }
 ]
