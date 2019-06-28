@@ -30,7 +30,7 @@ class TileArray extends Component {
         if (projects.length > 0) {
             projectsList = projects.map(project => {
                 return (
-                    <div key={project.id} className="float-left bg-white m-6 w-64">
+                    <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
                         <Tile project={project} />
                     </div>
                 )
