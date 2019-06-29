@@ -34,7 +34,7 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply px-4 pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16 mr-auto ml-auto;
+    @apply pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16 mr-auto ml-auto;
 }
 
 .content-text {
@@ -52,3 +52,7 @@
     border-right: 50px solid transparent;
     border-bottom: 50px solid red;
   }
+
+p   {
+    @apply ; 
+}

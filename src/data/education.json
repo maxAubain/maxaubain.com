@@ -2,10 +2,37 @@
     {
         "id": 1,
         "degree": "Bachelor of Science",
+        "major": "Materials Science and Engineering",
         "institution": "Cornell University",
-        "start-date": "xxx",
-        "end-date": "xxx",
-        "location": "Stockholm, Sweden",
-        "description": "xxx."
+        "startDate": "Aug. 2003",
+        "endDate": "May 2007",
+        "location": "Ithaca, New York, USA",
+        "description": "It was quite cold, but exciting as well!",
+        "pub_1": "xxx.",
+        "pub_link_1": "xxx"
+    },
+    {
+        "id": 2,
+        "degree": "Master of Science",
+        "major": "Materials Science and Engineering",
+        "institution": "University of California - San Diego",
+        "startDate": "Sep. 2007",
+        "endDate": "Jun. 2008",
+        "location": "La Jolla, California, USA",
+        "description": "It was quite warm, and relaxing next to the ocean.",
+        "pub_1": "xxx.",
+        "pub_link_1": "xxx"
+    },
+    {
+        "id": 3,
+        "degree": "Doctor of Philosophy",
+        "major": "Materials Science and Engineering",
+        "institution": "University of California - San Diego",
+        "startDate": "Sep. 2008",
+        "endDate": "Mar. 2013",
+        "location": "La Jolla, California, USA",
+        "description": "A strong finish.",
+        "pub_1": "xxx.",
+        "pub_link_1": "xxx"
     }
 ]

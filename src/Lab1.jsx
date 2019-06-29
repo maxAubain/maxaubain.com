@@ -18,10 +18,6 @@ class Lab1 extends Component {
         }, 1000);
     }
 
-    changeState() {
-        x += 1
-    }
-
     render() {
         
         let { isVisible } = this.state;
