@@ -8,23 +8,23 @@
     },
     {
         "id": 2,
-        "name": "Lab 2",
+        "name": "Lab 2: Curriculum Vitae",
         "image": "./src/img/DSC_1637_sm.JPG",
-        "description": "Black-hole sun?",
+        "description": "Detailed summary of work experience and education to date.",
         "navlink": "/Lab2"
     },
     {
         "id": 3,
         "name": "Lab 3",
         "image": "./src/img/DSC_2062_sm.JPG",
-        "description": "Just below Angel's Landing... the river runs through the valley.",
+        "description": "TBD",
         "navlink": "/Lab3"
     },
     {
         "id": 4,
         "name": "Lab 4",
         "image": "./src/img/DSC_2062_sm.JPG",
-        "description": "Just below Angel's Landing... the river runs through the valley.",
+        "description": "TBD",
         "navlink": "/Lab4"
     }
 ]
