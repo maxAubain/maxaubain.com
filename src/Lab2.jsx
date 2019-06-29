@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import axios from "axios"
 
 
 {/* const Lab2 = () => {
@@ -11,6 +12,22 @@ import React, { Component } from "react"
 class Lab2 extends Component {
     constructor() {
         super();
+    }
+
+    componentDidMount() {
+        axios.get('./src/data/experience.json')
+            .then(response => {
+                this.setState({
+                    experience: response.data  
+                })
+            })
+            
+        axios.get('./src/data/education.json')
+        .then(response => {
+            this.setState({
+                education: response.data  
+            })
+        })
     }
     
     render() {
