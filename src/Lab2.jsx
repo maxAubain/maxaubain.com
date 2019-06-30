@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
 import EducationTile from "./EducationTile"
+import ExperienceTile from "./ExperienceTile"
 
 
 {/* const Lab2 = () => {
@@ -36,9 +37,6 @@ class Lab2 extends Component {
     }
     
     render() {
-        const experience = this.state.experience
-        let experienceList
-
         const education = this.state.education
         let educationList
 
@@ -47,6 +45,19 @@ class Lab2 extends Component {
                 return (
                     <div key={educationItem.id} style={{ width: '50vw'}} className="m-16">
                         <EducationTile educationItem={educationItem} />
+                    </div>
+                )
+            })
+        }
+
+        const experience = this.state.experience
+        let experienceList
+
+        if (experience.length > 0) {
+            experienceList = experience.map(experienceItem => {
+                return (
+                    <div key={experienceItem.id} style={{ width: '50vw'}} className="m-16">
+                        <ExperienceTile experienceItem={experienceItem} />
                     </div>
                 )
             })
@@ -67,8 +78,15 @@ class Lab2 extends Component {
                 <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4" style={{textAlign: 'center'}}>
                     Education
                 </div>
-                <div className="px-1/4">
+                <div className="px-1/5">
                     {educationList}
+                </div>
+
+                <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4" style={{textAlign: 'center'}}>
+                    Experience
+                </div>
+                <div className="px-1/5">
+                    {experienceList}
                 </div>
             </div>
         )
