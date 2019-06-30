@@ -14,31 +14,31 @@
 
 /** Header **/
 .header {
-    @apply flex fixed w-full items-center justify-between flex-wrap bg-blue-darkest p-6;
+    @apply flex fixed w-full items-center justify-between flex-wrap bg-white p-6;
 }
 
 .header-title {
-    @apply text-white text-3xl;
+    @apply text-3xl;
 }
 
 /** Footer **/
 
 .footer-wrapper {
-    @apply bg-blue-lightest px-8 py-4;
+    @apply bg-white px-8 py-4;
 }
 
 .footer-content {
-    @apply flex justify-center text-red-dark;
+    @apply flex justify-center;
 }
 
 /** Content section **/
 
 .content-wrapper {
-    @apply pt-4 flex-1 overflow-y-scroll bg-blue-lightest mt-16 mr-auto ml-auto;
+    @apply pt-4 flex-1 overflow-y-scroll bg-white mt-16 mr-auto ml-auto;
 }
 
 .content-text {
-    @apply text-red-dark;
+    @apply;
 }
 
 /** Custom tags **/

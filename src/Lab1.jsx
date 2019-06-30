@@ -24,6 +24,13 @@ class Lab1 extends Component {
 
         return(
             <div>
+                <div className="px-6 py-4 w-screen bg-blue-light">
+                    <ol>
+                        <li><b>Page theme</b> - Find home button, features with timed visibility.</li>
+                        <li><b>Features</b> - Popmotion Pose component for animation.</li>
+                        <li><b>Development plan</b> - Page layout; Have hint button show after 5 seconds; Have arrow show after hint button is pressed.</li>
+                    </ol>
+                </div>
                 <div>
                     <Box className="up-triangle" pose={isVisible ? 'visible' : 'hidden'} />
                 </div>

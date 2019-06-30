@@ -6,7 +6,7 @@ const Tile = (props) => {
     let project = props.project
     return (
 
-        <div key={project.id} style={{transition: 'all 0.1s linear'}} className="rounded-lg shadow-2xl border-2 border-white hover:border-red-dark hover:shadow-2xlred">
+        <div key={project.id} style={{transition: 'all 0.1s linear'}} className="rounded-lg shadow-2xl border-2 border-white hover:shadow-2xlblue">
             <NavLink className="no-underline" to={project.navlink}>
 
                 <img src={project.image} className="w-60 rounded-lg m-2" style={{ height: '150px', objectFit: 'cover' }} />

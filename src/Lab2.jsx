@@ -45,7 +45,7 @@ class Lab2 extends Component {
         if (education.length > 0) {
             educationList = education.map(educationItem => {
                 return (
-                    <div key={educationItem.id} style={{ width: '50vw' }} className="m-6">
+                    <div key={educationItem.id} style={{ width: '50vw'}} className="m-16">
                         <EducationTile educationItem={educationItem} />
                     </div>
                 )
@@ -55,13 +55,16 @@ class Lab2 extends Component {
 
         return (
             
-            <div className="xs:text-sm sm:text-sm md:text-base lg:text-lg xl:text-xl">
-                <div className="px-6 py-4 w-screen border-blue-darker" style={{borderBottom: "1px solid"}}>
-                    <p>Page theme: Curriculum Vitae (CV).</p>
-                    <p>Features: Axios data retrieval; scalable text size based on screen width.</p>
+            <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
+                <div className="px-6 py-4 w-screen bg-blue-light">
+                    <ol>
+                        <li><b>Page theme</b> - Curriculum Vitae (CV).</li>
+                        <li><b>Features</b> - Axios data retrieval; scalable text size based on screen width.</li>
+                        <li><b>Development plan</b> - Content; Tabbed sections; linked publications.</li>
+                    </ol>
                 </div>
                 
-                <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4 text-blue-darker" style={{textAlign: 'center'}}>
+                <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4" style={{textAlign: 'center'}}>
                     Education
                 </div>
                 <div className="px-1/4">
