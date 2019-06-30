@@ -24,7 +24,7 @@
 /** Footer **/
 
 .footer-wrapper {
-    @apply bg-grey-lighter px-8 py-4;
+    @apply bg-blue-lightest px-8 py-4;
 }
 
 .footer-content {
@@ -34,7 +34,7 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply pt-4 flex-1 overflow-y-scroll bg-grey-lighter mt-16 mr-auto ml-auto;
+    @apply pt-4 flex-1 overflow-y-scroll bg-blue-lightest mt-16 mr-auto ml-auto;
 }
 
 .content-text {
@@ -52,7 +52,3 @@
     border-right: 50px solid transparent;
     border-bottom: 50px solid red;
   }
-
-p   {
-    @apply ; 
-}

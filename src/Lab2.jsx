@@ -45,7 +45,7 @@ class Lab2 extends Component {
         if (education.length > 0) {
             educationList = education.map(educationItem => {
                 return (
-                    <div key={educationItem.id} style={{ width: '100vw' }} className="rounded-lg bg-white m-6">
+                    <div key={educationItem.id} style={{ width: '50vw' }} className="m-6">
                         <EducationTile educationItem={educationItem} />
                     </div>
                 )
@@ -61,7 +61,7 @@ class Lab2 extends Component {
                     <p>Features: Axios data retrieval; scalable text size based on screen width.</p>
                 </div>
                 
-                <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
+                <div className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4 text-blue-darker" style={{textAlign: 'center'}}>
                     Education
                 </div>
                 <div className="px-1/4">
