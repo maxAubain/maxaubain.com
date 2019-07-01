@@ -16,7 +16,7 @@ import './css/tailwind.css'
 const App = () => {
     return (
         <div className="page-wrapper">
-            <div className="page-content" style={{ minHeight: '100vh', backgroundColor: 'white'}}>
+            <div className="page-content" style={{ minHeight: '100vh'}}>
                 <Header />
                 <div className="content-wrapper">
                     <Switch>

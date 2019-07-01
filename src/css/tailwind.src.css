@@ -34,11 +34,11 @@
 /** Content section **/
 
 .content-wrapper {
-    @apply pt-4 flex-1 overflow-y-scroll bg-white mt-16 mr-auto ml-auto;
+    @apply pt-4 flex-1 bg-white mt-16 mr-auto ml-auto;
 }
 
 .content-text {
-    @apply;
+
 }
 
 /** Custom tags **/
