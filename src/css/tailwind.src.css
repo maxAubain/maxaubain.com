@@ -26,10 +26,6 @@
 
 /** Page **/
 
-.page-wrapper {
-  @apply min-h-screen;
-}
-
 .page-content {
   @apply flex flex-col w-full pin-l pin-y;
 }
@@ -37,7 +33,7 @@
 /** Header **/
 
 .header-wrapper {
-  @apply flex fixed w-screen items-center justify-between flex-wrap border border-black;
+  @apply flex fixed w-screen items-center justify-between flex-wrap;
 }
 
 .header-left {
@@ -51,7 +47,7 @@
 /** Footer **/
 
 .footer-wrapper {
-  @apply bg-white px-8 py-4;
+  @apply px-8 py-4;
 }
 
 .footer-content {
@@ -59,10 +55,6 @@
 }
 
 /** Content section **/
-
-.content-wrapper {
-  @apply pt-4 flex-1 bg-white mt-16 mr-auto ml-auto;
-}
 
 /** Custom tags **/
 
@@ -75,6 +67,8 @@
   border-right: 50px solid transparent;
   border-bottom: 50px solid red;
 }
+
+/** Mobile first **/
 
 .page {
   display: flex;
