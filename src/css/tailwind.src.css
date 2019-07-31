@@ -15,12 +15,16 @@
 
 /**       Header      **/
 
-.header {
-  @apply flex fixed w-full items-center justify-between flex-wrap bg-white p-6;
+.header-wrapper {
+  @apply flex fixed w-screen items-center justify-between flex-wrap border border-black;
 }
 
-.header-title {
-  @apply text-3xl;
+.header-left {
+  @apply text-3xl border border-blue;
+}
+
+.header-center {
+  @apply text-3xl border border-green;
 }
 
 /**       Footer      **/
