@@ -4,40 +4,40 @@ import Tile from "./Tile"
 import { NavLink, Link } from 'react-router-dom';
 
 class TileArray extends Component {
-    constructor() {
-        super();
-        this.state = {
-            projects: []
-        };
-    }
+  constructor() {
+    super();
+    this.state = {
+      projects: []
+    };
+  }
 
-    componentDidMount() {
-        axios.get('./src/data/projects.json')
-            .then(response => {
-                this.setState({
-                    projects: response.data  
-                })
-            })
-    }
+  componentDidMount() {
+    axios.get('./src/data/projects.json')
+      .then(response => {
+        this.setState({
+          projects: response.data
+        })
+      })
+  }
 
-    render() {
-        const projects = this.state.projects
-        let projectsList 
+  render() {
+    const projects = this.state.projects
+    let projectsList
 
-        if (projects.length > 0) {
-            projectsList = projects.map(project => {
-                return (
-                    <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
-                        <Tile project={project} />
-                    </div>
-                )
-            })
-        }
-
+    if (projects.length > 0) {
+      projectsList = projects.map(project => {
         return (
-            <div>{projectsList} </div>
+          <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
+            <Tile project={project} />
+          </div>
         )
+      })
     }
+
+    return (
+      <div>{projectsList} </div>
+    )
+  }
 };
 
 export default TileArray
