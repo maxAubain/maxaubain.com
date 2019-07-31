@@ -1,5 +1,5 @@
 # Front End Application: Professional Portfolio
-Developed by,
+Developed and documented by,
 * Aubain, Max - [Github](https://github.com/CA-ma)  
 
 ## Summary
@@ -15,14 +15,36 @@ The [Portfolio App](https://max-aubain-portfolio.netlify.com/) is deployed using
 
 (image of home page)
 
-## Building
-To locally run or test this application, fork this repository to your github account and clone to a local workspace.  The following instructions will configure your local workspace with the necessary package manager and packages for Mac OS terminal.
+## Build
+This application's scaffolding is maintained using Node Package Manager (NPM).  As such, the following process was used to install the necessary [React](https://reactjs.org/), [Babel](https://babeljs.io/) compilier, and  [Webpack](https://webpack.js.org/) module bundler.
 
 ```
-Instructions here.
+// Initialize NPM
+$ npm init   
+
+// Install React and React-DOM
+$ npm install --save react react-dom
+
+// Install Babel core, command line interface (CLI), and presets for the JS syntax transforms for React
+$ npm install --save--dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+$ touch .babelrc
+```
+In `.babelrc` config file add the following configuration setting,
+```
+{
+  "presets": [
+    "@babel/env",
+    "@babel/preset-react"
+  ]
+}
+```
+Finally,
+```
+// Webpack installation and configuration
+$ npm install --save-dev webpack@4.19.1 webpack-cli@3.1.1 webpack-dev-server@3.1.8 style-loader@0.23.0 css-loader@1.0.0 babel-loader@8.0.2
 ```
 
-## Development and Testing
+## Development
 
 ## Acknowledgements
 Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
