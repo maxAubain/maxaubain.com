@@ -46,6 +46,11 @@ $ npm install --save-dev webpack@4.19.1 webpack-cli@3.1.1 webpack-dev-server@3.1
 
 ## Development
 
+The project is organized into features for organized and trackable development.
+
+**Feature list**
+* [Mobile first display](./src/features/mobile_first_display.md)
+
 ## Acknowledgements
 Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
 
