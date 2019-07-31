@@ -84,12 +84,17 @@
 }
 
 .header {
-  background-image: url(src/img/blackmnt.jpg);
+}
+
+.headshot {
+  border-radius: 50%;
 }
 
 .content {
   background-color: #EAEDF0;
-  height: 600px;
+  height: auto;
+  flex-direction: column;
+  padding: 50px;
 }
 
 .feature-1 {
