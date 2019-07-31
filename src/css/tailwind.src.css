@@ -3,7 +3,28 @@
 @tailwind utilities;
 @tailwind screens;
 
-/**       Page      **/
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
+
+/** Page **/
 
 .page-wrapper {
   @apply min-h-screen;
@@ -13,7 +34,7 @@
   @apply flex flex-col w-full pin-l pin-y;
 }
 
-/**       Header      **/
+/** Header **/
 
 .header-wrapper {
   @apply flex fixed w-screen items-center justify-between flex-wrap border border-black;
@@ -27,7 +48,7 @@
   @apply text-3xl border border-green;
 }
 
-/**       Footer      **/
+/** Footer **/
 
 .footer-wrapper {
   @apply bg-white px-8 py-4;
@@ -37,13 +58,13 @@
   @apply flex justify-center;
 }
 
-/**       Content section       **/
+/** Content section **/
 
 .content-wrapper {
   @apply pt-4 flex-1 bg-white mt-16 mr-auto ml-auto;
 }
 
-/**       Custom tags       **/
+/** Custom tags **/
 
 .up-triangle {
   margin-right: 150px;
