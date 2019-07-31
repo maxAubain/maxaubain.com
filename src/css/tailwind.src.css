@@ -3,52 +3,50 @@
 @tailwind utilities;
 @tailwind screens;
 
-/** Page **/ 
+/**       Page      **/
 
 .page-wrapper {
-    @apply min-h-screen;
-}
-.page-content {
-    @apply flex flex-col w-full pin-l pin-y;
+  @apply min-h-screen;
 }
 
-/** Header **/
+.page-content {
+  @apply flex flex-col w-full pin-l pin-y;
+}
+
+/**       Header      **/
+
 .header {
-    @apply flex fixed w-full items-center justify-between flex-wrap bg-white p-6;
+  @apply flex fixed w-full items-center justify-between flex-wrap bg-white p-6;
 }
 
 .header-title {
-    @apply text-3xl;
+  @apply text-3xl;
 }
 
-/** Footer **/
+/**       Footer      **/
 
 .footer-wrapper {
-    @apply bg-white px-8 py-4;
+  @apply bg-white px-8 py-4;
 }
 
 .footer-content {
-    @apply flex justify-center;
+  @apply flex justify-center;
 }
 
-/** Content section **/
+/**       Content section       **/
 
 .content-wrapper {
-    @apply pt-4 flex-1 bg-white mt-16 mr-auto ml-auto;
+  @apply pt-4 flex-1 bg-white mt-16 mr-auto ml-auto;
 }
 
-.content-text {
-
-}
-
-/** Custom tags **/
+/**       Custom tags       **/
 
 .up-triangle {
-    margin-right: 150px; 
-    margin-top: 20px;
-    width: 0; 
-    height: 0; 
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 50px solid red;
-  }
+  margin-right: 150px;
+  margin-top: 20px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 50px solid red;
+}
