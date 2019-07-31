@@ -33,7 +33,7 @@
 /** Header **/
 
 .header-wrapper {
-  @apply flex fixed w-screen items-center justify-between flex-wrap;
+  @apply flex w-screen items-center justify-between flex-wrap;
 }
 
 .header-left {
@@ -70,7 +70,7 @@
 
 /** Mobile first **/
 
-.page {
+.homepage {
   display: flex;
   flex-wrap: wrap;
 }
@@ -83,11 +83,6 @@
   align-items: center;
 }
 
-.menu {
-  background-color: #5995DA;
-  height: 80px;
-}
-
 .header {
   background-color: #B2D6FF;
 }
@@ -97,18 +92,10 @@
   height: 600px;
 }
 
-.sign-up {
-  background-color: #D6E9FE;
-}
-
 .feature-1 {
   background-color: #F5CF8E;
 }
 
 .feature-2 {
   background-color: #F09A9D;
-}
-
-.feature-3 {
-  background-color: #C8C6FA;
 }
