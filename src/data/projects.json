@@ -1,30 +1,30 @@
 [
-    {
-        "id": 1,
-        "name": "Lab 1: Going Home",
-        "image": "./src/img/home.PNG",
-        "description": "Don't leave home without knowing how to get back.",
-        "navlink": "/Lab1"
-    },
-    {
-        "id": 2,
-        "name": "Lab 2: Curriculum Vitae",
-        "image": "./src/img/DSC_1637_sm.JPG",
-        "description": "Detailed summary of work experience and education to date.",
-        "navlink": "/Lab2"
-    },
-    {
-        "id": 3,
-        "name": "Lab 3",
-        "image": "./src/img/DSC_2062_sm.JPG",
-        "description": "TBD",
-        "navlink": "/Lab3"
-    },
-    {
-        "id": 4,
-        "name": "Lab 4",
-        "image": "./src/img/DSC_2062_sm.JPG",
-        "description": "TBD",
-        "navlink": "/Lab4"
-    }
+  {
+    "id": 1,
+    "name": "Lab 1: Going Home",
+    "image": "./src/img/home.PNG",
+    "description": "Don't leave home without knowing how to get back.",
+    "navlink": "/Lab1"
+  },
+  {
+    "id": 2,
+    "name": "Lab 2: Curriculum Vitae",
+    "image": "./src/img/sunset_sm.JPG",
+    "description": "Detailed summary of work experience and education to date.",
+    "navlink": "/Lab2"
+  },
+  {
+    "id": 3,
+    "name": "Lab 3",
+    "image": "./src/img/rivervalley_sm.JPG",
+    "description": "TBD",
+    "navlink": "/Lab3"
+  },
+  {
+    "id": 4,
+    "name": "Lab 4",
+    "image": "./src/img/rivervalley_sm.JPG",
+    "description": "TBD",
+    "navlink": "/Lab4"
+  }
 ]
