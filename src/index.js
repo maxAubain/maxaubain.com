@@ -5,7 +5,6 @@ import Header from "./Header"
 import Footer from "./Footer"
 import TileArray from "./TileArray"
 {/* import About from "./About" */ }
-import Lab1 from "./Lab1"
 import Lab2 from "./Lab2"
 import Lab3 from "./Lab3"
 import Lab4 from "./Lab4"
