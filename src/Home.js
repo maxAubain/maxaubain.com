@@ -8,14 +8,10 @@ const Home = () => {
       </div>
       <div class='section content'>
         <p>
-          Hello!  My name is Max Aubain.
-        </p><br></br>
-        
-        <p>
           I am a dedicated engineer with over 10 years of experience, passionate about solving technical
-          and business problems.  To that end, I enjoy leading teams to success and continually
+          and business problems.  I enjoy leading teams to success and continually
           improving my own skills.  My career goals are currently focused on web-based application development
-          and managing projects with a team of engineers.
+          and project management.
         </p>
       </div >
       <div class='section feature-1'>
