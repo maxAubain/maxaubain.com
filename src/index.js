@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
-{/* import TileArray from "./TileArray" */}
+import TileArray from "./TileArray"
 {/* import About from "./About" */ }
 import Lab1 from "./Lab1"
 import Lab2 from "./Lab2"
@@ -21,7 +21,7 @@ const App = () => {
         <div className="content-wrapper">
           <Switch>
             <Route exact path='/' component={Home} ></Route>
-            <Route exact path='/Lab1' component={Lab1}></Route>
+            <Route exact path='/TileArray' component={TileArray}></Route>
             <Route exact path='/Lab2' component={Lab2}></Route>
             <Route exact path='/Lab3' component={Lab3}></Route>
             <Route exact path='/Lab4' component={Lab4}></Route>

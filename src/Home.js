@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink} from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -17,19 +18,19 @@ const Home = () => {
       <div class='section content'>
         <p>
           I am a dedicated engineer and registered Patent Agent with over 10 years of experience in emerging technologies, passionate about addressing concurrent technical
-          and business challenges. 
+          and business challenges.
         </p><br></br>
         <p>
-          My career goals are currently focused on web-based application development, 
+          My career goals are currently focused on web-based application development,
           project management, and data analysis.
         </p>
       </div >
       <div class='section feature-1'>
         <h2>Curriculum Vitae</h2>
       </div>
-      <div class='section feature-2'>
+      <NavLink class="navlink section feature-2" to='/TileArray'>
         <h2>Developer Projects</h2>
-      </div>
+      </NavLink>
     </div >
   )
 }

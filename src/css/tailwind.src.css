@@ -90,6 +90,10 @@
   border-bottom: 50px solid red;
 }
 
+.navlink {
+  text-decoration: none;
+}
+
 /** Mobile first **/
 
 .homepage {
