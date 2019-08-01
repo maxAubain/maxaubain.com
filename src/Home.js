@@ -7,7 +7,7 @@ const Home = () => {
         <img class='headshot' src='./src/img/headShot.png' />
       </div>
       <div class='section headline'>
-        <h1>Max Aubain</h1>
+        <h1>Max Aubain</h1><br></br>
         <h2><ul>
           <li>Full stack developer</li>
           <li>Project manager</li>
@@ -16,17 +16,19 @@ const Home = () => {
       </div>
       <div class='section content'>
         <p>
-          I am a dedicated engineer with over 10 years of experience, passionate about solving technical
-          and business problems.  I enjoy leading teams to success and continually
-          improving my own skills.  My career goals are currently focused on web-based application development, 
-          project management, and data processing.
+          I am a dedicated engineer and registered Patent Agent with over 10 years of experience in emerging technologies, passionate about addressing concurrent technical
+          and business challenges. 
+        </p><br></br>
+        <p>
+          My career goals are currently focused on web-based application development, 
+          project management, and data analysis.
         </p>
       </div >
       <div class='section feature-1'>
         <h2>Curriculum Vitae</h2>
       </div>
       <div class='section feature-2'>
-        <h2>Web Development Projects</h2>
+        <h2>Developer Projects</h2>
       </div>
     </div >
   )

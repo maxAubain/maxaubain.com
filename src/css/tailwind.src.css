@@ -98,15 +98,21 @@
 }
 
 .section {
-  height: 300px;
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.header {
+}
+
 .headshot {
   border-radius: 50%;
-  width: 300px;
+  width: 210px;
+  height: 210;
+  border: black solid 1px;
+  box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
 }
 
 .headline {
@@ -118,6 +124,7 @@
   height: auto;
   flex-direction: column;
   padding: 50px;
+  background-color: rgb(108, 201, 255);
 }
 
 .feature-1 {
