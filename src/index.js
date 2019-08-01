@@ -6,8 +6,6 @@ import Footer from "./Footer"
 import TileArray from "./TileArray"
 {/* import About from "./About" */ }
 import Lab2 from "./Lab2"
-import Lab3 from "./Lab3"
-import Lab4 from "./Lab4"
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './css/tailwind.css'
@@ -22,8 +20,6 @@ const App = () => {
             <Route exact path='/' component={Home} ></Route>
             <Route exact path='/TileArray' component={TileArray}></Route>
             <Route exact path='/Lab2' component={Lab2}></Route>
-            <Route exact path='/Lab3' component={Lab3}></Route>
-            <Route exact path='/Lab4' component={Lab4}></Route>
           </Switch>
         </div>
         <Footer />
