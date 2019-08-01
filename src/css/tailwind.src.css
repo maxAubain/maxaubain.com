@@ -3,6 +3,8 @@
   body {
     background-color: #F09A9D; /* Red */
   }
+  .header,
+  .headline,
   .feature-1,
   .feature-2 {
     width: 100%;
@@ -14,6 +16,8 @@
   body {
     background-color: #F5CF8E; /* Yellow */
   }
+  .header,
+  .headline,
   .feature-1,
   .feature-2 {
     width: 50%;
@@ -29,6 +33,8 @@
     width: 860px;
     margin: 0 auto;
   }
+  .header,
+  .headline,
   .feature-1,
   .feature-2 {
     width: 50%;
@@ -98,13 +104,13 @@
   align-items: center;
 }
 
-.header {
-  width: 100%;
-}
-
 .headshot {
   border-radius: 50%;
   width: 300px;
+}
+
+.headline {
+  flex-direction: column;
 }
 
 .content {
