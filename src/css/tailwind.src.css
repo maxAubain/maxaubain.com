@@ -109,23 +109,29 @@
 
 .content {
   width: 100%;
-  background-color: #EAEDF0;
   height: auto;
   flex-direction: column;
   padding: 50px;
 }
 
 .feature-1 {
-  background: url('../img/blackmnt.jpg');
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../img/blackmnt.jpg');
   background-size: cover;
 }
 
 .feature-2 {
-  background: url('../img/rivervalley_sm.jpg');
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url('../img/rivervalley_sm.jpg');
   background-size: cover;
 }
 
 .feature-1,
 .feature-2 {
   text-align: center;
+  color: white;
 }
