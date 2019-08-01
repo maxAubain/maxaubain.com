@@ -1,11 +1,12 @@
 import React from "react"
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+  let currentLocation = window.location.pathname;
+  console.log(currentLocation)
   return (
     <div className="header-wrapper" >
-      <nav><p className="header-left"><NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/'>Home</NavLink></p></nav>
-      <p className="header-center">Max Aubain</p>
+      <NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/'><img src="./src/img/left_arrow.png" class="left-arrow"></img></NavLink>
     </div>
   )
 }
