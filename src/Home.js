@@ -28,7 +28,7 @@ const Home = () => {
       <div class='section feature-1'>
         <h2>Curriculum Vitae</h2>
       </div>
-      <NavLink class="navlink section feature-2" to='/TileArray'>
+      <NavLink class="navlink section feature-2" to='/DeveloperProjects'>
         <h2>Developer Projects</h2>
       </NavLink>
     </div >

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
-import TileArray from "./TileArray"
+import DeveloperProjects from "./DeveloperProjects"
 import Lab2 from "./Lab2"
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
@@ -17,7 +17,7 @@ const App = () => {
         <div className="content-wrapper">
           <Switch>
             <Route exact path='/' component={Home} ></Route>
-            <Route exact path='/TileArray' component={TileArray}></Route>
+            <Route exact path='/DeveloperProjects' component={DeveloperProjects}></Route>
             <Route exact path='/Lab2' component={Lab2}></Route>
           </Switch>
         </div>
