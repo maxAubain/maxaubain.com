@@ -15,10 +15,10 @@ const Home = () => {
         </p>
       </div >
       <div class='section feature-1'>
-        <p>Section Feature 1</p>
+        <h2>Curriculum Vitae</h2>
       </div>
       <div class='section feature-2'>
-        <p>Section Feature 2</p>
+        <h2>Web Development Projects</h2>
       </div>
     </div >
   )

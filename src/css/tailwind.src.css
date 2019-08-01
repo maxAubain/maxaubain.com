@@ -95,7 +95,7 @@
   height: 300px;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
 }
 
 .header {
@@ -121,5 +121,11 @@
 }
 
 .feature-2 {
-  background-color: #F09A9D;
+  background: url('../img/rivervalley_sm.jpg');
+  background-size: cover;
+}
+
+.feature-1,
+.feature-2 {
+  text-align: center;
 }
