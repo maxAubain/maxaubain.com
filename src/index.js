@@ -4,7 +4,6 @@ import Home from "./Home"
 import Header from "./Header"
 import Footer from "./Footer"
 import TileArray from "./TileArray"
-{/* import About from "./About" */ }
 import Lab2 from "./Lab2"
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
