@@ -1,42 +1,23 @@
-import React, { Component } from "react"
-import axios from "axios"
-import Tile from "./Tile"
+import React from "react"
+import TileArray from "./TileArray"
 
-class DeveloperProjects extends Component {
-  constructor() {
-    super();
-    this.state = {
-      projects: []
-    };
-  }
-
-  componentDidMount() {
-    axios.get('./src/data/projects.json')
-      .then(response => {
-        this.setState({
-          projects: response.data
-        })
-      })
-  }
-
-  render() {
-    const projects = this.state.projects
-    let projectsList
-
-    if (projects.length > 0) {
-      projectsList = projects.map(project => {
-        return (
-          <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
-            <Tile project={project} />
-          </div>
-        )
-      })
-    }
-
-    return (
-      <div>{projectsList} </div>
-    )
-  }
+const DeveloperProjects = () => {
+  return (
+    <div>
+      <div>
+        <h1>Full Stack</h1>
+        <TileArray />
+      </div>
+      <div>
+        <h1>Back End / API</h1>
+        <TileArray />
+      </div>
+      <div>
+        <h1>Front End</h1>
+        <TileArray />
+      </div>
+    </div>
+  )
 };
 
 export default DeveloperProjects
