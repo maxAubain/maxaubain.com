@@ -1,16 +1,10 @@
 [
   {
     "id": 1,
-    "name": "Lab 1: Going Home",
-    "image": "./src/img/home.PNG",
-    "description": "Don't leave home without knowing how to get back.",
-    "navlink": "/Lab1"
-  },
-  {
-    "id": 2,
-    "name": "Lab 2: Curriculum Vitae",
-    "image": "./src/img/sunset_sm.JPG",
-    "description": "Detailed summary of work experience and education to date.",
-    "navlink": "/Lab2"
+    "name": "Professional Portfolio",
+    "image": "./src/img/headShot.png",
+    "description": "It's a start.",
+    "deploy_link": "https://max-aubain-portfolio.netlify.com/",
+    "readme_link": "https://github.com/CA-ma/portfolio-challenge#front-end-application-professional-portfolio"
   }
 ]

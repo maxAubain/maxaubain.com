@@ -94,6 +94,10 @@
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /** Mobile first **/
 
 .homepage {
