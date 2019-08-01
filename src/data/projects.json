@@ -12,19 +12,5 @@
     "image": "./src/img/sunset_sm.JPG",
     "description": "Detailed summary of work experience and education to date.",
     "navlink": "/Lab2"
-  },
-  {
-    "id": 3,
-    "name": "Lab 3",
-    "image": "./src/img/rivervalley_sm.JPG",
-    "description": "TBD",
-    "navlink": "/Lab3"
-  },
-  {
-    "id": 4,
-    "name": "Lab 4",
-    "image": "./src/img/rivervalley_sm.JPG",
-    "description": "TBD",
-    "navlink": "/Lab4"
   }
 ]
