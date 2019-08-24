@@ -5,8 +5,10 @@ const Header = () => {
   let currentLocation = window.location.pathname;
   console.log(currentLocation)
   return (
-    <div className="header-wrapper" >
-      <NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/'><img src="./src/img/left_arrow.png" class="left-arrow"></img></NavLink>
+    <div class='navbar' >
+      <NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/'>Home</NavLink>
+      <NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/DeveloperProjects'>Developer Projects</NavLink>
+      <NavLink style={{ transition: 'all 0.1s linear' }} className="text-black hover:text-blue no-underline" to='/'>Curriculum Vitae</NavLink>
     </div>
   )
 }

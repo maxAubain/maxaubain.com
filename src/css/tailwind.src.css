@@ -1,8 +1,6 @@
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
-  body {
-    background-color: #F09A9D; /* Red */
-  }
+  .navbar,
   .header,
   .headline,
   .feature-1,
@@ -13,9 +11,7 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  body {
-    background-color: #F5CF8E; /* Yellow */
-  }
+  .navbar,
   .header,
   .headline,
   .feature-1,
@@ -26,10 +22,9 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #B2D6FF; /* Blue */
-  }
-  .homepage {
+  .navbar,
+  .homepage,
+  .header-wrapper {
     width: 860px;
     margin: 0 auto;
   }
@@ -50,21 +45,15 @@
 
 .page-content {
   @apply flex flex-col w-full pin-l pin-y;
+  background-color: rgb(231, 246, 255);
 }
 
 /** Header **/
-
-.header-wrapper {
-  @apply flex w-screen items-center justify-between flex-wrap;
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: rgb(108, 201, 255);
-}
-
-.header-left {
-  @apply text-3xl border border-blue;
-}
-
-.header-center {
-  @apply text-3xl border border-green;
 }
 
 .left-arrow {
@@ -84,17 +73,6 @@
 /** Content section **/
 
 /** Custom tags **/
-
-.up-triangle {
-  margin-right: 150px;
-  margin-top: 20px;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid red;
-}
-
 .navlink {
   text-decoration: none;
 }
@@ -117,9 +95,6 @@ a {
   align-items: center;
 }
 
-.header {
-}
-
 .headshot {
   border-radius: 50%;
   width: 210px;
@@ -137,7 +112,7 @@ a {
   height: auto;
   flex-direction: column;
   padding: 50px;
-  background-color: rgb(108, 201, 255);
+  background-color: rgb(231, 246, 255);
 }
 
 .feature-1 {
