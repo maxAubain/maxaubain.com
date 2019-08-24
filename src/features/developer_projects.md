@@ -5,4 +5,3 @@
 * Full Stack
 * Back End / API
 * Front End
-3. Configure Header to have a back button which returns to Home from DeveloperProjects, but is blank while at Home.
