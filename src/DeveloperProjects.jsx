@@ -1,7 +1,11 @@
 import React from "react";
+
 import TileArray from "./TileArray";
 
+// DeveloperProjects returns a summary of projects I have worked on, displaying 
+// the project information using the TileArray component.
 const DeveloperProjects = () => {
+  /* Generates references to project information files */
   const fullStackPath = "./src/data/projectsFullStack.json";
   const frontEndPath = "./src/data/projectsFrontEnd.json";
   const backEndPath = "./src/data/projectsBackEnd.json";
