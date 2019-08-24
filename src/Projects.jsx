@@ -1,17 +1,21 @@
 import React, { Component } from "react"
 import axios from "axios"
-import ProjectCard from "./ProjectCard"
 
+import Project from "./Project"
+
+// Projects uses a GET request to receive projects file infromation and
+// renders an array of Project components for each project in the file.
+// It receives the path of the projects file as props from DeveloperProjects.
 class Projects extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       projects: []
     };
   }
 
   componentDidMount() {
-    axios.get('./src/data/projects.json')
+    axios.get(this.props.path)
       .then(response => {
         this.setState({
           projects: response.data
@@ -20,24 +24,16 @@ class Projects extends Component {
   }
 
   render() {
-    const projects = this.state.projects
-    let projectsList
-
-    if (projects.length > 0) {
-      projectsList = projects.map(project => {
-        return (
-          <div key={project.id} className="min-h-900 my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
-            <ProjectCard project={project} />
-          </div>
-        )
-      })
-    }
+    let projectsList = this.state.projects.map(project => {
+      return (
+        <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
+          <Project project={project} />
+        </div>
+      )
+    })
 
     return (
-      <div>
-        <h1 className="content-text">My Projects</h1>
-        {projectsList}
-      </div>
+      <div>{projectsList} </div>
     )
   }
 };

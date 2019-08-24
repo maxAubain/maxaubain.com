@@ -1,8 +1,9 @@
 import React from "react"
-import { NavLink, Link } from 'react-router-dom';
+
 import './css/tailwind.src.css';
 
-const Tile = (props) => {
+// Tile receives the information of a single project as props from Projects, formats it, and returns.
+const Project = (props) => {
   let project = props.project
   return (
     <div key={project.id} style={{ transition: 'all 0.1s linear' }} className="rounded-lg border border-grey hover:shadow-2xl hover:bg-grey-lightest">
@@ -19,4 +20,4 @@ const Tile = (props) => {
   )
 }
 
-export default Tile
+export default Project

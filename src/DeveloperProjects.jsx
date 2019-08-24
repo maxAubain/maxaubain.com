@@ -1,6 +1,6 @@
 import React from "react";
 
-import TileArray from "./TileArray";
+import Projects from "./Projects";
 
 // DeveloperProjects returns a summary of projects I have worked on, displaying 
 // the project information using the TileArray component.
@@ -14,15 +14,15 @@ const DeveloperProjects = () => {
     <div>
       <div>
         <h1>Full Stack</h1>
-        <TileArray path={fullStackPath} />
+        <Projects path={fullStackPath} />
       </div>
       <div>
         <h1>Front End</h1>
-        <TileArray path={frontEndPath} />
+        <Projects path={frontEndPath} />
       </div>
       <div>
         <h1>Back End</h1>
-        <TileArray path={backEndPath} />
+        <Projects path={backEndPath} />
       </div>
     </div>
   );
