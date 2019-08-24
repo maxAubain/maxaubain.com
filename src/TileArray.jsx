@@ -4,15 +4,15 @@ import Tile from "./Tile"
 import { NavLink, Link } from 'react-router-dom';
 
 class TileArray extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       projects: []
     };
   }
 
   componentDidMount() {
-    axios.get('./src/data/projects.json')
+    axios.get(this.props.path)
       .then(response => {
         this.setState({
           projects: response.data
@@ -21,18 +21,13 @@ class TileArray extends Component {
   }
 
   render() {
-    const projects = this.state.projects
-    let projectsList
-
-    if (projects.length > 0) {
-      projectsList = projects.map(project => {
-        return (
-          <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
-            <Tile project={project} />
-          </div>
-        )
-      })
-    }
+    let projectsList = this.state.projects.map(project => {
+      return (
+        <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
+          <Tile project={project} />
+        </div>
+      )
+    })
 
     return (
       <div>{projectsList} </div>
