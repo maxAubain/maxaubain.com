@@ -10,24 +10,23 @@ const Home = () => {
       <div class='section headline'>
         <h1>Max Aubain</h1><br></br>
         <h2><ul>
-          <li>Full stack developer</li>
           <li>Project manager</li>
+          <li>Full stack developer</li>
           <li>Data analyst</li>
         </ul></h2>
       </div>
       <div class='section content'>
         <p>
-          I am a dedicated engineer and registered Patent Agent with over 10 years of experience in emerging technologies, passionate about addressing concurrent technical
+          I am a dedicated engineer with over 10 years of experience in emerging technologies, passionate about addressing concurrent technical
           and business challenges.
         </p><br></br>
         <p>
-          My career goals are currently focused on web-based application development,
-          project management, and data analysis.
+          My career goals are currently focused on project management, web-based application development, and data analysis.
         </p>
       </div >
-      <div class='section feature-1'>
+      <a href="https://www.linkedin.com/in/maxaubain/" class='section feature-1'>
         <h2>Curriculum Vitae</h2>
-      </div>
+      </a>
       <NavLink class="navlink section feature-2" to='/DeveloperProjects'>
         <h2>Developer Projects</h2>
       </NavLink>
