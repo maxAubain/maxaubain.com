@@ -3,7 +3,7 @@ import axios from "axios";
 import EducationTile from "./EducationTile";
 import ExperienceTile from "./ExperienceTile";
 
-class Lab2 extends Component {
+class CurriculumVitae extends Component {
   constructor() {
     super();
     this.state = {
@@ -83,4 +83,4 @@ class Lab2 extends Component {
   }
 }
 
-export default Lab2;
+export default CurriculumVitae;

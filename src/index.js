@@ -2,11 +2,11 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Home from "./Home"
+import Profile from "./Profile"
 import Header from "./Header"
 import Footer from "./Footer"
 import DeveloperProjects from "./DeveloperProjects"
-import Lab2 from "./Lab2"
+import CurriculumVitae from "./CurriculumVitae"
 
 import './css/tailwind.css'
 
@@ -18,9 +18,9 @@ const App = () => {
       <Header />
       <div className="content-wrapper">
         <Switch>
-          <Route exact path='/' component={Home} ></Route>
+          <Route exact path='/' component={Profile} ></Route>
           <Route exact path='/DeveloperProjects' component={DeveloperProjects}></Route>
-          <Route exact path='/Lab2' component={Lab2}></Route>
+          <Route exact path='/CurriculumVitae' component={CurriculumVitae}></Route>
         </Switch>
       </div>
       <Footer />

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Profile = () => {
   return (
     <div class="homepage">
       <div class="section header">
@@ -34,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Profile;

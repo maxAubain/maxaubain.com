@@ -1,8 +1,10 @@
 Action items
-* Keep header on top at all times, give drop shadow, contain to same width as body content.
-* Have header arrow icon for 'back' link and "Max Aubain" only show when not on home page.
-* Change arrow icon to Apple style.
-* Add borders to left and right sides of body and header when in tablet and desktop mode.
-* Update "CV" to have "coming soon". (done)
+* Keep navbar on top at all times, contain to same width as body content. (done)
+* Add navbar with hover over effect and indicator of current page.
 * Remove color change with css media queries. (done)
-* Change pictures of CV and Projects to reflect content.
+* Add pictures for PM, Developer, Data Analyst to reflect content. (done)
+* Have to-section buttons do a slow move effect.
+* Have section content be mobile friendly.
+* Have Travel have a "coming soon" message.
+* Refactor "Lab2" component name, "Home" to "Profile".
+* Refactor components into a folder.
