@@ -3,10 +3,10 @@ import ReactDOM from "react-dom"
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Profile from "./Profile"
-import Header from "./Header"
-import Footer from "./Footer"
-import DeveloperProjects from "./DeveloperProjects"
-import CurriculumVitae from "./CurriculumVitae"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import DeveloperProjects from "./components/DeveloperProjects"
+import CurriculumVitae from "./components/CurriculumVitae"
 
 import './css/tailwind.css'
 

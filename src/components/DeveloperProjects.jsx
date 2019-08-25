@@ -2,8 +2,8 @@ import React from "react";
 
 import Projects from "./Projects";
 
-// DeveloperProjects returns a summary of projects I have worked on, displaying 
-// the project information using the TileArray component.
+// DeveloperProjects returns instances of the Projects component which contain projects 
+//I have worked on, where the return for each project is formatted by the Project component.
 const DeveloperProjects = () => {
   /* Generates references to project information files */
   const fullStackPath = "./src/data/projectsFullStack.json";

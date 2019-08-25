@@ -1,6 +1,6 @@
 import React from "react"
 
-import './css/tailwind.src.css';
+import '../css/tailwind.src.css';
 
 // Tile receives the information of a single project as props from Projects, formats it, and returns.
 const Project = (props) => {
