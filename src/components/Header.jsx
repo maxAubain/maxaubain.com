@@ -15,8 +15,8 @@ const Header = () => {
       <NavLink class="navlink" to="CurriculumVitae">
         Curriculum Vitae
       </NavLink>
-      <NavLink class="navlink" to="/">
-        Travel
+      <NavLink class="navlink" to="TravelBlog">
+        Travel Blog
       </NavLink>
     </div>
   );
