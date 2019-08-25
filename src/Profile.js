@@ -39,16 +39,16 @@ const Profile = () => {
           </li>
         </ul>
       </div>
-      <div class="content feature" id="project-manager">
-        <div class="category">Project Manager</div>
-        <div class="description">
+      <div class="section feature" id="project-manager">
+        <div class="feature-name">Project Manager</div>
+        <div class="feature-description">
           managing a large number of things. a great many things!
         </div>
       </div>
-      <div class="content feature" id="full-stack-developer">
+      <div class="section feature" id="full-stack-developer">
         hello world
       </div>
-      <div class="content feature" id="data-analyst">
+      <div class="section feature" id="data-analyst">
         hello world
       </div>
     </div>

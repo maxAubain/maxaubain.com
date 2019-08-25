@@ -10,6 +10,7 @@ import CurriculumVitae from "./components/CurriculumVitae";
 import TravelBlog from "./components/TravelBlog";
 
 import "./css/tailwind.css";
+import WebFont from 'webfontloader';
 
 // App component returns Header and Footer components, and uses React Router to switch
 // between components that populate the body of the website.
@@ -41,6 +42,13 @@ const App = () => {
     </div>
   );
 };
+
+// Installs custom google font
+WebFont.load({
+  google: {
+    families: ['Muli']
+  }
+});
 
 // Renders the App component in the virtual ReactDOM
 ReactDOM.render(
