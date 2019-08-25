@@ -1,9 +1,11 @@
 import React from "react";
 
 const TravelBlog = () => {
-  return(
-    <p>Coming soon.</p>
-  )
+  return (
+    <div class="component">
+      <p>Coming soon.</p>
+    </div>
+  );
 };
 
 export default TravelBlog;

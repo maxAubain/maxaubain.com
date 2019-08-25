@@ -23,7 +23,7 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .navbar,
-  .homepage,
+  .component,
   .header-wrapper {
     width: 860px;
     margin: 0 auto;
@@ -71,8 +71,8 @@
 
 /** Content between header and footer **/
 
-/** .homepage settings configures content to rearrange according to media queries **/
-.homepage {
+/** .component settings configures content to rearrange according to media queries **/
+.component {
   display: flex;
   flex-wrap: wrap;
 }
