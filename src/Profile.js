@@ -24,12 +24,12 @@ const Profile = () => {
       <div class="section content">
         <ul>
           <li>
-            I am a motivated team player and an advocate for getting the job
+            Motivated team player and an advocate for getting the job
             done right.
           </li>
           <br></br>
           <li>
-            I have a proven record of generating group cohesion and business
+            Proven record of generating group cohesion and business
             value in interdisciplinary, technical projects.
           </li>
           <br></br>
