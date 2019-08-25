@@ -24,7 +24,7 @@ const Profile = () => {
           emerging technologies.
         </div>
       </div>
-      <div class="section content">
+      {/*       <div class="section content">
         <a href="./#project-manager" class="feature-ref-1">
           Project Manager
         </a>
@@ -34,7 +34,7 @@ const Profile = () => {
         <a href="./#data-analyst" class="feature-ref-3">
           Data and Tech Analyst
         </a>
-      </div>
+      </div> */}
       <div class="section feature" id="project-manager">
         <div class="feature-name">Project Manager</div>
         <div class="feature-description">

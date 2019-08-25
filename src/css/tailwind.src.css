@@ -108,11 +108,11 @@ body {
 
 /* Configures sections */
 .section {
-  min-height: 280px;
-  height: auto;
+  min-height: 280px; height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 /* Header includes Headshot and Headline */
