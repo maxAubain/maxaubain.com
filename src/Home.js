@@ -1,37 +1,37 @@
-import React from "react"
-import { NavLink} from 'react-router-dom';
+import React from "react";
 
 const Home = () => {
   return (
-    <div class='homepage'>
-      <div class='section header'>
-        <img class='headshot' src='./src/img/headShot.png' />
+    <div class="homepage">
+      <div class="section header">
+        <div>
+          <img class="headshot" src="./src/img/headShot.png" />
+        </div><br></br>
+        <div>Max Aubain, Ph.D.</div>
       </div>
-      <div class='section headline'>
-        <h1>Max Aubain</h1><br></br>
-        <h2><ul>
-          <li>Project manager</li>
-          <li>Full stack developer</li>
-          <li>Data analyst</li>
-        </ul></h2>
+      <div class="section headline">
+        <a href="./#project-manager" class="feature-ref-1">Project Manager</a>
+        <a href="./#full-stack-developer" class="feature-ref-2">Full Stack Developer</a>
+        <a href="./#data-analyst" class="feature-ref-3">Data Analyst</a>
       </div>
-      <div class='section content'>
-        <p>
-          I am a dedicated engineer with over 10 years of experience in emerging technologies, passionate about addressing concurrent technical
-          and business challenges.
-        </p><br></br>
-        <p>
-          My career goals are currently focused on project management, web-based application development, and data analysis.
+      <div class="section content">
+        <p>I am a motivated team player and an advocate for getting the job done right; I have a proven
+        record of generating group cohesion and business value in interdisciplinary, technical projects; 
+        and I enjoy learning and applying emerging technologies.
         </p>
-      </div >
-      <a href="https://www.linkedin.com/in/maxaubain/" class='section feature-1'>
-        <h2>Curriculum Vitae</h2>
-      </a>
-      <NavLink class="navlink section feature-2" to='/DeveloperProjects'>
-        <h2>Developer Projects</h2>
-      </NavLink>
-    </div >
-  )
-}
+      </div>
+      <div class="content feature-1" id="project-manager">
+        <div class="category">Project Manager</div>
+        <div class="description">managing a large number of things.  a great many things!</div>
+      </div>
+      <div class="content feature-2" id="full-stack-developer">
+        hello world
+      </div>
+      <div class="content feature-3" id="data-analyst">
+        hello world
+      </div>
+    </div>
+  );
+};
 
-export default Home
+export default Home;

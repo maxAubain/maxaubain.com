@@ -4,19 +4,23 @@
   .header,
   .headline,
   .feature-1,
-  .feature-2 {
+  .feature-2,
+  .feature-3 {
     width: 100%;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .navbar,
   .header,
   .headline,
   .feature-1,
-  .feature-2 {
+  .feature-2,
+  .feature-3 {
     width: 50%;
+  }
+  .navbar {
+    width: 100%;
   }
 }
 
@@ -31,8 +35,12 @@
   .header,
   .headline,
   .feature-1,
-  .feature-2 {
+  .feature-2,
+  .feature-3 {
     width: 50%;
+  }
+  .navbar {
+    border-radius: 5px;
   }
 }
 
@@ -41,64 +49,57 @@
 @tailwind utilities;
 @tailwind screens;
 
-/** Page **/
-
+/** Page including header and footer **/
 .page-content {
-  @apply flex flex-col w-full pin-l pin-y;
-  background-color: rgb(231, 246, 255);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 239, 255);
+  min-height: 100vh;
+  width: 100vw;
 }
 
 /** Header **/
 .navbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background-color: rgb(108, 201, 255);
-}
-
-.left-arrow {
-  width: 50px;
+  display: flex; flex-wrap: wrap; justify-content: space-around;
+  background-color:white;
+  margin-top: 10px; margin-bottom: 30px;
 }
 
 /** Footer **/
-
 .footer-wrapper {
-  @apply px-8 py-4;
+  padding: 10px;
 }
 
 .footer-content {
-  @apply flex justify-center;
+  display:flex;
+  justify-content: center;
 }
 
-/** Content section **/
+/** Content between header and footer **/
 
-/** Custom tags **/
-.navlink {
-  text-decoration: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-/** Mobile first **/
-
+/** .homepage settings configures content to rearrange according to media queries **/
 .homepage {
   display: flex;
   flex-wrap: wrap;
 }
 
+/** .section class is attached to each Home content div **/
 .section {
-  height: 250px;
+  height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.header {
+  flex-direction: column;
+  font-size: 20px;
+}
+
 .headshot {
-  border-radius: 50%;
-  width: 210px;
-  height: 210;
+  border-radius: 5px;
+  width: 200px;
+  height: 200;
   border: black solid 1px;
   box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
 }
@@ -112,33 +113,76 @@ a {
   height: auto;
   flex-direction: column;
   padding: 50px;
-  background-color: rgb(231, 246, 255);
+  background-color: rgb(212, 239, 255);
 }
 
-.feature-1 {
+.feature-ref-1 {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  ), url('../img/project-manager.png');
+}
+
+.feature-ref-2 {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)
-  ), url('../img/blackmnt.jpg');
-  background-size: cover;
+  ), url('../img/web-development.png');
 }
 
-.feature-2 {
+.feature-ref-3 {
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ), url('../img/rivervalley_sm.jpg');
-  background-size: cover;
-  transition: all 0.2s linear;
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.8)
+  ), url('../img/data-analyst.png');
 }
 
-.feature-2:hover {
+.feature-ref-1:hover,
+.feature-ref-2:hover,
+.feature-ref-3:hover {
   color: rgb(108, 201, 255);
   box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
 }
 
-.feature-1,
-.feature-2 {
-  text-align: center;
-  color: white;
+.feature-ref-1,
+.feature-ref-2,
+.feature-ref-3 {
+  font-size: 20px; color: white; text-align: center; padding-top: 20px;
+  background-size: cover;
+  transition: all 0.2s linear;
+  width: 25vw; min-width: 220px;
+  height: 70px;
+  margin: 10px;
+  border: black 1px solid; border-radius: 5px;
 }
+
+.feature-1,
+.feature-2,
+.feature-3 {
+  display: flex; flex-direction: row;
+  background-color:white;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.category {
+  font-size: 20px;
+}
+
+/** Tags **/
+.navlink {
+  text-decoration: none;
+  transition: all 0.1s linear;
+  padding: 10px;
+  font-size: 20px;
+  color:#4eafff;
+}
+
+.navlink:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+a {
+  text-decoration: none;
+}
+
