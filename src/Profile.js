@@ -11,6 +11,20 @@ const Profile = () => {
         <div>Max Aubain, Ph.D.</div>
       </div>
       <div class="section headline">
+        <div class="headline-item">
+          Motivated team player and an advocate for getting the job done
+          right.
+        </div>
+        <div class="headline-item">
+          Proven record of generating group cohesion and business value in
+          interdisciplinary, technical projects.
+        </div>
+        <div class="headline-item">
+          Over 10 years of experience researching, developing, and applying
+          emerging technologies.
+        </div>
+      </div>
+      <div class="section content">
         <a href="./#project-manager" class="feature-ref-1">
           Project Manager
         </a>
@@ -21,35 +35,19 @@ const Profile = () => {
           Data Analyst
         </a>
       </div>
-      <div class="section content">
-        <ul>
-          <li>
-            Motivated team player and an advocate for getting the job
-            done right.
-          </li>
-          <br></br>
-          <li>
-            Proven record of generating group cohesion and business
-            value in interdisciplinary, technical projects.
-          </li>
-          <br></br>
-          <li>
-            I have over 10 years of experience researching, developing, and
-            applying emerging technologies.
-          </li>
-        </ul>
-      </div>
       <div class="section feature" id="project-manager">
         <div class="feature-name">Project Manager</div>
         <div class="feature-description">
-          managing a large number of things. a great many things!
+          I am passionate about project management as a tool to enhance the quality of products and business methods, and to enable developers and engineers to be creative and efficient.  I thrive when working in teams and I am energized by the prospect of bringing structure to the chaos of creating something new.  My experience includes Scrum Master in Agile development settings and technical project manager as a Senior Design Engineer.
         </div>
       </div>
       <div class="section feature" id="full-stack-developer">
-        hello world
+        <div class="feature-name">Full Stack Developer</div>
+        <div class="feature-description">I develop.</div>
       </div>
       <div class="section feature" id="data-analyst">
-        hello world
+        <div class="feature-name">Data Analyst</div>
+        <div class="feature-description">I analyze.</div>
       </div>
     </div>
   );
