@@ -131,13 +131,6 @@
   ), url('../img/data-analyst.png');
 }
 
-.feature-ref-1:hover,
-.feature-ref-2:hover,
-.feature-ref-3:hover {
-  color: rgb(108, 201, 255);
-  box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
-}
-
 .feature-ref-1,
 .feature-ref-2,
 .feature-ref-3 {
@@ -148,6 +141,14 @@
   height: 70px;
   margin: 10px;
   border: black 1px solid; border-radius: 5px;
+}
+
+.feature-ref-1:hover,
+.feature-ref-2:hover,
+.feature-ref-3:hover {
+  color: rgb(108, 201, 255);
+  box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
+  transform: scale(1..01);
 }
 
 .feature {
@@ -178,3 +179,7 @@ a {
   text-decoration: none;
 }
 
+/** Global parameters **/
+html {
+  scroll-behavior: smooth;
+}
