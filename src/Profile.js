@@ -32,13 +32,13 @@ const Profile = () => {
           Full Stack Developer
         </a>
         <a href="./#data-analyst" class="feature-ref-3">
-          Data Analyst
+          Data and Tech Analyst
         </a>
       </div>
       <div class="section feature" id="project-manager">
         <div class="feature-name">Project Manager</div>
         <div class="feature-description">
-          I am passionate about project management as a tool to enhance the quality of products and business methods, and to enable developers and engineers to be creative and efficient.  I thrive when working in teams and I am energized by the prospect of bringing structure to the chaos of creating something new.  My experience includes Scrum Master in Agile development settings and technical project manager as a Senior Design Engineer.
+          I am passionate about project management as a tool to enhance the quality of products and business methods, and to enable developers and engineers to be creative and efficient.  I thrive when working in teams and I am energized by the prospect of bringing structure to the chaos of building something new.  My experience includes Scrum Master in Agile development settings and technical project manager as a Senior Design Engineer.
         </div>
       </div>
       <div class="section feature" id="full-stack-developer">
