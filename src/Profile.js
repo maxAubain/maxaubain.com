@@ -20,14 +20,14 @@ const Profile = () => {
         and I enjoy learning and applying emerging technologies.
         </p>
       </div>
-      <div class="content feature-1" id="project-manager">
+      <div class="content feature" id="project-manager">
         <div class="category">Project Manager</div>
         <div class="description">managing a large number of things.  a great many things!</div>
       </div>
-      <div class="content feature-2" id="full-stack-developer">
+      <div class="content feature" id="full-stack-developer">
         hello world
       </div>
-      <div class="content feature-3" id="data-analyst">
+      <div class="content feature" id="data-analyst">
         hello world
       </div>
     </div>
