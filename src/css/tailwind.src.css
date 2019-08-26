@@ -222,3 +222,7 @@ body {
 a {
   text-decoration: none;
 }
+
+p {
+  line-height: 25px;
+}

@@ -1,3 +1,5 @@
+https://reactjs.org/docs/react-component.html#setstate
+
 Action items
 * Have section content be mobile friendly.
 * Have all sections adopt the same center style as the profile page.

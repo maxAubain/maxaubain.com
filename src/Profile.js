@@ -12,19 +12,19 @@ const Profile = () => {
       </div>
       <div class="section headline">
         <div class="headline-item">
-          Motivated team player and an advocate for getting the job done
-          right.
+          <p>Motivated team player and an advocate for getting the job done
+          right.</p>
         </div>
         <div class="headline-item">
-          Proven record of generating group cohesion and business value in
-          interdisciplinary, technical projects.
+          <p>Proven record of generating group cohesion and business value in
+          interdisciplinary, technical projects.</p>
         </div>
         <div class="headline-item">
-          Over 10 years of experience researching, developing, and applying
-          emerging technologies.
+          <p>Over 10 years of experience researching, developing, and applying
+          emerging technologies.</p>
         </div>
       </div>
-      {/*       <div class="section content">
+      <div class="section content">
         <a href="./#project-manager" class="feature-ref-1">
           Project Manager
         </a>
@@ -34,11 +34,11 @@ const Profile = () => {
         <a href="./#data-analyst" class="feature-ref-3">
           Data and Tech Analyst
         </a>
-      </div> */}
+      </div>
       <div class="section feature" id="project-manager">
         <div class="feature-name">Project Manager</div>
         <div class="feature-description">
-          I am passionate about project management as a tool to enhance the quality of products and business methods, and to enable developers and engineers to be creative and efficient.  I thrive when working in teams and I am energized by the prospect of bringing structure to the chaos of building something new.  My experience includes Scrum Master in Agile development settings and technical project manager as a Senior Design Engineer.
+          <p>I am passionate about project management as a tool to enhance the quality of products and business methods, and to enable developers and engineers to be creative and efficient.  I thrive when working in teams and I am energized by the prospect of bringing structure to the chaos of building something new.  My experience includes Scrum Master in Agile development settings and technical project manager as a Senior Design Engineer.</p>
         </div>
       </div>
       <div class="section feature" id="full-stack-developer">
