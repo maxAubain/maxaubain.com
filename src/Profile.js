@@ -51,7 +51,6 @@ const Profile = () => {
             teams and I am energized by the prospect of bringing structure to
             the chaos of building something new.
           </p>
-          <br></br>
           <p>
             My experience includes Scrum Master in Agile development settings
             and technical project management in the semiconductor industry.
@@ -66,7 +65,6 @@ const Profile = () => {
             career for equally as many tasks, from lab test automation to
             numerical integration fuctions.
           </p>
-          <br></br>
           <p>
             Now, I am laser focused on web development. Specifically, I am
             finishing the final project for a four month bootcamp at Craft
@@ -79,6 +77,7 @@ const Profile = () => {
       <div class="section feature" id="data-analyst">
         <div class="feature-name">Analyst</div>
         <div class="feature-description">I analyze.</div>
+      
       </div>
     </div>
   );
