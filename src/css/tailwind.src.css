@@ -115,6 +115,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .section-small {
@@ -122,6 +123,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 10px;
+  background-color:white;
+  margin-bottom: 20px;
 }
 
 /* Header includes Headshot and Headline */
@@ -200,9 +204,12 @@ body {
   transform: scale(1..01);
 }
 
+.feature-container {
+  width: 100%;
+}
+
 .feature {
-  background-color:white;
-  margin-bottom: 40px;
+  background-color: white;
 }
 
 .feature-title-outside {

@@ -33,7 +33,7 @@ class Projects extends Component {
     })
 
     return (
-      <div class="feature">
+      <div class="feature-container">
         {projectsList}
       </div>
     )
