@@ -62,14 +62,14 @@ const Profile = () => {
         <div class="feature-description">
           <p>
             Max has written applications in various languages throughout his
-            career for equally as many tasks, from lab test automation to
-            numerical integration fuctions.
+            career for equally as many tasks, from lab test automation in
+            Labview to numerical integration in MATLAB.
           </p>
           <p>
             Now he laser focused on web development. Specifically, he is
-            completing the final project for a four month bootcamp at Craft
-            Academy in Stockholm. Core competences include testing frameworks,
-            Ruby on Rails, and ReactJS.
+            completing the final project of a four month bootcamp at Craft
+            Academy in Stockholm. His core competences include testing
+            frameworks, Ruby on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
@@ -82,13 +82,14 @@ const Profile = () => {
         <div class="feature-title">Analyst</div>
         <div class="feature-description">
           <p>
-            Max has a unique combination of professional experiences that shaped
-            his analytic abilities.
+            Max has a unique combination of professional experiences that have
+            shaped his analytic abilities.
           </p>
           <p>
             He has passed the U.S. Patent Bar Exam and worked as a registered
             Patent Agent, drafting patent applications and legal documents while
-            performing intellectual property research.
+            performing intellectual property research on a wide range of
+            emerging technologies.
           </p>
           <p>
             He has been the technical lead on many engineering projects,
@@ -98,7 +99,7 @@ const Profile = () => {
           <p>
             Finally, his analytical foundation lies in the completion of a Ph.D.
             dissertation that resulted in the publication of peer reviewed
-            journal articles.
+            journal articles on the topic of materials physics.
           </p>
         </div>
       </div>
