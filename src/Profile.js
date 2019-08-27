@@ -68,7 +68,8 @@ const Profile = () => {
           <p>
             Now he laser focused on web development. Specifically, he is
             completing the final project for a four month bootcamp at Craft
-            Academy in Stockholm.
+            Academy in Stockholm. Core competences include testing frameworks,
+            Ruby on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
