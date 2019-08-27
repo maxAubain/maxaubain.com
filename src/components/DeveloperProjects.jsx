@@ -12,18 +12,14 @@ const DeveloperProjects = () => {
 
   return (
     <div class="component">
-      <div>
-        <h1>Full Stack</h1>
-        <Projects path={fullStackPath} />
-      </div>
-      <div>
-        <h1>Front End</h1>
-        <Projects path={frontEndPath} />
-      </div>
-      <div>
-        <h1>Back End</h1>
-        <Projects path={backEndPath} />
-      </div>
+      <div class="feature-title-outside">Full Stack</div>
+      <Projects path={fullStackPath} />
+      
+      <div class="feature-title-outside">Front End</div>
+      <Projects path={frontEndPath} />
+      
+      <div class="feature-title-outside">Back End</div>
+      <Projects path={backEndPath} />
     </div>
   );
 };

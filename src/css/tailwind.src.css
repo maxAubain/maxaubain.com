@@ -38,7 +38,7 @@ body {
   .feature {
     width: 100%;
   }
-  .feature-name {
+  .feature-title {
     min-width: 30%
   }
   .feature-description {
@@ -66,7 +66,7 @@ body {
   .feature {
     border-radius: 5px;
   }
-  .feature-name {
+  .feature-title {
     min-width: 30%
   }
   .feature-description {
@@ -205,9 +205,16 @@ body {
   margin-bottom: 40px;
 }
 
-.feature-name {
+.feature-title-outside {
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .feature-description {
