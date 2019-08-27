@@ -4,7 +4,7 @@ import EducationTile from "./EducationTile";
 import ExperienceTile from "./ExperienceTile";
 
 class CurriculumVitae extends Component {
-  constructor() {
+  /* constructor() {
     super();
     this.state = {
       experience: [],
@@ -24,10 +24,10 @@ class CurriculumVitae extends Component {
         education: response.data
       });
     });
-  }
+  } */
 
   render() {
-    const education = this.state.education;
+/*     const education = this.state.education;
     let educationList;
 
     if (education.length > 0) {
@@ -59,10 +59,10 @@ class CurriculumVitae extends Component {
           </div>
         );
       });
-    }
+    } */
 
     return (
-      <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
+ /*      <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
         <div
           className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4"
           style={{ textAlign: "center" }}
@@ -78,6 +78,9 @@ class CurriculumVitae extends Component {
           Experience
         </div>
         <div className="px-1/5">{experienceList}</div>
+      </div> */
+      <div class="component">
+        <p>Coming soon.  For more information about my education and publications, you can visit my <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.</p>
       </div>
     );
   }

@@ -26,14 +26,16 @@ class Projects extends Component {
   render() {
     let projectsList = this.state.projects.map(project => {
       return (
-        <div key={project.id} className="float-left rounded-lg bg-white m-6 w-64">
+        <div key={project.id} class="section-small feature">
           <Project project={project} />
         </div>
       )
     })
 
     return (
-      <div>{projectsList} </div>
+      <div class="component">
+        {projectsList}
+      </div>
     )
   }
 };
