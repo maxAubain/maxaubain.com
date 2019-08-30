@@ -23,7 +23,6 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .header,
   .headline {
     width: 50%;
   }
@@ -54,12 +53,10 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .header-wrapper,
   .feature {
     width: 860px;
     margin: 0 auto;
   }
-  .header,
   .headline {
     width: 50%;
   }
@@ -87,14 +84,6 @@
 }
 
 /* Page styling */
-/* Page content container including header and footer */
-.page-content {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(212, 239, 255);
-  min-height: 100vh;
-  width: 100vw;
-}
 
 /* Configures sections */
 .section {
@@ -113,12 +102,6 @@
   padding-bottom: 10px;
   background-color:white;
   margin-bottom: 20px;
-}
-
-/* Header includes Headshot and Headline */
-.header {
-  flex-direction: column;
-  font-size: 20px;
 }
 
 /* Headshot includes profile image */

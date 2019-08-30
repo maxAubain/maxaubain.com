@@ -3,7 +3,7 @@ import React from "react";
 const Profile = () => {
   return (
     <div class="intro">
-      <div class="section header">
+      <div class="section headshot-container">
         <div>
           <img class="headshot" src="./src/img/headShot.png" />
         </div>
