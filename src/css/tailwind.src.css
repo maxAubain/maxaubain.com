@@ -188,7 +188,7 @@ body {
 .feature-ref-1,
 .feature-ref-2,
 .feature-ref-3 {
-  font-size: 20px; color: rgb(0, 0, 177); text-align: center; padding-top: 20px;
+  font-size: 20px; color: rgb(0, 63, 158); text-align: center; padding-top: 20px;
   background-size: cover;
   transition: all 0.2s linear;
   width: 25vw; min-width: 220px;

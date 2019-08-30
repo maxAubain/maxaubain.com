@@ -45,11 +45,12 @@ const Profile = () => {
         <div class="feature-title">Project Manager</div>
         <div class="feature-description">
           <p>
-            Max is passionate about project management as a tool to enhance the
-            quality of products and business methods, and to enable developers
-            and engineers to be creative and efficient. He thrives when working
-            in teams and is energized by the prospect of bringing structure to
-            the chaos of building something new.
+            Max is passionate about being a project manager and using associated
+            methods as a tool to enhance the quality of products and business
+            flows, and to enable developers and engineers to be creative and
+            efficient. He thrives when working in teams and is energized by the
+            prospect of bringing structure to the chaos of building something
+            new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
@@ -68,8 +69,8 @@ const Profile = () => {
           <p>
             Now he laser focused on web development. Specifically, he is
             completing the final project of a four month bootcamp at Craft
-            Academy in Stockholm. His core competences include testing
-            frameworks, Ruby on Rails, and ReactJS.
+            Academy in Stockholm. His core competences include Agile
+            development, testing frameworks, Ruby on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
@@ -92,14 +93,14 @@ const Profile = () => {
             emerging technologies.
           </p>
           <p>
-            He has been the technical lead on many engineering projects,
-            including thermal risk management for semiconductor chips
-            manufactored for tier 1 smart phone manufactorers.
+            He has been a technical lead on product reliability, design, and
+            development projects, including thermal risk management for
+            smartphone semiconductor parts.
           </p>
           <p>
-            Finally, his analytical foundation lies in the completion of a Ph.D.
-            dissertation that resulted in the publication of peer reviewed
-            journal articles on the topic of materials physics.
+            Finally, his analytical foundation lies in the completion of an
+            engineering Ph.D. that resulted in the publication of peer reviewed
+            journal articles.
           </p>
         </div>
       </div>
