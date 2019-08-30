@@ -6,7 +6,7 @@ const Project = props => {
   return (
     <>
       <div>
-        <img src="./src/img/icon/portfolio.png"></img>
+        <img src={project.image}></img>
       </div>
       <div>
         <p>{project.name}</p>
