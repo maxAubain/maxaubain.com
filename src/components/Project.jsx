@@ -4,18 +4,16 @@ import React from "react";
 const Project = props => {
   let project = props.project;
   return (
-    <div key={project.id}>
-      <div>{project.name}</div>
+    <>
+      <div>
+        <p>{project.name}</p>
+        <a href={project.deploy_link}>Deployed Site</a><br></br>
+        <a href={project.readme_link}>Project Documentation</a>
+        </div>
       <div>
         <p>{project.description}</p>
       </div>
-      <div>
-        <a href={project.deploy_link}>Deployed Site</a>
-      </div>
-      <div>
-        <a href={project.readme_link}>Project Documentation</a>
-      </div>
-    </div>
+    </>
   );
 };
 
