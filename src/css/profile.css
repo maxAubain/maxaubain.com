@@ -1,17 +1,6 @@
-/* Global parameters and imports */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0 auto;
-  font-family: Muli; 
-}
-
 /* Styles based on queries of the screen width */
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
-  .navbar,
   .header,
   .headline,
   .feature {
@@ -21,17 +10,6 @@ body {
   .content {
     flex-wrap: wrap;
   }
-  .project-image {
-    width: 48%;
-  }
-  .project-title {
-    width: 50%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 100%;
-    border: 1px solid green;
-  }
 }
 
 /* Tablet Styles */
@@ -40,7 +18,6 @@ body {
   .headline {
     width: 50%;
   }
-  .navbar,
   .feature {
     width: 100%;
   }
@@ -53,22 +30,10 @@ body {
   .content {
     flex-wrap: wrap;
   }
-  .project-image {
-    width: 25%;
-  }
-  .project-title {
-    width: 25%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 50%;
-    border: 1px solid green;
-  }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .navbar,
   .component,
   .header-wrapper,
   .feature {
@@ -79,7 +44,6 @@ body {
   .headline {
     width: 50%;
   }
-  .navbar,
   .feature {
     border-radius: 5px;
   }
@@ -89,47 +53,6 @@ body {
   .feature-description {
     min-width: 65%;
   }
-  .project-image {
-    width: 25%;
-
-  }
-  .project-title {
-    width: 25%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 50%;
-    border: 1px solid green;
-  }
-  .navbar {
-    justify-content: left;
-  }
-}
-
-/* Page styling */
-/* Page content container including header and footer */
-.page-content {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(212, 239, 255);
-  min-height: 100vh;
-  width: 100vw;
-}
-
-/* Header */
-.navbar {
-  display: flex; flex-wrap: wrap; justify-content: space-around;
-  margin-top: 40px; margin-bottom: 40px;
-}
-
-/* Footer */
-.footer-wrapper {
-  padding: 10px;
-}
-
-.footer-content {
-  display:flex;
-  justify-content: center;
 }
 
 /* Configures component content */
@@ -256,29 +179,4 @@ body {
 .feature-description {
   font-size: 18px;
   padding: 20px;
-}
-
-/* Configures projects */
-.project-image {
-  text-align: center;
-  padding-top: 5px;
-}
-
-/* Tags */
-.navlink {
-  text-decoration: none;
-  transition: all 0.1s linear;
-  padding: 10px;
-  font-size: 20px;
-  color: rgb(0, 63, 158);
-}
-
-a {
-  text-decoration: none;
-  color:#0f84e4;
-}
-
-p {
-  line-height: 25px;
-  margin-bottom: 15px;
 }
