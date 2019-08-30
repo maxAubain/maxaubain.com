@@ -10,7 +10,7 @@ const Profile = () => {
         <br></br>
         <div>Max Aubain, Ph.D.</div>
       </div>
-      <div class="section headline">
+      <div class="section headline-container">
         <div class="headline-item">
           <p>
             Motivated team player and an advocate for getting the job done
