@@ -12,7 +12,7 @@ const DeveloperProjects = () => {
   const exercisesPath = "./src/data/projectsExercises.json";
 
   return (
-    <div class="component">
+    <>
       <div class="feature-title-outside">Full Stack</div>
       <Projects path={fullStackPath} />
       
@@ -24,7 +24,7 @@ const DeveloperProjects = () => {
 
       <div class="feature-title-outside">Exercises</div>
       <Projects path={exercisesPath} />
-    </div>
+    </>
   );
 };
 

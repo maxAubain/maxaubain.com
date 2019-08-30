@@ -2,7 +2,7 @@ import React from "react";
 
 const TravelBlog = () => {
   return (
-    <div class="component">
+    <div>
       <p>Coming soon.</p>
     </div>
   );
