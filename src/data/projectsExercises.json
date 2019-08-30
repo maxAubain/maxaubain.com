@@ -1,10 +1,10 @@
 [
   {
-    "id": "BE1",
-    "name": "Professional Portfolio",
+    "id": "E1",
+    "name": "ATM",
     "image": {
-      "path": "",
-      "alt": "",
+      "path": "./src/img/icon/bank.png",
+      "alt": "bank icon",
       "size": "100px"
     },
     "description": "It's a start.",

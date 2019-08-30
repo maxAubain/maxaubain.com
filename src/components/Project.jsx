@@ -5,15 +5,15 @@ const Project = props => {
   let project = props.project;
   return (
     <>
-      <div>
-        <img src={project.image}></img>
+      <div class="project-image">
+        <img src={project.image.path} alt={project.image.alt} height={project.image.size} width={project.image.size}></img>
       </div>
-      <div>
+      <div class="project-title">
         <p>{project.name}</p>
         <a href={project.deploy_link}>Deployed Site</a><br></br>
         <a href={project.readme_link}>Project Documentation</a>
         </div>
-      <div>
+      <div class="project-description">
         <p>{project.description}</p>
       </div>
     </>

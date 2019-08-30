@@ -67,6 +67,18 @@ body {
   .feature-description {
     min-width: 65%;
   }
+  .project-image {
+    width: 25%;
+    border: 1px solid red;
+  }
+  .project-title {
+    width: 25%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 50%;
+    border: 1px solid green;
+  }
   .navbar {
     justify-content: left;
   }
@@ -224,7 +236,12 @@ body {
   padding: 20px;
 }
 
-/** Tags **/
+/* Configures projects */
+.project-image {
+  text-align: center;
+}
+
+/* Tags */
 .navlink {
   text-decoration: none;
   transition: all 0.1s linear;

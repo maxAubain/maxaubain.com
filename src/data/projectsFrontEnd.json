@@ -2,7 +2,11 @@
   {
     "id": "FE1",
     "name": "Professional Portfolio",
-    "image": "./src/img/icon/portfolio.png",
+    "image": {
+      "path": "./src/img/icon/portfolio.png",
+      "alt": "",
+      "size": "100px"
+    },
     "description": "It's a start.",
     "deploy_link": "https://max-aubain-portfolio.netlify.com/",
     "readme_link": "https://github.com/CA-ma/portfolio-challenge#front-end-application-professional-portfolio"
