@@ -32,14 +32,14 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="buttons">
-        <a href="./#project-manager" class="feature-ref-1">
+      <div class="button-container">
+        <a href="./#project-manager" class="button-1">
           Project Manager
         </a>
-        <a href="./#full-stack-developer" class="feature-ref-2">
+        <a href="./#full-stack-developer" class="button-2">
           Full Stack Developer
         </a>
-        <a href="./#data-analyst" class="feature-ref-3">
+        <a href="./#data-analyst" class="button-3">
           Analyst
         </a>
       </div>

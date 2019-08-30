@@ -63,7 +63,7 @@
   margin-top: 20px;
 }
 
-.buttons {
+.button-container {
   min-height: 60px; height: auto;
   display: flex; flex-direction: row; justify-content: center;
   margin-top: 30px; margin-bottom: 30px;
@@ -96,7 +96,7 @@
 }
 
 /* Features include info about PM, Developer, Analyst */
-.feature-ref-1 {
+.button-1 {
   background-image: linear-gradient(
     to bottom right,
     rgba(212, 239, 255, 0.2),
@@ -104,7 +104,7 @@
   ), url('../img/project-manager.png');
 }
 
-.feature-ref-2 {
+.button-2 {
   background-image: linear-gradient(
     to bottom right,
     rgba(212, 239, 255, 0.5),
@@ -112,7 +112,7 @@
   ), url('../img/web-development.png');
 }
 
-.feature-ref-3 {
+.button-3 {
   background-image: linear-gradient(
     to bottom right,
     rgba(212, 239, 255, 0.6),
@@ -120,9 +120,9 @@
   ), url('../img/data-analyst.png');
 }
 
-.feature-ref-1,
-.feature-ref-2,
-.feature-ref-3 {
+.button-1,
+.button-2,
+.button-3 {
   font-size: 20px; color: rgb(0, 63, 158); text-align: center; padding-top: 20px;
   background-size: cover;
   transition: all 0.2s linear;
@@ -132,9 +132,9 @@
   border: black 1px solid; border-radius: 5px;
 }
 
-.feature-ref-1:hover,
-.feature-ref-2:hover,
-.feature-ref-3:hover {
+.button-1:hover,
+.button-2:hover,
+.button-3:hover {
   box-shadow: 2px 4px 10px 4px rgba(0,0,0,0.3);
   transform: scale(1..01);
 }
