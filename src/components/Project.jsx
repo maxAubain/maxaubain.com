@@ -6,6 +6,9 @@ const Project = props => {
   return (
     <>
       <div>
+        <img src="./src/img/icon/portfolio.png"></img>
+      </div>
+      <div>
         <p>{project.name}</p>
         <a href={project.deploy_link}>Deployed Site</a><br></br>
         <a href={project.readme_link}>Project Documentation</a>
