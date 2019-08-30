@@ -3,14 +3,14 @@ import React from "react";
 const Profile = () => {
   return (
     <div class="intro">
-      <div class="section headshot-container">
+      <div class="section-profile headshot-container">
         <div>
           <img class="headshot" src="./src/img/headShot.png" />
         </div>
         <br></br>
         <div>Max Aubain, Ph.D.</div>
       </div>
-      <div class="section headline-container">
+      <div class="section-profile headline-container">
         <div class="headline-item">
           <p>
             Motivated team player and an advocate for getting the job done
@@ -41,7 +41,7 @@ const Profile = () => {
           Analyst
         </a>
       </div>
-      <div class="section feature" id="project-manager">
+      <div class="section-profile feature-profile" id="project-manager">
         <div class="feature-title">Project Manager</div>
         <div class="feature-description">
           <p>
@@ -58,7 +58,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="section feature" id="full-stack-developer">
+      <div class="section-profile feature-profile" id="full-stack-developer">
         <div class="feature-title">Full Stack Developer</div>
         <div class="feature-description">
           <p>
@@ -79,7 +79,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="section feature" id="data-analyst">
+      <div class="section-profile feature-profile" id="data-analyst">
         <div class="feature-title">Analyst</div>
         <div class="feature-description">
           <p>
