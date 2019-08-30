@@ -91,6 +91,7 @@ body {
   }
   .project-image {
     width: 25%;
+
   }
   .project-title {
     width: 25%;
@@ -260,6 +261,7 @@ body {
 /* Configures projects */
 .project-image {
   text-align: center;
+  padding-top: 5px;
 }
 
 /* Tags */

@@ -8,9 +8,9 @@ const Project = props => {
       <div  class="section-small feature">
         <div class="project-image">
           <img src={project.image.path} alt={project.image.alt} height={project.image.size} width={project.image.size}></img>
+          <div class="feature-title-outside">{project.name}</div>
         </div>
         <div class="project-title">
-          <p>{project.name}</p>
           <a href={project.deploy_link}>Deployed Application</a><br></br>
           <a href={project.readme_link}>Repository & Documentation</a>
         </div>
