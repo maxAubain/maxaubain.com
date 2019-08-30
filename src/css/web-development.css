@@ -54,7 +54,6 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .component,
   .header-wrapper,
   .feature {
     width: 860px;
@@ -95,12 +94,6 @@
   background-color: rgb(212, 239, 255);
   min-height: 100vh;
   width: 100vw;
-}
-
-/* Configures component content */
-.component {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /* Configures sections */

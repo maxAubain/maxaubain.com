@@ -2,7 +2,7 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div class="component">
+    <div class="intro">
       <div class="section header">
         <div>
           <img class="headshot" src="./src/img/headShot.png" />
