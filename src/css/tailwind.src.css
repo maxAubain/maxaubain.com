@@ -8,11 +8,6 @@ body {
   font-family: Muli; 
 }
 
-@tailwind preflight;
-@tailwind components;
-@tailwind utilities;
-@tailwind screens;
-
 /* Styles based on queries of the screen width */
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
@@ -39,10 +34,10 @@ body {
     width: 100%;
   }
   .feature-title {
-    min-width: 30%
+    min-width: 25%
   }
   .feature-description {
-    min-width: 70%;
+    min-width: 65%;
   }
   .content {
     flex-wrap: wrap;
@@ -67,10 +62,10 @@ body {
     border-radius: 5px;
   }
   .feature-title {
-    min-width: 30%
+    min-width: 25%
   }
   .feature-description {
-    min-width: 70%;
+    min-width: 65%;
   }
   .navbar {
     justify-content: left;
@@ -115,11 +110,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .section-small {
-  min-height: 140px; height: auto;
+  min-height: 60px; height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +151,7 @@ body {
   width: 100%;
   height: auto;
   flex-direction: row;
-  padding: 50px;
+  padding: 30px;
   background-color: rgb(212, 239, 255);
 }
 
@@ -191,8 +186,8 @@ body {
   font-size: 20px; color: rgb(0, 63, 158); text-align: center; padding-top: 20px;
   background-size: cover;
   transition: all 0.2s linear;
-  width: 25vw; min-width: 220px;
-  height: 70px;
+  width: 15vw; min-width: 200px;
+  height: 45px;
   margin: 10px;
   border: black 1px solid; border-radius: 5px;
 }
