@@ -7,9 +7,6 @@
     width: 100%;
     flex-wrap: wrap;
   }
-  .content {
-    flex-wrap: wrap;
-  }
 }
 
 /* Tablet Styles */
@@ -26,9 +23,6 @@
   }
   .feature-description {
     min-width: 65%;
-  }
-  .content {
-    flex-wrap: wrap;
   }
 }
 
@@ -69,14 +63,13 @@
   margin-top: 20px;
 }
 
-.section-small {
+.buttons {
   min-height: 60px; height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-  background-color:white;
-  margin-bottom: 20px;
+  display: flex; flex-direction: row; justify-content: center;
+  margin-top: 30px; margin-bottom: 30px;
+  width: 100%;
+  background-color: rgb(212, 239, 255);
+  flex-wrap: wrap;
 }
 
 /* Headshot container includes Headshot */
@@ -100,15 +93,6 @@
 
 .headline-item {
   margin: 15px 30px 15px 30px;
-}
-
-/* Content includes list of personal descriptions */
-.content {
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  padding: 30px;
-  background-color: rgb(212, 239, 255);
 }
 
 /* Features include info about PM, Developer, Analyst */

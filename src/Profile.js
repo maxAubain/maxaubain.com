@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./css/profile.css";
+
 const Profile = () => {
   return (
     <div class="intro">
@@ -30,7 +32,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="section-small content">
+      <div class="buttons">
         <a href="./#project-manager" class="feature-ref-1">
           Project Manager
         </a>
