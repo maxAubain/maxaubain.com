@@ -1,13 +1,11 @@
-import React from "react"
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer-wrapper" style={{ bottom: '0' }}>
-      <div className="footer-content">
-        <p>&middot; &copy; 2019 Max Aubain &middot;</p>
-      </div>
+    <div className="footer-wrapper">
+      <p>&middot; &copy; 2019 Max Aubain &middot;</p>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
