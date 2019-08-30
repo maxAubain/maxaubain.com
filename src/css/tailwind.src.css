@@ -21,6 +21,17 @@ body {
   .content {
     flex-wrap: wrap;
   }
+  .project-image {
+    width: 48%;
+  }
+  .project-title {
+    width: 50%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 100%;
+    border: 1px solid green;
+  }
 }
 
 /* Tablet Styles */
@@ -41,6 +52,17 @@ body {
   }
   .content {
     flex-wrap: wrap;
+  }
+  .project-image {
+    width: 25%;
+  }
+  .project-title {
+    width: 25%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 50%;
+    border: 1px solid green;
   }
 }
 
@@ -69,7 +91,6 @@ body {
   }
   .project-image {
     width: 25%;
-    border: 1px solid red;
   }
   .project-title {
     width: 25%;

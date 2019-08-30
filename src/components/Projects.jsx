@@ -26,7 +26,7 @@ class Projects extends Component {
   render() {
     let projectsList = this.state.projects.map(project => {
       return (
-        <div key={project.id} class="section-small feature">
+        <div key={project.id}>
           <Project project={project} />
         </div>
       )
