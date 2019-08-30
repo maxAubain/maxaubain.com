@@ -139,18 +139,8 @@
   transform: scale(1..01);
 }
 
-.feature-container {
-  width: 100%;
-}
-
 .feature {
   background-color: white;
-}
-
-.feature-title-outside {
-  font-size: 20px; text-align: center;
-  margin-bottom: 10px;
-  width: 100%;
 }
 
 .feature-title {
