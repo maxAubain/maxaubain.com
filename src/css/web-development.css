@@ -95,6 +95,7 @@
 /* Features include info about PM, Developer, Analyst */
 .feature-container {
   width: 100%;
+  transition: all 0.5;
 }
 
 .feature {

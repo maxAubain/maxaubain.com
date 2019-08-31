@@ -13,17 +13,17 @@ const DeveloperProjects = () => {
 
   return (
     <>
-      <div class="feature-title-outside">Full Stack</div>
-      <Projects path={fullStackPath} />
+{/*       <div class="feature-title-outside">Full Stack</div>
+      <Projects path={fullStackPath} /> */}
       
-      <div class="feature-title-outside">Front End</div>
+      <div className="feature-title-outside">Front End</div>
       <Projects path={frontEndPath} />
       
-      <div class="feature-title-outside">Back End</div>
+{/*       <div class="feature-title-outside">Back End</div>
       <Projects path={backEndPath} />
 
       <div class="feature-title-outside">Exercises</div>
-      <Projects path={exercisesPath} />
+      <Projects path={exercisesPath} /> */}
     </>
   );
 };
