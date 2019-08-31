@@ -43,12 +43,15 @@ const Profile = () => {
       </div>
       <div class="section-profile feature-profile" id="project-manager">
         <div class="feature-title">
-          <div><img
-            src="./src/img/icon/project-manager.png"
-            alt="PM-icon"
-            height="100px"
-            width="100px"
-          /></div><br></br>
+          <div>
+            <img
+              src="./src/img/icon/project-manager.png"
+              alt="PM-icon"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <br></br>
           Project Manager
         </div>
         <div class="feature-description">
@@ -67,12 +70,15 @@ const Profile = () => {
       </div>
       <div class="section-profile feature-profile" id="full-stack-developer">
         <div class="feature-title">
-          <div><img
-            src="./src/img/icon/developer.png"
-            alt="dev-icon"
-            height="100px"
-            width="100px"
-          /></div><br></br>
+          <div>
+            <img
+              src="./src/img/icon/developer.png"
+              alt="dev-icon"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <br></br>
           Full Stack Developer
         </div>
         <div class="feature-description">
@@ -82,10 +88,9 @@ const Profile = () => {
             Labview to numerical integration in MATLAB.
           </p>
           <p>
-            Now he laser focused on web development. Specifically, he is
-            completing the final project of a four month bootcamp at Craft
-            Academy in Stockholm. His core competences include Agile
-            development, testing frameworks, Ruby on Rails, and ReactJS.
+            Now he laser focused on adding web development to his toolkit. His
+            core competences include Agile development, testing frameworks, Ruby
+            on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
@@ -96,12 +101,15 @@ const Profile = () => {
       </div>
       <div class="section-profile feature-profile" id="data-analyst">
         <div class="feature-title">
-          <div><img
-            src="./src/img/icon/analyst.png"
-            alt="analyst-icon"
-            height="100px"
-            width="100px"
-          /></div><br></br>
+          <div>
+            <img
+              src="./src/img/icon/analyst.png"
+              alt="analyst-icon"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <br></br>
           Analyst
         </div>
         <div class="feature-description">
