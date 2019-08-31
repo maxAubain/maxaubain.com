@@ -9,7 +9,7 @@ import DeveloperProjects from "./components/DeveloperProjects";
 import CurriculumVitae from "./components/CurriculumVitae";
 import TravelBlog from "./components/TravelBlog";
 
-import "./css/global.css"
+import "./css/global.css";
 import "./css/profile.css";
 import "./css/web-development.css";
 import WebFont from "webfontloader";
