@@ -45,12 +45,11 @@ const Profile = () => {
         <div class="feature-title">Project Manager</div>
         <div class="feature-description">
           <p>
-            Max is passionate about being a project manager and using associated
-            methods as a tool to enhance the quality of products and business
-            flows, and to enable developers and engineers to be creative and
-            efficient. He thrives when working in teams and is energized by the
-            prospect of bringing structure to the chaos of building something
-            new.
+            Max is passionate about being a project manager to enhance the
+            quality of products and business flows, and to enable his team to be
+            creative and efficient. He thrives when working with
+            interdisciplinary projects and is energized by the prospect of
+            bringing structure to the chaos of building something new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
