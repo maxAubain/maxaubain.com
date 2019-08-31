@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
-    "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
-    "start": "npm run watch:css & webpack-dev-server --inline --mode development --open",
-    "build": "npm run build:css && webpack --mode production"
+    "start": "npm run webpack-dev-server --inline --mode development --open",
+    "build": "npm run webpack --mode production"
   },
   "keywords": [],
   "author": "",
