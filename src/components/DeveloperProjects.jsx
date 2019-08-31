@@ -9,22 +9,22 @@ const DeveloperProjects = () => {
   const fullStackPath = "./src/data/projectsFullStack.json";
   const frontEndPath = "./src/data/projectsFrontEnd.json";
   const backEndPath = "./src/data/projectsBackEnd.json";
+  const exercisesPath = "./src/data/projectsExercises.json";
 
   return (
-    <div class="component">
-      <div>
-        <h1>Full Stack</h1>
-        <Projects path={fullStackPath} />
-      </div>
-      <div>
-        <h1>Front End</h1>
-        <Projects path={frontEndPath} />
-      </div>
-      <div>
-        <h1>Back End</h1>
-        <Projects path={backEndPath} />
-      </div>
-    </div>
+    <>
+      <div class="feature-title-outside">Full Stack</div>
+      <Projects path={fullStackPath} />
+      
+      <div class="feature-title-outside">Front End</div>
+      <Projects path={frontEndPath} />
+      
+      <div class="feature-title-outside">Back End</div>
+      <Projects path={backEndPath} />
+
+      <div class="feature-title-outside">Exercises</div>
+      <Projects path={exercisesPath} />
+    </>
   );
 };
 

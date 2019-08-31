@@ -1,0 +1,125 @@
+/* Styles based on queries of the screen width */
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+  .feature {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .project-image {
+    width: 48%;
+  }
+  .project-title {
+    width: 50%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 100%;
+    border: 1px solid green;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .feature {
+    width: 100%;
+  }
+  .feature-title {
+    min-width: 25%
+  }
+  .feature-description {
+    min-width: 65%;
+  }
+  .project-image {
+    width: 25%;
+  }
+  .project-title {
+    width: 25%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 50%;
+    border: 1px solid green;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .feature {
+    width: 860px;
+    margin: 0 auto;
+  }
+  .feature {
+    border-radius: 5px;
+  }
+  .feature-title {
+    min-width: 25%
+  }
+  .feature-description {
+    min-width: 65%;
+  }
+  .project-image {
+    width: 25%;
+
+  }
+  .project-title {
+    width: 25%;
+    border: 1px solid blue;
+  }
+  .project-description {
+    width: 50%;
+    border: 1px solid green;
+  }
+}
+
+/* Page styling */
+
+/* Configures sections */
+.section {
+  min-height: 280px; height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.section-small {
+  min-height: 60px; height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color:white;
+  margin-bottom: 20px;
+}
+
+/* Features include info about PM, Developer, Analyst */
+.feature-container {
+  width: 100%;
+}
+
+.feature {
+  background-color: white;
+}
+
+.feature-title-outside {
+  font-size: 20px; text-align: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.feature-title {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.feature-description {
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Configures projects */
+.project-image {
+  text-align: center;
+  padding-top: 5px;
+}

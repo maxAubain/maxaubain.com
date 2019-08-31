@@ -1,23 +1,26 @@
-import React from "react"
-
-import '../css/tailwind.src.css';
+import React from "react";
 
 // Tile receives the information of a single project as props from Projects, formats it, and returns.
-const Project = (props) => {
-  let project = props.project
+const Project = props => {
+  let project = props.project;
   return (
-    <div key={project.id} style={{ transition: 'all 0.1s linear' }} className="rounded-lg border border-grey hover:shadow-2xl hover:bg-grey-lightest">
-      <img src={project.image} className="w-60 rounded-lg m-2" style={{ height: '150px', objectFit: 'cover' }} />
-      <div className="font-bold text-xl text-black px-2">{project.name}</div>
-      <div className="px-2 py-4" style={{ minHeight: '100px' }} >
-        <p className="text-grey-darker">
-          {project.description}
-        </p>
+    <>
+      <div  class="section-small feature">
+        <div class="project-image">
+          <img src={project.image.path} alt={project.image.alt} height={project.image.size} width={project.image.size}></img>
+          <div class="feature-title-outside">{project.name}</div>
+        </div>
+        <div class="project-title">
+          <a href={project.deploy_link}>Deployed Application</a><br></br>
+          <a href={project.readme_link}>Repository & Documentation</a>
+        </div>
+      
+        <div class="project-description">
+          <p>{project.description}</p>
+        </div>
       </div>
-      <div><a href={project.deploy_link}>Deployed Site</a></div>
-      <div><a href={project.readme_link}>Project Documentation</a></div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Project
+export default Project;

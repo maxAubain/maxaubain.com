@@ -1,0 +1,71 @@
+/* Global parameters and imports */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: Muli; 
+  background-color: rgb(212, 239, 255);
+}
+
+/* Tags */
+.navlink {
+  text-decoration: none;
+  padding-left: 10px; padding-right: 10px;
+  font-size: 20px;
+  color: rgb(0, 63, 158);
+}
+
+a {
+  text-decoration: none;
+  color:#0f84e4;
+}
+
+p {
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+/* NavBar */
+.navbar {
+  display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
+  padding-top: 40px; padding-bottom: 40px;
+}
+
+/* Page content */
+.page-content {
+  display: flex; flex-wrap: wrap; flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Footer */
+.footer-wrapper {
+  display:flex;
+  justify-content: center;
+}
+
+/* Media query configuration */
+/* Smartphone Styles */
+@media only screen and (max-width: 420px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .navbar,
+  .page-content {
+    width: 860px;
+    margin: 0 auto;
+  }
+}

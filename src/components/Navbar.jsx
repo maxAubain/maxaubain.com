@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const NavBar = () => {
   /*   let currentLocation = window.location.pathname;
   console.log("current location", currentLocation) */
   return (
@@ -22,4 +22,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
