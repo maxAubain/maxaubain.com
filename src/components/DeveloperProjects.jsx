@@ -16,7 +16,7 @@ const DeveloperProjects = () => {
 {/*       <div class="feature-title-outside">Full Stack</div>
       <Projects path={fullStackPath} /> */}
       
-      <div className="feature-title-outside">Front End</div>
+      <div className="section-title">Front End Applications</div>
       <Projects path={frontEndPath} />
       
 {/*       <div class="feature-title-outside">Back End</div>

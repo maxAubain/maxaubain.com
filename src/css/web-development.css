@@ -1,87 +1,27 @@
-/* Styles based on queries of the screen width */
-/* Mobile Styles */
-@media only screen and (max-width: 420px) {
-  .feature {
-    width: 100%;
-    flex-wrap: wrap;
-  }
-  .project-image {
-    width: 48%;
-  }
-  .project-title {
-    width: 50%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 100%;
-    border: 1px solid green;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 421px) and (max-width: 960px) {
-  .feature {
-    width: 100%;
-  }
-  .feature-title {
-    min-width: 25%
-  }
-  .feature-description {
-    min-width: 65%;
-  }
-  .project-image {
-    width: 25%;
-  }
-  .project-title {
-    width: 25%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 50%;
-    border: 1px solid green;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  .feature {
-    width: 860px;
-    margin: 0 auto;
-  }
-  .feature {
-    border-radius: 5px;
-  }
-  .feature-title {
-    min-width: 25%
-  }
-  .feature-description {
-    min-width: 65%;
-  }
-  .project-image {
-    width: 25%;
-
-  }
-  .project-title {
-    width: 25%;
-    border: 1px solid blue;
-  }
-  .project-description {
-    width: 50%;
-    border: 1px solid green;
-  }
-}
-
 /* Page styling */
+/* Configures collapsible menu */
+.collapse-menu {
+  background-color: white;
+  display: flex; flex-direction: row; flex-wrap: wrap;
+  border-top-left-radius: 5px; border-top-right-radius: 5px;
+  cursor: pointer;
+}
+
+.project-icon {
+  padding: 5px;
+}
+
+/* Configures collapsible menu */
+.collapse-menu-title {
+  font-size: 20px;
+  padding: 8px 8px 0 8px;
+}
+
+.collapse-menu-description {
+  padding: 12px 0 0 0;
+}
 
 /* Configures sections */
-.section {
-  min-height: 280px; height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
 .section-small {
   min-height: 60px; height: auto;
   display: flex;
@@ -98,14 +38,11 @@
   transition: all 0.5;
 }
 
-.feature {
-  background-color: white;
-}
-
-.feature-title-outside {
-  font-size: 20px; text-align: center;
-  margin-bottom: 10px;
+.section-title {
+  font-size: 20px;
   width: 100%;
+  text-align: center;
+  padding: 0 0 10px 0;
 }
 
 .feature-title {
@@ -119,8 +56,52 @@
   padding: 20px;
 }
 
-/* Configures projects */
-.project-image {
-  text-align: center;
-  padding-top: 5px;
+/* Styles based on queries of the screen width */
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+  .collapse-menu {
+    width: 100%;
+  }
+
+  .collapse-menu-title {
+    width: 80%;
+  }
+  
+  .collapse-menu-description {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .collapse-menu {
+    width: 100%;
+  }
+
+  .collapse-menu-title {
+    width: 40%;
+  }
+  
+  .collapse-menu-description {
+    width: 45%;
+    padding: 12px 0 8px 0;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .collapse-menu {
+    width: 860px;
+    margin: 0 auto;
+  }
+  
+  .collapse-menu-title {
+    width: 40%;
+  }
+  
+  .collapse-menu-description {
+    width: 50%;
+  }
 }

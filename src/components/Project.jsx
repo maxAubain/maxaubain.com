@@ -9,17 +9,16 @@ class Project extends Component {
   render() {
     return (
       <>
-        <button className="section-small feature">
-          <div className="project-image">
-            <img
+        <div className="collapse-menu">
+            <img className="project-icon"
               src={this.props.project.image.path}
               alt={this.props.project.image.alt}
               height="30"
               width="30"
             ></img>
-            <div className="feature-title-outside">{this.props.project.name}</div>
-          </div>
-        </button>
+          <div className="collapse-menu-title">{this.props.project.title}</div>
+          <div className="collapse-menu-description">{this.props.project.description_short}</div>
+        </div>
       </>
     );
   }

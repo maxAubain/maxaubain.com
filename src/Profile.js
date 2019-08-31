@@ -56,11 +56,11 @@ const Profile = () => {
         </div>
         <div class="feature-description">
           <p>
-            Max is passionate about being a project manager to enhance the
-            quality of products and business flows, and to enable his team to be
-            creative and efficient. He thrives when working with
-            interdisciplinary projects and is energized by the prospect of
-            bringing structure to the chaos of building something new.
+            Max is a project manager passionate about enhancing the quality of
+            products and business flows, and enabling his team to be creative
+            and efficient. He thrives when working with interdisciplinary
+            projects and is energized by the prospect of bringing structure to
+            the chaos of building something new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
@@ -88,9 +88,9 @@ const Profile = () => {
             Labview to numerical integration in MATLAB.
           </p>
           <p>
-            Now he laser focused on adding web development to his toolkit. His
-            core competences include Agile development, testing frameworks, Ruby
-            on Rails, and ReactJS.
+            Now he is laser focused on adding web development to his toolkit.
+            His core competences include Agile development, testing frameworks,
+            Ruby on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
@@ -121,7 +121,8 @@ const Profile = () => {
             He has passed the U.S. Patent Bar Exam and worked as a registered
             Patent Agent, drafting patent applications and legal documents while
             performing intellectual property research on a wide range of
-            emerging technologies.
+            emerging technologies. As an engineer, he is also an inventor of
+            semiconductor device patents.
           </p>
           <p>
             He has been a technical lead on product reliability, design, and
