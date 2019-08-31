@@ -5,34 +5,39 @@ html {
 
 body {
   margin: 0 auto;
-  font-family: Muli; 
+  font-family: Muli;
   background-color: rgb(212, 239, 255);
 }
 
 /* Tags */
 .navlink {
   text-decoration: none;
-  padding-left: 10px; padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 20px;
   color: rgb(0, 63, 158);
 }
 
 a {
   text-decoration: none;
-  color:#0f84e4;
+  color: #0f84e4;
 }
 
 p {
   line-height: 25px;
-  margin-bottom: 15px;
+  margin: 10px 0 10px 0;
 }
 
 /* NavBar */
 .navbar {
-  display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   position: fixed;
   width: 100%;
-  padding-top: 15px; padding-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   background-color: rgb(212, 239, 255);
 }
 
@@ -43,28 +48,39 @@ p {
 
 /* Page content */
 .page-content {
-  display: flex; flex-wrap: wrap; flex-direction: column;
-  min-height: 100vh; width: 100vw;
-  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 /* Footer */
 .footer-wrapper {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 /* Media query configuration */
 /* Smartphone Styles */
-/* @media only screen and (max-width: 420px) {} */
+@media only screen and (max-width: 420px) {
+  .page-content {
+    padding-top: 80px;
+  }
+}
 
 /* Tablet Styles */
-/* @media only screen and (min-width: 421px) and (max-width: 960px) {} */
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .page-content {
+    padding-top: 50px;
+  }
+}
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .page-content {
     width: 860px;
     margin: 0 auto;
+    padding-top: 50px;
   }
 }

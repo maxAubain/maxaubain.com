@@ -7,17 +7,41 @@ class Project extends Component {
   }
 
   render() {
+    let description_full = this.props.project.description_full.map(p => {
+      return <p>{p}</p>;
+    });
+
     return (
       <>
-        <div className="collapse-menu">
-            <img className="project-icon"
-              src={this.props.project.image.path}
-              alt={this.props.project.image.alt}
-              height="30"
-              width="30"
-            ></img>
-          <div className="collapse-menu-title">{this.props.project.title}</div>
-          <div className="collapse-menu-description">{this.props.project.description_short}</div>
+        <div className="project-menu">
+          <img
+            className="project-menu-icon"
+            src={this.props.project.image.path}
+            alt={this.props.project.image.alt}
+            height="30"
+            width="30"
+          ></img>
+          <div className="project-menu-title">{this.props.project.title}</div>
+          <div className="project-menu-description">
+            {this.props.project.description_short}
+          </div>
+        </div>
+        <div className="project-full">
+          {description_full}
+          <div className="project-full-link-container">
+            <a
+              href={this.props.project.link_1}
+              className="project-full-link"
+            >
+              website
+            </a>
+            <a
+              href={this.props.project.link_2}
+              className="project-full-link"
+            >
+              github
+            </a>
+          </div>
         </div>
       </>
     );

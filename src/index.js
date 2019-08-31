@@ -11,7 +11,7 @@ import TravelBlog from "./components/TravelBlog";
 
 import "./css/global.css";
 import "./css/profile.css";
-import "./css/web-development.css";
+import "./css/developer-projects.css";
 import WebFont from "webfontloader";
 
 // App component returns Header and Footer components, and uses React Router to switch

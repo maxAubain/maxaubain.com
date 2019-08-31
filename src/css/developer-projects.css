@@ -1,35 +1,43 @@
 /* Page styling */
 /* Configures collapsible menu */
-.collapse-menu {
+.project-menu {
   background-color: white;
-  display: flex; flex-direction: row; flex-wrap: wrap;
-  border-top-left-radius: 5px; border-top-right-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   cursor: pointer;
 }
 
-.project-icon {
+.project-menu-icon {
   padding: 5px;
 }
 
-/* Configures collapsible menu */
-.collapse-menu-title {
+.project-menu-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
 }
 
-.collapse-menu-description {
+.project-menu-description {
   padding: 12px 0 0 0;
 }
 
-/* Configures sections */
-.section-small {
-  min-height: 60px; height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-  background-color:white;
-  margin-bottom: 20px;
+.project-full {
+  background-color: white;
+  border-top: 3px solid rgb(212, 239, 255);
+  padding: 8px;
+}
+
+.project-full-link-container {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
+
+.project-full-link {
+  padding: 8px;
+  border: 1px solid #0f84e4;
+  border-radius: 5px;
+  margin: 8px;
 }
 
 /* Features include info about PM, Developer, Analyst */
@@ -45,63 +53,58 @@
   padding: 0 0 10px 0;
 }
 
-.feature-title {
-  font-size: 20px;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.feature-description {
-  font-size: 18px;
-  padding: 20px;
-}
-
 /* Styles based on queries of the screen width */
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
-  .collapse-menu {
+  .project-menu {
     width: 100%;
   }
 
-  .collapse-menu-title {
+  .project-menu-title {
     width: 80%;
   }
-  
-  .collapse-menu-description {
+
+  .project-menu-description {
     width: 100%;
-    padding: 0;
+    padding: 0 0 8px 8px;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .collapse-menu {
+  .project-menu {
     width: 100%;
   }
 
-  .collapse-menu-title {
+  .project-menu-title {
     width: 40%;
   }
-  
-  .collapse-menu-description {
+
+  .project-menu-description {
     width: 45%;
     padding: 12px 0 8px 0;
   }
-
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .collapse-menu {
+  .project-menu {
     width: 860px;
     margin: 0 auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
-  
-  .collapse-menu-title {
+
+  .project-menu-title {
     width: 40%;
   }
-  
-  .collapse-menu-description {
+
+  .project-menu-description {
     width: 50%;
+  }
+
+  .project-full {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 }

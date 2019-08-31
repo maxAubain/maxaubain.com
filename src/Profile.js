@@ -2,32 +2,34 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div class="intro">
-      <div class="section-profile headshot-container">
-        <div>
-          <img class="headshot" src="./src/img/headShot.png" />
+    <>
+      <div class="intro">
+        <div class="section-profile headshot-container">
+          <div>
+            <img class="headshot" src="./src/img/headShot.png" />
+          </div>
+          <br></br>
+          <div>Max Aubain, Ph.D.</div>
         </div>
-        <br></br>
-        <div>Max Aubain, Ph.D.</div>
-      </div>
-      <div class="section-profile headline-container">
-        <div class="headline-item">
-          <p>
-            Motivated team player and an advocate for getting the job done
-            right.
-          </p>
-        </div>
-        <div class="headline-item">
-          <p>
-            Proven record of generating group cohesion and business value in
-            interdisciplinary, technical projects.
-          </p>
-        </div>
-        <div class="headline-item">
-          <p>
-            Over 10 years of experience researching, developing, and applying
-            emerging technologies.
-          </p>
+        <div class="section-profile headline-container">
+          <div class="headline-item">
+            <p>
+              Motivated team player and an advocate for getting the job done
+              right.
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
+              Proven record of generating group cohesion and business value in
+              interdisciplinary, technical projects.
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
+              Over 10 years of experience researching, developing, and applying
+              emerging technologies.
+            </p>
+          </div>
         </div>
       </div>
       <div class="button-container">
@@ -136,7 +138,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
