@@ -42,7 +42,15 @@ const Profile = () => {
         </a>
       </div>
       <div class="section-profile feature-profile" id="project-manager">
-        <div class="feature-title">Project Manager</div>
+        <div class="feature-title">
+          <div><img
+            src="./src/img/icon/project-manager.png"
+            alt="PM-icon"
+            height="100px"
+            width="100px"
+          /></div><br></br>
+          Project Manager
+        </div>
         <div class="feature-description">
           <p>
             Max is passionate about being a project manager to enhance the
@@ -58,7 +66,15 @@ const Profile = () => {
         </div>
       </div>
       <div class="section-profile feature-profile" id="full-stack-developer">
-        <div class="feature-title">Full Stack Developer</div>
+        <div class="feature-title">
+          <div><img
+            src="./src/img/icon/developer.png"
+            alt="dev-icon"
+            height="100px"
+            width="100px"
+          /></div><br></br>
+          Full Stack Developer
+        </div>
         <div class="feature-description">
           <p>
             Max has written applications in various languages throughout his
@@ -79,7 +95,15 @@ const Profile = () => {
         </div>
       </div>
       <div class="section-profile feature-profile" id="data-analyst">
-        <div class="feature-title">Analyst</div>
+        <div class="feature-title">
+          <div><img
+            src="./src/img/icon/analyst.png"
+            alt="analyst-icon"
+            height="100px"
+            width="100px"
+          /></div><br></br>
+          Analyst
+        </div>
         <div class="feature-description">
           <p>
             Max has a unique combination of professional experiences that have
