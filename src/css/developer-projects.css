@@ -1,6 +1,6 @@
 /* Page styling */
 /* Configures collapsible menu */
-.project-menu {
+.project-summary {
   background-color: white;
   display: flex;
   flex-direction: row;
@@ -8,32 +8,40 @@
   cursor: pointer;
 }
 
-.project-menu-icon {
+.project-summary-icon {
   padding: 5px;
 }
 
-.project-menu-title {
+.project-summary-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
 }
 
-.project-menu-description {
+.project-summary-description {
   padding: 12px 0 0 0;
 }
 
-.project-full {
+.project-details-container {
   background-color: white;
   border-top: 3px solid rgb(212, 239, 255);
+}
+
+.project-details-container.activate {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.project-details-padding {
   padding: 8px;
 }
 
-.project-full-link-container {
+.project-details-link-container {
   width: 100%;
-  padding: 8px;
+  padding: 20px 8px 8px 8px;
   text-align: center;
 }
 
-.project-full-link {
+.project-details-link {
   padding: 8px;
   border: 1px solid #0f84e4;
   border-radius: 5px;
@@ -56,15 +64,15 @@
 /* Styles based on queries of the screen width */
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
-  .project-menu {
+  .project-summary {
     width: 100%;
   }
 
-  .project-menu-title {
+  .project-summary-title {
     width: 80%;
   }
 
-  .project-menu-description {
+  .project-summary-description {
     width: 100%;
     padding: 0 0 8px 8px;
   }
@@ -72,15 +80,15 @@
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
-  .project-menu {
+  .project-summary {
     width: 100%;
   }
 
-  .project-menu-title {
+  .project-summary-title {
     width: 40%;
   }
 
-  .project-menu-description {
+  .project-summary-description {
     width: 45%;
     padding: 12px 0 8px 0;
   }
@@ -88,22 +96,22 @@
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .project-menu {
+  .project-summary {
     width: 860px;
     margin: 0 auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
 
-  .project-menu-title {
+  .project-summary-title {
     width: 40%;
   }
 
-  .project-menu-description {
+  .project-summary-description {
     width: 50%;
   }
 
-  .project-full {
+  .project-details-container {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }

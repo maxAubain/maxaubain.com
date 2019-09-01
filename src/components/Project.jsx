@@ -4,44 +4,49 @@ import React, { Component } from "react";
 class Project extends Component {
   constructor(props) {
     super(props);
+    this.state = { projectFull: "project-details-container" };
   }
 
   render() {
-    let description_full = this.props.project.description_full.map(p => {
+    const description_full = this.props.project.description_full.map(p => {
       return <p>{p}</p>;
     });
 
+    const menuActivate = () => {
+      this.state.projectFull == "project-details-container"
+        ? this.setState({ projectFull: "project-details-container activate" })
+        : this.setState({ projectFull: "project-details-container" });
+    };
+
     return (
       <>
-        <div className="project-menu">
+        <div className="project-summary" onClick={menuActivate}>
           <img
-            className="project-menu-icon"
+            className="project-summary-icon"
             src={this.props.project.image.path}
             alt={this.props.project.image.alt}
             height="30"
             width="30"
           ></img>
-          <div className="project-menu-title">{this.props.project.title}</div>
-          <div className="project-menu-description">
+          <div className="project-summary-title">{this.props.project.title}</div>
+          <div className="project-summary-description">
             {this.props.project.description_short}
           </div>
         </div>
-        <div className="project-full">
-          {description_full}
-          <strong>Technlogies: </strong>{this.props.project.tech}
-          <div className="project-full-link-container">
-            <a
-              href={this.props.project.link_1}
-              className="project-full-link"
-            >
-              website
-            </a>
-            <a
-              href={this.props.project.link_2}
-              className="project-full-link"
-            >
-              github
-            </a>
+
+        <div className={this.state.projectFull}>
+          <div className="project-details-padding">
+            {description_full}
+            <strong>Technlogies: </strong>
+            {this.props.project.tech}
+            <div className="project-details-link-container">
+              <a href={this.props.project.link_1} className="project-details-link">
+                website
+              </a>
+              <a href={this.props.project.link_2} className="project-details-link">
+                github
+              </a>
+            </div>
           </div>
         </div>
       </>
