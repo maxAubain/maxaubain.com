@@ -28,6 +28,7 @@ class Project extends Component {
         </div>
         <div className="project-full">
           {description_full}
+          <strong>Technlogies: </strong>{this.props.project.tech}
           <div className="project-full-link-container">
             <a
               href={this.props.project.link_1}

@@ -10,9 +10,10 @@
     "description_short": "A website showcasing my professional work.",
     "description_full": [
       "I can imagine every web developer feels the need to create a personal website at least once.",
-      "When I began to plan for mine, I knew I wanted to have the deployed site showcase many types of information in an easy-to-follow, but interesting manner.  The categories I settled upon are the ones you can see in the navigation bar above.",
-      "Technologies: Github, Netlify, ES6, ReactJS.  Please see the Github README.md file for more details."
+      "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you can see here.",
+      "Please use the Github link to access more project documentation."
     ],
+    "tech": "Github | Netlify | ES6, ReactJS",
     "link_1": "https://max-aubain.netlify.com/",
     "link_2": "https://github.com/CA-ma/portfolio-challenge#front-end-application-professional-portfolio",
     "link_3": "",

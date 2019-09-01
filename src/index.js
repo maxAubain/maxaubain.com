@@ -25,7 +25,7 @@ const App = () => {
           <Route exact path="/" component={Profile}></Route>
           <Route
             exact
-            path="/DeveloperProjects"
+            path="/WebDevelopment"
             component={DeveloperProjects}
           ></Route>
           <Route

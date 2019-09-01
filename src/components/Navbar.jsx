@@ -40,7 +40,7 @@ class NavBar extends Component {
         <NavLink className="navlink" to="/">
           Profile
         </NavLink>
-        <NavLink className="navlink" to="DeveloperProjects">
+        <NavLink className="navlink" to="WebDevelopment">
           Web Development
         </NavLink>
         <NavLink className="navlink" to="CurriculumVitae">
