@@ -6,6 +6,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   cursor: pointer;
+  margin: 12px 0 0 0;
+  border-bottom: 3px solid rgb(212, 239, 255);
 }
 
 .project-summary-icon {
@@ -15,15 +17,16 @@
 .project-summary-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
+  color: rgb(0, 63, 158)
 }
 
 .project-summary-description {
   padding: 12px 0 0 0;
+  text-align: center;
 }
 
 .project-details-container {
   background-color: white;
-  border-top: 3px solid rgb(212, 239, 255);
 }
 
 .project-details-container.activate {
@@ -37,28 +40,24 @@
 
 .project-details-link-container {
   width: 100%;
-  padding: 20px 8px 8px 8px;
-  text-align: center;
+  padding: 10px 8px 8px 8px;
 }
 
 .project-details-link {
   padding: 8px;
-  border: 1px solid #0f84e4;
-  border-radius: 5px;
   margin: 8px;
 }
 
 /* Features include info about PM, Developer, Analyst */
 .feature-container {
   width: 100%;
-  transition: all 0.5;
 }
 
 .section-title {
   font-size: 20px;
   width: 100%;
   text-align: center;
-  padding: 0 0 10px 0;
+  padding: 16px 0 10px 0;
 }
 
 /* Styles based on queries of the screen width */
@@ -98,7 +97,6 @@
 @media only screen and (min-width: 961px) {
   .project-summary {
     width: 860px;
-    margin: 0 auto;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }

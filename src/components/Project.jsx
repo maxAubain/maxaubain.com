@@ -4,7 +4,7 @@ import React, { Component } from "react";
 class Project extends Component {
   constructor(props) {
     super(props);
-    this.state = { projectFull: "project-details-container" };
+    this.state = { projectFull: "project-details-container activate" };
   }
 
   render() {
@@ -41,10 +41,16 @@ class Project extends Component {
             {this.props.project.tech}
             <div className="project-details-link-container">
               <a href={this.props.project.link_1} className="project-details-link">
-                website
+                {this.props.project.link_1_button}
               </a>
               <a href={this.props.project.link_2} className="project-details-link">
-                github
+                {this.props.project.link_2_button}
+              </a>
+              <a href={this.props.project.link_3} className="project-details-link">
+                {this.props.project.link_3_button}
+              </a>
+              <a href={this.props.project.link_4} className="project-details-link">
+                {this.props.project.link_4_button}
               </a>
             </div>
           </div>
