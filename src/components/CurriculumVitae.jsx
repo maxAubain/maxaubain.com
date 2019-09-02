@@ -1,8 +1,10 @@
 import React, { Component } from "react";
-import axios from "axios";
+/* import axios from "axios";
 import EducationTile from "./EducationTile";
-import ExperienceTile from "./ExperienceTile";
+import ExperienceTile from "./ExperienceTile"; */
 
+/* This component needs a new plan.  Keeping old layout for
+now for inspiration later. */
 class CurriculumVitae extends Component {
   /* constructor() {
     super();

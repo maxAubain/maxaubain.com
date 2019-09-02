@@ -8,9 +8,11 @@
     },
     "description_short": "Receive images of the webpages at specified URLs.",
     "description_full": [
-      ""
+      "Snapshot is a prototype application to get proof-of-concept functionality as fast as possible.  I enjoyed pushing myself for this project and completed it in three days time.",
+      "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
+      "The application is configured to be run locally.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "tech": "Github | Ruby on Rails | PhantomJS, Webshot gem | Cucumber, Rspec",
+    "tech": "Github | Ruby on Rails, Cucumber, Rspec | PhantomJS, Webshot",
     "link_1": "https://github.com/maxAubain/DTC_screenshot",
     "link_1_button": "github",
     "link_2": "",
@@ -29,9 +31,10 @@
     },
     "description_short": "Connecting research enthusiasts with researchers through news articles.",
     "description_full": [
-      ""
+      "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
+      "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "",
+    "tech": "Github | Netlify, Heroku | ReactJS, Redux, Cypress | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/gnosis-client",
@@ -48,11 +51,11 @@
       "path": "./src/img/icon/run.png",
       "alt": "run-icon"
     },
-    "description_short": "Evaluating and plotting personal running fitness.",
+    "description_short": "Evaluating and visually displaying running fitness metrics.",
     "description_full": [
-      ""
+      "This application is under development."
     ],
-    "tech": "",
+    "tech": "Github | ReactJS ...",
     "link_1": "https://github.com/CA-ma/cooper_front_end",
     "link_1_button": "github-client",
     "link_2": "https://github.com/CA-ma/cooper_back_end",
@@ -71,13 +74,35 @@
     },
     "description_short": "Classic articles blog with Create-Read-Update-Delete methods.",
     "description_full": [
-      ""
+      "Of all the web development documentation I have encountered, I have been most impressed with the Ruby on Rails Guides.  In this application I use their general approach to create a blog-style posting site, which exercises the four basic data flow methods: create, read, update, and delete.",
+      "You can visit the live site and create an account to see what others have posted.  Please feel free to participate and leave a post of your own."
     ],
-    "tech": "",
-    "link_1": "https://github.com/CA-ma/rails_bdd",
-    "link_1_button": "github",
-    "link_2": "",
-    "link_2_button": "",
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | Devise",
+    "link_1": "https://an-article-posting-site.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/rails_bdd",
+    "link_2_button": "github",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS5",
+    "title": "Playdate",
+    "image": {
+      "path": "./src/img/icon/children.png",
+      "alt": "children-icon"
+    },
+    "description_short": "Parent-organized child care for kindergarteners.",
+    "description_full": [
+      "This application is under development."
+    ],
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls",
+    "link_1": "https://rails-playdate.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/playdate-june2019",
+    "link_2_button": "github",
     "link_3": "",
     "link_3_button": "",
     "link_4": "",

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 // NavBar component contains navlinks to content components.
 class NavBar extends Component {
-  /*  Option: implement for underline effect under navlinks
+  /*  Option for later: implement for underline effect under navlinks
   let currentLocation = window.location.pathname;
   console.log("current location", currentLocation) */
 
@@ -13,7 +13,7 @@ class NavBar extends Component {
     this.state = { navbarState: "navbar" };
   }
 
-  /*  Adds event listener which is triggered on vertical
+  /*  Adds/removes event listener that triggers on vertical
   scroll anywhere on the page */
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
@@ -24,7 +24,7 @@ class NavBar extends Component {
   }
 
   /* Checks absolute vertical scroll location and adds/removes className 
-  label to implement navbar shadow below 10 px */
+  label to implement navbar shadow greater than 10 px scroll distance. */
   handleScroll(event) {
     let scrollLocation = document.documentElement.scrollTop;
     if (scrollLocation > 10) {

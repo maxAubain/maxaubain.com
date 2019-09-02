@@ -3,9 +3,9 @@ import axios from "axios"
 
 import Project from "./Project"
 
-// Projects uses a GET request to receive projects file infromation and
-// renders an array of Project components for each project in the file.
-// It receives the path of the projects file as props from DeveloperProjects.
+/* Projects uses a GET request to receive projects file infromation and
+renders an array of Project components for each project in the file.
+It receives the path of the projects file as props from DeveloperProjects. */
 class Projects extends Component {
   constructor(props) {
     super(props);

@@ -14,8 +14,8 @@ import "./css/profile.css";
 import "./css/developer-projects.css";
 import WebFont from "webfontloader";
 
-// App component returns Header and Footer components, and uses React Router to switch
-// between components that populate the body of the website.
+/* App component returns Header and Footer components, and uses React
+Router to switch between components that populate the body of the website. */
 const App = () => {
   return (
     <>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-// Tile receives the information of a single project as props from Projects, formats it, and returns.
+/* The Project component receives the information of a single project as
+props from Projects, formats it, and returns. */
 class Project extends Component {
   constructor(props) {
     super(props);
@@ -12,6 +13,8 @@ class Project extends Component {
       return <p>{p}</p>;
     });
 
+    /* menuActivate() enables the showing/hiding of the 'project-details' 
+    div to keep the page tidy and easy to read. */
     const menuActivate = () => {
       this.state.projectFull == "project-details-container"
         ? this.setState({ projectFull: "project-details-container activate" })
@@ -37,7 +40,7 @@ class Project extends Component {
         <div className={this.state.projectFull}>
           <div className="project-details-padding">
             {description_full}
-            <strong>Technlogies: {this.props.project.tech}</strong>
+            <strong>Technologies: {this.props.project.tech}</strong>
             <div className="project-details-link-container">
               <a href={this.props.project.link_1} className="project-details-link">
                 {this.props.project.link_1_button}
@@ -60,28 +63,3 @@ class Project extends Component {
 }
 
 export default Project;
-
-{
-  /* <>
-  <div class="section-small feature">
-    <div class="project-image">
-      <img
-        src={project.image.path}
-        alt={project.image.alt}
-        height={project.image.size}
-        width={project.image.size}
-      ></img>
-      <div class="feature-title-outside">{project.name}</div>
-    </div>
-    <div class="project-title">
-      <a href={project.deploy_link}>Deployed Application</a>
-      <br></br>
-      <a href={project.readme_link}>Repository & Documentation</a>
-    </div>
-
-    <div class="project-description">
-      <p>{project.description}</p>
-    </div>
-  </div>
-</>; */
-}
