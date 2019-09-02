@@ -32,7 +32,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div class="button-container">
+{/*       <div class="button-container">
         <a href="./#project-manager" class="button-1">
           Project Manager
         </a>
@@ -42,7 +42,7 @@ const Profile = () => {
         <a href="./#data-analyst" class="button-3">
           Analyst
         </a>
-      </div>
+      </div> */}
       <div class="section-profile feature-profile" id="project-manager">
         <div class="feature-title">
           <div>
