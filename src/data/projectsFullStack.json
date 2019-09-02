@@ -6,11 +6,11 @@
       "path": "./src/img/icon/camera.png",
       "alt": "camera-icon"
     },
-    "description_short": "Input URLs => Output images of webpage at each URL.",
+    "description_short": "Receive images of the webpages at specified URLs.",
     "description_full": [
       ""
     ],
-    "tech": "Github | Ruby on Rails | PhantomJS, Webshot gem | Cucumber",
+    "tech": "Github | Ruby on Rails | PhantomJS, Webshot gem | Cucumber, Rspec",
     "link_1": "https://github.com/maxAubain/DTC_screenshot",
     "link_1_button": "github",
     "link_2": "",
@@ -27,7 +27,7 @@
       "path": "./src/img/icon/news.png",
       "alt": "news-icon"
     },
-    "description_short": "Connecting research enthusiasts with the ",
+    "description_short": "Connecting research enthusiasts with researchers through news articles.",
     "description_full": [
       ""
     ],
@@ -48,7 +48,7 @@
       "path": "./src/img/icon/run.png",
       "alt": "run-icon"
     },
-    "description_short": "",
+    "description_short": "Evaluating and plotting personal running fitness.",
     "description_full": [
       ""
     ],
@@ -69,7 +69,7 @@
       "path": "./src/img/icon/blog.png",
       "alt": "blog-icon"
     },
-    "description_short": "",
+    "description_short": "Classic articles blog with Create-Read-Update-Delete methods.",
     "description_full": [
       ""
     ],

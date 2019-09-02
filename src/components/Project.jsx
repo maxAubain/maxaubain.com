@@ -37,8 +37,7 @@ class Project extends Component {
         <div className={this.state.projectFull}>
           <div className="project-details-padding">
             {description_full}
-            <strong>Technlogies: </strong>
-            {this.props.project.tech}
+            <strong>Technlogies: {this.props.project.tech}</strong>
             <div className="project-details-link-container">
               <a href={this.props.project.link_1} className="project-details-link">
                 {this.props.project.link_1_button}

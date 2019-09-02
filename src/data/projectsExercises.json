@@ -6,7 +6,7 @@
       "path": "./src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
-    "description_short": "",
+    "description_short": "Simple Body Mass Index calculator.",
     "description_full": [
       ""
     ],
@@ -27,7 +27,7 @@
       "path": "./src/img/icon/fizz.png",
       "alt": "fizzbuzz-icon"
     },
-    "description_short": "A classic interview coding problem.",
+    "description_short": "The classic interview coding problem.",
     "description_full": [
       ""
     ],
@@ -48,7 +48,7 @@
       "path": "./src/img/icon/book.png",
       "alt": "book icon"
     },
-    "description_short": "",
+    "description_short": "Managing and searching a collection of books.",
     "description_full": [
       ""
     ],
@@ -68,7 +68,7 @@
       "path": "./src/img/icon/atm.png",
       "alt": "atm icon"
     },
-    "description_short": "",
+    "description_short": "Manipulation of ATM account funds and information.",
     "description_full": [
       ""
     ],
