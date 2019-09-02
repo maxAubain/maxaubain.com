@@ -1,0 +1,24 @@
+[
+  {
+    "id": "M1",
+    "title": "Gnosis as iOS mobile",
+    "image": {
+      "path": "./src/img/icon/news.png",
+      "alt": "news-icon"
+    },
+    "description_short": "Repackage Gnosis client as a mobile app.",
+    "description_full": [
+      "Deployed desktop applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
+      "Using this example method, the Gnosis application has been updated as an iOS mobile application.  The mobile app is enabled to run locally using Apple's Xcode mobile app emulator."
+    ],
+    "tech": "Github | ReactJS | Capacitor, Ionic, Xcode",
+    "link_1": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile",
+    "link_1_button": "github",
+    "link_2": "",
+    "link_2_button": "",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
+  }
+]

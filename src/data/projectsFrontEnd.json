@@ -29,10 +29,8 @@
       "alt": "calculator-icon"
     },
     "description_short": "Simple Body Mass Index calculator.",
-    "description_full": [
-      "The project description is under development."
-    ],
-    "tech": "",
+    "description_full": ["This application is under development."],
+    "tech": "Github | ReactJS",
     "link_1": "https://github.com/CA-ma/challenge_bmi_calc_react",
     "link_1_button": "github",
     "link_2": "",
@@ -51,9 +49,11 @@
     },
     "description_short": "A digital rendition of a childhood game.",
     "description_full": [
-      ""
+      "My guess as to why Rock Paper Scissors was so popular when I was a child what that it was simple to learn, and exciting!  Yelling and throwing your hands around is always a good time.",
+      "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images with the play chosen game outcomes.",
+      "The game can be played by clicking on the left side selections on the live site, and unit and feature tests can be run with a local build as described in the Github documentation."
     ],
-    "tech": "",
+    "tech": "Github | Netlify | Javascript, Mocha",
     "link_1": "https://ca-ma-rps.netlify.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/RPS_challenge_npm",
@@ -71,10 +71,8 @@
       "alt": "food-icon"
     },
     "description_short": "Order the best snacks and meals, for your pets!",
-    "description_full": [
-      "This project description is under construction."
-    ],
-    "tech": "",
+    "description_full": ["This application is under development."],
+    "tech": "Github | Ruby on Rails, Cucumber",
     "link_1": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019",
     "link_1_button": "github",
     "link_2": "",
@@ -93,9 +91,10 @@
     },
     "description_short": "A sleek UI to store contacts.",
     "description_full": [
-      ""
+      "The Address Book application focuses on implementing styles from a content delivery network and using session storage in the browser to mimic CRUD methods usually implemented with an api, but with a front-end-only solution.",
+      "Please review the documentation in the github repository for a demonstration flow of the application on the live site and the process to establish a local build to run feature tests."
     ],
-    "tech": "",
+    "tech": "Github | JS ES6, Cucumber | Semantic-UI",
     "link_1": "https://ca-ma.github.io/address_book_challenge/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/address_book_challenge",
