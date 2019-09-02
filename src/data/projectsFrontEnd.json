@@ -11,7 +11,7 @@
       "I can imagine every web developer feels the need to create a personal website.",
       "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you see here."
     ],
-    "tech": "Github | Netlify | Javascript ES6, ReactJS",
+    "tech": "Github | Netlify | JS ES6, ReactJS",
     "link_1": "https://max-aubain.netlify.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/portfolio-challenge",
@@ -30,7 +30,7 @@
     },
     "description_short": "Simple Body Mass Index calculator.",
     "description_full": [
-      ""
+      "The project description is under development."
     ],
     "tech": "",
     "link_1": "https://github.com/CA-ma/challenge_bmi_calc_react",
@@ -49,7 +49,7 @@
       "path": "./src/img/icon/hand.png",
       "alt": "rps-icon"
     },
-    "description_short": "A digital rendition of the favorite childhood game.",
+    "description_short": "A digital rendition of a childhood game.",
     "description_full": [
       ""
     ],
@@ -65,14 +65,14 @@
   },
   {
     "id": "FE4",
-    "title": "Order Food Online",
+    "title": "Kibbles 'n Bites",
     "image": {
       "path": "./src/img/icon/food.png",
       "alt": "food-icon"
     },
-    "description_short": "Get the best snacks and meals, for your pets!",
+    "description_short": "Order the best snacks and meals, for your pets!",
     "description_full": [
-      ""
+      "This project description is under construction."
     ],
     "tech": "",
     "link_1": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019",
