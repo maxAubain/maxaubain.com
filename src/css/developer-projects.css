@@ -1,0 +1,119 @@
+/* Page styling */
+/* Configures collapsible menu */
+.project-summary {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  margin: 12px 0 0 0;
+  border-bottom: 3px solid rgb(212, 239, 255);
+}
+
+.project-summary-icon {
+  padding: 5px;
+}
+
+.project-summary-title {
+  font-size: 20px;
+  padding: 8px 8px 0 8px;
+  color: rgb(0, 63, 158)
+}
+
+.project-summary-description {
+  padding: 12px 0 0 0;
+}
+
+.project-details-container {
+  background-color: white;
+}
+
+.project-details-container.activate {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.project-details-padding {
+  padding: 8px;
+}
+
+.project-details-link-container {
+  width: 100%;
+  padding: 10px 8px 8px 8px;
+}
+
+.project-details-link {
+  padding: 8px;
+  margin: 8px;
+}
+
+/* Configures */
+.feature-container {
+  width: 100%;
+}
+
+.section-title {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0 10px 0;
+}
+
+/* Styles based on queries of the screen width */
+/* Mobile Styles */
+@media only screen and (max-width: 420px) {
+  .project-summary {
+    width: 100%;
+  }
+
+  .project-summary-title {
+    width: 80%;
+  }
+
+  .project-summary-description {
+    width: 100%;
+    padding: 0 0 8px 8px;
+    text-align: left;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .project-summary {
+    width: 100%;
+  }
+
+  .project-summary-title {
+    width: 40%;
+  }
+
+  .project-summary-description {
+    width: 45%;
+    padding: 6px 0 6px 0;
+    text-align: left;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .project-summary {
+    width: 860px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .project-summary-title {
+    width: 40%;
+  }
+
+  .project-summary-description {
+    width: 50%;
+    padding: 6px 0 6px 0;
+    text-align: center;
+  }
+
+  .project-details-container {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}

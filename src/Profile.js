@@ -2,32 +2,34 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div class="intro">
-      <div class="section-profile headshot-container">
-        <div>
-          <img class="headshot" src="./src/img/headShot.png" />
+    <>
+      <div class="intro">
+        <div class="section-profile headshot-container">
+          <div>
+            <img class="headshot" src="./src/img/headShot.png" />
+          </div>
+          <br></br>
+          <div>Max Aubain, Ph.D.</div>
         </div>
-        <br></br>
-        <div>Max Aubain, Ph.D.</div>
-      </div>
-      <div class="section-profile headline-container">
-        <div class="headline-item">
-          <p>
-            Motivated team player and an advocate for getting the job done
-            right.
-          </p>
-        </div>
-        <div class="headline-item">
-          <p>
-            Proven record of generating group cohesion and business value in
-            interdisciplinary, technical projects.
-          </p>
-        </div>
-        <div class="headline-item">
-          <p>
-            Over 10 years of experience researching, developing, and applying
-            emerging technologies.
-          </p>
+        <div class="section-profile headline-container">
+          <div class="headline-item">
+            <p>
+              Motivated team player and an advocate for getting the job done
+              right.
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
+              Proven record of generating group cohesion and business value in
+              interdisciplinary, technical projects.
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
+              Over 10 years of experience researching, developing, and applying
+              emerging technologies.
+            </p>
+          </div>
         </div>
       </div>
       <div class="button-container">
@@ -56,11 +58,11 @@ const Profile = () => {
         </div>
         <div class="feature-description">
           <p>
-            Max is passionate about being a project manager to enhance the
-            quality of products and business flows, and to enable his team to be
-            creative and efficient. He thrives when working with
-            interdisciplinary projects and is energized by the prospect of
-            bringing structure to the chaos of building something new.
+            Max is a project manager passionate about enhancing the quality of
+            products and business flows, and enabling his team to be creative
+            and efficient. He thrives when working with interdisciplinary
+            projects and is energized by the prospect of bringing structure to
+            the chaos of building something new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
@@ -88,9 +90,9 @@ const Profile = () => {
             Labview to numerical integration in MATLAB.
           </p>
           <p>
-            Now he laser focused on adding web development to his toolkit. His
-            core competences include Agile development, testing frameworks, Ruby
-            on Rails, and ReactJS.
+            Now he is laser focused on adding web development to his toolkit.
+            His core competences include Agile development, testing frameworks,
+            Ruby on Rails, and ReactJS.
           </p>
           <p>
             Opportunites to manage development projects and products, or
@@ -121,7 +123,8 @@ const Profile = () => {
             He has passed the U.S. Patent Bar Exam and worked as a registered
             Patent Agent, drafting patent applications and legal documents while
             performing intellectual property research on a wide range of
-            emerging technologies.
+            emerging technologies. As an engineer, he is also an inventor of
+            semiconductor device patents.
           </p>
           <p>
             He has been a technical lead on product reliability, design, and
@@ -135,7 +138,7 @@ const Profile = () => {
           </p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

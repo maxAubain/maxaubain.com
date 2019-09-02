@@ -1,18 +1,86 @@
 [
   {
     "id": "FS1",
-    "name": "Professional Portfolio",
-    "image": "",
-    "description": "It's a start.",
-    "deploy_link": "https://max-aubain-portfolio.netlify.com/",
-    "readme_link": "https://github.com/CA-ma/portfolio-challenge#front-end-application-professional-portfolio"
+    "title": "Webpage Snapshot",
+    "image": {
+      "path": "./src/img/icon/camera.png",
+      "alt": "camera-icon"
+    },
+    "description_short": "Receive images of the webpages at specified URLs.",
+    "description_full": [
+      ""
+    ],
+    "tech": "Github | Ruby on Rails | PhantomJS, Webshot gem | Cucumber, Rspec",
+    "link_1": "https://github.com/maxAubain/DTC_screenshot",
+    "link_1_button": "github",
+    "link_2": "",
+    "link_2_button": "",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
   },
   {
     "id": "FS2",
-    "name": "Professional Portfolio",
-    "image": "",
-    "description": "It's a start.",
-    "deploy_link": "https://max-aubain-portfolio.netlify.com/",
-    "readme_link": "https://github.com/CA-ma/portfolio-challenge#front-end-application-professional-portfolio"
+    "title": "Gnosis: Science News",
+    "image": {
+      "path": "./src/img/icon/news.png",
+      "alt": "news-icon"
+    },
+    "description_short": "Connecting research enthusiasts with researchers through news articles.",
+    "description_full": [
+      ""
+    ],
+    "tech": "",
+    "link_1": "https://gnosis-app.netlify.com",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/gnosis-client",
+    "link_2_button": "github-client",
+    "link_3": "https://immense-reef-37436.herokuapp.com/",
+    "link_3_button": "api",
+    "link_4": "https://github.com/CA-ma/gnosis-api",
+    "link_4_button": "github-api"
+  },
+  {
+    "id": "FS3",
+    "title": "The 'Cooper Test'",
+    "image": {
+      "path": "./src/img/icon/run.png",
+      "alt": "run-icon"
+    },
+    "description_short": "Evaluating and plotting personal running fitness.",
+    "description_full": [
+      ""
+    ],
+    "tech": "",
+    "link_1": "https://github.com/CA-ma/cooper_front_end",
+    "link_1_button": "github-client",
+    "link_2": "https://github.com/CA-ma/cooper_back_end",
+    "link_2_button": "github-api",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS4",
+    "title": "Articles Blog",
+    "image": {
+      "path": "./src/img/icon/blog.png",
+      "alt": "blog-icon"
+    },
+    "description_short": "Classic articles blog with Create-Read-Update-Delete methods.",
+    "description_full": [
+      ""
+    ],
+    "tech": "",
+    "link_1": "https://github.com/CA-ma/rails_bdd",
+    "link_1_button": "github",
+    "link_2": "",
+    "link_2_button": "",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
   }
 ]

@@ -37,10 +37,10 @@ class NavBar extends Component {
   render() {
     return (
       <div id="navbar" className={this.state.navbarState}>
-        <NavLink class="navlink" to="/">
+        <NavLink className="navlink" to="/">
           Profile
         </NavLink>
-        <NavLink className="navlink" to="DeveloperProjects">
+        <NavLink className="navlink" to="WebDevelopment">
           Web Development
         </NavLink>
         <NavLink className="navlink" to="CurriculumVitae">
