@@ -52,3 +52,5 @@ Add pivital tracker links to projects
 * Playdate: https://www.pivotaltracker.com/n/projects/2370835
 * Gnosis: https://www.pivotaltracker.com/n/projects/2384164
 * Kibbles 'n Bites: https://www.pivotaltracker.com/n/projects/2360231
+
+Add `enzyme` to list of technologies for unit testing js
