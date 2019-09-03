@@ -43,3 +43,7 @@ $ npm install --save-dev webpack@4.19.1 webpack-cli@3.1.1 webpack-dev-server@3.1
 Also,
 1. Install and configure `file-loader` and `url-loader` to the `Webpack` framework in order to compile `url()` methods in css files.
 2. Implement images using `background: url()` in the css files.
+
+### dev notes
+Scroll to top solution to try:
+https://github.com/ReactTraining/react-router/issues/2019
