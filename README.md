@@ -47,3 +47,8 @@ Also,
 ### dev notes
 Scroll to top solution to try:
 https://github.com/ReactTraining/react-router/issues/2019
+
+Add pivital tracker links to projects
+* Playdate: https://www.pivotaltracker.com/n/projects/2370835
+* Gnosis: https://www.pivotaltracker.com/n/projects/2384164
+* Kibbles 'n Bites: https://www.pivotaltracker.com/n/projects/2360231
