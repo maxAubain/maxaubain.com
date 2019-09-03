@@ -54,3 +54,6 @@ Add pivital tracker links to projects
 * Kibbles 'n Bites: https://www.pivotaltracker.com/n/projects/2360231
 
 Add `enzyme` to list of technologies for unit testing js
+
+Option to add an effect to each navlink in the navbar when the page is selected
+https://reacttraining.com/react-router/web/api/NavLink/isactive-func
