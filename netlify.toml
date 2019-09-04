@@ -1,0 +1,5 @@
+# Solves when "/WebDevelopment" extension is typed into browser, the page is found instead of a 404.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
