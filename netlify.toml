@@ -1,4 +1,7 @@
-# Solves when "/WebDevelopment" extension is typed into browser, the page is found instead of a 404.
+[context.development-deploy]
+  command = "echo development"
+
+# Fixes problem when page extension, e.g., "/WebDevelopment", is typed into browser, the page is 404.
 [[redirects]]
   from = "/*"
   to = "/index.html"
