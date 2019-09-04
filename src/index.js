@@ -50,9 +50,7 @@ WebFont.load({
 
 // Renders the App component in the virtual ReactDOM
 ReactDOM.render(
-  /* forceRefresh={true} is a quick fix so that when a NavLink is 
-  used, the page view starts at the top so all content is visible. */
-  <BrowserRouter forceRefresh={true}>
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById("app")
