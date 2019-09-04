@@ -1,16 +1,3 @@
-# Branch Deploy context: all deploys that are not from a pull/merge request or
-# from the Production branch will inherit these settings.
-[context.branch-deploy]
-  command = "echo branch"
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
-
-# Specific branch context: all deploys from this specific branch will inherit
-# these settings.
-[context.development] # 'development' is a branch name
-  command = "echo 'development'"
-  base = "development"
-
 # Fixes problem when page extension, e.g., "/WebDevelopment", is typed into browser, the page is 404.
 [[redirects]]
   from = "/*"
