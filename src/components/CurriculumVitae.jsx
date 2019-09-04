@@ -81,7 +81,7 @@ class CurriculumVitae extends Component {
         </div>
         <div className="px-1/5">{experienceList}</div>
       </div> */
-      <div class="component">
+      <div className="component">
         <p>Coming soon.  For more information about education, work experience, and publications, please visit my <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.</p>
       </div>
     );

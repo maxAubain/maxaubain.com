@@ -10,7 +10,7 @@ class Project extends Component {
 
   render() {
     const description_full = this.props.project.description_full.map(p => {
-      return <p>{p}</p>;
+      return <p key={p}>{p}</p>;
     });
 
     /* menuActivate() enables the showing/hiding of the 'project-details' 

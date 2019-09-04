@@ -8,16 +8,16 @@ categories: Full Stack, Front End, Mobile, and Exercises.  */
 const DeveloperProjects = () => {
   return (
     <>
-      <div class="section-title">Full Stack Applications</div>
+      <div className="section-title">Full Stack Applications</div>
       <Projects path={"./src/data/projectsFullStack.json"} />
 
       <div className="section-title">Front End Applications</div>
       <Projects path={"./src/data/projectsFrontEnd.json"} />
 
-      <div class="section-title">Mobile Applications</div>
+      <div className="section-title">Mobile Applications</div>
       <Projects path={"./src/data/projectsMobile.json"} />
 
-      <div class="section-title">Coding Exercises</div>
+      <div className="section-title">Coding Exercises</div>
       <Projects path={"./src/data/projectsExercises.json"} />
     </>
   );
