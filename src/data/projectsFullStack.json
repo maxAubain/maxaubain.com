@@ -116,14 +116,18 @@
       "alt": "food-icon"
     },
     "description_short": "Order the best snacks and meals, for your pets!",
-    "description_full": ["This application is under development."],
-    "tech": "Github | Ruby on Rails, Cucumber | Pivotal Tracker",
-    "link_1": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019",
-    "link_1_button": "github",
-    "link_2": "https://www.pivotaltracker.com/n/projects/2360231",
-    "link_2_button": "pivotal tracker",
-    "link_3": "",
-    "link_3_button": "",
+    "description_full": [
+      "Maybe it's just an American thing, but I know a lot of people who love to spoil their pets.  And one of my project-mates on this application just happens to be one of those people.",
+      "This application was an early project to get a sense for management of categories of products using database models.  The theme is a food menu, and the view is configured to show the products organized by the categories.",
+      "The application can be viewed on the live site, and even an order can be generated.  Feature test can be run using a local instance of the application as described in the github documentation."
+    ],
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | Cartify | Pivotal Tracker",
+    "link_1": "https://rails-slow-food.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019",
+    "link_2_button": "github",
+    "link_3": "https://www.pivotaltracker.com/n/projects/2360231",
+    "link_3_button": "pivotal tracker",
     "link_4": "",
     "link_4_button": ""
   }
