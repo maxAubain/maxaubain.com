@@ -30,8 +30,8 @@
     },
     "description_short": "Simple Body Mass Index calculator.",
     "description_full": [
-      "While the functionality of this application is on the topic of medical metrics, the value of this coding exercise is to practice the design methodology of React components.",
-      "Tbe implementation of acceptance and unit tests upon building this application locally, and the design approach for this application, is discussed in the github documentation."
+      "While the functionality of this application is on the topic of medical metrics, the value of the application is to practice the design methodology of React components.",
+      "The implementation of acceptance and unit tests upon building this application locally, and the approach for this application, is discussed in the github documentation."
     ],
     "tech": "Github | Netlify | JS ES6, React, Cypress, Enzyme",
     "link_1": "https://bmi-calc-react.netlify.com",
@@ -53,8 +53,8 @@
     "description_short": "A digital rendition of a childhood game.",
     "description_full": [
       "My guess as to why Rock Paper Scissors was so popular when I was a child what that it was simple to learn, and exciting!  Yelling and throwing your hands around is always a good time.",
-      "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images with the play chosen game outcomes.",
-      "The game can be played by clicking on the left side selections on the live site, and unit and feature tests can be run with a local build as described in the Github documentation."
+      "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images that mirror the game outcomes.",
+      "The game is played by clicking on the left side selections on the live site (don't choose new options too quickly, the images take time to load).  Furthermore, unit and feature tests can be run with a local build as described in the Github documentation."
     ],
     "tech": "Github | Netlify | Javascript, Mocha",
     "link_1": "https://ca-ma-rps.netlify.com/",
