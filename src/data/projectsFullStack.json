@@ -34,15 +34,15 @@
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github | Netlify, Heroku | ReactJS, Redux, Cypress | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI",
+    "tech": "Github | Netlify, Heroku | ReactJS, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/gnosis-client",
     "link_2_button": "github-client",
-    "link_3": "https://immense-reef-37436.herokuapp.com/",
-    "link_3_button": "api",
-    "link_4": "https://github.com/CA-ma/gnosis-api",
-    "link_4_button": "github-api"
+    "link_3": "https://github.com/CA-ma/gnosis-api",
+    "link_3_button": "github-api",
+    "link_4": "https://www.pivotaltracker.com/n/projects/2384164",
+    "link_4_button": "pivotal tracker"
   },
   {
     "id": "FS3",
@@ -55,7 +55,7 @@
     "description_full": [
       "This application is under development."
     ],
-    "tech": "Github | ReactJS ...",
+    "tech": "Github | ReactJS, Cypress, Enzyme ...",
     "link_1": "https://github.com/CA-ma/cooper_front_end",
     "link_1_button": "github-client",
     "link_2": "https://github.com/CA-ma/cooper_back_end",
@@ -98,11 +98,30 @@
     "description_full": [
       "This application is under development."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls",
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
     "link_1": "https://rails-playdate.herokuapp.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/playdate-june2019",
     "link_2_button": "github",
+    "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
+    "link_3_button": "pivotal tracker",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS6",
+    "title": "Kibbles 'n Bites",
+    "image": {
+      "path": "./src/img/icon/food.png",
+      "alt": "food-icon"
+    },
+    "description_short": "Order the best snacks and meals, for your pets!",
+    "description_full": ["This application is under development."],
+    "tech": "Github | Ruby on Rails, Cucumber | Pivotal Tracker",
+    "link_1": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019",
+    "link_1_button": "github",
+    "link_2": "https://www.pivotaltracker.com/n/projects/2360231",
+    "link_2_button": "pivotal tracker",
     "link_3": "",
     "link_3_button": "",
     "link_4": "",
