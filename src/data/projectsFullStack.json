@@ -96,7 +96,8 @@
     },
     "description_short": "Parent-organized child care for kindergarteners.",
     "description_full": [
-      "This application is under development."
+      "This application is under development.",
+      "The application can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
     "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
     "link_1": "https://rails-playdate.herokuapp.com/",
@@ -117,9 +118,9 @@
     },
     "description_short": "Order the best snacks and meals, for your pets!",
     "description_full": [
-      "Maybe it's just an American thing, but I know a lot of people who love to spoil their pets.  One of my project-mates on this application just happens to be one of those people.",
-      "This application was an early project to get a sense for management of categories of products using database models.  The theme is a food menu, and the view is configured to show the products organized by the categories.",
-      "The application can be viewed on the live site and an order can be generated using the Cartify flow.  Feature tests can be run using a local instance of the application as described in the github documentation."
+      "Maybe it's just an American thing, but I know a lot of people who love to spoil their pets.  One of my project-mates on this application just happens to be one of them.",
+      "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
+      "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
     "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | Cartify | Pivotal Tracker",
     "link_1": "https://rails-slow-food.herokuapp.com/",
