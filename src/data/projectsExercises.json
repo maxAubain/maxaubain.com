@@ -11,7 +11,7 @@
       "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application on the live site performs the required calculations to produce a BMI value using Metric and Imperial units.",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github | JS, Mocha",
+    "tech": "Github | Node.js, Mocha",
     "link_1": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator",
@@ -34,7 +34,7 @@
       "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github | JS, Mocha",
+    "tech": "Github | Node.js, Mocha",
     "link_1": "https://ca-ma.github.io/fizzbuzz_challenge/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz",
