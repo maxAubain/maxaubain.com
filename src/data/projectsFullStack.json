@@ -12,7 +12,7 @@
       "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
       "The application is demonstrated at the live site.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "tech": "Github | Ruby on Rails, Cucumber, Rspec | PhantomJS, Webshot",
+    "tech": "Github | Heroku | Ruby on Rails, Rspec | PhantomJS, Webshot",
     "link_1": "https://screenshot-capture.herokuapp.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
@@ -37,7 +37,7 @@
     "tech": "Github | Netlify, Heroku | React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/gnosis-client",
+    "link_2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
     "link_2_button": "github-client",
     "link_3": "https://github.com/CA-ma/gnosis-api",
     "link_3_button": "github-api",
