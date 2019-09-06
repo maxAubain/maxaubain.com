@@ -8,15 +8,15 @@
     },
     "description_short": "Receive images of the webpages at specified URLs.",
     "description_full": [
-      "Snapshot is a prototype application to get proof-of-concept functionality as fast as possible.  I enjoyed pushing myself for this project and completed it in three days time.",
+      "Snapshot is a prototype application to get proof-of-concept functionality.  I really enjoyed pushing myself on this one.",
       "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
-      "The application is configured to be run locally.  Instructions for generating a local build are included in the Github repository documentation."
+      "The application is demonstrated at the live site.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "tech": "Github | Ruby on Rails, Cucumber, Rspec | PhantomJS, Webshot",
-    "link_1": "https://github.com/maxAubain/DTC_screenshot",
-    "link_1_button": "github",
-    "link_2": "",
-    "link_2_button": "",
+    "tech": "Github | Heroku | Ruby on Rails, Rspec | PhantomJS, Webshot",
+    "link_1": "https://screenshot-capture.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
+    "link_2_button": "github",
     "link_3": "",
     "link_3_button": "",
     "link_4": "",
@@ -34,15 +34,15 @@
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github | Netlify, Heroku | ReactJS, Redux, Cypress | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI",
+    "tech": "Github | Netlify, Heroku | React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/gnosis-client",
+    "link_2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
     "link_2_button": "github-client",
-    "link_3": "https://immense-reef-37436.herokuapp.com/",
-    "link_3_button": "api",
-    "link_4": "https://github.com/CA-ma/gnosis-api",
-    "link_4_button": "github-api"
+    "link_3": "https://github.com/CA-ma/gnosis-api",
+    "link_3_button": "github-api",
+    "link_4": "https://www.pivotaltracker.com/n/projects/2384164",
+    "link_4_button": "pivotal tracker"
   },
   {
     "id": "FS3",
@@ -55,7 +55,7 @@
     "description_full": [
       "This application is under development."
     ],
-    "tech": "Github | ReactJS ...",
+    "tech": "Github | React, Cypress, Enzyme ...",
     "link_1": "https://github.com/CA-ma/cooper_front_end",
     "link_1_button": "github-client",
     "link_2": "https://github.com/CA-ma/cooper_back_end",
@@ -96,15 +96,39 @@
     },
     "description_short": "Parent-organized child care for kindergarteners.",
     "description_full": [
-      "This application is under development."
+      "This application is under development.",
+      "The application can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls",
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
     "link_1": "https://rails-playdate.herokuapp.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/playdate-june2019",
     "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
+    "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
+    "link_3_button": "pivotal tracker",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS6",
+    "title": "Kibbles 'n Bites",
+    "image": {
+      "path": "./src/img/icon/food.png",
+      "alt": "food-icon"
+    },
+    "description_short": "Order the best snacks and meals, for your pets!",
+    "description_full": [
+      "Maybe it's just an American thing, but I know a lot of people who love to spoil their pets.  One of my project-mates on this application just happens to be one of them.",
+      "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
+      "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
+    ],
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | Cartify | Pivotal Tracker",
+    "link_1": "https://rails-slow-food.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+    "link_2_button": "github",
+    "link_3": "https://www.pivotaltracker.com/n/projects/2360231",
+    "link_3_button": "pivotal tracker",
     "link_4": "",
     "link_4_button": ""
   }
