@@ -11,7 +11,7 @@
       "Deployed desktop applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
       "Using this example method, the Gnosis application has been updated as an iOS mobile application.  The mobile app is enabled to run locally using Apple's Xcode mobile app emulator."
     ],
-    "tech": "Github | ReactJS | Capacitor, Ionic, Xcode",
+    "tech": "Github | React | Capacitor, Ionic, Xcode",
     "link_1": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app",
     "link_1_button": "github",
     "link_2": "",

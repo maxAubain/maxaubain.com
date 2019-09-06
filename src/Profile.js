@@ -14,35 +14,24 @@ const Profile = () => {
         <div class="section-profile headline-container">
           <div class="headline-item">
             <p>
+              Big nerd and lover of all things sci-fi. Also an engineer at
+              heart, always asking, "what do you DO with it?"
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
+              Recently moved from the USA and enjoying the Swedish lifestyle.
+            </p>
+          </div>
+          <div class="headline-item">
+            <p>
               Motivated team player and an advocate for getting the job done
-              right.
-            </p>
-          </div>
-          <div class="headline-item">
-            <p>
-              Proven record of generating group cohesion and business value in
-              interdisciplinary, technical projects.
-            </p>
-          </div>
-          <div class="headline-item">
-            <p>
-              Over 10 years of experience researching, developing, and applying
-              emerging technologies.
+              right. Over 10 years of experience researching, developing, and
+              applying emerging technologies.
             </p>
           </div>
         </div>
       </div>
-{/*       <div class="button-container">
-        <a href="./#project-manager" class="button-1">
-          Project Manager
-        </a>
-        <a href="./#full-stack-developer" class="button-2">
-          Full Stack Developer
-        </a>
-        <a href="./#data-analyst" class="button-3">
-          Analyst
-        </a>
-      </div> */}
       <div class="section-profile feature-profile" id="project-manager">
         <div class="feature-title">
           <div>
@@ -58,11 +47,11 @@ const Profile = () => {
         </div>
         <div class="feature-description">
           <p>
-            Max is a project manager passionate about enhancing the quality of
-            products and business flows, and enabling his team to be creative
-            and efficient. He thrives when working with interdisciplinary
-            projects and is energized by the prospect of bringing structure to
-            the chaos of building something new.
+            Max has been a project manager, passionate about enhancing the
+            quality of products and business flows, and enabling his team to be
+            creative and efficient. He thrives when working with
+            interdisciplinary projects and is energized by the prospect of
+            bringing structure to the chaos of building something new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
@@ -95,9 +84,7 @@ const Profile = () => {
             Ruby on Rails, and ReactJS.
           </p>
           <p>
-            Opportunites to manage development projects and products, or
-            technical positions that are development-centered, are his next
-            ideal career move.
+            Development-centered opportunities are his next ideal career move.
           </p>
         </div>
       </div>
@@ -121,15 +108,12 @@ const Profile = () => {
           </p>
           <p>
             He has passed the U.S. Patent Bar Exam and worked as a registered
-            Patent Agent, drafting patent applications and legal documents while
-            performing intellectual property research on a wide range of
-            emerging technologies. As an engineer, he is also an inventor of
-            semiconductor device patents.
+            Patent Agent. As an engineer, he is an inventor of semiconductor
+            device patents.
           </p>
           <p>
             He has been a technical lead on product reliability, design, and
-            development projects, including thermal risk management for
-            smartphone semiconductor parts.
+            development projects.
           </p>
           <p>
             Finally, his analytical foundation lies in the completion of an
