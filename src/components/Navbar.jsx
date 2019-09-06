@@ -36,6 +36,7 @@ class NavBar extends Component {
   navlink keeps same vertical scroll location from previous view location */
   resetView() {
     window.scrollTo(0, 0);
+    // Try this with `window.moveTo(0,0)` instead so that scroll is not triggered
   }
 
   render() {
