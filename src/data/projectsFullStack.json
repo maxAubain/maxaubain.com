@@ -57,7 +57,7 @@
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github | Netlify, Heroku | React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
+    "tech": "Github | Netlify, Heroku | Node.js, React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | SemaphoreCI, Coveralls | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
@@ -102,7 +102,7 @@
       "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
       "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | Cartify | Pivotal Tracker",
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | SemaphoreCI, Coveralls | Cartify | Pivotal Tracker",
     "link_1": "https://rails-slow-food.herokuapp.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
