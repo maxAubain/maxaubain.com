@@ -31,7 +31,7 @@ const App = () => {
             path="/CurriculumVitae"
             component={CurriculumVitae}
           ></Route>
-          <Route exact path="/TravelBlog" component={TravelBlog}></Route>
+          {/* <Route exact path="/TravelBlog" component={TravelBlog}></Route> */}
         </Switch>
       </div>
       <Footer />

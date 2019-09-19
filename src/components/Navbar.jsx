@@ -61,9 +61,9 @@ class NavBar extends Component {
         >
           Curriculum Vitae
         </NavLink>
-        <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
+        {/* <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
           Travel Blog
-        </NavLink>
+        </NavLink> */}
       </div>
     );
   }

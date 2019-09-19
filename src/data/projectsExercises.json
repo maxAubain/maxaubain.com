@@ -10,7 +10,7 @@
     "description_full": [
       "The Playdate application is inspired by real-world challenges faced by parents with young children.  With child care being expensive as a private service, communal sharing of care responsibilities between parents is a great way to improve quality of life for little monetary investment.  Making playdates for your kids can also form community and new friendships among adults.",
       "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
-      "The partial prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
+      "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
     "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
     "link_1": "https://rails-playdate.herokuapp.com/",
