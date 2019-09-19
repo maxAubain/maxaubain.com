@@ -24,6 +24,29 @@
   },
   {
     "id": "FS2",
+    "title": "Todo list",
+    "image": {
+      "path": "./src/img/icon/checkbox.png",
+      "alt": "checkbox-icon"
+    },
+    "description_short": "Not your everyday todo list app.",
+    "description_full": [
+      "My responsibilities for this development project was to implement improvements to an existing todo list application, including autosave functionality, due date tracking, todo completion tracking, and setting up a backend server to persist the data.  Notably, as JS is updated often, this project is implemented using the latest syntax and hooks available in ES8 and React.",
+      "Each feature and Dev Ops chore was documented in individual pull requests, reviewable using the github link below.  The functionality can be testing using the live site.",
+      "For features that modified the UI or UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The cypress framework can run the tests with a local instance of the application."
+    ],
+    "tech": "Github | Netlify, Heroku | React, ES8, Cypress, Material-UI | Node.js, Express",
+    "link_1": "https://todo-list-client.netlify.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
+    "link_2_button": "github",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS3",
     "title": "Gnosis: Science News",
     "image": {
       "path": "./src/img/icon/news.png",
@@ -34,7 +57,7 @@
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github | Netlify, Heroku | React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
+    "tech": "Github | Netlify, Heroku | Node.js, React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | SemaphoreCI, Coveralls | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
     "link_1": "https://gnosis-app.netlify.com",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
@@ -45,7 +68,7 @@
     "link_4_button": "pivotal tracker"
   },
   {
-    "id": "FS3",
+    "id": "FS4",
     "title": "Articles Blog",
     "image": {
       "path": "./src/img/icon/blog.png",
@@ -67,7 +90,7 @@
     "link_4_button": ""
   },
   {
-    "id": "FS4",
+    "id": "FS5",
     "title": "Kibbles 'n Bites",
     "image": {
       "path": "./src/img/icon/food.png",
@@ -79,7 +102,7 @@
       "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
       "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | Cartify | Pivotal Tracker",
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | SemaphoreCI, Coveralls | Cartify | Pivotal Tracker",
     "link_1": "https://rails-slow-food.herokuapp.com/",
     "link_1_button": "website",
     "link_2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",

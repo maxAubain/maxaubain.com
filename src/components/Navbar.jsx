@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 
-  /*  Option for later: implement for underline effect under navlinks
+/*  Option for later: implement for underline effect under navlinks
   let currentLocation = window.location.pathname;
   console.log("current location", currentLocation) */
 
@@ -32,11 +32,13 @@ class NavBar extends Component {
     }
   }
 
-  /* Sets view to top of page when navlink is clicked, otherwise
-  navlink keeps same vertical scroll location from previous view location */
+  /* Sets view to top of page when navlink is clicked */
   resetView() {
-    window.scrollTo(0, 0);
-    // Try this with `window.moveTo(0,0)` instead so that scroll is not triggered
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto"
+    });
   }
 
   render() {
@@ -45,15 +47,23 @@ class NavBar extends Component {
         <NavLink className="navlink" to="/" onClick={this.resetView}>
           Profile
         </NavLink>
-        <NavLink className="navlink" to="WebDevelopment" onClick={this.resetView}>
+        <NavLink
+          className="navlink"
+          to="WebDevelopment"
+          onClick={this.resetView}
+        >
           Web Development
         </NavLink>
-        <NavLink className="navlink" to="CurriculumVitae" onClick={this.resetView}>
+        <NavLink
+          className="navlink"
+          to="CurriculumVitae"
+          onClick={this.resetView}
+        >
           Curriculum Vitae
         </NavLink>
-        <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
+        {/* <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
           Travel Blog
-        </NavLink>
+        </NavLink> */}
       </div>
     );
   }
