@@ -1,26 +1,4 @@
 {
-  "id": "FS5",
-  "title": "Playdate",
-  "image": {
-    "path": "./src/img/icon/children.png",
-    "alt": "children-icon"
-  },
-  "description_short": "Parent-organized child care for kindergarteners.",
-  "description_full": [
-    "This application is under development.",
-    "The application can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
-  ],
-  "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
-  "link_1": "https://rails-playdate.herokuapp.com/",
-  "link_1_button": "website",
-  "link_2": "https://github.com/CA-ma/playdate-june2019",
-  "link_2_button": "github",
-  "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
-  "link_3_button": "pivotal tracker",
-  "link_4": "",
-  "link_4_button": ""
-},
-{
   "id": "FS3",
   "title": "The 'Cooper Test'",
   "image": {
