@@ -24,6 +24,29 @@
   },
   {
     "id": "FS2",
+    "title": "Todo list",
+    "image": {
+      "path": "./src/img/icon/checkbox.png",
+      "alt": "checkbox-icon"
+    },
+    "description_short": "Not your everyday todo list app.",
+    "description_full": [
+      "My responsibilities for this development project was to implement improvements to an existing todo list application, including autosave functionality, due date tracking, todo completion tracking, and setting up a backend server to persist the data.  Notably, as JS is updated often, this project is implemented using the latest syntax and hooks available in ES8 and React.",
+      "Each feature and Dev Ops chore was documented in individual pull requests, reviewable using the github link below.  The functionality can be testing using the live site.",
+      "For features that modified the UI or UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The cypress framework can run the tests with a local instance of the application."
+    ],
+    "tech": "Github | Netlify, Heroku | React, ES8, Cypress, Material-UI | Node.js, Express",
+    "link_1": "https://todo-list-client.netlify.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
+    "link_2_button": "github",
+    "link_3": "",
+    "link_3_button": "",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "FS3",
     "title": "Gnosis: Science News",
     "image": {
       "path": "./src/img/icon/news.png",
@@ -43,27 +66,6 @@
     "link_3_button": "github-api",
     "link_4": "https://www.pivotaltracker.com/n/projects/2384164",
     "link_4_button": "pivotal tracker"
-  },
-  {
-    "id": "FS3",
-    "title": "The 'Cooper Test'",
-    "image": {
-      "path": "./src/img/icon/run.png",
-      "alt": "run-icon"
-    },
-    "description_short": "Evaluating and visually displaying running fitness metrics.",
-    "description_full": [
-      "This application is under development."
-    ],
-    "tech": "Github | Node.js, React, Cypress, Enzyme ...",
-    "link_1": "https://github.com/CA-ma/cooper_front_end",
-    "link_1_button": "github-client",
-    "link_2": "https://github.com/CA-ma/cooper_back_end",
-    "link_2_button": "github-api",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
   },
   {
     "id": "FS4",
@@ -89,28 +91,6 @@
   },
   {
     "id": "FS5",
-    "title": "Playdate",
-    "image": {
-      "path": "./src/img/icon/children.png",
-      "alt": "children-icon"
-    },
-    "description_short": "Parent-organized child care for kindergarteners.",
-    "description_full": [
-      "This application is under development.",
-      "The application can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
-    ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
-    "link_1": "https://rails-playdate.herokuapp.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/playdate-june2019",
-    "link_2_button": "github",
-    "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
-    "link_3_button": "pivotal tracker",
-    "link_4": "",
-    "link_4_button": ""
-  },
-  {
-    "id": "FS6",
     "title": "Kibbles 'n Bites",
     "image": {
       "path": "./src/img/icon/food.png",

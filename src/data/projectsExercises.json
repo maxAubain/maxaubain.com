@@ -1,6 +1,29 @@
 [
   {
     "id": "E1",
+    "title": "Playdate",
+    "image": {
+      "path": "./src/img/icon/children.png",
+      "alt": "children-icon"
+    },
+    "description_short": "Parent-organized child care for kindergarteners.",
+    "description_full": [
+      "The Playdate application is inspired by real-world challenges faced by parents with young children.  With child care being expensive as a private service, communal sharing of care responsibilities between parents is a great way to improve quality of life for little monetary investment.  Making playdates for your kids can also form community and new friendships among adults.",
+      "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
+      "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
+    ],
+    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
+    "link_1": "https://rails-playdate.herokuapp.com/",
+    "link_1_button": "website",
+    "link_2": "https://github.com/CA-ma/playdate-june2019",
+    "link_2_button": "github",
+    "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
+    "link_3_button": "pivotal tracker",
+    "link_4": "",
+    "link_4_button": ""
+  },
+  {
+    "id": "E2",
     "title": "BMI Calculator",
     "image": {
       "path": "./src/img/icon/calculator.png",
@@ -22,7 +45,7 @@
     "link_4_button": ""
   },
   {
-    "id": "E2",
+    "id": "E3",
     "title": "FizzBuzz",
     "image": {
       "path": "./src/img/icon/fizz.png",
@@ -45,7 +68,7 @@
     "link_4_button": ""
   },
   {
-    "id": "E3",
+    "id": "E4",
     "title": "Library Manager",
     "image": {
       "path": "./src/img/icon/book.png",
@@ -67,7 +90,7 @@
     "link_4_button": ""
   },
   {
-    "id": "E4",
+    "id": "E5",
     "title": "ATM Simulator",
     "image": {
       "path": "./src/img/icon/atm.png",

@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Profile from "./Profile";
+import Profile from "./components/Profile";
 import NavBar from "./components/Navbar";
 import Footer from "./components/Footer";
 import DeveloperProjects from "./components/DeveloperProjects";
@@ -14,8 +14,6 @@ import "./css/profile.css";
 import "./css/developer-projects.css";
 import WebFont from "webfontloader";
 
-/* App component returns Header and Footer components, and uses React
-Router to switch between components that populate the body of the website. */
 const App = () => {
   return (
     <>
@@ -33,7 +31,7 @@ const App = () => {
             path="/CurriculumVitae"
             component={CurriculumVitae}
           ></Route>
-          <Route exact path="/TravelBlog" component={TravelBlog}></Route>
+          {/* <Route exact path="/TravelBlog" component={TravelBlog}></Route> */}
         </Switch>
       </div>
       <Footer />
@@ -48,7 +46,6 @@ WebFont.load({
   }
 });
 
-// Renders the App component in the virtual ReactDOM
 ReactDOM.render(
   <BrowserRouter>
     <App />
