@@ -3,27 +3,27 @@ import React from "react";
 const Profile = () => {
   return (
     <>
-      <div class="intro">
-        <div class="section-profile headshot-container">
+      <div className="intro">
+        <div className="section-profile headshot-container">
           <div>
-            <img class="headshot" src="./src/img/headShot.png" />
+            <img className="headshot" src="./src/img/headShot.png" />
           </div>
           <br></br>
           <div>Max Aubain, Ph.D.</div>
         </div>
-        <div class="section-profile headline-container">
-          <div class="headline-item">
+        <div className="section-profile headline-container">
+          <div className="headline-item">
             <p>
               Big nerd and lover of all things sci-fi. Also an engineer at
               heart, always asking, "what do you DO with it?"
             </p>
           </div>
-          <div class="headline-item">
+          <div className="headline-item">
             <p>
               Recently moved from the USA and enjoying the Swedish lifestyle.
             </p>
           </div>
-          <div class="headline-item">
+          <div className="headline-item">
             <p>
               Motivated team player and an advocate for getting the job done
               right. Over 10 years of experience researching, developing, and
@@ -32,8 +32,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div class="section-profile feature-profile" id="project-manager">
-        <div class="feature-title">
+      <div className="section-profile feature-profile" id="project-manager">
+        <div className="feature-title">
           <div>
             <img
               src="./src/img/icon/project-manager.png"
@@ -45,7 +45,7 @@ const Profile = () => {
           <br></br>
           Project Manager
         </div>
-        <div class="feature-description">
+        <div className="feature-description">
           <p>
             Max has been a project manager, passionate about enhancing the
             quality of products and business flows, and enabling his team to be
@@ -59,8 +59,8 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="section-profile feature-profile" id="full-stack-developer">
-        <div class="feature-title">
+      <div className="section-profile feature-profile" id="full-stack-developer">
+        <div className="feature-title">
           <div>
             <img
               src="./src/img/icon/developer.png"
@@ -72,7 +72,7 @@ const Profile = () => {
           <br></br>
           Full Stack Developer
         </div>
-        <div class="feature-description">
+        <div className="feature-description">
           <p>
             Max has written applications in various languages throughout his
             career for equally as many tasks, from lab test automation in
@@ -88,8 +88,8 @@ const Profile = () => {
           </p>
         </div>
       </div>
-      <div class="section-profile feature-profile" id="data-analyst">
-        <div class="feature-title">
+      <div className="section-profile feature-profile" id="data-analyst">
+        <div className="feature-title">
           <div>
             <img
               src="./src/img/icon/analyst.png"
@@ -101,7 +101,7 @@ const Profile = () => {
           <br></br>
           Analyst
         </div>
-        <div class="feature-description">
+        <div className="feature-description">
           <p>
             Max has a unique combination of professional experiences that have
             shaped his analytic abilities.
