@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
   let currentLocation = window.location.pathname;
   console.log("current location", currentLocation) */
 
+/* Option to add an effect to each navlink in the navbar when the page is selected
+https://reacttraining.com/react-router/web/api/NavLink/isactive-func */
+
 // NavBar component contains navlinks to content components.
 class NavBar extends Component {
   constructor() {
