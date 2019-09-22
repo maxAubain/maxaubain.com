@@ -5,15 +5,17 @@ import { NavLink } from "react-router-dom";
   let currentLocation = window.location.pathname;
   console.log("current location", currentLocation) */
 
-/* Option to add an effect to each navlink in the navbar when the page is selected
-https://reacttraining.com/react-router/web/api/NavLink/isactive-func */
-
 // NavBar component contains navlinks to content components.
 class NavBar extends Component {
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
-    this.state = { navbarState: "navbar" };
+    this.handleNavlinkProfileStyle = this.handleNavlinkProfileStyle.bind(this);
+    this.resetView = this.resetView.bind(this);
+    this.state = {
+      navbarState: "navbar",
+      navlinkCNprofile: "navlink"
+    };
   }
 
   componentDidMount() {
@@ -27,8 +29,7 @@ class NavBar extends Component {
   /* Checks vertical scroll location and adds/removes className 
   label to implement navbar shadow greater than 10 px scroll distance. */
   handleScroll(event) {
-    let scrollLocation = document.documentElement.scrollTop;
-    if (scrollLocation > 10) {
+    if (document.documentElement.scrollTop > 10) {
       this.setState({ navbarState: "navbar floating-navbar" });
     } else {
       this.setState({ navbarState: "navbar" });
@@ -44,10 +45,24 @@ class NavBar extends Component {
     });
   }
 
+/* Formats current location navlink style */
+  handleNavlinkProfileStyle() {
+    console.log(this.state.navlinkCNprofile)
+    if (this.state.navlinkCNprofile === "navlink") {
+      this.setState({ navlinkCNprofile: "navlink_current" })
+    } else {
+      this.setState({ navlinkCNprofile: "navlink" })
+    }
+  }
+
   render() {
     return (
       <div id="navbar" className={this.state.navbarState}>
-        <NavLink className="navlink" to="/" onClick={this.resetView}>
+        <NavLink
+          className={this.state.navlinkCNprofile}
+          to="/"
+          onClick={this.resetView, this.handleNavlinkProfileStyle}
+        >
           Profile
         </NavLink>
         <NavLink

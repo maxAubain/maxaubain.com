@@ -18,6 +18,14 @@ body {
   color: rgb(0, 63, 158);
 }
 
+.navlink_current {
+  text-decoration: underline;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  color: rgb(0, 63, 158);
+}
+
 a {
   text-decoration: none;
   color: #0f84e4;
