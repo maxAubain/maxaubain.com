@@ -1,90 +1,71 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-/*  Option for later: implement for underline effect under navlinks
-  let currentLocation = window.location.pathname;
-  console.log("current location", currentLocation) */
+let navLinkClasses = {
+  profile: "",
+  webDevelopment: "",
+  curriculumVitae: ""
+};
 
-// NavBar component contains navlinks to content components.
-class NavBar extends Component {
-  constructor() {
-    super();
-    this.handleScroll = this.handleScroll.bind(this);
-    this.handleNavlinkProfileStyle = this.handleNavlinkProfileStyle.bind(this);
-    this.resetView = this.resetView.bind(this);
-    this.state = {
-      navbarState: "navbar",
-      navlinkCNprofile: "navlink"
-    };
-  }
+export const NavBar = () => {
+  // Handle navbar shadow
+  const [navBarClass, setNavBarClass] = useState("navbar");
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  /* Checks vertical scroll location and adds/removes className 
-  label to implement navbar shadow greater than 10 px scroll distance. */
-  handleScroll(event) {
+  const handleNavBarShadow = event => {
     if (document.documentElement.scrollTop > 10) {
-      this.setState({ navbarState: "navbar floating-navbar" });
+      setNavBarClass("navbar floating-navbar");
     } else {
-      this.setState({ navbarState: "navbar" });
+      setNavBarClass("navbar");
     }
-  }
+  };
 
-  /* Sets view to top of page when navlink is clicked */
-  resetView() {
+  useEffect(() => {
+    window.addEventListener("scroll", handleNavBarShadow);
+  });
+
+  // Handle Navlink style classes
+  // navLinkClasses are not stored in State to avoid an infinite loop on render
+  Object.keys(navLinkClasses).forEach(key => {
+    if (`/${key}` === location.pathname) {
+      Object.assign(navLinkClasses, { [key]: "navlink navlink-current" });
+    } else {
+      Object.assign(navLinkClasses, { [key]: "navlink" });
+    }
+  });
+
+  const handleViewReset = () =>
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "auto"
     });
-  }
 
-/* Formats current location navlink style */
-  handleNavlinkProfileStyle() {
-    console.log(this.state.navlinkCNprofile)
-    if (this.state.navlinkCNprofile === "navlink") {
-      this.setState({ navlinkCNprofile: "navlink_current" })
-    } else {
-      this.setState({ navlinkCNprofile: "navlink" })
-    }
-  }
-
-  render() {
-    return (
-      <div id="navbar" className={this.state.navbarState}>
-        <NavLink
-          className={this.state.navlinkCNprofile}
-          to="/"
-          onClick={this.resetView, this.handleNavlinkProfileStyle}
-        >
-          Profile
-        </NavLink>
-        <NavLink
-          className="navlink"
-          to="WebDevelopment"
-          onClick={this.resetView}
-        >
-          Web Development
-        </NavLink>
-        <NavLink
-          className="navlink"
-          to="CurriculumVitae"
-          onClick={this.resetView}
-        >
-          Curriculum Vitae
-        </NavLink>
-        {/* <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
+  return (
+    <div id="navbar" className={navBarClass}>
+      <NavLink
+        className={navLinkClasses.profile}
+        to="/profile"
+        onClick={handleViewReset}
+      >
+        Profile
+      </NavLink>
+      <NavLink
+        className={navLinkClasses.webDevelopment}
+        to="webDevelopment"
+        onClick={handleViewReset}
+      >
+        Web Development
+      </NavLink>
+      <NavLink
+        className={navLinkClasses.curriculumVitae}
+        to="curriculumVitae"
+        onClick={handleViewReset}
+      >
+        Curriculum Vitae
+      </NavLink>
+      {/* <NavLink className="navlink" to="TravelBlog" onClick={handleViewReset}>
           Travel Blog
         </NavLink> */}
-      </div>
-    );
-  }
-}
-
-export default NavBar;
+    </div>
+  );
+};
