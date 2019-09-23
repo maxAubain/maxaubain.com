@@ -2,25 +2,36 @@ import React from "react";
 
 import Projects from "./Projects";
 
-/* DeveloperProjects returns instances of the Projects component which contain types of projects,
-where the return for each project is formatted by the Project component. There are four projects 
-categories: Full Stack, Front End, Mobile, and Exercises.  */
-const DeveloperProjects = () => {
-  return (
-    <>
-      <div className="section-title">Full Stack Applications</div>
-      <Projects path={"./src/data/projectsFullStack.json"} />
+const projectsCategoriesReference = [
+  {
+    title: "Full Stack Applications",
+    path: "./src/data/projectsFullStack.json"
+  },
+  {
+    title: "Front End Applications",
+    path: "./src/data/projectsFrontEnd.json"
+  },
+  {
+    title: "Mobile Applications",
+    path: "./src/data/projectsMobile.json"
+  },
+  {
+    title: "Coding Exercises",
+    path: "./src/data/projectsExercises.json"
+  }
+];
 
-      <div className="section-title">Front End Applications</div>
-      <Projects path={"./src/data/projectsFrontEnd.json"} />
+export const DeveloperProjects = () => {
+  const projCatRef = projectsCategoriesReference.map(category => {
+    return (
+      <>
+        <div key={category.title} className="section-title">
+          {category.title}
+        </div>
+        <Projects path={category.path} />
+      </>
+    );
+  });
 
-      <div className="section-title">Mobile Applications</div>
-      <Projects path={"./src/data/projectsMobile.json"} />
-
-      <div className="section-title">Coding Exercises</div>
-      <Projects path={"./src/data/projectsExercises.json"} />
-    </>
-  );
+  return <>{projCatRef}</>;
 };
-
-export default DeveloperProjects;

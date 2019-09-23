@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-/* The Project component receives the information of a single project as
-props from Projects, formats it, and returns. */
 class Project extends Component {
   constructor(props) {
     super(props);

@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import Profile from "./components/Profile";
+import { Profile } from "./components/Profile";
 import { NavBar } from "./components/Navbar";
-import Footer from "./components/Footer";
-import DeveloperProjects from "./components/DeveloperProjects";
+import { Footer } from "./components/Footer";
+import { DeveloperProjects } from "./components/DeveloperProjects";
 import CurriculumVitae from "./components/CurriculumVitae";
-import TravelBlog from "./components/TravelBlog";
+// import { TravelBlog } from "./components/TravelBlog";
 
 import "./css/global.css";
 import "./css/profile.css";
