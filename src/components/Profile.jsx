@@ -20,7 +20,7 @@ const Profile = () => {
           </div>
           <div className="headline-item">
             <p>
-              Recently moved from the USA and enjoying the Swedish lifestyle.
+              Recently moved from the USA and enjoying a Scandinavian pace of life.
             </p>
           </div>
           <div className="headline-item">
