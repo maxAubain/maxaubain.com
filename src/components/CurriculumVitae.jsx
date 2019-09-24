@@ -5,7 +5,7 @@ import ExperienceTile from "./ExperienceTile"; */
 
 /* This component needs a new plan.  Keeping old layout for
 now for inspiration later. */
-class CurriculumVitae extends Component {
+export const CurriculumVitae = () => {
   /* constructor() {
     super();
     this.state = {
@@ -28,8 +28,7 @@ class CurriculumVitae extends Component {
     });
   } */
 
-  render() {
-/*     const education = this.state.education;
+  /*     const education = this.state.education;
     let educationList;
 
     if (education.length > 0) {
@@ -63,8 +62,8 @@ class CurriculumVitae extends Component {
       });
     } */
 
-    return (
- /*      <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
+  return (
+    /*      <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
         <div
           className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4"
           style={{ textAlign: "center" }}
@@ -81,11 +80,12 @@ class CurriculumVitae extends Component {
         </div>
         <div className="px-1/5">{experienceList}</div>
       </div> */
-      <div className="component">
-        <p>Coming soon.  For more information about education, work experience, and publications, please visit my <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.</p>
-      </div>
-    );
-  }
-}
-
-export default CurriculumVitae;
+    <div className="component">
+      <p>
+        Coming soon. For more information about education, work experience, and
+        publications, please visit my{" "}
+        <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+      </p>
+    </div>
+  );
+};

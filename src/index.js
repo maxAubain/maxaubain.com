@@ -6,7 +6,7 @@ import { Profile } from "./components/Profile";
 import { NavBar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { DeveloperProjects } from "./components/DeveloperProjects";
-import CurriculumVitae from "./components/CurriculumVitae";
+import { CurriculumVitae } from "./components/CurriculumVitae";
 // import { TravelBlog } from "./components/TravelBlog";
 
 import "./css/global.css";
