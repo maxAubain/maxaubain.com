@@ -74,7 +74,7 @@
       "path": "./src/img/icon/book.png",
       "alt": "book icon"
     },
-    "descriptionShort": "Managing a collection of books with search function.",
+    "descriptionShort": "Managing a book collection with search function.",
     "descriptionFull": [
       "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
@@ -96,7 +96,7 @@
       "path": "./src/img/icon/atm.png",
       "alt": "atm icon"
     },
-    "descriptionShort": "Interactions between an Automatic Teller Machine and a bank account holder.",
+    "descriptionShort": "ATM functions with a bank account member.",
     "descriptionFull": [
       "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."

@@ -6,13 +6,13 @@
       "path": "./src/img/icon/camera.png",
       "alt": "camera-icon"
     },
-    "descriptionShort": "Receive images of the webpages at specified URLs.",
+    "descriptionShort": "Screenshots provided with a SaaS platform.",
     "descriptionFull": [
       "Snapshot is a prototype application to get proof-of-concept functionality.  I really enjoyed pushing myself on this one.",
       "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
       "The application is demonstrated at the live site.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "tech": "Github, Heroku, Ruby on Rails, Rspec, PhantomJS, Webshot",
+    "tech": "Github, Heroku deployment, Ruby and Ruby on Rails with Active Storage, Rspec TDD, PhantomJS, Webshot Gem",
     "link1": "https://screenshot-capture.herokuapp.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
@@ -35,7 +35,7 @@
       "Each feature and Dev Ops chore was documented in individual pull requests, reviewable using the github link below.  The functionality can be testing using the live site.",
       "For features that modified the UI or UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The cypress framework can run the tests with a local instance of the application."
     ],
-    "tech": "Github, Netlify, Heroku, React, ES8, Cypress, Material-UI, Node.js, Express",
+    "tech": "Github, Netlify and Heroku deployment, React v16.9 with ES8, Cypress TDD, Material-UI, Node.js, Express server with CORS",
     "link1": "https://todo-list-client.netlify.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
@@ -52,12 +52,12 @@
       "path": "./src/img/icon/news.png",
       "alt": "news-icon"
     },
-    "descriptionShort": "Connecting research enthusiasts with researchers through news articles.",
+    "descriptionShort": "Research news written by researchers.",
     "descriptionFull": [
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github, Netlify, Heroku, Node.js, React, Redux, Cypress, Enzyme, Ruby on Rails, Rspec, SemaphoreCI, Coveralls, Devise Token Auth, Stripe, Semantic-UI, Pivotal Tracker",
+    "tech": "Github, Netlify and Heroku deployment, Node.js, React 16 with ES6, Redux, Cypress and Enzyme TDD, Ruby and Ruby on Rails with CORS, Rspec TDD, SemaphoreCI, Coveralls, Devise Token Auth authentication, Stripe payments, Semantic-UI, Pivotal Tracker",
     "link1": "https://gnosis-app.netlify.com",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
@@ -74,12 +74,12 @@
       "path": "./src/img/icon/blog.png",
       "alt": "blog-icon"
     },
-    "descriptionShort": "Classic articles blog with Create-Read-Update-Delete methods.",
+    "descriptionShort": "Classic articles blog with CRUD methods.",
     "descriptionFull": [
       "Of all the web development documentation I have encountered, I have been most impressed with the Ruby on Rails Guides.  In this application I use their general approach to create a blog-style posting site, which exercises the four basic data flow methods: create, read, update, and delete.",
       "You can visit the live site and create an account to see what others have posted.  Please feel free to participate and leave a post of your own."
     ],
-    "tech": "Github, Heroku, Ruby on Rails, Cucumber, Rspec, Devise",
+    "tech": "Github, Heroku deployment, Ruby and Ruby on Rails, Cucumber and Rspec TDD, Devise authentication, CSS3",
     "link1": "https://an-article-posting-site.herokuapp.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/rails_bdd",
@@ -102,7 +102,7 @@
       "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
       "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github, Heroku, Ruby on Rails, Cucumber, Haml, SemaphoreCI, Coveralls, Cartify, Pivotal Tracker",
+    "tech": "Github, Heroku deployment, Ruby on Rails, Cucumber TDD, Haml, SemaphoreCI, Coveralls, Cartify, Pivotal Tracker",
     "link1": "https://rails-slow-food.herokuapp.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
