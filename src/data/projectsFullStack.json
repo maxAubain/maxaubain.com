@@ -6,21 +6,21 @@
       "path": "./src/img/icon/camera.png",
       "alt": "camera-icon"
     },
-    "description_short": "Receive images of the webpages at specified URLs.",
-    "description_full": [
+    "descriptionShort": "Receive images of the webpages at specified URLs.",
+    "descriptionFull": [
       "Snapshot is a prototype application to get proof-of-concept functionality.  I really enjoyed pushing myself on this one.",
       "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
       "The application is demonstrated at the live site.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Rspec | PhantomJS, Webshot",
-    "link_1": "https://screenshot-capture.herokuapp.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Heroku, Ruby on Rails, Rspec, PhantomJS, Webshot",
+    "link1": "https://screenshot-capture.herokuapp.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FS2",
@@ -29,21 +29,21 @@
       "path": "./src/img/icon/checkbox.png",
       "alt": "checkbox-icon"
     },
-    "description_short": "Not your everyday todo list app.",
-    "description_full": [
+    "descriptionShort": "Not your everyday todo list app.",
+    "descriptionFull": [
       "My responsibilities for this development project was to implement improvements to an existing todo list application, including autosave functionality, due date tracking, todo completion tracking, and setting up a backend server to persist the data.  Notably, as JS is updated often, this project is implemented using the latest syntax and hooks available in ES8 and React.",
       "Each feature and Dev Ops chore was documented in individual pull requests, reviewable using the github link below.  The functionality can be testing using the live site.",
       "For features that modified the UI or UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The cypress framework can run the tests with a local instance of the application."
     ],
-    "tech": "Github | Netlify, Heroku | React, ES8, Cypress, Material-UI | Node.js, Express",
-    "link_1": "https://todo-list-client.netlify.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Netlify, Heroku, React, ES8, Cypress, Material-UI, Node.js, Express",
+    "link1": "https://todo-list-client.netlify.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FS3",
@@ -52,20 +52,20 @@
       "path": "./src/img/icon/news.png",
       "alt": "news-icon"
     },
-    "description_short": "Connecting research enthusiasts with researchers through news articles.",
-    "description_full": [
+    "descriptionShort": "Connecting research enthusiasts with researchers through news articles.",
+    "descriptionFull": [
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "tech": "Github | Netlify, Heroku | Node.js, React, Redux, Cypress, Enzyme | Ruby on Rails, Rspec | SemaphoreCI, Coveralls | Devise Token Auth | Stripe | Semantic-UI | Pivotal Tracker",
-    "link_1": "https://gnosis-app.netlify.com",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
-    "link_2_button": "github-client",
-    "link_3": "https://github.com/CA-ma/gnosis-api",
-    "link_3_button": "github-api",
-    "link_4": "https://www.pivotaltracker.com/n/projects/2384164",
-    "link_4_button": "pivotal tracker"
+    "tech": "Github, Netlify, Heroku, Node.js, React, Redux, Cypress, Enzyme, Ruby on Rails, Rspec, SemaphoreCI, Coveralls, Devise Token Auth, Stripe, Semantic-UI, Pivotal Tracker",
+    "link1": "https://gnosis-app.netlify.com",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
+    "linkLabel2": "github-client",
+    "link3": "https://github.com/CA-ma/gnosis-api",
+    "linkLabel3": "github-api",
+    "link4": "https://www.pivotaltracker.com/n/projects/2384164",
+    "linkLabel4": "pivotal tracker"
   },
   {
     "id": "FS4",
@@ -74,20 +74,20 @@
       "path": "./src/img/icon/blog.png",
       "alt": "blog-icon"
     },
-    "description_short": "Classic articles blog with Create-Read-Update-Delete methods.",
-    "description_full": [
+    "descriptionShort": "Classic articles blog with Create-Read-Update-Delete methods.",
+    "descriptionFull": [
       "Of all the web development documentation I have encountered, I have been most impressed with the Ruby on Rails Guides.  In this application I use their general approach to create a blog-style posting site, which exercises the four basic data flow methods: create, read, update, and delete.",
       "You can visit the live site and create an account to see what others have posted.  Please feel free to participate and leave a post of your own."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | Devise",
-    "link_1": "https://an-article-posting-site.herokuapp.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/rails_bdd",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Heroku, Ruby on Rails, Cucumber, Rspec, Devise",
+    "link1": "https://an-article-posting-site.herokuapp.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/rails_bdd",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FS5",
@@ -96,20 +96,20 @@
       "path": "./src/img/icon/food.png",
       "alt": "food-icon"
     },
-    "description_short": "Order the best snacks and meals, for your pets!",
-    "description_full": [
+    "descriptionShort": "Order the best snacks and meals, for your pets!",
+    "descriptionFull": [
       "Maybe it's just an American thing, but I know a lot of people who love to spoil their pets.  One of my project-mates on this application just happens to be one of them.",
       "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
       "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Haml | SemaphoreCI, Coveralls | Cartify | Pivotal Tracker",
-    "link_1": "https://rails-slow-food.herokuapp.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
-    "link_2_button": "github",
-    "link_3": "https://www.pivotaltracker.com/n/projects/2360231",
-    "link_3_button": "pivotal tracker",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Heroku, Ruby on Rails, Cucumber, Haml, SemaphoreCI, Coveralls, Cartify, Pivotal Tracker",
+    "link1": "https://rails-slow-food.herokuapp.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+    "linkLabel2": "github",
+    "link3": "https://www.pivotaltracker.com/n/projects/2360231",
+    "linkLabel3": "pivotal tracker",
+    "link4": "",
+    "linkLabel4": ""
   }
 ]

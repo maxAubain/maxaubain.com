@@ -28,7 +28,7 @@
   background-color: white;
 }
 
-.project-details-container.activate {
+.project-details-container.hidden {
   max-height: 0;
   overflow: hidden;
 }

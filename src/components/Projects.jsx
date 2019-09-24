@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import Project from "./Project";
+import { Project } from "./Project";
 
-export const Projects = projectsCategory => {
+export const Projects = props => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     if (projects.length === 0) {
-      axios.get(projectsCategory.path).then(response => {
+      axios.get(props.path).then(response => {
         setProjects(response.data);
       });
     }

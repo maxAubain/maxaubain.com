@@ -5,17 +5,15 @@
     "path": "./src/img/icon/run.png",
     "alt": "run-icon"
   },
-  "description_short": "Evaluating and visually displaying running fitness metrics.",
-  "description_full": [
-    "This application is under development."
-  ],
-  "tech": "Github | Node.js, React, Cypress, Enzyme ...",
-  "link_1": "https://github.com/CA-ma/cooper_front_end",
-  "link_1_button": "github-client",
-  "link_2": "https://github.com/CA-ma/cooper_back_end",
-  "link_2_button": "github-api",
-  "link_3": "",
-  "link_3_button": "",
-  "link_4": "",
-  "link_4_button": ""
+  "descriptionShort": "Evaluating and visually displaying running fitness metrics.",
+  "descriptionFull": ["This application is under development."],
+  "tech": "Github, Node.js, React, Cypress, Enzyme ...",
+  "link1": "https://github.com/CA-ma/cooper_front_end",
+  "linkLabel1": "github-client",
+  "link2": "https://github.com/CA-ma/cooper_back_end",
+  "linkLabel2": "github-api",
+  "link3": "",
+  "linkLabel3": "",
+  "link4": "",
+  "linkLabel4": ""
 }

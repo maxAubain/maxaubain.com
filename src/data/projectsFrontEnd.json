@@ -6,20 +6,20 @@
       "path": "./src/img/icon/portfolio.png",
       "alt": "portfolio-icon"
     },
-    "description_short": "Showcasing experience, projects, and education.",
-    "description_full": [
+    "descriptionShort": "Showcasing experience, projects, and education.",
+    "descriptionFull": [
       "I can imagine every web developer feels the need to create a personal website.",
       "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you see here."
     ],
-    "tech": "Github | Netlify | Node.js, React",
-    "link_1": "https://max-aubain.netlify.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/maxAubain/portfolio#front-end-application-professional-portfolio",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Netlify, Node.js, React",
+    "link1": "https://max-aubain.netlify.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/maxAubain/portfolio#front-end-application-professional-portfolio",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FE2",
@@ -28,20 +28,20 @@
       "path": "./src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
-    "description_short": "Simple Body Mass Index calculator.",
-    "description_full": [
+    "descriptionShort": "Simple Body Mass Index calculator.",
+    "descriptionFull": [
       "While the functionality of this application is on the topic of medical metrics, the value of developing this application is to practice the design methodology of React component architecture.",
       "A guide to run acceptance and unit tests upon building this application locally, and a description of the design approach for this application, is discussed in the github documentation."
     ],
-    "tech": "Github | Netlify | Node.js, React, Cypress, Enzyme",
-    "link_1": "https://bmi-calc-react.netlify.com",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Netlify, Node.js, React, Cypress, Enzyme",
+    "link1": "https://bmi-calc-react.netlify.com",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FE3",
@@ -50,21 +50,21 @@
       "path": "./src/img/icon/hand.png",
       "alt": "rps-icon"
     },
-    "description_short": "A digital rendition of a childhood game.",
-    "description_full": [
+    "descriptionShort": "A digital rendition of a childhood game.",
+    "descriptionFull": [
       "My guess as to why Rock Paper Scissors was so popular when I was a child what that it was simple to learn, and exciting!  Yelling and throwing your hands around is always a good time.",
       "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images that mirror the game outcomes.",
       "The game is played by clicking on the Player 1 option buttons (don't choose new options too quickly, the images take time to load).  Furthermore, unit and feature tests can be run with a local build as described in the Github documentation."
     ],
-    "tech": "Github | Netlify | Node.js, Mocha",
-    "link_1": "https://ca-ma-rps.netlify.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Netlify, Node.js, Mocha",
+    "link1": "https://ca-ma-rps.netlify.com/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   },
   {
     "id": "FE4",
@@ -73,19 +73,19 @@
       "path": "./src/img/icon/contact.png",
       "alt": "planner-icon"
     },
-    "description_short": "A sleek UI to store contacts.",
-    "description_full": [
+    "descriptionShort": "A sleek UI to store contacts.",
+    "descriptionFull": [
       "The Address Book application focuses on implementing styles from a content delivery network (CDN) and using session storage in the browser to mimic CRUD functionality usually implemented with an api, but with a front-end-only solution.",
       "A demonstration flow for the live site, and a process to generate a local build and run feature tests, is provided in the github documentation."
     ],
-    "tech": "Github | Node.js, Cucumber | Semantic-UI",
-    "link_1": "https://ca-ma.github.io/address_book_challenge/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": "Github, Node.js, Cucumber, Semantic-UI",
+    "link1": "https://ca-ma.github.io/address_book_challenge/",
+    "linkLabel1": "website",
+    "link2": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book",
+    "linkLabel2": "github",
+    "link3": "",
+    "linkLabel3": "",
+    "link4": "",
+    "linkLabel4": ""
   }
 ]

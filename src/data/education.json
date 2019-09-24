@@ -8,8 +8,8 @@
     "endDate": "May 2007",
     "location": "Ithaca, New York, USA",
     "description": "It was quite cold, but exciting as well!  Cornell is a large and diverse institution located in my home state of New York.",
-    "pub_1": "xxx.",
-    "pub_link_1": "xxx"
+    "pub1": "xxx.",
+    "pubLink1": "xxx"
   },
   {
     "id": 2,
@@ -20,8 +20,8 @@
     "endDate": "Jun. 2008",
     "location": "La Jolla, California, USA",
     "description": "It was warm and relaxing next to the ocean.",
-    "pub_1": "xxx.",
-    "pub_link_1": "xxx"
+    "pub1": "xxx.",
+    "pubLink1": "xxx"
   },
   {
     "id": 3,
@@ -32,7 +32,7 @@
     "endDate": "Mar. 2013",
     "location": "La Jolla, California, USA",
     "description": "A strong finish.",
-    "pub_1": "xxx.",
-    "pub_link_1": "xxx"
+    "pub1": "xxx.",
+    "pubLink1": "xxx"
   }
 ]
