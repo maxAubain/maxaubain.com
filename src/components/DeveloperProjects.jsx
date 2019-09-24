@@ -2,7 +2,7 @@ import React from "react";
 
 import Projects from "./Projects";
 
-const projectsCategoriesReference = [
+const projectsCategories = [
   {
     title: "Full Stack Applications",
     path: "./src/data/projectsFullStack.json"
@@ -22,16 +22,16 @@ const projectsCategoriesReference = [
 ];
 
 export const DeveloperProjects = () => {
-  const projCatRef = projectsCategoriesReference.map(category => {
+  const projsCats = projectsCategories.map(projectsCategory => {
     return (
       <>
-        <div key={category.title} className="section-title">
-          {category.title}
+        <div key={projectsCategory.title} className="section-title">
+          {projectsCategory.title}
         </div>
-        <Projects path={category.path} />
+        <Projects path={projectsCategory.path} />
       </>
     );
   });
 
-  return <>{projCatRef}</>;
+  return <>{projsCats}</>;
 };
