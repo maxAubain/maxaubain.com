@@ -1,6 +1,6 @@
 import React from "react";
 
-import Projects from "./Projects";
+import { Projects } from "./Projects";
 
 const projectsCategories = [
   {
@@ -24,12 +24,12 @@ const projectsCategories = [
 export const DeveloperProjects = () => {
   const projsCats = projectsCategories.map(projectsCategory => {
     return (
-      <>
-        <div key={projectsCategory.title} className="section-title">
+      <div key={projectsCategory.title}>
+        <div className="section-title">
           {projectsCategory.title}
         </div>
         <Projects path={projectsCategory.path} />
-      </>
+      </div>
     );
   });
 
