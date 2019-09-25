@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { Projects } from "./Projects";
 import { IconSmall } from "./imageComponents/IconSmall";
 
+import "../css/developer-projects.css";
+
 export const DeveloperProjects = () => {
   const [projectsCategories, setProjectsCategories] = useState({
     0: {
