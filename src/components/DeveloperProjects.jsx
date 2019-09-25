@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 
 import { Projects } from "./Projects";
+import { ProjectsCount } from "./ProjectsCount";
 import { IconSmall } from "./imageComponents/IconSmall";
 
 import "../css/developer-projects.css";
 
+let src, alt, projectsContainerClassName, projectsCountClassName, icon;
 export const DeveloperProjects = () => {
-  const [projectsCategories, setProjectsCategories] = useState({
+  const [
+    projectCategoriesAttributes,
+    setProjectCategoriesAttributes
+  ] = useState({
     0: {
       title: "Full Stack Applications",
       path: "./src/data/projectsFullStack.json",
@@ -29,46 +34,53 @@ export const DeveloperProjects = () => {
     }
   });
 
-  let src, alt, projectsContainerClassName, icon;
+  const projectCategories = Object.keys(projectCategoriesAttributes).map(
+    key => {
+      if (projectCategoriesAttributes[key].hidden) {
+        src = "./src/img/icon/plus.png";
+        alt = "plus-icon";
+        projectsContainerClassName = "hidden";
+        projectsCountClassName = "section-title";
+      } else {
+        src = "./src/img/icon/minus.png";
+        alt = "minus-icon";
+        projectsContainerClassName = "";
+        projectsCountClassName = "hidden";
+      }
 
-  const projsCats = Object.keys(projectsCategories).map(key => {
-    if (projectsCategories[key].hidden) {
-      src = "./src/img/icon/plus.png";
-      alt = "plus-icon";
-      projectsContainerClassName = "hidden";
-    } else {
-      src = "./src/img/icon/minus.png";
-      alt = "minus-icon";
-      projectsContainerClassName = "";
+      icon = <IconSmall src={src} alt={alt} />;
+
+      return (
+        <div key={projectCategoriesAttributes[key].title}>
+          <div
+            className="section"
+            onClick={() => {
+              setProjectCategoriesAttributes({
+                ...projectCategoriesAttributes,
+                [key]: {
+                  id: projectCategoriesAttributes[key].id,
+                  title: projectCategoriesAttributes[key].title,
+                  path: projectCategoriesAttributes[key].path,
+                  hidden: !projectCategoriesAttributes[key].hidden
+                }
+              });
+            }}
+          >
+            {icon}
+            <div className="section-title">
+              {projectCategoriesAttributes[key].title}{" "}
+            </div>
+            <div className={projectsCountClassName}>
+              <ProjectsCount path={projectCategoriesAttributes[key].path} />
+            </div>
+          </div>
+          <div className={projectsContainerClassName}>
+            <Projects path={projectCategoriesAttributes[key].path} />
+          </div>
+        </div>
+      );
     }
+  );
 
-    icon = <IconSmall src={src} alt={alt} />;
-
-    return (
-      <div key={projectsCategories[key].title}>
-        <div
-          className="section"
-          onClick={() => {
-            setProjectsCategories({
-              ...projectsCategories,
-              [key]: {
-                id: projectsCategories[key].id,
-                title: projectsCategories[key].title,
-                path: projectsCategories[key].path,
-                hidden: !projectsCategories[key].hidden
-              }
-            });
-          }}
-        >
-          {icon}
-          <div className="section-title">{projectsCategories[key].title}</div>
-        </div>
-        <div className={projectsContainerClassName}>
-          <Projects path={projectsCategories[key].path} />
-        </div>
-      </div>
-    );
-  });
-
-  return <>{projsCats}</>;
+  return <>{projectCategories}</>;
 };

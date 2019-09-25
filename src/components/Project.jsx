@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { IconSmall } from "./imageComponents/IconSmall";
 
-export const Project = props => {
+export const Project = ({ project }) => {
   const [projectAttributes, setProjectAttributes] = useState({
     hidden: true
   });
@@ -16,7 +16,7 @@ export const Project = props => {
     projectSummaryTitleClassName = "project-summary-title current";
   }
 
-  const descriptionFull = props.project.descriptionFull.map(paragraph => {
+  const descriptionFull = project.descriptionFull.map(paragraph => {
     return <p key={paragraph}>{paragraph}</p>;
   });
 
@@ -26,29 +26,29 @@ export const Project = props => {
         className="project-summary"
         onClick={() => {setProjectAttributes({ hidden: !projectAttributes.hidden })}}
       >
-        <IconSmall src={props.project.image.path} alt={props.project.image.alt} />
-        <div className={projectSummaryTitleClassName}>{props.project.title}</div>
+        <IconSmall src={project.image.path} alt={project.image.alt} />
+        <div className={projectSummaryTitleClassName}>{project.title}</div>
         <div className="project-summary-description">
-          {props.project.descriptionShort}
+          {project.descriptionShort}
         </div>
       </div>
 
       <div className={projectContainerClassName}>
         <div className="project-details-padding">
           {descriptionFull}
-          <strong>Technology Stack: {props.project.tech}</strong>
+          <strong>Technology Stack: {project.tech}</strong>
           <div className="project-details-link-container">
-            <a href={props.project.link1} className="project-details-link">
-              {props.project.linkLabel1}
+            <a href={project.link1} className="project-details-link">
+              {project.linkLabel1}
             </a>
-            <a href={props.project.link2} className="project-details-link">
-              {props.project.linkLabel2}
+            <a href={project.link2} className="project-details-link">
+              {project.linkLabel2}
             </a>
-            <a href={props.project.link3} className="project-details-link">
-              {props.project.linkLabel3}
+            <a href={project.link3} className="project-details-link">
+              {project.linkLabel3}
             </a>
-            <a href={props.project.link4} className="project-details-link">
-              {props.project.linkLabel4}
+            <a href={project.link4} className="project-details-link">
+              {project.linkLabel4}
             </a>
           </div>
         </div>
