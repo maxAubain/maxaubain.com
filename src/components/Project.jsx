@@ -1,65 +1,58 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-/* The Project component receives the information of a single project as
-props from Projects, formats it, and returns. */
-class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projectFull: "project-details-container activate" };
+import { IconSmall } from "./imageComponents/IconSmall";
+
+export const Project = ({ project }) => {
+  const [projectAttributes, setProjectAttributes] = useState({
+    hidden: true
+  });
+
+  let projectContainerClassName, projectSummaryTitleClassName;
+  if (projectAttributes.hidden) {
+    projectContainerClassName = "project-details-container hidden";
+    projectSummaryTitleClassName = "project-summary-title";
+  } else {
+    projectContainerClassName = "project-details-container";
+    projectSummaryTitleClassName = "project-summary-title current";
   }
 
-  render() {
-    const description_full = this.props.project.description_full.map(p => {
-      return <p key={p}>{p}</p>;
-    });
+  const descriptionFull = project.descriptionFull.map(paragraph => {
+    return <p key={paragraph}>{paragraph}</p>;
+  });
 
-    /* menuActivate() enables the showing/hiding of the 'project-details' 
-    div to keep the page tidy and easy to read. */
-    const menuActivate = () => {
-      this.state.projectFull == "project-details-container"
-        ? this.setState({ projectFull: "project-details-container activate" })
-        : this.setState({ projectFull: "project-details-container" });
-    };
+  return (
+    <>
+      <div
+        className="project-summary"
+        onClick={() => {setProjectAttributes({ hidden: !projectAttributes.hidden })}}
+      >
+        <IconSmall src={project.image.path} alt={project.image.alt} />
+        <div className={projectSummaryTitleClassName}>{project.title}</div>
+        <div className="project-summary-description">
+          {project.descriptionShort}
+        </div>
+      </div>
 
-    return (
-      <>
-        <div className="project-summary" onClick={menuActivate}>
-          <img
-            className="project-summary-icon"
-            src={this.props.project.image.path}
-            alt={this.props.project.image.alt}
-            height="30"
-            width="30"
-          ></img>
-          <div className="project-summary-title">{this.props.project.title}</div>
-          <div className="project-summary-description">
-            {this.props.project.description_short}
+      <div className={projectContainerClassName}>
+        <div className="project-details-padding">
+          {descriptionFull}
+          <strong>Technology Stack: {project.tech}</strong>
+          <div className="project-details-link-container">
+            <a href={project.link1} className="project-details-link">
+              {project.linkLabel1}
+            </a>
+            <a href={project.link2} className="project-details-link">
+              {project.linkLabel2}
+            </a>
+            <a href={project.link3} className="project-details-link">
+              {project.linkLabel3}
+            </a>
+            <a href={project.link4} className="project-details-link">
+              {project.linkLabel4}
+            </a>
           </div>
         </div>
-
-        <div className={this.state.projectFull}>
-          <div className="project-details-padding">
-            {description_full}
-            <strong>Technologies: {this.props.project.tech}</strong>
-            <div className="project-details-link-container">
-              <a href={this.props.project.link_1} className="project-details-link">
-                {this.props.project.link_1_button}
-              </a>
-              <a href={this.props.project.link_2} className="project-details-link">
-                {this.props.project.link_2_button}
-              </a>
-              <a href={this.props.project.link_3} className="project-details-link">
-                {this.props.project.link_3_button}
-              </a>
-              <a href={this.props.project.link_4} className="project-details-link">
-                {this.props.project.link_4_button}
-              </a>
-            </div>
-          </div>
-        </div>
-      </>
-    );
-  }
-}
-
-export default Project;
+      </div>
+    </>
+  );
+};

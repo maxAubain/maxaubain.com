@@ -1,26 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 
-import Projects from "./Projects";
+import { Projects } from "./Projects";
+import { ProjectsCount } from "./ProjectsCount";
+import { IconSmall } from "./imageComponents/IconSmall";
 
-/* DeveloperProjects returns instances of the Projects component which contain types of projects,
-where the return for each project is formatted by the Project component. There are four projects 
-categories: Full Stack, Front End, Mobile, and Exercises.  */
-const DeveloperProjects = () => {
-  return (
-    <>
-      <div className="section-title">Full Stack Applications</div>
-      <Projects path={"./src/data/projectsFullStack.json"} />
+import "../css/developer-projects.css";
 
-      <div className="section-title">Front End Applications</div>
-      <Projects path={"./src/data/projectsFrontEnd.json"} />
+let src, alt, projectsContainerClassName, projectsCountClassName, icon;
+export const DeveloperProjects = () => {
+  const [
+    projectCategoriesAttributes,
+    setProjectCategoriesAttributes
+  ] = useState({
+    0: {
+      title: "Full Stack Applications",
+      path: "./src/data/projectsFullStack.json",
+      hidden: true
+    },
+    1: {
+      title: "Front End Applications",
+      path: "./src/data/projectsFrontEnd.json",
+      hidden: true
+    },
+    2: {
+      title: "Mobile Applications",
+      path: "./src/data/projectsMobile.json",
+      hidden: true
+    },
+    3: {
+      title: "Coding Exercises",
+      path: "./src/data/projectsExercises.json",
+      hidden: true
+    }
+  });
 
-      <div className="section-title">Mobile Applications</div>
-      <Projects path={"./src/data/projectsMobile.json"} />
+  const projectCategories = Object.keys(projectCategoriesAttributes).map(
+    key => {
+      if (projectCategoriesAttributes[key].hidden) {
+        src = "./src/img/icon/plus.png";
+        alt = "plus-icon";
+        projectsContainerClassName = "hidden";
+        projectsCountClassName = "section-title";
+      } else {
+        src = "./src/img/icon/minus.png";
+        alt = "minus-icon";
+        projectsContainerClassName = "";
+        projectsCountClassName = "hidden";
+      }
 
-      <div className="section-title">Coding Exercises</div>
-      <Projects path={"./src/data/projectsExercises.json"} />
-    </>
+      icon = <IconSmall src={src} alt={alt} />;
+
+      return (
+        <div key={projectCategoriesAttributes[key].title}>
+          <div
+            className="section"
+            onClick={() => {
+              setProjectCategoriesAttributes({
+                ...projectCategoriesAttributes,
+                [key]: {
+                  id: projectCategoriesAttributes[key].id,
+                  title: projectCategoriesAttributes[key].title,
+                  path: projectCategoriesAttributes[key].path,
+                  hidden: !projectCategoriesAttributes[key].hidden
+                }
+              });
+            }}
+          >
+            {icon}
+            <div className="section-title">
+              {projectCategoriesAttributes[key].title}{" "}
+            </div>
+            <div className={projectsCountClassName}>
+              <ProjectsCount path={projectCategoriesAttributes[key].path} />
+            </div>
+          </div>
+          <div className={projectsContainerClassName}>
+            <Projects path={projectCategoriesAttributes[key].path} />
+          </div>
+        </div>
+      );
+    }
   );
-};
 
-export default DeveloperProjects;
+  return <>{projectCategories}</>;
+};
