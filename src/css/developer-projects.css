@@ -20,6 +20,10 @@
   color: rgb(0, 63, 158)
 }
 
+.current {
+  color: #0f84e4;
+}
+
 .project-summary-description {
   padding: 12px 0 0 0;
 }
@@ -28,7 +32,7 @@
   background-color: white;
 }
 
-.project-details-container.hidden {
+.hidden {
   max-height: 0;
   overflow: hidden;
 }

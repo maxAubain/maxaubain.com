@@ -25,7 +25,7 @@ export const NavBar = () => {
   // navLinkClasses are not stored in State to avoid an infinite loop on render
   Object.keys(navLinkClasses).forEach(key => {
     if (`/${key}` === location.pathname) {
-      Object.assign(navLinkClasses, { [key]: "navlink navlink-current" });
+      Object.assign(navLinkClasses, { [key]: "navlink current" });
     } else {
       Object.assign(navLinkClasses, { [key]: "navlink" });
     }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Projects } from "./Projects";
-import { IconSmall } from "./imageComponents/IconSmall"
+import { IconSmall } from "./imageComponents/IconSmall";
 
 export const DeveloperProjects = () => {
   const [projectsCategories, setProjectsCategories] = useState({
@@ -27,12 +27,20 @@ export const DeveloperProjects = () => {
     }
   });
 
-  let icon;
-  //let projectsCategoryClassName;
+  let src, alt, projectsContainerClassName, icon;
+
   const projsCats = Object.keys(projectsCategories).map(key => {
-    projectsCategories[key].hidden
-      ? icon = (<IconSmall src="./src/img/icon/plus.png" alt="plus-icon"/>)
-      : icon = (<IconSmall src="./src/img/icon/minus.png" alt="minus-icon" />);
+    if (projectsCategories[key].hidden) {
+      src = "./src/img/icon/plus.png";
+      alt = "plus-icon";
+      projectsContainerClassName = "hidden";
+    } else {
+      src = "./src/img/icon/minus.png";
+      alt = "minus-icon";
+      projectsContainerClassName = "";
+    }
+
+    icon = <IconSmall src={src} alt={alt} />;
 
     return (
       <div key={projectsCategories[key].title}>
@@ -40,7 +48,8 @@ export const DeveloperProjects = () => {
           className="section"
           onClick={() => {
             setProjectsCategories({
-              ...projectsCategories, [key]: {
+              ...projectsCategories,
+              [key]: {
                 id: projectsCategories[key].id,
                 title: projectsCategories[key].title,
                 path: projectsCategories[key].path,
@@ -50,10 +59,11 @@ export const DeveloperProjects = () => {
           }}
         >
           {icon}
-          &nbsp;
           <div className="section-title">{projectsCategories[key].title}</div>
         </div>
-        <Projects path={projectsCategories[key].path} />
+        <div className={projectsContainerClassName}>
+          <Projects path={projectsCategories[key].path} />
+        </div>
       </div>
     );
   });

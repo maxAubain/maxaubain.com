@@ -18,13 +18,13 @@ body {
   color: rgb(0, 63, 158);
 }
 
-.navlink-current {
+.current {
   color: #0f84e4;
 }
 
 a {
   text-decoration: none;
-  color: #0f84e4;
+  color: rgb(0, 63, 158);
 }
 
 p {

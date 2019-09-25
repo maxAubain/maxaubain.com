@@ -14,7 +14,7 @@ export const Projects = props => {
     }
   });
 
-  let projectsRender = projects.map(project => {
+  const projectsRender = projects.map(project => {
     return (
       <div key={project.id}>
         <Project project={project} />
