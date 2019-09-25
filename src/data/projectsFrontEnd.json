@@ -11,7 +11,7 @@
       "I can imagine every web developer feels the need to create a personal website.",
       "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you see here."
     ],
-    "tech": "Github, Netlify deployement, Node.js, React v16.9 with ES8, CSS3",
+    "tech": "Github, Netlify deployment, Node.js, React v16.9 with ES8, CSS3",
     "link1": "https://max-aubain.netlify.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/maxAubain/portfolio#front-end-application-professional-portfolio",
@@ -78,7 +78,7 @@
       "The Address Book application focuses on implementing styles from a content delivery network (CDN) and using session storage in the browser to mimic CRUD functionality usually implemented with an api, but with a front-end-only solution.",
       "A demonstration flow for the live site, and a process to generate a local build and run feature tests, is provided in the github documentation."
     ],
-    "tech": "Github and GH-pages deployment, Node.js, Cucumber TDD, Semantic-UI",
+    "tech": "Github, GH-pages deployment, Node.js, Cucumber TDD, Semantic-UI CDN",
     "link1": "https://ca-ma.github.io/address_book_challenge/",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book",

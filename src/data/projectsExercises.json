@@ -12,7 +12,7 @@
       "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
       "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github, Heroku, Ruby on Rails, Cucumber, Rspec, SemaphoreCI, Coveralls, Pivotal Tracker",
+    "tech": "Github, Heroku deployment, Ruby on Rails, Cucumber and Rspec TDD, SemaphoreCI, Coveralls, Pivotal Tracker project tracking",
     "link1": "https://rails-playdate.herokuapp.com/",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/playdate-june2019",
@@ -34,7 +34,7 @@
       "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application on the live site performs the required calculations to produce a BMI value using Metric and Imperial units.",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github, Node.js, Mocha",
+    "tech": "Github, GH-pages deployment, Node.js, Mocha TDD",
     "link1": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator",
@@ -57,7 +57,7 @@
       "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github, Node.js, Mocha",
+    "tech": "Github, GH-pages deployment, Node.js, Mocha TDD",
     "link1": "https://ca-ma.github.io/fizzbuzz_challenge/",
     "linkLabel1": "website",
     "link2": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz",
@@ -79,7 +79,7 @@
       "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github, Ruby, Rspec",
+    "tech": "Github, Ruby, Rspec TDD",
     "link1": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications",
     "linkLabel1": "github",
     "link2": "",
@@ -101,7 +101,7 @@
       "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github, Ruby, Rspec",
+    "tech": "Github, Ruby, Rspec TDD",
     "link1": "https://github.com/CA-ma/atm_challenge#atm-group-challenge",
     "linkLabel1": "github",
     "link2": "",

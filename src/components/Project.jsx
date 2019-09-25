@@ -35,7 +35,7 @@ export const Project = props => {
       <div className={projectClass}>
         <div className="project-details-padding">
           {descriptionFull}
-          <strong>Technologies: {project.tech}</strong>
+          <strong>Technology Stack: {project.tech}</strong>
           <div className="project-details-link-container">
             <a href={project.link1} className="project-details-link">
               {project.linkLabel1}
