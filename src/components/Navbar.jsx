@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 let navLinkClasses = {
   profile: "",
   webDevelopment: "",
-  curriculumVitae: ""
+  curriculumVitae: "",
+  skills: ""
 };
 
 export const NavBar = () => {
@@ -60,6 +61,13 @@ export const NavBar = () => {
         onClick={handleViewReset}
       >
         Curriculum Vitae
+      </NavLink>
+      <NavLink
+        className={navLinkClasses.skills}
+        to="skills"
+        onClick={handleViewReset}
+      >
+        Skills
       </NavLink>
       {/* <NavLink className="navlink" to="TravelBlog" onClick={handleViewReset}>
           Travel Blog

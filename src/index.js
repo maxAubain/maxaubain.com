@@ -6,6 +6,7 @@ import { Profile } from "./components/Profile";
 import { NavBar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { DeveloperProjects } from "./components/DeveloperProjects";
+import { Skills } from "./components/Skills"
 import { CurriculumVitae } from "./components/CurriculumVitae";
 // import { TravelBlog } from "./components/TravelBlog";
 
@@ -23,6 +24,7 @@ const App = () => {
               <Redirect exact from="/" to="/profile" />
               <Route path="/profile" component={Profile} />
               <Route path="/webDevelopment" component={DeveloperProjects} />
+              <Route path="/skills" component={Skills} />
               <Route path="/curriculumVitae" component={CurriculumVitae} />
               {/* <Route path="/TravelBlog" component={TravelBlog}></Route> */}
             </Switch>
