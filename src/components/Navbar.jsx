@@ -12,11 +12,9 @@ export const NavBar = () => {
   const [navBarClass, setNavBarClass] = useState("navbar");
 
   const handleNavBarShadow = event => {
-    if (document.documentElement.scrollTop > 10) {
-      setNavBarClass("navbar floating-navbar");
-    } else {
-      setNavBarClass("navbar");
-    }
+    document.documentElement.scrollTop > 10
+      ? setNavBarClass("navbar floating-navbar")
+      : setNavBarClass("navbar");
   };
 
   useEffect(() => {
