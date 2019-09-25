@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { IconSmall } from "./imageComponents/IconSmall"
+
 export const Project = props => {
   const [projectClass, setProjectClass] = useState(
     "project-details-container hidden"
@@ -19,13 +21,7 @@ export const Project = props => {
   return (
     <>
       <div className="project-summary" onClick={handleProjectShow}>
-        <img
-          className="project-summary-icon"
-          src={project.image.path}
-          alt={project.image.alt}
-          height="30"
-          width="30"
-        ></img>
+        <IconSmall src={project.image.path} alt={project.image.alt} />
         <div className="project-summary-title">{project.title}</div>
         <div className="project-summary-description">
           {project.descriptionShort}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Projects } from "./Projects";
+import { IconSmall } from "./imageComponents/IconSmall"
 
 export const DeveloperProjects = () => {
   const [projectsCategories, setProjectsCategories] = useState({
@@ -30,22 +31,8 @@ export const DeveloperProjects = () => {
   //let projectsCategoryClassName;
   const projsCats = Object.keys(projectsCategories).map(key => {
     projectsCategories[key].hidden
-      ? (icon = (
-          <img
-            className="project-summary-icon"
-            src="./src/img/icon/plus.png"
-            height="30"
-            width="30"
-          ></img>
-        ))
-      : (icon = (
-          <img
-            className="project-summary-icon"
-            src="./src/img/icon/minus.png"
-            height="30"
-            width="30"
-          ></img>
-        ));
+      ? icon = (<IconSmall src="./src/img/icon/plus.png" alt="plus-icon"/>)
+      : icon = (<IconSmall src="./src/img/icon/minus.png" alt="minus-icon" />);
 
     return (
       <div key={projectsCategories[key].title}>
