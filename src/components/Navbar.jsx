@@ -62,16 +62,6 @@ export const NavBar = () => {
       >
         Curriculum Vitae
       </NavLink>
-      <NavLink
-        className={navLinkClasses.skills}
-        to="skills"
-        onClick={handleViewReset}
-      >
-        Skills
-      </NavLink>
-      {/* <NavLink className="navlink" to="TravelBlog" onClick={handleViewReset}>
-          Travel Blog
-        </NavLink> */}
     </div>
   );
 };
