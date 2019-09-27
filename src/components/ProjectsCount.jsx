@@ -13,8 +13,6 @@ export const ProjectsCount = ({ path }) => {
     }
   });
 
-  console.log(projectsCount);
-
   if (projectsCount > 0) {
     return <>&nbsp;({projectsCount})</>;
   } else {
