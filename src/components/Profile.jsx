@@ -4,7 +4,7 @@ import "../css/profile.css";
 
 export const Profile = () => {
   return (
-    <>
+    <div className="profile-wrapper">
       <div className="intro">
         <div className="section-profile headshot-container">
           <div>
@@ -124,6 +124,6 @@ export const Profile = () => {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

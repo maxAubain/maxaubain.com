@@ -82,5 +82,5 @@ export const DeveloperProjects = () => {
     }
   );
 
-  return <>{projectCategories}</>;
+  return <div className="project-categories-wrapper">{projectCategories}</div>;
 };
