@@ -2,15 +2,11 @@ import React, { useState } from "react";
 
 import { Skills } from "./Skills";
 
+import "../css/curriculumVitae.css";
+
 export const CurriculumVitae = () => {
-  const components = ["Skills", "Recommendations", "Education", "Publications"]
+  const components = ["Skills", "Recommendations", "Education", "Publications"];
   const [currentComponent, setCurrentComponent] = useState(components[0]);
-  const [componentHidden, setComponentHidden] = useState({
-    skills: false,
-    recommendations: true,
-    education: true,
-    publications: true
-  });
 
   let component;
   switch (currentComponent) {
@@ -43,22 +39,29 @@ export const CurriculumVitae = () => {
       break;
   }
 
+  let navlinkSectionClassName;
   const componentsSelectors = components.map(component => {
-    
+    component === currentComponent
+      ? (navlinkSectionClassName = "navlink-section-current")
+      : (navlinkSectionClassName = "navlink-section");
+
     return (
-      <div className="section-title"
+      <div
+        key={component}
+        className={navlinkSectionClassName}
         onClick={() => {
-        setCurrentComponent(component)
-      }}>{component}</div>
+          setCurrentComponent(component);
+        }}
+      >
+        {component}
+      </div>
     );
-  })
+  });
 
   return (
     <>
-      <div>
-        {componentsSelectors}
-      </div>
-      {component}
+      <div className="navlink-section-container">{componentsSelectors}</div>
+      <div className="cv-component-container">{component}</div>
     </>
   );
 };

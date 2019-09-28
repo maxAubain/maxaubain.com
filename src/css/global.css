@@ -12,25 +12,44 @@ body {
 /* Tags */
 .navlink {
   text-decoration: none;
-  padding: 0 10px 0 0;
-  margin: 0 5px 0 0;
+  margin: 10px;
   font-size: 20px;
-  color: rgb(0, 63, 158);
+  color: black;
+  transition: 0.3s;
+}
+
+.navlink:hover {
+  color:rgb(0, 63, 158);
 }
 
 .navlink-current {
+  margin: 10px;
+  font-size: 20px;
   color: #0f84e4;
 }
 
 .navlink-section {
   cursor: pointer;
-  padding: 0 10px 0 0;
-  margin: 0 5px 0 0;
+  margin: 10px;
   font-size: 16px;
+  transition: 0.3s;
+}
+
+.navlink-section:hover {
+  color:rgb(0, 63, 158);
 }
 
 .navlink-section-current {
-  color: rgb(34, 34, 34);
+  cursor: pointer;
+  margin: 10px;
+  font-size: 16px;
+  color: #0f84e4;
+}
+
+.navlink-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0 0 0;
 }
 
 a {
@@ -50,6 +69,7 @@ p {
   position: fixed;
   width: 100vw;
   background-color: rgb(212, 239, 255);
+  border-bottom: 1px solid white;
 }
 
 .navbar {
