@@ -10,12 +10,12 @@ let navLinkClasses = {
 
 export const NavBar = () => {
   // Handle navbar shadow
-  const [navBarClass, setNavBarClass] = useState("navbar");
+  const [navBarContainerClass, setNavBarContainerClass] = useState("navbar-container");
 
   const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
-      ? setNavBarClass("navbar floating-navbar")
-      : setNavBarClass("navbar");
+      ? setNavBarContainerClass("navbar-container floating-navbar")
+      : setNavBarContainerClass("navbar-container");
   };
 
   useEffect(() => {
@@ -25,11 +25,9 @@ export const NavBar = () => {
   // Handle Navlink style classes
   // navLinkClasses are not stored in State to avoid an infinite loop on render
   Object.keys(navLinkClasses).forEach(key => {
-    if (`/${key}` === location.pathname) {
-      Object.assign(navLinkClasses, { [key]: "navlink current" });
-    } else {
-      Object.assign(navLinkClasses, { [key]: "navlink" });
-    }
+    `/${key}` === location.pathname
+      ? Object.assign(navLinkClasses, { [key]: "navlink navlink-current" })
+      : Object.assign(navLinkClasses, { [key]: "navlink" });
   });
 
   const handleViewReset = () =>
@@ -40,28 +38,30 @@ export const NavBar = () => {
     });
 
   return (
-    <div id="navbar" className={navBarClass}>
-      <NavLink
-        className={navLinkClasses.profile}
-        to="/profile"
-        onClick={handleViewReset}
-      >
-        Profile
-      </NavLink>
-      <NavLink
-        className={navLinkClasses.webDevelopment}
-        to="webDevelopment"
-        onClick={handleViewReset}
-      >
-        Web Development
-      </NavLink>
-      <NavLink
-        className={navLinkClasses.curriculumVitae}
-        to="curriculumVitae"
-        onClick={handleViewReset}
-      >
-        Curriculum Vitae
-      </NavLink>
+    <div className={navBarContainerClass}>
+      <div id="navbar" className="navbar">
+        <NavLink
+          className={navLinkClasses.profile}
+          to="/profile"
+          onClick={handleViewReset}
+        >
+          Profile
+        </NavLink>
+        <NavLink
+          className={navLinkClasses.webDevelopment}
+          to="webDevelopment"
+          onClick={handleViewReset}
+        >
+          Web Development
+        </NavLink>
+        <NavLink
+          className={navLinkClasses.curriculumVitae}
+          to="curriculumVitae"
+          onClick={handleViewReset}
+        >
+          Curriculum Vitae
+        </NavLink>
+      </div>
     </div>
   );
 };

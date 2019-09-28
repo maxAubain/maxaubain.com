@@ -12,14 +12,25 @@ body {
 /* Tags */
 .navlink {
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px 0 0;
+  margin: 0 5px 0 0;
   font-size: 20px;
   color: rgb(0, 63, 158);
 }
 
-.current {
+.navlink-current {
   color: #0f84e4;
+}
+
+.navlink-section {
+  cursor: pointer;
+  padding: 0 10px 0 0;
+  margin: 0 5px 0 0;
+  font-size: 16px;
+}
+
+.navlink-section-current {
+  color: rgb(34, 34, 34);
 }
 
 a {
@@ -33,13 +44,19 @@ p {
 }
 
 /* NavBar */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(212, 239, 255);
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  position: fixed;
-  width: 100vw;
+  justify-content: left;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgb(212, 239, 255);
@@ -71,12 +88,20 @@ p {
   .page-content {
     padding-top: 80px;
   }
+
+  .navbar{
+    width: 100vw;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .page-content {
     padding-top: 50px;
+  }
+
+  .navbar{
+    width: 100vw;
   }
 }
 
@@ -86,5 +111,9 @@ p {
     width: 860px;
     margin: 0 auto;
     padding-top: 50px;
+  }
+
+  .navbar{
+    width: 860px;
   }
 }

@@ -13,7 +13,7 @@ export const Project = ({ project }) => {
     projectSummaryTitleClassName = "project-summary-title";
   } else {
     projectContainerClassName = "project-details-container";
-    projectSummaryTitleClassName = "project-summary-title current";
+    projectSummaryTitleClassName = "project-summary-title navlink-current";
   }
 
   const descriptionFull = project.descriptionFull.map(paragraph => {
