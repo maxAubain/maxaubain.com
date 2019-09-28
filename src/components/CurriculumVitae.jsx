@@ -8,6 +8,25 @@ export const CurriculumVitae = () => {
   const components = ["Skills", "Recommendations", "Education", "Publications"];
   const [currentComponent, setCurrentComponent] = useState(components[0]);
 
+  let navlinkSectionClassName;
+  const componentsSelectors = components.map(component => {
+    component === currentComponent
+      ? (navlinkSectionClassName = "navlink-section-current")
+      : (navlinkSectionClassName = "navlink-section");
+
+    return (
+      <div
+        key={component}
+        className={navlinkSectionClassName}
+        onClick={() => {
+          setCurrentComponent(component);
+        }}
+      >
+        {component}
+      </div>
+    );
+  });
+
   let component;
   switch (currentComponent) {
     case "Skills":
@@ -57,24 +76,7 @@ export const CurriculumVitae = () => {
       break;
   }
 
-  let navlinkSectionClassName;
-  const componentsSelectors = components.map(component => {
-    component === currentComponent
-      ? (navlinkSectionClassName = "navlink-section-current")
-      : (navlinkSectionClassName = "navlink-section");
 
-    return (
-      <div
-        key={component}
-        className={navlinkSectionClassName}
-        onClick={() => {
-          setCurrentComponent(component);
-        }}
-      >
-        {component}
-      </div>
-    );
-  });
 
   return (
     <>

@@ -27,6 +27,7 @@
 
 .project-summary-description {
   padding: 12px 0 0 0;
+  text-align: left;
 }
 
 .project-details-container {
@@ -87,7 +88,6 @@
   .project-summary-description {
     width: 100%;
     padding: 0 0 8px 8px;
-    text-align: left;
   }
   
   .project-details-container {
@@ -109,7 +109,6 @@
   .project-summary-description {
     width: 45%;
     padding: 6px 0 6px 0;
-    text-align: left;
   }
 
   .project-details-container {
@@ -132,7 +131,6 @@
   .project-summary-description {
     width: 50%;
     padding: 6px 0 6px 0;
-    text-align: center;
   }
 
   .project-details-container {

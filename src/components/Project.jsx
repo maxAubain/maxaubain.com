@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { IconSmall } from "./imageComponents/IconSmall";
+import { IconSmall } from "./common/IconSmall";
 
 export const Project = ({ project }) => {
   const [projectAttributes, setProjectAttributes] = useState({
