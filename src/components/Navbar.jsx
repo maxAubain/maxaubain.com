@@ -10,26 +10,19 @@ let navLinkClasses = {
 
 export const NavBar = () => {
   // Handle navbar shadow
-  const [navBarContainerClass, setNavBarContainerClass] = useState("navbar-container");
-
+  const [navBarContainerClass, setNavBarContainerClass] = useState(
+    "navbar-container"
+  );
   const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
       ? setNavBarContainerClass("navbar-container floating-navbar")
       : setNavBarContainerClass("navbar-container");
   };
-
   useEffect(() => {
     window.addEventListener("scroll", handleNavBarShadow);
   });
 
-  // Handle Navlink style classes
-  // navLinkClasses are not stored in State to avoid an infinite loop on render
-  Object.keys(navLinkClasses).forEach(key => {
-    `/${key}` === location.pathname
-      ? Object.assign(navLinkClasses, { [key]: "navlink navlink-current" })
-      : Object.assign(navLinkClasses, { [key]: "navlink" });
-  });
-
+  // Handle view reset on navlink click
   const handleViewReset = () =>
     window.scrollTo({
       top: 0,
@@ -37,9 +30,17 @@ export const NavBar = () => {
       behavior: "auto"
     });
 
+  // Handle Navlink style classes
+  // navLinkClasses are not stored in State to avoid an infinite loop on render
+  Object.keys(navLinkClasses).forEach(key => {
+    `/${key}` === location.pathname
+      ? Object.assign(navLinkClasses, { [key]: "navlink-current" })
+      : Object.assign(navLinkClasses, { [key]: "navlink" });
+  });
+
   return (
     <div className={navBarContainerClass}>
-      <div id="navbar" className="navbar">
+      <div className="navbar">
         <NavLink
           className={navLinkClasses.profile}
           to="/profile"
