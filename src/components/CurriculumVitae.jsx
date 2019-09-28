@@ -3,29 +3,62 @@ import React, { useState } from "react";
 import { Skills } from "./Skills";
 
 export const CurriculumVitae = () => {
-  const [currentComponent, setCurrentComponent] = useState("Skills");
+  const components = ["Skills", "Recommendations", "Education", "Publications"]
+  const [currentComponent, setCurrentComponent] = useState(components[0]);
+  const [componentHidden, setComponentHidden] = useState({
+    skills: false,
+    recommendations: true,
+    education: true,
+    publications: true
+  });
 
   let component;
   switch (currentComponent) {
     case "Skills":
       component = <Skills />;
       break;
+    case "Recommendations":
+      component = (
+        <p>
+          For the original posts of the recommendations, please visit my &nbsp;
+          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+        </p>
+      );
+      break;
     case "Education":
-      component = <p>Education</p>;
+      component = (
+        <p>
+          For more information about education, please visit my &nbsp;
+          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+        </p>
+      );
+      break;
+    case "Publications":
+      component = (
+        <p>
+          For more information about publications, please visit my &nbsp;
+          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+        </p>
+      );
+      break;
   }
+
+  const componentsSelectors = components.map(component => {
+    
+    return (
+      <div className="section-title"
+        onClick={() => {
+        setCurrentComponent(component)
+      }}>{component}</div>
+    );
+  })
 
   return (
     <>
-      <p className="navlink" onClick={() => { setCurrentComponent("Skills") }}>Skills</p>
-      <p className="navlink" onClick={() => { setCurrentComponent("Education") }}>Education</p>
-      <p>Current Section: {currentComponent}</p>
+      <div>
+        {componentsSelectors}
+      </div>
       {component}
     </>
   );
 };
-
-/*      <p>
-        Coming soon. For more information about education, work experience, and
-        publications, please visit my{" "}
-        <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
-      </p> */

@@ -4,7 +4,7 @@ import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 import { IconSmall } from "./imageComponents/IconSmall";
 
-import "../css/developer-projects.css";
+import "../css/developerProjects.css";
 
 let src, alt, projectsContainerClassName, projectsCountClassName, icon;
 export const DeveloperProjects = () => {
@@ -15,7 +15,7 @@ export const DeveloperProjects = () => {
     0: {
       title: "Full Stack Applications",
       path: "./src/data/projectsFullStack.json",
-      hidden: true
+      hidden: false
     },
     1: {
       title: "Front End Applications",
