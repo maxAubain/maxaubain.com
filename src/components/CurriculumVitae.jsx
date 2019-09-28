@@ -16,24 +16,42 @@ export const CurriculumVitae = () => {
     case "Recommendations":
       component = (
         <p>
-          For the original posts of the recommendations, please visit my &nbsp;
-          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+          For the original posts of the recommendations, please visit my&nbsp;
+          <a
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
+            }}
+          >
+            Linkedin Profile
+          </a>.
         </p>
       );
       break;
     case "Education":
       component = (
         <p>
-          For more information about education, please visit my &nbsp;
-          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+          For more information about education, please visit my&nbsp;
+          <a
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
+            }}
+          >
+            Linkedin Profile
+          </a>.
         </p>
       );
       break;
     case "Publications":
       component = (
         <p>
-          For more information about publications, please visit my &nbsp;
-          <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.
+          For more information about publications, please visit my&nbsp;
+          <a
+            onClick={() => {
+              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
+            }}
+          >
+            Linkedin Profile
+          </a>.
         </p>
       );
       break;
