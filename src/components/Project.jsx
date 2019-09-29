@@ -40,26 +40,34 @@ export const Project = ({ project }) => {
         <div className="project-details-padding">
           <div className="project-details-link-container">
             Links:
-            <NewTabLink
-              url={project.link1}
-              linkText={project.linkLabel1}
-              className="project-details-link weblink"
-            />
-            <NewTabLink
-              url={project.link2}
-              linkText={project.linkLabel2}
-              className="project-details-link weblink"
-            />
-            <NewTabLink
-              url={project.link3}
-              linkText={project.linkLabel3}
-              className="project-details-link weblink"
-            />
-            <NewTabLink
-              url={project.link4}
-              linkText={project.linkLabel4}
-              className="project-details-link weblink"
-            />
+            <div>
+              <NewTabLink
+                url={project.link1}
+                linkText={project.linkLabel1}
+                className="project-details-link weblink"
+              />
+            </div>
+            <div>
+              <NewTabLink
+                url={project.link2}
+                linkText={project.linkLabel2}
+                className="project-details-link weblink"
+              />
+            </div>
+            <div>
+              <NewTabLink
+                url={project.link3}
+                linkText={project.linkLabel3}
+                className="project-details-link weblink"
+              />
+            </div>
+            <div>
+              <NewTabLink
+                url={project.link4}
+                linkText={project.linkLabel4}
+                className="project-details-link weblink"
+              />
+            </div>
           </div>
           <div className="project-description-full-container">
             <div className="project-description-full">
@@ -68,7 +76,13 @@ export const Project = ({ project }) => {
             </div>
             <div className="project-stack">
               <strong>Technology Stack</strong>
-              <p>{project.tech}</p>
+              <p>Version control: {project.versionControl}</p>
+              <p>Deployment: {project.deployment}</p>
+              <p>Application frameworks: {project.applicationFrameworks}</p>
+              <p>Testing frameworks: {project.tdd}</p>
+              <p>Libraries and modules: {project.libraries}</p>
+              <p>Styling: {project.style}</p>
+              <p>Project management: {project.pm}</p>
             </div>
           </div>
         </div>
