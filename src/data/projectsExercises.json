@@ -12,15 +12,20 @@
       "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
       "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github, Heroku deployment, Ruby on Rails, Cucumber and Rspec TDD, SemaphoreCI, Coveralls, Pivotal Tracker project tracking",
-    "link1": "https://rails-playdate.herokuapp.com/",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/playdate-june2019",
-    "linkLabel2": "github",
-    "link3": "https://www.pivotaltracker.com/n/projects/2370835",
-    "linkLabel3": "pivotal tracker",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Heroku, Semaphore CI, Coveralls",
+      "Application frameworks": "Ruby on Rails",
+      "Testing frameworks": "Cucumber, Rspec",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://rails-playdate.herokuapp.com/",
+      "repository & documentation": "https://github.com/CA-ma/playdate-june2019",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2370835"
+    }
   },
   {
     "id": "E2",
@@ -34,15 +39,19 @@
       "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application on the live site performs the required calculations to produce a BMI value using Metric and Imperial units.",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github, GH-pages deployment, Node.js, Mocha TDD",
-    "link1": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github-pages",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Mocha",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
+      "repository & documentation": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator"
+    }
   },
   {
     "id": "E3",
@@ -57,15 +66,19 @@
       "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github, GH-pages deployment, Node.js, Mocha TDD",
-    "link1": "https://ca-ma.github.io/fizzbuzz_challenge/",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github-pages",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Mocha",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/fizzbuzz_challenge/",
+      "repository & documentation": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz"
+    }
   },
   {
     "id": "E4",
@@ -79,15 +92,18 @@
       "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github, Ruby, Rspec TDD",
-    "link1": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications",
-    "linkLabel1": "github",
-    "link2": "",
-    "linkLabel2": "",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "none",
+      "Application frameworks": "Ruby",
+      "Testing frameworks": "Rspec",
+      "Libraries and modules": "none",
+      "Styling": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications"
+    }
   },
   {
     "id": "E5",
@@ -101,14 +117,17 @@
       "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github, Ruby, Rspec TDD",
-    "link1": "https://github.com/CA-ma/atm_challenge#atm-group-challenge",
-    "linkLabel1": "github",
-    "link2": "",
-    "linkLabel2": "",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "local",
+      "Application frameworks": "Ruby",
+      "Testing frameworks": "Rspec",
+      "Libraries and modules": "none",
+      "Styling": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/CA-ma/atm_challenge#atm-group-challenge"
+    }
   }
 ]

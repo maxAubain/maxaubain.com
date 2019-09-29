@@ -79,7 +79,7 @@
       "live site": "https://gnosis-app.netlify.com",
       "client-side repository & documentation": "https://github.com/CA-ma/gnosis-client#gnosis-app",
       "api-side repository & documentation": "https://github.com/CA-ma/gnosis-api",
-      "project management": "https://www.pivotaltracker.com/n/projects/2384164"
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
     }
   },
   {
@@ -133,7 +133,7 @@
     "links": {
       "live site": "https://rails-slow-food.herokuapp.com/",
       "repository & documentation": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
-      "project management": "https://www.pivotaltracker.com/n/projects/2360231"
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2360231"
     }
   }
 ]

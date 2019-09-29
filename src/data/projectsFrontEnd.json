@@ -11,15 +11,19 @@
       "I can imagine every web developer feels the need to create a personal website.",
       "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you see here."
     ],
-    "tech": "Github, Netlify deployment, Node.js, React v16.9 with ES8, CSS3",
-    "link1": "https://max-aubain.netlify.com/",
-    "linkLabel1": "website",
-    "link2": "https://github.com/maxAubain/portfolio#front-end-application-professional-portfolio",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Netlify",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "none",
+      "Libraries and modules": "React v16.9 with ES8",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://max-aubain.netlify.com/",
+      "repository & documentation": "https://github.com/maxAubain/portfolio#front-end-application-professional-portfolio"
+    }
   },
   {
     "id": "FE2",
@@ -33,15 +37,19 @@
       "While the functionality of this application is on the topic of medical metrics, the value of developing this application is to practice the design methodology of React component architecture.",
       "A guide to run acceptance and unit tests upon building this application locally, and a description of the design approach for this application, is discussed in the github documentation."
     ],
-    "tech": "Github, Netlify deployment, Node.js, React v16 with ES6, Cypress and Enzyme TDD, CSS3",
-    "link1": "https://bmi-calc-react.netlify.com",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Netlify",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Cypress, Enzyme",
+      "Libraries and modules": "React v16 with ES6",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://bmi-calc-react.netlify.com",
+      "repository & documentation": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator"
+    }
   },
   {
     "id": "FE3",
@@ -56,15 +64,19 @@
       "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images that mirror the game outcomes.",
       "The game is played by clicking on the Player 1 option buttons (don't choose new options too quickly, the images take time to load).  Furthermore, unit and feature tests can be run with a local build as described in the Github documentation."
     ],
-    "tech": "Github, Netlify deployment, Node.js, Jquery, Mocha TDD",
-    "link1": "https://ca-ma-rps.netlify.com/",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Netlify",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Mocah",
+      "Libraries and modules": "JQuery",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma-rps.netlify.com/",
+      "repository & documentation": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game"
+    }
   },
   {
     "id": "FE4",
@@ -78,14 +90,18 @@
       "The Address Book application focuses on implementing styles from a content delivery network (CDN) and using session storage in the browser to mimic CRUD functionality usually implemented with an api, but with a front-end-only solution.",
       "A demonstration flow for the live site, and a process to generate a local build and run feature tests, is provided in the github documentation."
     ],
-    "tech": "Github, GH-pages deployment, Node.js, Cucumber TDD, Semantic-UI CDN",
-    "link1": "https://ca-ma.github.io/address_book_challenge/",
-    "linkLabel1": "website",
-    "link2": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book",
-    "linkLabel2": "github",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github-pages",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Cucumber",
+      "Libraries and modules": "none",
+      "Styling": "Semantic-UI, CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/address_book_challenge/",
+      "repository & documentation": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book"
+    }
   }
 ]

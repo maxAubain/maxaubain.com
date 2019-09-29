@@ -7,10 +7,10 @@ import "../css/developerProjects.css";
 
 export const DeveloperProjects = () => {
   const projectCategories = {
-    "Full Stack": "./src/data/projectsFullStack.json"/* ,
+    "Full Stack": "./src/data/projectsFullStack.json",
     "Front End": "./src/data/projectsFrontEnd.json",
-    "Mobile": "./src/data/projectsMobile.json",
-    "Coding Exercises": "./src/data/projectsExercises.json" */
+    "Mobile": "./src/data/projectsMobile.json", 
+    "Coding Exercises": "./src/data/projectsExercises.json"
   };
   const [currentProjectCategory, setCurrentProjectCategory] = useState(
     "Full Stack"
