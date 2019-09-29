@@ -1,9 +1,5 @@
 /* Page styling */
 /* Configures collapsible menu */
-.project-categories-wrapper {
-  margin: 50px 0 0 10px;
-}
-
 .project-summary {
   background-color: white;
   display: flex;
@@ -25,13 +21,13 @@
 }
 
 .project-summary-title:hover {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
 }
 
 .project-summary-title-current {
   font-size: 20px;
   padding: 8px 8px 0 8px;
-  color: #0f84e4;;
+  color: #0f84e4;
 }
 
 .project-details-container {
@@ -61,27 +57,24 @@
   color: black;
 }
 
-/* Configures */
-.section {
+.project-description-full-container {
   display: flex;
-  flex-direction: row;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  padding: 12px 0 0 0;
+  flex-wrap: wrap;
 }
 
-.section-title {
-  font-size: 20px;
-  padding: 8px 0 0 0;
+.project-description-full,
+.project-stack {
+  padding: 0 2px 0 2px;
 }
 
 /* Styles based on queries of the screen width */
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
+  .project-categories-wrapper {
+    margin: 30px 0 0 0;
+  } 
   .project-summary {
     width: 100%;
-    border-top-left-radius: 5px;
   }
 
   .project-summary-title {
@@ -92,17 +85,20 @@
     width: 100%;
     padding: 0 0 8px 8px;
   }
-  
-  .project-details-container {
-    border-bottom-left-radius: 5px;
+
+  .project-description-full,
+  .project-stack {
+    width: 96%;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
+  .project-categories-wrapper {
+    margin: 30px 0 0 0;
+  } 
   .project-summary {
     width: 100%;
-    border-top-left-radius: 5px;
   }
 
   .project-summary-title {
@@ -118,13 +114,18 @@
     padding: 9px 0 0 0;
   }
 
-  .project-details-container {
-    border-bottom-left-radius: 5px;
+  .project-description-full,
+  .project-stack {
+    width: 48%;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .project-categories-wrapper {
+    margin: 30px 0 0 10px;
+  }
+  
   .project-summary {
     width: 860px;
     border-top-left-radius: 5px;
@@ -147,5 +148,10 @@
   .project-details-container {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+
+  .project-description-full,
+  .project-stack {
+    width: 48%;
   }
 }

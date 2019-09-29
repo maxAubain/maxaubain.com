@@ -25,7 +25,9 @@ export const Project = ({ project }) => {
     <>
       <div
         className="project-summary"
-        onClick={() => {setProjectAttributes({ hidden: !projectAttributes.hidden })}}
+        onClick={() => {
+          setProjectAttributes({ hidden: !projectAttributes.hidden });
+        }}
       >
         <IconSmall src={project.image.path} alt={project.image.alt} />
         <div className={projectSummaryTitleClassName}>{project.title}</div>
@@ -36,13 +38,38 @@ export const Project = ({ project }) => {
 
       <div className={projectContainerClassName}>
         <div className="project-details-padding">
-          {descriptionFull}
-          <strong>Technology Stack: {project.tech}</strong>
           <div className="project-details-link-container">
-            <NewTabLink url={project.link1} linkText={project.linkLabel1} className="project-details-link weblink" />
-            <NewTabLink url={project.link2} linkText={project.linkLabel2} className="project-details-link weblink" />
-            <NewTabLink url={project.link3} linkText={project.linkLabel3} className="project-details-link weblink" />
-            <NewTabLink url={project.link4} linkText={project.linkLabel4} className="project-details-link weblink" />
+            Links:
+            <NewTabLink
+              url={project.link1}
+              linkText={project.linkLabel1}
+              className="project-details-link weblink"
+            />
+            <NewTabLink
+              url={project.link2}
+              linkText={project.linkLabel2}
+              className="project-details-link weblink"
+            />
+            <NewTabLink
+              url={project.link3}
+              linkText={project.linkLabel3}
+              className="project-details-link weblink"
+            />
+            <NewTabLink
+              url={project.link4}
+              linkText={project.linkLabel4}
+              className="project-details-link weblink"
+            />
+          </div>
+          <div className="project-description-full-container">
+            <div className="project-description-full">
+              <strong>Description</strong>
+              {descriptionFull}
+            </div>
+            <div className="project-stack">
+              <strong>Technology Stack</strong>
+              <p>{project.tech}</p>
+            </div>
           </div>
         </div>
       </div>
