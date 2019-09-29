@@ -14,7 +14,7 @@ export const Project = ({ project }) => {
     projectSummaryTitleClassName = "project-summary-title";
   } else {
     projectContainerClassName = "project-details-container";
-    projectSummaryTitleClassName = "project-summary-title navlink-current";
+    projectSummaryTitleClassName = "project-summary-title-current";
   }
 
   const descriptionFull = project.descriptionFull.map(paragraph => {
@@ -39,10 +39,10 @@ export const Project = ({ project }) => {
           {descriptionFull}
           <strong>Technology Stack: {project.tech}</strong>
           <div className="project-details-link-container">
-            <NewTabLink url={project.link1} linkText={project.linkLabel1} className="project-details-link" />
-            <NewTabLink url={project.link2} linkText={project.linkLabel2} className="project-details-link" />
-            <NewTabLink url={project.link3} linkText={project.linkLabel3} className="project-details-link" />
-            <NewTabLink url={project.link4} linkText={project.linkLabel4} className="project-details-link" />
+            <NewTabLink url={project.link1} linkText={project.linkLabel1} className="project-details-link weblink" />
+            <NewTabLink url={project.link2} linkText={project.linkLabel2} className="project-details-link weblink" />
+            <NewTabLink url={project.link3} linkText={project.linkLabel3} className="project-details-link weblink" />
+            <NewTabLink url={project.link4} linkText={project.linkLabel4} className="project-details-link weblink" />
           </div>
         </div>
       </div>

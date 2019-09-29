@@ -1,7 +1,7 @@
 /* Page styling */
 /* Configures collapsible menu */
 .project-categories-wrapper {
-  margin: 50px 0 0 0;
+  margin: 50px 0 0 10px;
 }
 
 .project-summary {
@@ -21,12 +21,17 @@
 .project-summary-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
-  color: rgb(0, 63, 158)
+  color: rgb(78, 78, 78);
 }
 
-.project-summary-description {
-  padding: 12px 0 0 0;
-  text-align: left;
+.project-summary-title:hover {
+  color: rgb(0,0,0);
+}
+
+.project-summary-title-current {
+  font-size: 20px;
+  padding: 8px 8px 0 8px;
+  color: #0f84e4;;
 }
 
 .project-details-container {
@@ -52,12 +57,11 @@
   margin: 8px;
 }
 
-/* Configures */
-.feature-container {
-  margin: 0 0 0 20px;
-  width: 100%%;
+.project-details-link:hover {
+  color: black;
 }
 
+/* Configures */
 .section {
   display: flex;
   flex-direction: row;
@@ -105,9 +109,13 @@
     width: 40%;
   }
 
+  .project-summary-title-current {
+    width: 40%;
+  }
+
   .project-summary-description {
     width: 45%;
-    padding: 6px 0 6px 0;
+    padding: 9px 0 0 0;
   }
 
   .project-details-container {
@@ -127,9 +135,13 @@
     width: 40%;
   }
 
+  .project-summary-title-current {
+    width: 40%;
+  }
+
   .project-summary-description {
     width: 50%;
-    padding: 6px 0 6px 0;
+    padding: 9px 0 0 0;
   }
 
   .project-details-container {

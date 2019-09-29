@@ -22,5 +22,5 @@ export const Projects = ({ path }) => {
     );
   });
 
-  return <div className="feature-container">{projectsList}</div>;
+  return <>{projectsList}</>;
 };
