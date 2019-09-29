@@ -23,7 +23,7 @@ export const Project = ({ project }) => {
 
   const links = Object.keys(project.links).map(key => {
     return (
-      <div key={project.links[key]}>
+      <div key={key}>
         <NewTabLink
           url={project.links[key]}
           linkText={key}
@@ -32,6 +32,12 @@ export const Project = ({ project }) => {
       </div>
     );
   });
+
+  const tech = Object.keys(project.tech).map(key => {
+    return (
+      <p key={key}>{key}: {project.tech[key]}.</p>
+    )
+  })
 
   return (
     <>
@@ -60,13 +66,7 @@ export const Project = ({ project }) => {
             </div>
             <div className="project-stack">
               <strong>Technology Stack</strong>
-              <p>Version control: {project.versionControl}</p>
-              <p>Deployment: {project.deployment}</p>
-              <p>Application frameworks: {project.applicationFrameworks}</p>
-              <p>Testing frameworks: {project.tdd}</p>
-              <p>Libraries and modules: {project.libraries}</p>
-              <p>Styling: {project.style}</p>
-              <p>Project management: {project.pm}</p>
+              {tech}
             </div>
           </div>
         </div>

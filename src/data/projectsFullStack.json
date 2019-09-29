@@ -12,13 +12,15 @@
       "The goal of the application is to generate and show snapshots of webpages that are chosen by a user.  There is an input on the view for a user to specify the webpages with a list of URLs.  Upon submission of the URLs, the controller saves the URLs as a 'request' that can be retrieved later.  A Rails Gem helper method is used to generate screenshot image files for each URL address and they are stored on the back end in a File System configuration.  Finally, the request can be queried by the user in the view, where the URLs and screenshots associated with the query are displayed together.",
       "The application is demonstrated at the live site.  Instructions for generating a local build are included in the Github repository documentation."
     ],
-    "versionControl": "Github",
-    "deployment": "Heroku",
-    "applicationFrameworks": "Ruby on Rails",
-    "tdd": "Rspec",
-    "libraries": "Rails Active Storage, PhantomJS/Webshot",
-    "style": "CSS3",
-    "pm": "none",
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Heroku",
+      "Application frameworks": "Ruby on Rails",
+      "Testing frameworks": "Rspec",
+      "Libraries and modules": "Rails Active Storage, PhantomJS/Webshot",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
     "links": {
       "live site": "https://screenshot-capture.herokuapp.com/",
       "repository & documentation": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service"
@@ -37,15 +39,18 @@
       "Each feature and Dev Ops chore was documented in individual pull requests, reviewable using the github link below.  The functionality can be testing using the live site.",
       "For features that modified the UI or UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The cypress framework can run the tests with a local instance of the application."
     ],
-    "versionControl": "Github",
-    "deployment": "Netlify, Heroku",
-    "applicationFrameworks": "Node.js",
-    "tdd": "Cypress",
-    "libraries": "React v16.9 with ES8, Express server, Axios, Body Parser, CORS",
-    "style": "Material-UI CDN, CSS3",
-    "pm": "none",
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Netlify, Heroku",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Cypress",
+      "Libraries and modules": "React v16.9 with ES8, Express server, Axios, Body Parser, CORS",
+      "Styling": "Material-UI, CSS3",
+      "Project management tools": "none"
+    },
     "links": {
       "live site": "https://todo-list-client.netlify.com/",
+      "api site": "https://todo-list-is-here.herokuapp.com/",
       "repository & documentation": "https://github.com/maxAubain/fullstack-sandbox/pulls"
     }
   },
@@ -61,13 +66,15 @@
       "Gnosis is a science news application with complex user roles for University subscribers, Research Group publishers, and Reader members.  Gnosis was planned and constructed by a team of myself and five other junior developers, with guidance from senior developers.",
       "The application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the documentation of the 'github-client'.  The second approach includes creating a local build of the client.  This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
     ],
-    "versionControl": "Github",
-    "deployment": "Netlify, Heroku, Semaphore CI, Coveralls",
-    "applicationFrameworks": "Node.js, Ruby on Rails",
-    "tdd": "Cypress, Enzyme, Rspec",
-    "libraries": "React v16 with ES6, Redux, CORS, Stripe, Devise Token Auth",
-    "style": "Semantic-UI CDN, CSS3",
-    "pm": "Pivotal Tracker",
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Netlify, Heroku, Semaphore CI, Coveralls",
+      "Application frameworks": "Node.js, Ruby on Rails",
+      "Testing frameworks": "Cypress, Enzyme, Rspec",
+      "Libraries and modules": "React v16 with ES6, Redux, CORS, Stripe, Devise Token Auth",
+      "Styling": "Semantic-UI, CSS3",
+      "Project management tools": "Pivotal Tracker"
+    },
     "links": {
       "live site": "https://gnosis-app.netlify.com",
       "client-side repository & documentation": "https://github.com/CA-ma/gnosis-client#gnosis-app",
@@ -87,13 +94,15 @@
       "Of all the web development documentation I have encountered, I have been most impressed with the Ruby on Rails Guides.  In this application I use their general approach to create a blog-style posting site, which exercises the four basic data flow methods: create, read, update, and delete.",
       "You can visit the live site and create an account to see what others have posted.  Please feel free to participate and leave a post of your own."
     ],
-    "versionControl": "Github",
-    "deployment": "Heroku",
-    "applicationFrameworks": "Ruby on Rails",
-    "tdd": "Cucumber, Rspec",
-    "libraries": "Devise",
-    "style": "CSS3",
-    "pm": "none",
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Heroku",
+      "Application frameworks": "Ruby on Rails",
+      "Testing frameworks": "Cucumber, Rspec",
+      "Libraries and modules": "Devise",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
     "links": {
       "live site": "https://an-article-posting-site.herokuapp.com/",
       "repository & documentation": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
@@ -112,13 +121,15 @@
       "This application was for practicing the management of categories of products using database models and category tags.  The theme is a restaurant menu, and the view is configured to show the products organized by the categories.",
       "The application can be viewed on the live site and an order can be simulated using the flow provided by the Cartify gem.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "versionControl": "Github",
-    "deployment": "Heroku, SemaphoreCI, Coveralls",
-    "applicationFrameworks": "Ruby on Rails",
-    "tdd": "Cucumber",
-    "libraries": "Haml, Cartify",
-    "style": "CSS3",
-    "pm": "Pivotal Tracker",
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Heroku, SemaphoreCI, Coveralls",
+      "Application frameworks": "Ruby on Rails",
+      "Testing frameworks": "Cucumber",
+      "Libraries and modules": "Haml, Cartify",
+      "Styling": "CSS3",
+      "Project management tools": "Pivotal Tracker"
+    },
     "links": {
       "live site": "https://rails-slow-food.herokuapp.com/",
       "repository & documentation": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
