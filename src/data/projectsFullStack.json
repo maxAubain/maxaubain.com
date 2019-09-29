@@ -19,14 +19,10 @@
     "libraries": "Rails Active Storage, PhantomJS/Webshot",
     "style": "CSS3",
     "pm": "none",
-    "link1": "https://screenshot-capture.herokuapp.com/",
-    "linkLabel1": "live site",
-    "link2": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service",
-    "linkLabel2": "repository & documentation",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "links": {
+      "live site": "https://screenshot-capture.herokuapp.com/",
+      "repository & documentation": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service"
+    }
   },
   {
     "id": "FS2",
@@ -48,14 +44,10 @@
     "libraries": "React v16.9 with ES8, Express server, Axios, Body Parser, CORS",
     "style": "Material-UI CDN, CSS3",
     "pm": "none",
-    "link1": "https://todo-list-client.netlify.com/",
-    "linkLabel1": "live site",
-    "link2": "https://github.com/maxAubain/fullstack-sandbox/pulls",
-    "linkLabel2": "repository & documentation",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "links": {
+      "live site": "https://todo-list-client.netlify.com/",
+      "repository & documentation": "https://github.com/maxAubain/fullstack-sandbox/pulls"
+    }
   },
   {
     "id": "FS3",
@@ -76,14 +68,12 @@
     "libraries": "React v16 with ES6, Redux, CORS, Stripe, Devise Token Auth",
     "style": "Semantic-UI CDN, CSS3",
     "pm": "Pivotal Tracker",
-    "link1": "https://gnosis-app.netlify.com",
-    "linkLabel1": "live site",
-    "link2": "https://github.com/CA-ma/gnosis-client#gnosis-app",
-    "linkLabel2": "client-side repository & documentation",
-    "link3": "https://github.com/CA-ma/gnosis-api",
-    "linkLabel3": "api-side repository & documentation",
-    "link4": "https://www.pivotaltracker.com/n/projects/2384164",
-    "linkLabel4": "project management"
+    "links": {
+      "live site": "https://gnosis-app.netlify.com",
+      "client-side repository & documentation": "https://github.com/CA-ma/gnosis-client#gnosis-app",
+      "api-side repository & documentation": "https://github.com/CA-ma/gnosis-api",
+      "project management": "https://www.pivotaltracker.com/n/projects/2384164"
+    }
   },
   {
     "id": "FS4",
@@ -104,14 +94,10 @@
     "libraries": "Devise",
     "style": "CSS3",
     "pm": "none",
-    "link1": "https://an-article-posting-site.herokuapp.com/",
-    "linkLabel1": "live site",
-    "link2": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site",
-    "linkLabel2": "repository & documentation",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "links": {
+      "live site": "https://an-article-posting-site.herokuapp.com/",
+      "repository & documentation": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
+    }
   },
   {
     "id": "FS5",
@@ -133,13 +119,10 @@
     "libraries": "Haml, Cartify",
     "style": "CSS3",
     "pm": "Pivotal Tracker",
-    "link1": "https://rails-slow-food.herokuapp.com/",
-    "linkLabel1": "live site",
-    "link2": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
-    "linkLabel2": "repository & documentation",
-    "link3": "https://www.pivotaltracker.com/n/projects/2360231",
-    "linkLabel3": "project management",
-    "link4": "",
-    "linkLabel4": ""
+    "links": {
+      "live site": "https://rails-slow-food.herokuapp.com/",
+      "repository & documentation": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+      "project management": "https://www.pivotaltracker.com/n/projects/2360231"
+    }
   }
 ]

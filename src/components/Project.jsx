@@ -21,6 +21,18 @@ export const Project = ({ project }) => {
     return <p key={paragraph}>{paragraph}</p>;
   });
 
+  const links = Object.keys(project.links).map(key => {
+    return (
+      <div key={project.links[key]}>
+        <NewTabLink
+          url={project.links[key]}
+          linkText={key}
+          className="project-details-link weblink"
+        />
+      </div>
+    );
+  });
+
   return (
     <>
       <div
@@ -39,35 +51,7 @@ export const Project = ({ project }) => {
       <div className={projectContainerClassName}>
         <div className="project-details-padding">
           <div className="project-details-link-container">
-            Links:
-            <div>
-              <NewTabLink
-                url={project.link1}
-                linkText={project.linkLabel1}
-                className="project-details-link weblink"
-              />
-            </div>
-            <div>
-              <NewTabLink
-                url={project.link2}
-                linkText={project.linkLabel2}
-                className="project-details-link weblink"
-              />
-            </div>
-            <div>
-              <NewTabLink
-                url={project.link3}
-                linkText={project.linkLabel3}
-                className="project-details-link weblink"
-              />
-            </div>
-            <div>
-              <NewTabLink
-                url={project.link4}
-                linkText={project.linkLabel4}
-                className="project-details-link weblink"
-              />
-            </div>
+            Links: {links}
           </div>
           <div className="project-description-full-container">
             <div className="project-description-full">
