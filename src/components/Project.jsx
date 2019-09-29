@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { IconSmall } from "./common/IconSmall";
+import { NewTabLink } from "./common/NewTabLink";
 
 export const Project = ({ project }) => {
   const [projectAttributes, setProjectAttributes] = useState({
@@ -38,18 +39,10 @@ export const Project = ({ project }) => {
           {descriptionFull}
           <strong>Technology Stack: {project.tech}</strong>
           <div className="project-details-link-container">
-            <a href={project.link1} className="project-details-link">
-              {project.linkLabel1}
-            </a>
-            <a href={project.link2} className="project-details-link">
-              {project.linkLabel2}
-            </a>
-            <a href={project.link3} className="project-details-link">
-              {project.linkLabel3}
-            </a>
-            <a href={project.link4} className="project-details-link">
-              {project.linkLabel4}
-            </a>
+            <NewTabLink url={project.link1} linkText={project.linkLabel1} className="project-details-link" />
+            <NewTabLink url={project.link2} linkText={project.linkLabel2} className="project-details-link" />
+            <NewTabLink url={project.link3} linkText={project.linkLabel3} className="project-details-link" />
+            <NewTabLink url={project.link4} linkText={project.linkLabel4} className="project-details-link" />
           </div>
         </div>
       </div>

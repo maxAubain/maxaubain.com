@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Skills } from "./Skills";
+import { NewTabLink} from "./common/NewTabLink"
 
 import "../css/curriculumVitae.css";
 
@@ -36,13 +37,7 @@ export const CurriculumVitae = () => {
       component = (
         <p>
           For the original posts of the recommendations, please visit my&nbsp;
-          <a
-            onClick={() => {
-              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
-            }}
-          >
-            Linkedin Profile
-          </a>.
+          <NewTabLink url="https://www.linkedin.com/in/maxaubain/" linkText="Linkedin Profile" />.
         </p>
       );
       break;
@@ -50,13 +45,7 @@ export const CurriculumVitae = () => {
       component = (
         <p>
           For more information about education, please visit my&nbsp;
-          <a
-            onClick={() => {
-              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
-            }}
-          >
-            Linkedin Profile
-          </a>.
+          <NewTabLink url="https://www.linkedin.com/in/maxaubain/" linkText="Linkedin Profile" />.
         </p>
       );
       break;
@@ -64,13 +53,7 @@ export const CurriculumVitae = () => {
       component = (
         <p>
           For more information about publications, please visit my&nbsp;
-          <a
-            onClick={() => {
-              window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
-            }}
-          >
-            Linkedin Profile
-          </a>.
+          <NewTabLink url="https://www.linkedin.com/in/maxaubain/" linkText="Linkedin Profile" />.
         </p>
       );
       break;
