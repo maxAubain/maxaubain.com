@@ -14,12 +14,11 @@ body {
   text-decoration: none;
   margin: 10px;
   font-size: 20px;
-  color: rgb(78, 78, 78);
-  transition: 0.3s;
+  color: rgb(0,0,0);
 }
 
 .navlink:hover {
-  color:rgb(0, 0, 0);
+  color:rgb(100, 100, 100);
 }
 
 .navlink-current {
@@ -31,13 +30,12 @@ body {
 .navlink-section {
   margin: 10px;
   font-size: 16px;
-  color: rgb(78, 78, 78);
+  color: rgb(0, 0, 0);
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .navlink-section:hover {
-  color:rgb(0, 0, 0);
+  color:rgb(100, 100, 100);
 }
 
 .navlink-section-current {
