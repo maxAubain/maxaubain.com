@@ -5,6 +5,7 @@ import { NewTabLink } from "./common/NewTabLink";
 import { AssignTechLinks } from "../modules/AssignTechLinks";
 
 export const Project = ({ project }) => {
+  // Show/hide Project object functionality
   const [projectAttributes, setProjectAttributes] = useState({
     hidden: true
   });
@@ -18,10 +19,7 @@ export const Project = ({ project }) => {
     projectSummaryTitleClassName = "project-summary-title-current";
   }
 
-  const descriptionFull = project.descriptionFull.map(paragraph => {
-    return <p key={paragraph}>{paragraph}</p>;
-  });
-
+  // Project Links object
   const links = Object.keys(project.links).map(key => {
     return (
       <div key={key}>
@@ -34,23 +32,33 @@ export const Project = ({ project }) => {
     );
   });
 
-  let keywordArray, length, i, link;
-  const tech = Object.keys(project.tech).map(key => {
-    keywordArray = project.tech[key].split(", ");
-    //console.log("KEYWORD ARRAY AFTER SPLIT", keywordArray)
-    length = keywordArray.length;
-    for (i = 0; i < length; i++) {
-      link = AssignTechLinks(keywordArray[i]);
-      //console.log("LINK AFTER FUNCTION", link)
-      keywordArray.splice(i, 1, link);
-      //if (i != (length - 1)) { keywordArray.splice(i+1, 0, ", ")}
-      //console.log("KEYWORD ARRAY AFTER SPLICE", keywordArray)
+  // Description object
+  const descriptionFull = project.descriptionFull.map(paragraph => {
+    return <p key={paragraph}>{paragraph}</p>;
+  });
+
+  // Technology Stack object
+  let valueArray, valueArraylength, i, link;
+  const technologyStack = Object.keys(project.tech).map(key => {
+    valueArray = project.tech[key].split(", "); // e.g. valueArray = ["Netlify", "Heroku"]
+    valueArraylength = valueArray.length;
+
+    // Replace each string with weblink object in array
+    for (i = 0; i < valueArraylength; i++) {
+      link = AssignTechLinks(valueArray[i]);
+      valueArray.splice(i, 1, link);
     }
-    //console.log(keywordArray);
+
+    // Insert ", " between weblink objects in array
+    if (valueArraylength > 1) {
+      for (i = 1; i < (2 * valueArraylength - 2); i = i + 2) {
+        valueArray.splice(i, 0, ", ")
+      }
+    }
 
     return (
       <p key={key}>
-        {key}: {keywordArray}.
+        {key}: {valueArray}.
       </p>
     );
   });
@@ -74,7 +82,7 @@ export const Project = ({ project }) => {
         <div className="project-details-padding">
           <div className="project-details-link-container">
             <strong>
-              <u>Links</u>
+              <u>Project Links</u>
             </strong>
             {links}
           </div>
@@ -89,7 +97,7 @@ export const Project = ({ project }) => {
               <strong>
                 <u>Technology Stack</u>
               </strong>
-              {tech}
+              {technologyStack}
             </div>
           </div>
         </div>

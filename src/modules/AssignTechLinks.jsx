@@ -1,7 +1,9 @@
-import { NewTabLink } from "../components/common/NewTabLink";
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-const extLinks = {
+import { NewTabLink } from "../components/common/NewTabLink";
+
+const externalLinks = {
   "Axios": "https://github.com/axios/axios#axios",
   "Body Parser": "https://www.npmjs.com/package/body-parser",
   "Cartify": "https://github.com/GalenkoEugene/cartify#cartify",
@@ -35,7 +37,7 @@ const extLinks = {
   "Ruby": "https://www.ruby-lang.org/en/",
   "Ruby on Rails": "https://rubyonrails.org/",
   "Rspec": "https://rspec.info/",
-  "Semantic-UI": "https://semantic-ui.com/",
+  "Semantic-UI": "https://semantic-ui.com/usage/layout.html",
   "Semaphore CI": "https://semaphoreci.com/product",
   "Stripe": "https://stripe.com/docs/api",
   "Webshot": "https://github.com/vitalie/webshot#webshot"
@@ -43,13 +45,28 @@ const extLinks = {
 
 let keyArray, i, link;
 export const AssignTechLinks = keyword => {
-  keyArray = Object.keys(extLinks);
+/*   const [externalLinks, setExternalLinks] = useState({});
+
+  useEffect(() => {
+    if (externalLinks.length === 0) {
+      axios.get("./src/data/externalLinks.json").then(response => {
+        setExternalLinks(response.data);
+      });
+    }
+  });
+
+  const extLinks = externalLinks.map(hash => {
+    return {hash}
+  }) */
+
+  keyArray = Object.keys(externalLinks);
+  console.log(keyArray)
   for (i = 0; i < keyArray.length; i++) {
     if (keyArray[i] == keyword) {
       link = (
         <NewTabLink
           key={keyArray[i]}
-          url={extLinks[keyArray[i]]}
+          url={externalLinks[keyArray[i]]}
           linkText={keyword}
           className="weblink"
         />

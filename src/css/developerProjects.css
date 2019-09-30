@@ -17,11 +17,11 @@
 .project-summary-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
-  color: rgb(78, 78, 78);
+  color: rgb(0, 0, 0);
 }
 
 .project-summary-title:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(100, 100, 100);
 }
 
 .project-summary-title-current {
