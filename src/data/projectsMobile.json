@@ -13,7 +13,7 @@
     ],
     "tech": {
       "Version control": "Github",
-      "Deployment": "Xcode emulator",
+      "Deployment": "local",
       "Application frameworks": "Node.js, Ionic",
       "Testing frameworks": "none",
       "Libraries and modules": "React v16 with ES6, Capacitor",

@@ -68,8 +68,8 @@
       "Version control": "Github",
       "Deployment": "Netlify",
       "Application frameworks": "Node.js",
-      "Testing frameworks": "Mocah",
-      "Libraries and modules": "JQuery",
+      "Testing frameworks": "Mocha",
+      "Libraries and modules": "jQuery",
       "Styling": "CSS3",
       "Project management tools": "none"
     },

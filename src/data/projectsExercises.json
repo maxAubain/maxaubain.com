@@ -94,7 +94,7 @@
     ],
     "tech": {
       "Version control": "Github",
-      "Deployment": "none",
+      "Deployment": "local",
       "Application frameworks": "Ruby",
       "Testing frameworks": "Rspec",
       "Libraries and modules": "none",

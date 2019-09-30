@@ -56,11 +56,11 @@ body {
 }
 
 .weblink {
-  color: rgb(78, 78, 78);
+  color: rgb(216, 115, 0);
 }
 
 .weblink:hover {
-  color: rgb(0, 0, 0);
+  color: rgb(238, 163, 77);
 }
 
 a {

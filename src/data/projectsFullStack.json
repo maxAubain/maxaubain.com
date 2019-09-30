@@ -17,7 +17,7 @@
       "Deployment": "Heroku",
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Rspec",
-      "Libraries and modules": "Rails Active Storage, PhantomJS/Webshot",
+      "Libraries and modules": "Rails Active Storage, PhantomJS, Webshot",
       "Styling": "CSS3",
       "Project management tools": "none"
     },
@@ -44,7 +44,7 @@
       "Deployment": "Netlify, Heroku",
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cypress",
-      "Libraries and modules": "React v16.9 with ES8, Express server, Axios, Body Parser, CORS",
+      "Libraries and modules": "React v16.9 with ES8, Express server, Express CORS, Axios, Body Parser",
       "Styling": "Material-UI, CSS3",
       "Project management tools": "none"
     },
@@ -71,7 +71,7 @@
       "Deployment": "Netlify, Heroku, Semaphore CI, Coveralls",
       "Application frameworks": "Node.js, Ruby on Rails",
       "Testing frameworks": "Cypress, Enzyme, Rspec",
-      "Libraries and modules": "React v16 with ES6, Redux, CORS, Stripe, Devise Token Auth",
+      "Libraries and modules": "React v16 with ES6, Redux, Rails CORS, Stripe, Devise Token Auth",
       "Styling": "Semantic-UI, CSS3",
       "Project management tools": "Pivotal Tracker"
     },
@@ -123,7 +123,7 @@
     ],
     "tech": {
       "Version control": "Github",
-      "Deployment": "Heroku, SemaphoreCI, Coveralls",
+      "Deployment": "Heroku, Semaphore CI, Coveralls",
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Cucumber",
       "Libraries and modules": "Haml, Cartify",
