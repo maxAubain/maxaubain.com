@@ -3,7 +3,7 @@ import axios from "axios";
 
 import { Project } from "./Project";
 
-export const Projects = ({ path }) => {
+export const Projects = ({ path, externalLinks }) => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -13,14 +13,18 @@ export const Projects = ({ path }) => {
       });
     }
   });
-  
+
   const projectsList = projects.map(project => {
     return (
       <div key={project.id}>
-        <Project project={project} />
+        <Project project={project} externalLinks={externalLinks} />
       </div>
     );
   });
 
-  return <>{projectsList}</>;
+  if (projects.length > 0) {
+    return <>{projectsList}</>;
+  } else {
+    return <></>;
+  }
 };

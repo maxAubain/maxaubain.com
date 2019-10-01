@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
@@ -6,18 +7,33 @@ import { ProjectsCount } from "./ProjectsCount";
 import "../css/developerProjects.css";
 
 export const DeveloperProjects = () => {
+
+  // Define project categories attributes
   const projectCategories = {
     "Full Stack": "./src/data/projectsFullStack.json",
     "Front End": "./src/data/projectsFrontEnd.json",
-    "Mobile": "./src/data/projectsMobile.json",
+    Mobile: "./src/data/projectsMobile.json",
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
+
+  // Get externalLinks as hash of tech keywords and tech description weblinks 
+  const [externalLinks, setExternalLinks] = useState({});
+  useEffect(() => {
+    if (Object.keys(externalLinks).length === 0) {
+      axios.get("./src/data/externalLinks.json").then(response => {
+        setExternalLinks(response.data);
+      });
+    }
+  });
+
+  // Set current project category state
   const [currentProjectCategory, setCurrentProjectCategory] = useState(
     "Full Stack"
   );
 
+  // Project Categories navlinks
   let navlinkSectionClassName;
-  const projectCategoriesSelectors = Object.keys(projectCategories).map(key => {
+  const ProjectCategoriesNavlinks = Object.keys(projectCategories).map(key => {
     key === currentProjectCategory
       ? (navlinkSectionClassName = "navlink-section-current")
       : (navlinkSectionClassName = "navlink-section");
@@ -36,20 +52,29 @@ export const DeveloperProjects = () => {
     );
   });
 
+  // Projects object when category is selected
   const projects = Object.keys(projectCategories).map(key => {
     if (key === currentProjectCategory) {
       return (
-        <Projects key={key} path={projectCategories[currentProjectCategory]} />
+        <Projects
+          key={key}
+          path={projectCategories[currentProjectCategory]}
+          externalLinks={externalLinks}
+        />
       );
     }
   });
 
-  return (
-    <>
-      <div className="navlink-section-container">
-        {projectCategoriesSelectors}
-      </div>
-      <div className="project-categories-wrapper">{projects}</div>
-    </>
-  );
+  if (Object.keys(externalLinks).length > 0) {
+    return (
+      <>
+        <div className="navlink-section-container">
+          {ProjectCategoriesNavlinks}
+        </div>
+        <div className="project-categories-wrapper">{projects}</div>
+      </>
+    );
+  } else {
+    return <></>;
+  }
 };
