@@ -1,6 +1,6 @@
 import React from "react";
 
-export const NewTabLink = ({ url, linkText, className }) => {
+export const WebLink = ({ url, linkText, className }) => {
   return (
     <a
       onClick={() => {

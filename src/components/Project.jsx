@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { IconSmall } from "./common/IconSmall";
-import { NewTabLink } from "./common/NewTabLink";
+import { WebLink } from "./common/WebLink";
 import { TechWebLinks } from "./TechWebLinks";
 
 export const Project = ({ project, externalLinks }) => {
@@ -23,7 +23,7 @@ export const Project = ({ project, externalLinks }) => {
   const projectLinks = Object.keys(project.links).map(key => {
     return (
       <div key={key}>
-        <NewTabLink
+        <WebLink
           url={project.links[key]}
           linkText={key}
           className="project-details-link weblink"
@@ -45,7 +45,15 @@ export const Project = ({ project, externalLinks }) => {
 
     // Replace each string value with weblink object in array
     for (i = 0; i < valueArraylength; i++) {
-      valueArray.splice(i, 1, <TechWebLinks key={valueArray[i]} keyword={valueArray[i]} externalLinks={externalLinks} />);
+      valueArray.splice(
+        i,
+        1,
+        <TechWebLinks
+          key={valueArray[i]}
+          keyword={valueArray[i]}
+          externalLinks={externalLinks}
+        />
+      );
     }
 
     // Insert ", " value between adjacent weblink objects in array

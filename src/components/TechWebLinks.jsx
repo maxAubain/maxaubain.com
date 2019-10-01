@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NewTabLink } from "./common/NewTabLink";
+import { WebLink } from "./common/WebLink";
 
 let keyArray, i, link;
 export const TechWebLinks = ({ keyword, externalLinks }) => {
@@ -8,7 +8,7 @@ export const TechWebLinks = ({ keyword, externalLinks }) => {
   for (i = 0; i < keyArray.length; i++) {
     if (keyArray[i] == keyword) {
       link = (
-        <NewTabLink
+        <WebLink
           key={keyword}
           url={externalLinks[keyword]}
           linkText={keyword}
