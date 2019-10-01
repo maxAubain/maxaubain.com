@@ -1,91 +1,83 @@
-import React, { Component } from "react";
-/* import axios from "axios";
-import EducationTile from "./EducationTile";
-import ExperienceTile from "./ExperienceTile"; */
+import React, { useState } from "react";
 
-/* This component needs a new plan.  Keeping old layout for
-now for inspiration later. */
-class CurriculumVitae extends Component {
-  /* constructor() {
-    super();
-    this.state = {
-      experience: [],
-      education: []
-    };
-  }
+import { Skills } from "./Skills";
+import { WebLink } from "./common/WebLink";
 
-  componentDidMount() {
-    axios.get("./src/data/experience.json").then(response => {
-      this.setState({
-        experience: response.data
-      });
-    });
+import "../css/curriculumVitae.css";
 
-    axios.get("./src/data/education.json").then(response => {
-      this.setState({
-        education: response.data
-      });
-    });
-  } */
+export const CurriculumVitae = () => {
+  const components = ["Skills", "Recommendations", "Education", "Publications"];
+  const [currentComponent, setCurrentComponent] = useState(components[0]);
 
-  render() {
-/*     const education = this.state.education;
-    let educationList;
-
-    if (education.length > 0) {
-      educationList = education.map(educationItem => {
-        return (
-          <div
-            key={educationItem.id}
-            style={{ width: "50vw" }}
-            className="m-16"
-          >
-            <EducationTile educationItem={educationItem} />
-          </div>
-        );
-      });
-    }
-
-    const experience = this.state.experience;
-    let experienceList;
-
-    if (experience.length > 0) {
-      experienceList = experience.map(experienceItem => {
-        return (
-          <div
-            key={experienceItem.id}
-            style={{ width: "50vw" }}
-            className="m-16"
-          >
-            <ExperienceTile experienceItem={experienceItem} />
-          </div>
-        );
-      });
-    } */
+  let navlinkSectionClassName;
+  const componentsSelectors = components.map(component => {
+    component === currentComponent
+      ? (navlinkSectionClassName = "navlink-section-current")
+      : (navlinkSectionClassName = "navlink-section");
 
     return (
- /*      <div className="xs:text-sm sm:text-sm md:text-sm lg:text-base xl:text-base">
-        <div
-          className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4"
-          style={{ textAlign: "center" }}
-        >
-          Education
-        </div>
-        <div className="px-1/5">{educationList}</div>
-
-        <div
-          className="xs:text-2xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pt-4"
-          style={{ textAlign: "center" }}
-        >
-          Experience
-        </div>
-        <div className="px-1/5">{experienceList}</div>
-      </div> */
-      <div className="component">
-        <p>Coming soon.  For more information about education, work experience, and publications, please visit my <a href="https://www.linkedin.com/in/maxaubain/">Linkedin profile</a>.</p>
+      <div
+        key={component}
+        className={navlinkSectionClassName}
+        onClick={() => {
+          setCurrentComponent(component);
+        }}
+      >
+        {component}
       </div>
     );
-  }
-}
+  });
 
-export default CurriculumVitae;
+  let component;
+  switch (currentComponent) {
+    case "Skills":
+      component = <Skills />;
+      break;
+    case "Recommendations":
+      component = (
+        <p>
+          For the original posts of the recommendations, please visit my&nbsp;
+          <WebLink
+            url="https://www.linkedin.com/in/maxaubain/"
+            linkText="Linkedin Profile"
+            className="weblink"
+          />
+          .
+        </p>
+      );
+      break;
+    case "Education":
+      component = (
+        <p>
+          For more information about education, please visit my&nbsp;
+          <WebLink
+            url="https://www.linkedin.com/in/maxaubain/"
+            linkText="Linkedin Profile"
+            className="weblink"
+          />
+          .
+        </p>
+      );
+      break;
+    case "Publications":
+      component = (
+        <p>
+          For more information about publications, please visit my&nbsp;
+          <WebLink
+            url="https://www.linkedin.com/in/maxaubain/"
+            linkText="Linkedin Profile"
+            className="weblink"
+          />
+          .
+        </p>
+      );
+      break;
+  }
+
+  return (
+    <>
+      <div className="navlink-section-container">{componentsSelectors}</div>
+      <div className="cv-component-container">{component}</div>
+    </>
+  );
+};

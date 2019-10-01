@@ -12,30 +12,80 @@ body {
 /* Tags */
 .navlink {
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 10px;
   font-size: 20px;
-  color: rgb(0, 63, 158);
+  color: rgb(0,0,0);
+}
+
+.navlink:hover {
+  color:rgb(100, 100, 100);
+}
+
+.navlink-current {
+  margin: 10px;
+  font-size: 20px;
+  color: #0f84e4;
+}
+
+.navlink-section {
+  margin: 10px;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.navlink-section:hover {
+  color:rgb(100, 100, 100);
+}
+
+.navlink-section-current {
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #0f84e4;
+}
+
+.navlink-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px 0 0 0;
+  width: 100%;
+}
+
+.weblink {
+  color: rgb(216, 115, 0);
+}
+
+.weblink:hover {
+  color: rgb(238, 163, 77);
 }
 
 a {
   text-decoration: none;
-  color: #0f84e4;
+  cursor: pointer;
 }
 
 p {
-  line-height: 25px;
+  line-height: 20px;
   margin: 10px 0 10px 0;
 }
 
 /* NavBar */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(212, 239, 255);
+  border-bottom: 1px solid white;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
+  justify-content: left;
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: rgb(212, 239, 255);
@@ -67,12 +117,20 @@ p {
   .page-content {
     padding-top: 80px;
   }
+
+  .navbar{
+    width: 100vw;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .page-content {
     padding-top: 50px;
+  }
+
+  .navbar{
+    width: 100vw;
   }
 }
 
@@ -82,5 +140,9 @@ p {
     width: 860px;
     margin: 0 auto;
     padding-top: 50px;
+  }
+
+  .navbar{
+    width: 860px;
   }
 }

@@ -1,65 +1,114 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
-/* The Project component receives the information of a single project as
-props from Projects, formats it, and returns. */
-class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { projectFull: "project-details-container activate" };
+import { IconSmall } from "./common/IconSmall";
+import { WebLink } from "./common/WebLink";
+import { TechWebLinks } from "./TechWebLinks";
+
+export const Project = ({ project, externalLinks }) => {
+  // Show/hide Project object details functionality
+  const [projectAttributes, setProjectAttributes] = useState({
+    hidden: true
+  });
+
+  let projectContainerClassName, projectSummaryTitleClassName;
+  if (projectAttributes.hidden) {
+    projectContainerClassName = "project-details-container hidden";
+    projectSummaryTitleClassName = "project-summary-title";
+  } else {
+    projectContainerClassName = "project-details-container";
+    projectSummaryTitleClassName = "project-summary-title-current";
   }
 
-  render() {
-    const description_full = this.props.project.description_full.map(p => {
-      return <p key={p}>{p}</p>;
-    });
+  // Project Links object
+  const projectLinks = Object.keys(project.links).map(key => {
+    return (
+      <div key={key}>
+        <WebLink
+          url={project.links[key]}
+          linkText={key}
+          className="project-details-link weblink"
+        />
+      </div>
+    );
+  });
 
-    /* menuActivate() enables the showing/hiding of the 'project-details' 
-    div to keep the page tidy and easy to read. */
-    const menuActivate = () => {
-      this.state.projectFull == "project-details-container"
-        ? this.setState({ projectFull: "project-details-container activate" })
-        : this.setState({ projectFull: "project-details-container" });
-    };
+  // Description object
+  const projectDescription = project.descriptionFull.map(paragraph => {
+    return <p key={paragraph}>{paragraph}</p>;
+  });
+
+  // Technology Stack object
+  let valueArray, valueArraylength, i;
+  const technologyStack = Object.keys(project.tech).map(key => {
+    valueArray = project.tech[key].split(", "); // e.g. valueArray = ["Netlify", "Heroku"]
+    valueArraylength = valueArray.length;
+
+    // Replace each string value with weblink object in array
+    for (i = 0; i < valueArraylength; i++) {
+      valueArray.splice(
+        i,
+        1,
+        <TechWebLinks
+          key={valueArray[i]}
+          keyword={valueArray[i]}
+          externalLinks={externalLinks}
+        />
+      );
+    }
+
+    // Insert ", " value between adjacent weblink objects in array
+    if (valueArraylength > 1) {
+      for (i = 1; i < 2 * valueArraylength - 2; i = i + 2) {
+        valueArray.splice(i, 0, ", ");
+      }
+    }
 
     return (
-      <>
-        <div className="project-summary" onClick={menuActivate}>
-          <img
-            className="project-summary-icon"
-            src={this.props.project.image.path}
-            alt={this.props.project.image.alt}
-            height="30"
-            width="30"
-          ></img>
-          <div className="project-summary-title">{this.props.project.title}</div>
-          <div className="project-summary-description">
-            {this.props.project.description_short}
-          </div>
-        </div>
+      <p key={key}>
+        {key}: {valueArray}.
+      </p>
+    );
+  });
 
-        <div className={this.state.projectFull}>
-          <div className="project-details-padding">
-            {description_full}
-            <strong>Technologies: {this.props.project.tech}</strong>
-            <div className="project-details-link-container">
-              <a href={this.props.project.link_1} className="project-details-link">
-                {this.props.project.link_1_button}
-              </a>
-              <a href={this.props.project.link_2} className="project-details-link">
-                {this.props.project.link_2_button}
-              </a>
-              <a href={this.props.project.link_3} className="project-details-link">
-                {this.props.project.link_3_button}
-              </a>
-              <a href={this.props.project.link_4} className="project-details-link">
-                {this.props.project.link_4_button}
-              </a>
+  return (
+    <>
+      <div
+        className="project-summary"
+        onClick={() => {
+          setProjectAttributes({ hidden: !projectAttributes.hidden });
+        }}
+      >
+        <IconSmall src={project.image.path} alt={project.image.alt} />
+        <div className={projectSummaryTitleClassName}>{project.title}</div>
+        <div className="project-summary-description">
+          {project.descriptionShort}
+        </div>
+      </div>
+
+      <div className={projectContainerClassName}>
+        <div className="project-details-padding">
+          <div className="project-details-link-container">
+            <strong>
+              <u>Project Links</u>
+            </strong>
+            {projectLinks}
+          </div>
+          <div className="project-description-full-container">
+            <div className="project-description-full">
+              <strong>
+                <u>Description</u>
+              </strong>
+              {projectDescription}
+            </div>
+            <div className="project-stack">
+              <strong>
+                <u>Technology Stack</u>
+              </strong>
+              {technologyStack}
             </div>
           </div>
         </div>
-      </>
-    );
-  }
-}
-
-export default Project;
+      </div>
+    </>
+  );
+};

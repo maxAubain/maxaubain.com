@@ -6,21 +6,26 @@
       "path": "./src/img/icon/children.png",
       "alt": "children-icon"
     },
-    "description_short": "Parent-organized child care for kindergarteners.",
-    "description_full": [
+    "descriptionShort": "Parent-organized child care for kindergarteners.",
+    "descriptionFull": [
       "The Playdate application is inspired by real-world challenges faced by parents with young children.  With child care being expensive as a private service, communal sharing of care responsibilities between parents is a great way to improve quality of life for little monetary investment.  Making playdates for your kids can also form community and new friendships among adults.",
       "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
       "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
-    "tech": "Github | Heroku | Ruby on Rails, Cucumber, Rspec | SemaphoreCI, Coveralls | Pivotal Tracker",
-    "link_1": "https://rails-playdate.herokuapp.com/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/playdate-june2019",
-    "link_2_button": "github",
-    "link_3": "https://www.pivotaltracker.com/n/projects/2370835",
-    "link_3_button": "pivotal tracker",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Heroku, Semaphore CI, Coveralls",
+      "Application frameworks": "Ruby on Rails",
+      "Testing frameworks": "Cucumber, Rspec",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://rails-playdate.herokuapp.com/",
+      "repository & documentation": "https://github.com/CA-ma/playdate-june2019",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2370835"
+    }
   },
   {
     "id": "E2",
@@ -29,20 +34,24 @@
       "path": "./src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
-    "description_short": "Simple Body Mass Index calculator.",
-    "description_full": [
+    "descriptionShort": "Simple Body Mass Index calculator.",
+    "descriptionFull": [
       "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application on the live site performs the required calculations to produce a BMI value using Metric and Imperial units.",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github | Node.js, Mocha",
-    "link_1": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github-pages",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Mocha",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
+      "repository & documentation": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator"
+    }
   },
   {
     "id": "E3",
@@ -51,21 +60,25 @@
       "path": "./src/img/icon/fizz.png",
       "alt": "fizzbuzz-icon"
     },
-    "description_short": "The classic interview coding problem.",
-    "description_full": [
+    "descriptionShort": "The classic interview coding problem.",
+    "descriptionFull": [
       "The FizzBuzz coding challenge has historically been a 'litmus test' for basic scripting acumen.  The requirement is simple: write a program that iterates through positive integers, and return Fizz if divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by 15.",
       "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
       "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
     ],
-    "tech": "Github | Node.js, Mocha",
-    "link_1": "https://ca-ma.github.io/fizzbuzz_challenge/",
-    "link_1_button": "website",
-    "link_2": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz",
-    "link_2_button": "github",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github-pages",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "Mocha",
+      "Libraries and modules": "none",
+      "Styling": "CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/fizzbuzz_challenge/",
+      "repository & documentation": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz"
+    }
   },
   {
     "id": "E4",
@@ -74,20 +87,23 @@
       "path": "./src/img/icon/book.png",
       "alt": "book icon"
     },
-    "description_short": "Managing a collection of books with search function.",
-    "description_full": [
+    "descriptionShort": "Managing a book collection with search function.",
+    "descriptionFull": [
       "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github | Ruby, Rspec",
-    "link_1": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications",
-    "link_1_button": "github",
-    "link_2": "",
-    "link_2_button": "",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "local",
+      "Application frameworks": "Ruby",
+      "Testing frameworks": "Rspec",
+      "Libraries and modules": "none",
+      "Styling": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications"
+    }
   },
   {
     "id": "E5",
@@ -96,19 +112,22 @@
       "path": "./src/img/icon/atm.png",
       "alt": "atm icon"
     },
-    "description_short": "Interactions between an Automatic Teller Machine and a bank account holder.",
-    "description_full": [
+    "descriptionShort": "ATM functions with a bank account member.",
+    "descriptionFull": [
       "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
     ],
-    "tech": "Github | Ruby, Rspec",
-    "link_1": "https://github.com/CA-ma/atm_challenge#atm-group-challenge",
-    "link_1_button": "github",
-    "link_2": "",
-    "link_2_button": "",
-    "link_3": "",
-    "link_3_button": "",
-    "link_4": "",
-    "link_4_button": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "local",
+      "Application frameworks": "Ruby",
+      "Testing frameworks": "Rspec",
+      "Libraries and modules": "none",
+      "Styling": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/CA-ma/atm_challenge#atm-group-challenge"
+    }
   }
 ]

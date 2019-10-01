@@ -1,26 +1,80 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-import Projects from "./Projects";
+import { Projects } from "./Projects";
+import { ProjectsCount } from "./ProjectsCount";
 
-/* DeveloperProjects returns instances of the Projects component which contain types of projects,
-where the return for each project is formatted by the Project component. There are four projects 
-categories: Full Stack, Front End, Mobile, and Exercises.  */
-const DeveloperProjects = () => {
-  return (
-    <>
-      <div className="section-title">Full Stack Applications</div>
-      <Projects path={"./src/data/projectsFullStack.json"} />
+import "../css/developerProjects.css";
 
-      <div className="section-title">Front End Applications</div>
-      <Projects path={"./src/data/projectsFrontEnd.json"} />
+export const DeveloperProjects = () => {
 
-      <div className="section-title">Mobile Applications</div>
-      <Projects path={"./src/data/projectsMobile.json"} />
+  // Define project categories attributes
+  const projectCategories = {
+    "Full Stack": "./src/data/projectsFullStack.json",
+    "Front End": "./src/data/projectsFrontEnd.json",
+    Mobile: "./src/data/projectsMobile.json",
+    "Coding Exercises": "./src/data/projectsExercises.json"
+  };
 
-      <div className="section-title">Coding Exercises</div>
-      <Projects path={"./src/data/projectsExercises.json"} />
-    </>
+  // Get externalLinks as hash of tech keywords and tech description weblinks 
+  const [externalLinks, setExternalLinks] = useState({});
+  useEffect(() => {
+    if (Object.keys(externalLinks).length === 0) {
+      axios.get("./src/data/externalLinks.json").then(response => {
+        setExternalLinks(response.data);
+      });
+    }
+  });
+
+  // Set current project category state
+  const [currentProjectCategory, setCurrentProjectCategory] = useState(
+    "Full Stack"
   );
-};
 
-export default DeveloperProjects;
+  // Project Categories navlinks
+  let navlinkSectionClassName;
+  const ProjectCategoriesNavlinks = Object.keys(projectCategories).map(key => {
+    key === currentProjectCategory
+      ? (navlinkSectionClassName = "navlink-section-current")
+      : (navlinkSectionClassName = "navlink-section");
+
+    return (
+      <div
+        key={key}
+        className={navlinkSectionClassName}
+        onClick={() => {
+          setCurrentProjectCategory(key);
+        }}
+      >
+        {key}
+        <ProjectsCount path={projectCategories[key]} />
+      </div>
+    );
+  });
+
+  // Projects object when category is selected
+  const projects = Object.keys(projectCategories).map(key => {
+    if (key === currentProjectCategory) {
+      return (
+        <Projects
+          key={key}
+          path={projectCategories[currentProjectCategory]}
+          externalLinks={externalLinks}
+        />
+      );
+    }
+  });
+
+  if (Object.keys(externalLinks).length > 0) {
+    return (
+      <>
+        <div className="navlink-section-container">
+          {ProjectCategoriesNavlinks}
+        </div>
+        <div className="project-categories-wrapper">{projects}</div>
+      </>
+    );
+  } else {
+    return <></>;
+  }
+};

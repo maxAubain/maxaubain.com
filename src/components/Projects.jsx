@@ -1,43 +1,30 @@
-import React, { Component } from "react"
-import axios from "axios"
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
-import Project from "./Project"
+import { Project } from "./Project";
 
-/* Projects uses a GET request to receive projects file infromation and
-renders an array of Project components for each project in the file.
-It receives the path of the projects file as props from DeveloperProjects. */
-class Projects extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      projects: []
-    };
-  }
+export const Projects = ({ path, externalLinks }) => {
+  const [projects, setProjects] = useState([]);
 
-  componentDidMount() {
-    axios.get(this.props.path)
-      .then(response => {
-        this.setState({
-          projects: response.data
-        })
-      })
-  }
+  useEffect(() => {
+    if (projects.length === 0) {
+      axios.get(path).then(response => {
+        setProjects(response.data);
+      });
+    }
+  });
 
-  render() {
-    let projectsList = this.state.projects.map(project => {
-      return (
-        <div key={project.id}>
-          <Project project={project} />
-        </div>
-      )
-    })
-
+  const projectsList = projects.map(project => {
     return (
-      <div className="feature-container">
-        {projectsList}
+      <div key={project.id}>
+        <Project project={project} externalLinks={externalLinks} />
       </div>
-    )
+    );
+  });
+
+  if (projects.length > 0) {
+    return <>{projectsList}</>;
+  } else {
+    return <></>;
   }
 };
-
-export default Projects

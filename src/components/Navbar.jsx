@@ -1,72 +1,68 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-/*  Option for later: implement for underline effect under navlinks
-  let currentLocation = window.location.pathname;
-  console.log("current location", currentLocation) */
+let navLinkClasses = {
+  profile: "",
+  webDevelopment: "",
+  curriculumVitae: "",
+  skills: ""
+};
 
-// NavBar component contains navlinks to content components.
-class NavBar extends Component {
-  constructor() {
-    super();
-    this.handleScroll = this.handleScroll.bind(this);
-    this.state = { navbarState: "navbar" };
-  }
+export const NavBar = () => {
+  // Handle navbar shadow
+  const [navBarContainerClass, setNavBarContainerClass] = useState(
+    "navbar-container"
+  );
+  const handleNavBarShadow = event => {
+    document.documentElement.scrollTop > 10
+      ? setNavBarContainerClass("navbar-container floating-navbar")
+      : setNavBarContainerClass("navbar-container");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleNavBarShadow);
+  });
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  /* Checks vertical scroll location and adds/removes className 
-  label to implement navbar shadow greater than 10 px scroll distance. */
-  handleScroll(event) {
-    let scrollLocation = document.documentElement.scrollTop;
-    if (scrollLocation > 10) {
-      this.setState({ navbarState: "navbar floating-navbar" });
-    } else {
-      this.setState({ navbarState: "navbar" });
-    }
-  }
-
-  /* Sets view to top of page when navlink is clicked */
-  resetView() {
+  // Handle view reset on navlink click
+  const handleViewReset = () =>
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "auto"
     });
-  }
 
-  render() {
-    return (
-      <div id="navbar" className={this.state.navbarState}>
-        <NavLink className="navlink" to="/" onClick={this.resetView}>
+  // Handle Navlink style classes
+  // navLinkClasses are not stored in State to avoid an infinite loop on render
+  Object.keys(navLinkClasses).forEach(key => {
+    `/${key}` === location.pathname
+      ? Object.assign(navLinkClasses, { [key]: "navlink-current" })
+      : Object.assign(navLinkClasses, { [key]: "navlink" });
+  });
+
+  return (
+    <div className={navBarContainerClass}>
+      <div className="navbar">
+        <NavLink
+          className={navLinkClasses.profile}
+          to="/profile"
+          onClick={handleViewReset}
+        >
           Profile
         </NavLink>
         <NavLink
-          className="navlink"
-          to="WebDevelopment"
-          onClick={this.resetView}
+          className={navLinkClasses.webDevelopment}
+          to="webDevelopment"
+          onClick={handleViewReset}
         >
           Web Development
         </NavLink>
         <NavLink
-          className="navlink"
-          to="CurriculumVitae"
-          onClick={this.resetView}
+          className={navLinkClasses.curriculumVitae}
+          to="curriculumVitae"
+          onClick={handleViewReset}
         >
           Curriculum Vitae
         </NavLink>
-        {/* <NavLink className="navlink" to="TravelBlog" onClick={this.resetView}>
-          Travel Blog
-        </NavLink> */}
       </div>
-    );
-  }
-}
-
-export default NavBar;
+    </div>
+  );
+};
