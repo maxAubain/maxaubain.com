@@ -16,22 +16,53 @@ export const Profile = () => {
         <div className="section-profile headline-container">
           <div className="headline-item">
             <p>
-              Big nerd and lover of all things sci-fi. Also an engineer at
-              heart, always asking, "what do you DO with it?"
+              Technical expert with over 10 years of experience researching,
+              developing, and prototyping emerging technologies.
             </p>
           </div>
           <div className="headline-item">
             <p>
-              Recently moved from the USA and enjoying a Scandinavian pace of life.
+              Recently moved back to the USA from Sweden and enjoying a New
+              England lifestyle.
             </p>
           </div>
           <div className="headline-item">
             <p>
-              Motivated team player and an advocate for getting the job done
-              right. Over 10 years of experience researching, developing, and
-              applying emerging technologies.
+              Sci-fi fan and engineer at heart. I often wonder, "But, who is going to USE it?!"
             </p>
           </div>
+        </div>
+      </div>
+      <div
+        className="section-profile feature-profile"
+        id="full-stack-developer"
+      >
+        <div className="feature-title">
+          <div>
+            <img
+              src="./src/img/icon/developer.png"
+              alt="dev-icon"
+              height="100px"
+              width="100px"
+            />
+          </div>
+          <br></br>
+          Full Stack Developer
+        </div>
+        <div className="feature-description">
+          <p>
+            Max has written applications in a number of languages throughout his
+            engineering career, from lab test automation in Labview to numerical
+            integration in MATLAB.
+          </p>
+          <p>
+            Now, he is laser focused on web development. His core competences
+            include Agile development, testing frameworks, Ruby on Rails, and
+            ReactJS.
+          </p>
+          <p>
+            Development-centered opportunities are his next ideal career move.
+          </p>
         </div>
       </div>
       <div className="section-profile feature-profile" id="project-manager">
@@ -49,44 +80,15 @@ export const Profile = () => {
         </div>
         <div className="feature-description">
           <p>
-            Max has been a project manager, passionate about enhancing the
-            quality of products and business flows, and enabling his team to be
-            creative and efficient. He thrives when working with
-            interdisciplinary projects and is energized by the prospect of
-            bringing structure to the chaos of building something new.
+            Max has technical project manager experience and is passionate about
+            enhancing the quality of products through business flow development.
+            He thrives when working on interdisciplinary projects and is
+            energized by the prospect of bringing structure to the chaos of
+            building something new.
           </p>
           <p>
             His experience includes Scrum Master in Agile development settings
-            and technical project management in the semiconductor industry.
-          </p>
-        </div>
-      </div>
-      <div className="section-profile feature-profile" id="full-stack-developer">
-        <div className="feature-title">
-          <div>
-            <img
-              src="./src/img/icon/developer.png"
-              alt="dev-icon"
-              height="100px"
-              width="100px"
-            />
-          </div>
-          <br></br>
-          Full Stack Developer
-        </div>
-        <div className="feature-description">
-          <p>
-            Max has written applications in various languages throughout his
-            career for equally as many tasks, from lab test automation in
-            Labview to numerical integration in MATLAB.
-          </p>
-          <p>
-            Now he is laser focused on adding web development to his toolkit.
-            His core competences include Agile development, testing frameworks,
-            Ruby on Rails, and ReactJS.
-          </p>
-          <p>
-            Development-centered opportunities are his next ideal career move.
+            and product reliability management in the semiconductor industry.
           </p>
         </div>
       </div>
@@ -106,20 +108,15 @@ export const Profile = () => {
         <div className="feature-description">
           <p>
             Max has a unique combination of professional experiences that have
-            shaped his analytic abilities.
+            shaped his analytic abilities and skills.
           </p>
           <p>
             He has passed the U.S. Patent Bar Exam and worked as a registered
-            Patent Agent. As an engineer, he is an inventor of semiconductor
-            device patents.
+            Patent Agent and is inventor of two semiconductor device patents.
           </p>
           <p>
-            He has been a technical lead on product reliability, design, and
-            development projects.
-          </p>
-          <p>
-            Finally, his analytical foundation lies in the completion of an
-            engineering Ph.D. that resulted in the publication of peer reviewed
+            His analytical foundation lies in the completion of an engineering
+            Ph.D. that resulted in the publication of three peer reviewed
             journal articles.
           </p>
         </div>
