@@ -17,8 +17,8 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "none",
       "Libraries and modules": "React v16.9 with ES8",
-      "Styling": "CSS3",
-      "Project management tools": "none"
+      "User Interface": "HTML5, CSS3",
+      "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://max-aubain.netlify.com/",
@@ -43,7 +43,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cypress, Enzyme",
       "Libraries and modules": "React v16 with ES6",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -70,7 +70,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "jQuery",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -96,7 +96,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cucumber",
       "Libraries and modules": "none",
-      "Styling": "Semantic-UI, CSS3",
+      "User Interface": "Semantic-UI, HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {

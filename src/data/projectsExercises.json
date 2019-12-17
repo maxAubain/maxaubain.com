@@ -18,7 +18,7 @@
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Cucumber, Rspec",
       "Libraries and modules": "none",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "Pivotal Tracker"
     },
     "links": {
@@ -45,7 +45,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "none",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -72,7 +72,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "none",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -98,7 +98,7 @@
       "Application frameworks": "Ruby",
       "Testing frameworks": "Rspec",
       "Libraries and modules": "none",
-      "Styling": "none",
+      "User Interface": "CLI",
       "Project management tools": "none"
     },
     "links": {
@@ -123,7 +123,7 @@
       "Application frameworks": "Ruby",
       "Testing frameworks": "Rspec",
       "Libraries and modules": "none",
-      "Styling": "none",
+      "User Interface": "CLI",
       "Project management tools": "none"
     },
     "links": {

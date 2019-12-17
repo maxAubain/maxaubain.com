@@ -18,7 +18,7 @@
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Rspec",
       "Libraries and modules": "Rails Active Storage, PhantomJS, Webshot",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -45,7 +45,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cypress",
       "Libraries and modules": "React v16.9 with ES8, Express server, Express CORS, Axios, Body Parser",
-      "Styling": "Material-UI, CSS3",
+      "User Interface": "Material-UI, HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -72,7 +72,7 @@
       "Application frameworks": "Node.js, Ruby on Rails",
       "Testing frameworks": "Cypress, Enzyme, Rspec",
       "Libraries and modules": "React v16 with ES6, Redux, Rails CORS, Stripe, Devise Token Auth",
-      "Styling": "Semantic-UI, CSS3",
+      "User Interface": "Semantic-UI, HTML5, CSS3",
       "Project management tools": "Pivotal Tracker"
     },
     "links": {
@@ -100,7 +100,7 @@
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Cucumber, Rspec",
       "Libraries and modules": "Devise",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -127,7 +127,7 @@
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Cucumber",
       "Libraries and modules": "Haml, Cartify",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "Pivotal Tracker"
     },
     "links": {
