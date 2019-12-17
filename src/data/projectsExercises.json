@@ -6,10 +6,10 @@
       "path": "./src/img/icon/children.png",
       "alt": "children-icon"
     },
-    "descriptionShort": "Parent-organized child care for kindergarteners.",
+    "descriptionShort": "Parent-organized child care service.",
     "descriptionFull": [
       "The Playdate application is inspired by real-world challenges faced by parents with young children.  With child care being expensive as a private service, communal sharing of care responsibilities between parents is a great way to improve quality of life for little monetary investment.  Making playdates for your kids can also form community and new friendships among adults.",
-      "Playdate is far from complete as a SaaS application.  The primary goals that Daria Lykova, my co-developer, and I had was to plan the application and setup the CD/CI pipeline, and code as much as we could within a week using TDD and BDD practices.",
+      "Playdate is an SaaS application under development.  The goals of Daria Lykova, my co-developer, and I were to setup the CD/CI pipeline and code as much as we could within a week using TDD and BDD practices.",
       "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
     ],
     "tech": {
@@ -29,7 +29,7 @@
   },
   {
     "id": "E2",
-    "title": "BMI Calculator",
+    "title": "BMI Calculator JS",
     "image": {
       "path": "./src/img/icon/calculator.png",
       "alt": "calculator-icon"
@@ -60,7 +60,7 @@
       "path": "./src/img/icon/fizz.png",
       "alt": "fizzbuzz-icon"
     },
-    "descriptionShort": "The classic interview coding problem.",
+    "descriptionShort": "A classic interview coding problem.",
     "descriptionFull": [
       "The FizzBuzz coding challenge has historically been a 'litmus test' for basic scripting acumen.  The requirement is simple: write a program that iterates through positive integers, and return Fizz if divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by 15.",
       "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
@@ -87,7 +87,7 @@
       "path": "./src/img/icon/book.png",
       "alt": "book icon"
     },
-    "descriptionShort": "Managing a book collection with search function.",
+    "descriptionShort": "Managing a library collection with search function.",
     "descriptionFull": [
       "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."
@@ -112,7 +112,7 @@
       "path": "./src/img/icon/atm.png",
       "alt": "atm icon"
     },
-    "descriptionShort": "ATM functions with a bank account member.",
+    "descriptionShort": "Simulating ATM interactions with bank account member.",
     "descriptionFull": [
       "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
       "This exercise is configured to be run and tested locally, as described in the github documentation."

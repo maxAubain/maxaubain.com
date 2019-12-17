@@ -28,7 +28,7 @@ export const Profile = () => {
           </div>
           <div className="headline-item">
             <p>
-              Sci-fi fan and engineer at heart. I often wonder, "But, who is going to USE it?!"
+              Sci-fi fan and engineer at heart. I often wonder, "And, how could that be used?"
             </p>
           </div>
         </div>
