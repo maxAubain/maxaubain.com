@@ -1,24 +1,24 @@
 [
   {
     "id": "FE1",
-    "title": "Professional Portfolio",
+    "title": "Professional Portfolio Website",
     "image": {
       "path": "./src/img/icon/portfolio.png",
       "alt": "portfolio-icon"
     },
-    "descriptionShort": "Showcasing experience, projects, and education.",
+    "descriptionShort": "A showcase of work experience and education history.",
     "descriptionFull": [
-      "I can imagine every web developer feels the need to create a personal website.",
-      "When I began to plan for mine, I knew I wanted to have the site showcase many types of information in an easy-to-follow, but interesting manner.  The categories and styles I settled upon are the ones you see here."
+      "This personal website is a single-page application, implemented with the recently released state hooks in ReactJS.",
+      "Notable features include a mobile-friendly design, routing with React Router, Axios JSON file import with the passing of data via 'props', and a script to procedurally populate the projects' descriptions' Technology Stack with external links."
     ],
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify",
       "Application frameworks": "Node.js",
       "Testing frameworks": "none",
-      "Libraries and modules": "React v16.9 with ES8",
-      "Styling": "CSS3",
-      "Project management tools": "none"
+      "Libraries and modules": "React v16.9 with ES8, Axios",
+      "User Interface": "HTML5, CSS3",
+      "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://max-aubain.netlify.com/",
@@ -27,15 +27,15 @@
   },
   {
     "id": "FE2",
-    "title": "BMI Calculator Revisited",
+    "title": "BMI Calculator ReactJS",
     "image": {
       "path": "./src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
     "descriptionShort": "Simple Body Mass Index calculator.",
     "descriptionFull": [
-      "While the functionality of this application is on the topic of medical metrics, the value of developing this application is to practice the design methodology of React component architecture.",
-      "A guide to run acceptance and unit tests upon building this application locally, and a description of the design approach for this application, is discussed in the github documentation."
+      "The Body Mass Index (BMI) is defined as the ratio of height to weight.  It is an outdated way to evaulate personal fitness, but can be interesting for a programming exercise.",
+      "This single-page, ReactJS application organizes scripts into Components, which are involved in view rendering, and Modules that offload simple calculations on the front end."
     ],
     "tech": {
       "Version control": "Github",
@@ -43,7 +43,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cypress, Enzyme",
       "Libraries and modules": "React v16 with ES6",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -58,11 +58,10 @@
       "path": "./src/img/icon/hand.png",
       "alt": "rps-icon"
     },
-    "descriptionShort": "A digital rendition of a childhood game.",
+    "descriptionShort": "A digital rendition of the classic childhood game.",
     "descriptionFull": [
-      "My guess as to why Rock Paper Scissors was so popular when I was a child what that it was simple to learn, and exciting!  Yelling and throwing your hands around is always a good time.",
-      "This implementation of RPS as a web game strives to capture all of the simplicity, and give a nod to the excitement through the rendering of images that mirror the game outcomes.",
-      "The game is played by clicking on the Player 1 option buttons (don't choose new options too quickly, the images take time to load).  Furthermore, unit and feature tests can be run with a local build as described in the Github documentation."
+      "This application uses JS and jQuery to implement an interactive game of Rock, Paper, Scissors.",
+      "While optimization was beyond the scope of this project, it is clear that the sluggish rendering of high resolution images can be improved."
     ],
     "tech": {
       "Version control": "Github",
@@ -70,7 +69,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "jQuery",
-      "Styling": "CSS3",
+      "User Interface": "HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
@@ -85,9 +84,9 @@
       "path": "./src/img/icon/contact.png",
       "alt": "planner-icon"
     },
-    "descriptionShort": "A sleek UI to store contacts.",
+    "descriptionShort": "A sleek UI for digitally storing contacts.",
     "descriptionFull": [
-      "The Address Book application focuses on implementing styles from a content delivery network (CDN) and using session storage in the browser to mimic CRUD functionality usually implemented with an api, but with a front-end-only solution.",
+      "The Address Book application implements styles from a content delivery network (CDN) and using session storage in the browser to mimic CRUD functionality usually implemented with an api, but with a front-end-only solution.",
       "A demonstration flow for the live site, and a process to generate a local build and run feature tests, is provided in the github documentation."
     ],
     "tech": {
@@ -96,7 +95,7 @@
       "Application frameworks": "Node.js",
       "Testing frameworks": "Cucumber",
       "Libraries and modules": "none",
-      "Styling": "Semantic-UI, CSS3",
+      "User Interface": "Semantic-UI, HTML5, CSS3",
       "Project management tools": "none"
     },
     "links": {
