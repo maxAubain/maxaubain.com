@@ -2,12 +2,7 @@
   margin: 10px;
 }
 
-/* .cv-content-container {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  cursor: pointer;
-  margin: 12px 0 0 0;
-  border-bottom: 3px solid rgb(212, 239, 255);
-} */
+.pdf {
+  width: 100%;
+  height: 100vh;
+}

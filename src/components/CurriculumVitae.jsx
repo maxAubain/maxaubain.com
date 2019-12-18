@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { ResumeDownload } from "./ResumeDownload";
+import { Resume } from "./Resume";
 import { Recommendations } from "./Recommendations"
 import { WebLink } from "./common/WebLink";
 
@@ -11,7 +11,7 @@ export const CurriculumVitae = () => {
     "Recommendations",
     "Education",
     "Publications",
-    "Download Resume"
+    "Resume"
   ];
   const [currentComponent, setCurrentComponent] = useState(components[0]);
 
@@ -45,8 +45,8 @@ export const CurriculumVitae = () => {
     case "Publications":
       component = <p>Publications here.</p>;
       break;
-    case "Download Resume":
-      component = <ResumeDownload />;
+    case "Resume":
+      component = <Resume />;
       break;
   }
 
