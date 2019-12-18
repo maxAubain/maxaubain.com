@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 
-import { Skills } from "./Skills";
+import { ResumeDownload } from "./ResumeDownload";
+import { Recommendations } from "./Recommendations"
 import { WebLink } from "./common/WebLink";
 
 import "../css/curriculumVitae.css";
 
 export const CurriculumVitae = () => {
-  const components = ["Skills", "Recommendations", "Education", "Publications"];
+  const components = [
+    "Recommendations",
+    "Education",
+    "Publications",
+    "Download Resume"
+  ];
   const [currentComponent, setCurrentComponent] = useState(components[0]);
 
   let navlinkSectionClassName;
@@ -30,53 +36,32 @@ export const CurriculumVitae = () => {
 
   let component;
   switch (currentComponent) {
-    case "Skills":
-      component = <Skills />;
-      break;
     case "Recommendations":
-      component = (
-        <p>
-          For the original posts of the recommendations, please visit my&nbsp;
-          <WebLink
-            url="https://www.linkedin.com/in/maxaubain/"
-            linkText="Linkedin Profile"
-            className="weblink"
-          />
-          .
-        </p>
-      );
+      component = <Recommendations />;
       break;
     case "Education":
-      component = (
-        <p>
-          For more information about education, please visit my&nbsp;
-          <WebLink
-            url="https://www.linkedin.com/in/maxaubain/"
-            linkText="Linkedin Profile"
-            className="weblink"
-          />
-          .
-        </p>
-      );
+      component = <p>Education here.</p>;
       break;
     case "Publications":
-      component = (
-        <p>
-          For more information about publications, please visit my&nbsp;
-          <WebLink
-            url="https://www.linkedin.com/in/maxaubain/"
-            linkText="Linkedin Profile"
-            className="weblink"
-          />
-          .
-        </p>
-      );
+      component = <p>Publications here.</p>;
+      break;
+    case "Download Resume":
+      component = <ResumeDownload />;
       break;
   }
 
   return (
     <>
-      <div className="navlink-section-container">{componentsSelectors}</div>
+      <div className="navlink-section-container">
+        {componentsSelectors}
+        <div className="navlink-section">
+          <WebLink
+            url="https://www.linkedin.com/in/maxaubain/"
+            linkText="Linkedin Profile"
+            className="weblink"
+          />
+        </div>
+      </div>
       <div className="cv-component-container">{component}</div>
     </>
   );

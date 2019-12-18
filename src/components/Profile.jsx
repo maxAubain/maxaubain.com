@@ -112,7 +112,7 @@ export const Profile = () => {
           </p>
           <p>
             He has passed the U.S. Patent Bar Exam and worked as a registered
-            Patent Agent and is inventor of two semiconductor device patents.
+            Patent Agent.  As an inventor, he is an author of two semiconductor device patents.
           </p>
           <p>
             His analytical foundation lies in the completion of an engineering

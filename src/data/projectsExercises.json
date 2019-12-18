@@ -17,7 +17,7 @@
       "Deployment": "Heroku, Semaphore CI, Coveralls",
       "Application frameworks": "Ruby on Rails",
       "Testing frameworks": "Cucumber, Rspec",
-      "Libraries and modules": "none",
+      "Libraries and modules": "PostgreSQL",
       "User Interface": "HTML5, CSS3",
       "Project management tools": "Pivotal Tracker"
     },
