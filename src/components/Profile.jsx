@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../css/profile.css";
-
 export const Profile = () => {
   return (
     <div className="profile-wrapper">
@@ -10,7 +8,6 @@ export const Profile = () => {
           <div>
             <img className="headshot" src="./src/img/headShot.png" />
           </div>
-          <br></br>
           <div>Max Aubain, Ph.D.</div>
         </div>
         <div className="section-profile headline-container">
@@ -28,15 +25,13 @@ export const Profile = () => {
           </div>
           <div className="headline-item">
             <p>
-              Sci-fi fan and engineer at heart. I often wonder, "And, how could that be used?"
+              Sci-fi fan and engineer at heart. I often wonder, "And, how could
+              that be used?"
             </p>
           </div>
         </div>
       </div>
-      <div
-        className="section-profile feature-profile"
-        id="full-stack-developer"
-      >
+      <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
             <img
@@ -46,7 +41,7 @@ export const Profile = () => {
               width="100px"
             />
           </div>
-          <br></br>
+          <br />
           Full Stack Developer
         </div>
         <div className="feature-description">
@@ -65,7 +60,7 @@ export const Profile = () => {
           </p>
         </div>
       </div>
-      <div className="section-profile feature-profile" id="project-manager">
+      <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
             <img
@@ -75,7 +70,7 @@ export const Profile = () => {
               width="100px"
             />
           </div>
-          <br></br>
+          <br />
           Project Manager
         </div>
         <div className="feature-description">
@@ -92,7 +87,7 @@ export const Profile = () => {
           </p>
         </div>
       </div>
-      <div className="section-profile feature-profile" id="data-analyst">
+      <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
             <img
@@ -102,7 +97,7 @@ export const Profile = () => {
               width="100px"
             />
           </div>
-          <br></br>
+          <br />
           Analyst
         </div>
         <div className="feature-description">
@@ -112,7 +107,8 @@ export const Profile = () => {
           </p>
           <p>
             He has passed the U.S. Patent Bar Exam and worked as a registered
-            Patent Agent.  As an inventor, he is an author of two semiconductor device patents.
+            Patent Agent. As an inventor, he is an author of two semiconductor
+            device patents.
           </p>
           <p>
             His analytical foundation lies in the completion of an engineering

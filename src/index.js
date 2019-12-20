@@ -2,19 +2,20 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { CurriculumVitae } from "./components/CurriculumVitae";
+import { About } from "./components/About";
 import { DeveloperProjects } from "./components/DeveloperProjects";
 import { EmailForm } from "./components/EmailForm";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
-import { Profile } from "./components/Profile";
 import { Resume } from "./components/Resume";
 
-import "./css/global.css";
-import "./css/socialMedia.css"
-import "./css/curriculumVitae.css";
-import "./css/resume.css";
 import "./css/developerProjects.css";
+import "./css/education.css";
+import "./css/global.css";
+import "./css/profile.css";
+import "./css/resume.css";
+import "./css/socialMedia.css"
+
 
 import WebFont from "webfontloader";
 
@@ -26,10 +27,9 @@ const App = () => {
           <NavBar />
           <div className="page-content">
             <Switch>
-              <Redirect exact from="/" to="/profile" />
-              <Route path="/profile" component={Profile} />
+              <Redirect exact from="/" to="/about" />
+              <Route path="/about" component={About} />
               <Route path="/webDevelopment" component={DeveloperProjects} />
-              <Route path="/curriculumVitae" component={CurriculumVitae} />
               <Route path="/resume" component={Resume} />
               <Route path="/emailForm" component={EmailForm} />
             </Switch>

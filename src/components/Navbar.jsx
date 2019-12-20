@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-import { NavLink } from "react-router-dom";
 import { IconSmall } from "./common/IconSmall";
+import { NavLink } from "react-router-dom";
 
 let navLinkClasses = {
-  profile: "",
+  about: "",
   webDevelopment: "",
-  curriculumVitae: "",
   resume: ""
 };
 
@@ -44,11 +43,11 @@ export const NavBar = () => {
     <div className={navBarContainerClass}>
       <div className="navbar-navlinks">
         <NavLink
-          className={navLinkClasses.profile}
-          to="/profile"
+          className={navLinkClasses.about}
+          to="/about"
           onClick={handleViewReset}
         >
-          Profile
+          About
         </NavLink>
         <NavLink
           className={navLinkClasses.webDevelopment}
@@ -56,13 +55,6 @@ export const NavBar = () => {
           onClick={handleViewReset}
         >
           Web Development
-        </NavLink>
-        <NavLink
-          className={navLinkClasses.curriculumVitae}
-          to="curriculumVitae"
-          onClick={handleViewReset}
-        >
-          Curriculum Vitae
         </NavLink>
         <NavLink
           className={navLinkClasses.resume}
