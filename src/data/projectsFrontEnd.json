@@ -9,14 +9,14 @@
     "descriptionShort": "A showcase of work experience and education history.",
     "descriptionFull": [
       "This personal website is a single-page application, implemented with the recently released state hooks in ReactJS.",
-      "Notable features include a mobile-friendly design, routing with React Router, Axios JSON file import with the passing of data via 'props', and a script to procedurally populate the projects' descriptions' Technology Stack with external links."
+      "Notable features include a mobile-friendly design, routing with React Router, email messaging with Formspree microservice, Axios JSON file import with the passing of data via 'props', and a script to procedurally populate the projects' descriptions' Technology Stack with external links."
     ],
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify",
       "Application frameworks": "Node.js",
       "Testing frameworks": "none",
-      "Libraries and modules": "React v16.9 with ES8, Axios",
+      "Libraries and modules": "React v16.9 with ES8, Axios, Formspree",
       "User Interface": "HTML5, CSS3",
       "Project management tools": "Jira"
     },

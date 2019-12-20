@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
+
+import { IconSmall } from "./common/IconSmall";
 import { NavLink } from "react-router-dom";
 
 let navLinkClasses = {
-  profile: "",
+  about: "",
   webDevelopment: "",
-  curriculumVitae: "",
-  skills: ""
+  resume: ""
 };
 
 export const NavBar = () => {
@@ -40,13 +41,13 @@ export const NavBar = () => {
 
   return (
     <div className={navBarContainerClass}>
-      <div className="navbar">
+      <div className="navbar-navlinks">
         <NavLink
-          className={navLinkClasses.profile}
-          to="/profile"
+          className={navLinkClasses.about}
+          to="/about"
           onClick={handleViewReset}
         >
-          Profile
+          About
         </NavLink>
         <NavLink
           className={navLinkClasses.webDevelopment}
@@ -56,12 +57,35 @@ export const NavBar = () => {
           Web Development
         </NavLink>
         <NavLink
-          className={navLinkClasses.curriculumVitae}
-          to="curriculumVitae"
+          className={navLinkClasses.resume}
+          to="resume"
           onClick={handleViewReset}
         >
-          Curriculum Vitae
+          Resume
         </NavLink>
+      </div>
+      <div className="navbar-social">
+        <NavLink
+          /* className={navLinkClasses.curriculumVitae} */
+          to="emailForm"
+          onClick={handleViewReset}
+        >
+          <IconSmall src="./src/img/icon/email3.png" alt="email icon"/>
+        </NavLink>
+        <a
+          onClick={() => {
+            window.open("https://github.com/maxAubain", "_blank");
+          }}
+        >
+          <IconSmall src="./src/img/icon/github3.png" alt="github icon" />
+        </a>
+        <a
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
+          }}
+        >
+          <IconSmall src="./src/img/icon/linkedin2.png" alt="linkedin icon" />
+        </a>
       </div>
     </div>
   );
