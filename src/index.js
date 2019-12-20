@@ -1,17 +1,21 @@
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
-import { Profile } from "./components/Profile";
-import { NavBar } from "./components/Navbar";
-import { Footer } from "./components/Footer";
-import { DeveloperProjects } from "./components/DeveloperProjects";
 import { CurriculumVitae } from "./components/CurriculumVitae";
+import { DeveloperProjects } from "./components/DeveloperProjects";
 import { EmailForm } from "./components/EmailForm";
+import { Footer } from "./components/Footer";
+import { NavBar } from "./components/Navbar";
+import { Profile } from "./components/Profile";
+import { Resume } from "./components/Resume";
 
 import "./css/global.css";
 import "./css/socialMedia.css"
 import "./css/curriculumVitae.css";
+import "./css/resume.css";
+import "./css/developerProjects.css";
+
 import WebFont from "webfontloader";
 
 const App = () => {
@@ -26,6 +30,7 @@ const App = () => {
               <Route path="/profile" component={Profile} />
               <Route path="/webDevelopment" component={DeveloperProjects} />
               <Route path="/curriculumVitae" component={CurriculumVitae} />
+              <Route path="/resume" component={Resume} />
               <Route path="/emailForm" component={EmailForm} />
             </Switch>
           </div>

@@ -7,7 +7,7 @@ let navLinkClasses = {
   profile: "",
   webDevelopment: "",
   curriculumVitae: "",
-  skills: ""
+  resume: ""
 };
 
 export const NavBar = () => {
@@ -64,6 +64,13 @@ export const NavBar = () => {
         >
           Curriculum Vitae
         </NavLink>
+        <NavLink
+          className={navLinkClasses.resume}
+          to="resume"
+          onClick={handleViewReset}
+        >
+          Resume
+        </NavLink>
       </div>
       <div className="navbar-social">
         <NavLink
@@ -71,21 +78,21 @@ export const NavBar = () => {
           to="emailForm"
           onClick={handleViewReset}
         >
-          <IconSmall src="./src/img/icon/email.png" alt="email icon" />
+          <IconSmall src="./src/img/icon/email3.png" alt="email icon"/>
         </NavLink>
         <a
           onClick={() => {
             window.open("https://github.com/maxAubain", "_blank");
           }}
         >
-          <IconSmall src="./src/img/icon/github.png" alt="github icon" />
+          <IconSmall src="./src/img/icon/github3.png" alt="github icon" />
         </a>
         <a
           onClick={() => {
             window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
           }}
         >
-          <IconSmall src="./src/img/icon/linkedin.png" alt="linkedin icon" />
+          <IconSmall src="./src/img/icon/linkedin2.png" alt="linkedin icon" />
         </a>
       </div>
     </div>
