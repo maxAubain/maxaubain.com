@@ -118,6 +118,11 @@ p {
   justify-content: center;
 }
 
+/* Resume */
+.resume-link {
+  margin: 0 0 0 15px;
+}
+
 /* Media query configuration */
 /* Smartphone Styles */
 @media only screen and (max-width: 420px) {

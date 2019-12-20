@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WebLink } from "./common/WebLink"
+import { WebLink } from "./common/WebLink";
 
 /* This component will need to be re-developed to a DRY
 configuration, storing the education data in a JSON and 
@@ -38,7 +38,16 @@ export const Education = () => {
             2013
           </p>
           <p>
-            <i>Dissertation degree acheived by simulating and measuring physical properties of semiconductor materials.  Alumnus of the <WebLink url="http://maeresearch.ucsd.edu/bandaru/Students_Staff_meetings.htm" linkText="Prof. Bandaru Research Group" className="weblink"/></i>
+            <i>
+              Dissertation degree acheived by simulating and measuring physical
+              properties of semiconductor materials. Alumnus of the{" "}
+              <WebLink
+                url="http://maeresearch.ucsd.edu/bandaru/Students_Staff_meetings.htm"
+                linkText="Prof. Bandaru Research Group"
+                className="weblink"
+              />
+              .
+            </i>
           </p>
         </div>
       </div>
@@ -56,9 +65,9 @@ export const Education = () => {
         </div>
         <div className="education-feature-description">
           <b>
-              Bachelors of Science
-              <br />
-              Materials Science and Engineering
+            Bachelors of Science
+            <br />
+            Materials Science and Engineering
           </b>
           <p>
             Ithaca, New York, USA
@@ -66,7 +75,16 @@ export const Education = () => {
             2007
           </p>
           <p>
-            <i>A well rounded engineering degree with a experimental research and thesis component.  Alumnus of the <WebLink url="https://baker.mse.cornell.edu/Alumni.html" linkText="Prof. Baker Research Group" className="weblink"/>.</i>
+            <i>
+              A well rounded engineering degree with a experimental research and
+              thesis component. Alumnus of the{" "}
+              <WebLink
+                url="https://baker.mse.cornell.edu/Alumni.html"
+                linkText="Prof. Baker Research Group"
+                className="weblink"
+              />
+              .
+            </i>
           </p>
         </div>
       </div>
@@ -84,9 +102,9 @@ export const Education = () => {
         </div>
         <div className="education-feature-description">
           <b>
-              Bootcamp Student
-              <br />
-              Full Stack Development
+            Bootcamp Student
+            <br />
+            Full Stack Development
           </b>
           <p>
             Stockholm, Sweden
@@ -94,7 +112,10 @@ export const Education = () => {
             2019
           </p>
           <p>
-            <i>Mastered web development fundamentals and Agile principles in a 60 hours per week, laboratory setting.</i>
+            <i>
+              Mastered web development fundamentals and Agile principles in a 60
+              hours per week, laboratory setting.
+            </i>
           </p>
         </div>
       </div>
@@ -108,13 +129,15 @@ export const Education = () => {
               width="160px"
             />
           </div>
-          <b>Leadership and Teamwork Program</b>
+          <b>
+            UCSD Leadership and <br /> Teamwork Program
+          </b>
         </div>
         <div className="education-feature-description">
           <b>
-              Leadership Trainee
-              <br />
-              Engineering and Business Management
+            Leadership Trainee
+            <br />
+            Engineering and Business Management
           </b>
           <p>
             La Jolla, California, USA
@@ -122,7 +145,10 @@ export const Education = () => {
             2015
           </p>
           <p>
-            <i>Studied personality, motivation, and case studies involving work psychology and ethics.</i>
+            <i>
+              Studied personality, motivation, and case studies involving work
+              psychology and ethics.
+            </i>
           </p>
         </div>
       </div>
@@ -140,9 +166,9 @@ export const Education = () => {
         </div>
         <div className="education-feature-description">
           <b>
-              Patent Agent, Reg. No. 77,295
-              <br />
-              Independent Study course for the USPTO Bar Exam
+            Patent Agent, Reg. No. 77,295
+            <br />
+            Independent Study course for the USPTO Bar Exam
           </b>
           <p>
             USA
@@ -150,7 +176,16 @@ export const Education = () => {
             2018
           </p>
           <p>
-            <i>Studied laws, rules, and procedures for evaluating intellectual property novelty.</i>
+            <i>
+              Studied laws, rules, and procedures for evaluating intellectual
+              property. My registration is recorded in the USPTO's{" "}
+              <WebLink
+                url="https://www.uspto.gov/web/offices/com/sol/og/2018/week26/TOC.htm"
+                linkText="Official Gazette"
+                className="weblink"
+              />
+              .
+            </i>
           </p>
         </div>
       </div>

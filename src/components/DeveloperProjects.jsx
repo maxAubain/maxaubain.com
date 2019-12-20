@@ -4,8 +4,6 @@ import axios from "axios";
 import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 
-import "../css/developerProjects.css";
-
 export const DeveloperProjects = () => {
 
   // Define project categories attributes
