@@ -6,19 +6,22 @@
       "path": "./src/img/icon/news.png",
       "alt": "news-icon"
     },
-    "descriptionShort": "Repackage Gnosis client as a mobile app.",
+    "descriptionShort": "Gnosis browser app 'repackaged' as mobile app.",
     "descriptionFull": [
-      "Deployed desktop applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
-      "Using this example method, the Gnosis application has been updated as an iOS mobile application.  The mobile app is enabled to run locally using Apple's Xcode mobile app emulator."
+      "Browser applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
+      "Using this type of development process, the Gnosis application has been updated as an iOS mobile application.  The mobile app is enabled to run locally using Apple's Xcode mobile app emulator."
     ],
-    "tech": "Github, Node.js, React v16 with ES6, converted to mobile app with Capacitor and Ionic, emulated with Xcode",
-    "link1": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app",
-    "linkLabel1": "github",
-    "link2": "",
-    "linkLabel2": "",
-    "link3": "",
-    "linkLabel3": "",
-    "link4": "",
-    "linkLabel4": ""
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "local",
+      "Application frameworks": "Node.js, Ionic",
+      "Testing frameworks": "none",
+      "Libraries and modules": "React v16 with ES6, Capacitor",
+      "User Interface": "HTML5, CSS3",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app"
+    }
   }
 ]
