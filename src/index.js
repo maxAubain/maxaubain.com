@@ -11,6 +11,7 @@ import { EmailForm } from "./components/EmailForm";
 
 import "./css/global.css";
 import "./css/socialMedia.css"
+import "./css/curriculumVitae.css";
 import WebFont from "webfontloader";
 
 const App = () => {

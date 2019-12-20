@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 
 import { Resume } from "./Resume";
-import { Recommendations } from "./Recommendations"
-import { WebLink } from "./common/WebLink";
-
-import "../css/curriculumVitae.css";
+import { Recommendations } from "./Recommendations";
+import { Education } from "./Education"
 
 export const CurriculumVitae = () => {
-  const components = [
-    "Recommendations",
-    "Education",
-    "Publications",
-    "Resume"
-  ];
+  const components = ["Recommendations", "Education", "Resume"];
   const [currentComponent, setCurrentComponent] = useState(components[0]);
 
   let navlinkSectionClassName;
@@ -40,10 +33,7 @@ export const CurriculumVitae = () => {
       component = <Recommendations />;
       break;
     case "Education":
-      component = <p>Education here.</p>;
-      break;
-    case "Publications":
-      component = <p>Publications here.</p>;
+      component = <Education />
       break;
     case "Resume":
       component = <Resume />;
@@ -54,15 +44,8 @@ export const CurriculumVitae = () => {
     <>
       <div className="navlink-section-container">
         {componentsSelectors}
-        <div className="navlink-section">
-          <WebLink
-            url="https://www.linkedin.com/in/maxaubain/"
-            linkText="Linkedin Profile"
-            className="weblink"
-          />
-        </div>
       </div>
-      <div className="cv-component-container">{component}</div>
+      {component}
     </>
   );
 };
