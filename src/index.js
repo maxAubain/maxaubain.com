@@ -7,8 +7,10 @@ import { NavBar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { DeveloperProjects } from "./components/DeveloperProjects";
 import { CurriculumVitae } from "./components/CurriculumVitae";
+import { EmailForm } from "./components/EmailForm";
 
 import "./css/global.css";
+import "./css/socialMedia.css"
 import WebFont from "webfontloader";
 
 const App = () => {
@@ -23,6 +25,7 @@ const App = () => {
               <Route path="/profile" component={Profile} />
               <Route path="/webDevelopment" component={DeveloperProjects} />
               <Route path="/curriculumVitae" component={CurriculumVitae} />
+              <Route path="/emailForm" component={EmailForm} />
             </Switch>
           </div>
           <Footer />

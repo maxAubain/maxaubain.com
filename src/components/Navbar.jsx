@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import { NavLink } from "react-router-dom";
+import { IconSmall } from "./common/IconSmall";
 
 let navLinkClasses = {
   profile: "",
@@ -40,7 +42,7 @@ export const NavBar = () => {
 
   return (
     <div className={navBarContainerClass}>
-      <div className="navbar">
+      <div className="navbar-navlinks">
         <NavLink
           className={navLinkClasses.profile}
           to="/profile"
@@ -62,6 +64,29 @@ export const NavBar = () => {
         >
           Curriculum Vitae
         </NavLink>
+      </div>
+      <div className="navbar-social">
+        <NavLink
+          /* className={navLinkClasses.curriculumVitae} */
+          to="emailForm"
+          onClick={handleViewReset}
+        >
+          <IconSmall src="./src/img/icon/email.png" alt="email icon" />
+        </NavLink>
+        <a
+          onClick={() => {
+            window.open("https://github.com/maxAubain", "_blank");
+          }}
+        >
+          <IconSmall src="./src/img/icon/github.png" alt="github icon" />
+        </a>
+        <a
+          onClick={() => {
+            window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
+          }}
+        >
+          <IconSmall src="./src/img/icon/linkedin.png" alt="linkedin icon" />
+        </a>
       </div>
     </div>
   );
