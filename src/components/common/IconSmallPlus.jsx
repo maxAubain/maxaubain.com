@@ -1,13 +1,13 @@
 import React from "react";
 
-export const IconSmall = props => {
+export const IconSmallPlus = props => {
   return (
     <img
-      className="icon-small"
+      className="icon-small-plus"
       src={props.src}
       alt={props.alt}
-      height="30"
-      width="30"
+      height="40"
+      width="40"
     ></img>
   );
 };

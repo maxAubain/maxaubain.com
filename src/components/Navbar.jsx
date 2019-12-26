@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import { IconSmall } from "./common/IconSmall";
+import { IconSmallPlus } from "./common/IconSmallPlus";
 import { NavLink } from "react-router-dom";
 
 let navLinkClasses = {
   about: "",
   webDevelopment: "",
-  resume: ""
+  resume: "",
+  contact:""
 };
 
 export const NavBar = () => {
@@ -63,28 +64,28 @@ export const NavBar = () => {
         >
           Resume
         </NavLink>
-      </div>
-      <div className="navbar-social">
         <NavLink
-          /* className={navLinkClasses.curriculumVitae} */
-          to="emailForm"
+          className={navLinkClasses.contact}
+          to="contact"
           onClick={handleViewReset}
         >
-          <IconSmall src="./src/img/icon/email3.png" alt="email icon"/>
+          Contact
         </NavLink>
+      </div>
+      <div className="navbar-social">
         <a
           onClick={() => {
             window.open("https://github.com/maxAubain", "_blank");
           }}
         >
-          <IconSmall src="./src/img/icon/github3.png" alt="github icon" />
+          <IconSmallPlus src="./src/img/icon/github4.png" alt="github icon" />
         </a>
         <a
           onClick={() => {
             window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
           }}
         >
-          <IconSmall src="./src/img/icon/linkedin2.png" alt="linkedin icon" />
+          <IconSmallPlus src="./src/img/icon/linkedin3.png" alt="linkedin icon" />
         </a>
       </div>
     </div>
