@@ -1,8 +1,22 @@
-.resume-wrapper {
-  margin: 25px 0 0 0;
-}
-
 .pdf {
   width: 100%;
   height: 100vh;
+}
+
+@media only screen and (max-width: 420px) {
+  .resume-wrapper {
+    padding: 40px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .resume-wrapper {
+    padding: 5px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .resume-wrapper {
+    padding: 5px 0 0 0;
+  }
 }

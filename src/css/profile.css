@@ -64,6 +64,7 @@
   .feature-profile {
     width: 100%;
     flex-wrap: wrap;
+    margin: 20px 0 0 0;
   }
   .headline-item {
     padding: 0px 30px 0px 30px;
@@ -88,6 +89,7 @@
   .feature-profile {
     width: 100%;
     flex-wrap: wrap;
+    margin: 20px 0 0 0;
   }
   .feature-title {
     min-width: 25%

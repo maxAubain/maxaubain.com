@@ -9,6 +9,7 @@ import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
 import { Resume } from "./components/Resume";
 
+import "./css/common.css";
 import "./css/developerProjects.css";
 import "./css/education.css";
 import "./css/global.css";
@@ -31,7 +32,7 @@ const App = () => {
               <Route path="/about" component={About} />
               <Route path="/webDevelopment" component={DeveloperProjects} />
               <Route path="/resume" component={Resume} />
-              <Route path="/emailForm" component={EmailForm} />
+              <Route path="/contact" component={EmailForm} />
             </Switch>
           </div>
           <Footer />

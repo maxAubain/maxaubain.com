@@ -12,7 +12,7 @@ body {
 /* Tags */
 .navlink {
   text-decoration: none;
-  margin: 10px;
+  margin: 10px 8px 10px 8px;
   font-size: 20px;
   color: rgb(0, 0, 0);
 }
@@ -22,7 +22,7 @@ body {
 }
 
 .navlink-current {
-  margin: 10px;
+  margin: 10px 8px 10px 8px;
   font-size: 20px;
   color: #0f84e4;
 }
@@ -91,16 +91,16 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .navbar-social {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Page content */
@@ -127,7 +127,7 @@ p {
 /* Smartphone Styles */
 @media only screen and (max-width: 420px) {
   .page-content {
-    padding-top: 80px;
+    padding-top: 50px;
   }
 
   .navbar-navlinks {
@@ -150,7 +150,7 @@ p {
   }
 
   .navlink-section-container {
-    margin: 25px 0 0 0;
+    margin: 5px 0 0 0;
   }
 }
 
@@ -171,6 +171,6 @@ p {
   }
 
   .navlink-section-container {
-    margin: 25px 0 0 0;
+    margin: 5px 0 0 0;
   }
 }

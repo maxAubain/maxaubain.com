@@ -23,7 +23,7 @@ export const Recommendations = () => {
         <p>
           He is an effective and transparent manager, and is great at always
           being available even while being extremely productive himself. He
-          consistently develops the skills of those he works will while
+          consistently develops the skills of those he works with while
           fostering independence and growth."
         </p>
         <p>

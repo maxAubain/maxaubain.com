@@ -30,19 +30,20 @@ export const EmailForm = () => {
           method="POST"
           className="email-form"
         >
-          {/* add your custom form HTML here */}
-          <label>
+          <p>
             For professional inquiries, please leave your contact information
             and a brief message.
-          </label>
+          </p>
           <label className="email-label">Name</label>
-          <input size="42" type="email" name="email" className="email-input" />
+          <input type="text" name="name" className="email-input" />
+          <label className="email-label">Company</label>
+          <input type="text" name="company" className="email-input" />
           <label className="email-label">Email</label>
-          <input size="42" type="email" name="email" className="email-input" />
+          <input type="email" name="email" className="email-input" />
           <label className="email-label">Message</label>
-          <textarea rows="5" cols="32" name="message" className="email-input" /><br />
+          <textarea name="message" className="email-input" /><br />
           {status === "SUCCESS" ? (
-            <p>Thanks!</p>
+            <p>Thanks!  I will get back to you soon.</p>
           ) : (
             <button className="email-submit">Submit</button>
           )}

@@ -76,8 +76,8 @@ export const Education = () => {
           </p>
           <p>
             <i>
-              A well rounded engineering degree with a experimental research and
-              thesis component. Alumnus of the{" "}
+              A well rounded engineering degree with experimental research and
+              thesis components. Alumnus of the{" "}
               <WebLink
                 url="https://baker.mse.cornell.edu/Alumni.html"
                 linkText="Prof. Baker Research Group"
@@ -113,8 +113,8 @@ export const Education = () => {
           </p>
           <p>
             <i>
-              Mastered web development fundamentals and Agile principles in a 60
-              hours per week, laboratory setting.
+              Mastered web development fundamentals and Agile principles in a
+              laboratory setting, 60 hours per week over 16 weeks.
             </i>
           </p>
         </div>
