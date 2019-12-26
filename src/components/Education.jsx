@@ -76,8 +76,8 @@ export const Education = () => {
           </p>
           <p>
             <i>
-              A well rounded engineering degree with a experimental research and
-              thesis component. Alumnus of the{" "}
+              A well rounded engineering degree with experimental research and
+              thesis components. Alumnus of the{" "}
               <WebLink
                 url="https://baker.mse.cornell.edu/Alumni.html"
                 linkText="Prof. Baker Research Group"
