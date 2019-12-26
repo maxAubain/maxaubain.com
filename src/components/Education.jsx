@@ -113,8 +113,8 @@ export const Education = () => {
           </p>
           <p>
             <i>
-              Mastered web development fundamentals and Agile principles in a 60
-              hours per week, laboratory setting.
+              Mastered web development fundamentals and Agile principles in a
+              laboratory setting, 60 hours per week over 16 weeks.
             </i>
           </p>
         </div>
