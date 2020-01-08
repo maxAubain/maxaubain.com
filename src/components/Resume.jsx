@@ -5,14 +5,16 @@ import { WebLink } from "./common/WebLink";
 export const Resume = () => {
   return (
     <div className="resume-wrapper">
-      <h4><WebLink
-        url="https://drive.google.com/open?id=1r9NKpSXyXky87jLEICQ_j8X_-7efsXsw"
-        linkText="Download Resume"
-        className="weblink resume-link"
-      /></h4>
+      <h4>
+        <WebLink
+          url="https://drive.google.com/open?id=1q5RSFeCHtSh95N2ofFrDlwvJRLO5XZ0f"
+          linkText="Download Resume"
+          className="weblink resume-link"
+        />
+      </h4>
       <object
         className="pdf"
-        data="./src/pdf/Max Aubain - R - FSD.pdf"
+        data="./src/pdf/Max Aubain - Resume.pdf"
         type="application/pdf"
       />
     </div>
