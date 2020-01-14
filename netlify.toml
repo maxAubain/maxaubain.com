@@ -1,4 +1,4 @@
-# Fixes problem when page extension, e.g., "/WebDevelopment", is typed into browser, the page is 404.
+# Fixes problem when page extension, e.g., "/portfolio", is typed into browser, the page is 404.
 [[redirects]]
   from = "/*"
   to = "/index.html"

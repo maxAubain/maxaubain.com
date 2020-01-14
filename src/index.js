@@ -15,8 +15,7 @@ import "./css/education.css";
 import "./css/global.css";
 import "./css/profile.css";
 import "./css/resume.css";
-import "./css/socialMedia.css"
-
+import "./css/socialMedia.css";
 
 import WebFont from "webfontloader";
 
@@ -30,7 +29,7 @@ const App = () => {
             <Switch>
               <Redirect exact from="/" to="/about" />
               <Route path="/about" component={About} />
-              <Route path="/webDevelopment" component={DeveloperProjects} />
+              <Route path="/portfolio" component={DeveloperProjects} />
               <Route path="/resume" component={Resume} />
               <Route path="/contact" component={EmailForm} />
             </Switch>
