@@ -34,20 +34,42 @@ export const EmailForm = () => {
             For professional inquiries, please leave your contact information
             and a brief message.
           </p>
-          <label className="email-label">Name</label>
-          <input type="text" name="name" className="email-input" />
-          <label className="email-label">Company</label>
-          <input type="text" name="company" className="email-input" />
-          <label className="email-label">Email</label>
-          <input type="email" name="email" className="email-input" />
-          <label className="email-label">Message</label>
-          <textarea name="message" className="email-input" /><br />
+          <p>Or, email me at maxaubain [at] protonmail [dot] com.</p>
+          <label className="email-form-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            className="email-form-input"
+            required
+          />
+          <label className="email-form-label">Company</label>
+          <input
+            type="text"
+            name="company"
+            className="email-form-input"
+            required
+          />
+          <label className="email-form-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            className="email-form-input"
+            required
+          />
+          <label className="email-form-label">Message</label>
+          <textarea name="message" className="email-form-input" required />
+          <br />
           {status === "SUCCESS" ? (
-            <p>Thanks!  I will get back to you soon.</p>
+            <p>Thanks! I will get back to you soon.</p>
           ) : (
-            <button className="email-submit">Submit</button>
+            <button className="email-submit-button">Submit</button>
           )}
-          {status === "ERROR" && <p>Ooops! There was an error.</p>}
+          {status === "ERROR" && (
+            <p>
+              Ooops! There was an error. Please make sure each section is
+              accurately completed, and re-submit.
+            </p>
+          )}
         </form>
       </div>
     </div>

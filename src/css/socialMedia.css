@@ -8,27 +8,28 @@
   max-width: 350px;
 }
 
-input.email-input,
-textarea.email-input {
+input.email-form-input,
+textarea.email-form-input {
   box-shadow: inset 0 0 5px #bebebe;
   border-radius: 3px;
   border: 1px black solid;
   font-size: 16px;
   width: 300px;
   padding: 10px;
+  font-family: Muli;
 }
 
-textarea.email-input {
+textarea.email-form-input {
   height: 100px;
 }
 
-.email-label {
+.email-form-label {
   font-size: 20px;
   display: block;
   margin: 15px 0 5px 0;
 }
 
-.email-submit {
+.email-submit-button {
   border-radius: 3px;
   border: 1px black solid;
   font-size: 16px;
@@ -39,7 +40,8 @@ textarea.email-input {
 
 /* Configures sections */
 .section-form {
-  min-height: 400px; height: auto;
+  min-height: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
