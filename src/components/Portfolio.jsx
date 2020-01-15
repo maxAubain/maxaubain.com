@@ -4,7 +4,7 @@ import axios from "axios";
 import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 
-export const DeveloperProjects = () => {
+export const Portfolio = () => {
   // Define project categories attributes
   const projectCategories = {
     Featured: ".src/data/projectsFeatured.json",
@@ -51,7 +51,7 @@ export const DeveloperProjects = () => {
 
   // Projects object when category is selected
   const projects = Object.keys(projectCategories).map(key => {
-    if (key === currentProjectCategory) {
+    if (key === currentProjectCategory && !(key === "Featured")) {
       return (
         <Projects
           key={key}
@@ -59,6 +59,8 @@ export const DeveloperProjects = () => {
           externalLinks={externalLinks}
         />
       );
+    } else if (key === currentProjectCategory && key === "Featured") {
+      return <p>Well HELLO there!</p>;
     }
   });
 

@@ -3,14 +3,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { About } from "./components/About";
-import { DeveloperProjects } from "./components/DeveloperProjects";
+import { Portfolio } from "./components/Portfolio";
 import { EmailForm } from "./components/EmailForm";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
 import { Resume } from "./components/Resume";
 
 import "./css/common.css";
-import "./css/developerProjects.css";
+import "./css/Portfolio.css";
 import "./css/education.css";
 import "./css/global.css";
 import "./css/profile.css";
@@ -29,7 +29,7 @@ const App = () => {
             <Switch>
               <Redirect exact from="/" to="/about" />
               <Route path="/about" component={About} />
-              <Route path="/portfolio" component={DeveloperProjects} />
+              <Route path="/portfolio" component={Portfolio} />
               <Route path="/resume" component={Resume} />
               <Route path="/contact" component={EmailForm} />
             </Switch>
