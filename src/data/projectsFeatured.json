@@ -1,6 +1,6 @@
 [
   {
-    "id": "FS1",
+    "id": "F1",
     "title": "Webpage Snapshot",
     "image": {
       "path": "./src/img/icon/camera.png",
@@ -23,117 +23,6 @@
     "links": {
       "live site": "https://screenshot-capture.herokuapp.com/",
       "repository & documentation": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service"
-    }
-  },
-  {
-    "id": "FS2",
-    "title": "Todo list",
-    "image": {
-      "path": "./src/img/icon/checkbox.png",
-      "alt": "checkbox-icon"
-    },
-    "descriptionShort": "Todo list app with advanced features.",
-    "descriptionFull": [
-      "My responsibilities for this development project were to implement improvements to an existing todo list application written using the newly released state hooks in ReactJS.  These improvements included autosave functionality, due date tracking, todo completion tracking, and setting up a backend server to persist the data.  As such, this is a CORS full stack application with the API hosted using Heroku containerized cloud service and the front end deployed with Netlify's JAMstack technology.",
-      "Each feature and Dev Ops chore was documented with pull requests in Github, reviewable using the 'repository & documentation' link above.  The application can be tested using the 'live site' link, and the database can be viewed as text with the 'api site' link.",
-      "For features that modified the UX flow, acceptance tests were scripted in the Cypress testing framework to verify the new functionality.  The Cypress framework can run the tests with a local instance of the application."
-    ],
-    "tech": {
-      "Version control": "Github",
-      "Deployment": "Netlify, Heroku",
-      "Application frameworks": "Node.js",
-      "Testing frameworks": "Cypress",
-      "Libraries and modules": "React v16.9 with ES8, Express server, Express CORS, Axios, Body Parser",
-      "User Interface": "Material-UI, HTML5, CSS3",
-      "Project management tools": "none"
-    },
-    "links": {
-      "live site": "https://todo-list-client.netlify.com/",
-      "api site": "https://todo-list-is-here.herokuapp.com/",
-      "repository & documentation": "https://github.com/maxAubain/fullstack-sandbox/pulls"
-    }
-  },
-  {
-    "id": "FS3",
-    "title": "Gnosis: Science News",
-    "image": {
-      "path": "./src/img/icon/news.png",
-      "alt": "news-icon"
-    },
-    "descriptionShort": "Research news aggregator site for enthusiasts.",
-    "descriptionFull": [
-      "Gnosis is a science news aggregation site with complex user roles for University subscribers, Research Group publishers, and Member readers.  Gnosis was planned and constructed by a team comprising myself and five other junior developers, with guidance from senior developers.",
-      "This CORS-configured full stack application is demonstrated two ways.  The first approach is to use the live website with the three types of user roles.  Demonstration guides for this approach are found in the 'client-side repository & documentation'.  The *magic* of this app is seen, perhaps counterintuitively for a news site, in the 'sign up' of the different user types rather than the showing of various articles.  The second approach includes creating a local build of the client and running acceptance tests.",
-      "This application was developed using TDD methods and, accordingly, acceptance tests are available on the client side.  It is not possible to test the api with its request specs due to security features implemented on the back end, but the request specs files are available for direct inspection in 'github-api'."
-    ],
-    "tech": {
-      "Version control": "Github",
-      "Deployment": "Netlify, Heroku, Semaphore CI, Coveralls",
-      "Application frameworks": "Node.js, Ruby on Rails",
-      "Testing frameworks": "Cypress, Enzyme, Rspec",
-      "Libraries and modules": "React v16 with ES6, Redux, Rails CORS, Stripe, Devise Token Auth, PostgreSQL",
-      "User Interface": "Semantic-UI, HTML5, CSS3",
-      "Project management tools": "Pivotal Tracker"
-    },
-    "links": {
-      "live site": "https://gnosis-app.netlify.com",
-      "live site with features in development": "https://development--gnosis-app.netlify.com",
-      "client-side repository & documentation": "https://github.com/CA-ma/gnosis-client#gnosis-app",
-      "api-side repository & documentation": "https://github.com/CA-ma/gnosis-api",
-      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
-    }
-  },
-  {
-    "id": "FS4",
-    "title": "Articles Blog",
-    "image": {
-      "path": "./src/img/icon/blog.png",
-      "alt": "blog-icon"
-    },
-    "descriptionShort": "Classic articles blog with CRUD methods.",
-    "descriptionFull": [
-      "Create, Read, Update, and Delete (CRUD) methods encompass some the fundamental HTTP verbs that describe how database information is manipulated.  This monolithic, Ruby on Rails application was built with instruction from the Ruby on Rails Guides to showcase these methods in the context of a blog posting site.",
-      "Please feel free to visit the live site, sign up, and leave a post or comment of your own!"
-    ],
-    "tech": {
-      "Version control": "Github",
-      "Deployment": "Heroku",
-      "Application frameworks": "Ruby on Rails",
-      "Testing frameworks": "Cucumber, Rspec",
-      "Libraries and modules": "Devise, PostgreSQL",
-      "User Interface": "HTML5, CSS3",
-      "Project management tools": "none"
-    },
-    "links": {
-      "live site": "https://an-article-posting-site.herokuapp.com/",
-      "repository & documentation": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
-    }
-  },
-  {
-    "id": "FS5",
-    "title": "Kibbles 'n Bites",
-    "image": {
-      "path": "./src/img/icon/food.png",
-      "alt": "food-icon"
-    },
-    "descriptionShort": "Order the best snacks and meals, for your pets!",
-    "descriptionFull": [
-      "This monolithic, Ruby on Rails application uses Heroku to deploy a restaurant menu with fixed category and product layout that is procedurally generated in the view, but also has an updateable menu items.  These product requirements were chosen to simulate what might be desired from a chef trying to break into the online ordering market.",
-      "The Cartify gem/library is implemented to simulate the flow of placing an online order.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories are used to define application features, which are organized in the project management tool Pivotal Tracker according to Agile and design sprint principles."
-    ],
-    "tech": {
-      "Version control": "Github",
-      "Deployment": "Heroku, Semaphore CI, Coveralls",
-      "Application frameworks": "Ruby on Rails",
-      "Testing frameworks": "Cucumber",
-      "Libraries and modules": "Haml, Cartify, PostgreSQL",
-      "User Interface": "HTML5, CSS3",
-      "Project management tools": "Pivotal Tracker"
-    },
-    "links": {
-      "live site": "https://rails-slow-food.herokuapp.com/",
-      "repository & documentation": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
-      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2360231"
     }
   }
 ]

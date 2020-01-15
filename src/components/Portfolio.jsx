@@ -7,7 +7,7 @@ import { ProjectsCount } from "./ProjectsCount";
 export const Portfolio = () => {
   // Define project categories attributes
   const projectCategories = {
-    Featured: ".src/data/projectsFeatured.json",
+    Featured: "./src/data/projectsFeatured.json",
     "Full Stack": "./src/data/projectsFullStack.json",
     "Front End": "./src/data/projectsFrontEnd.json",
     "Coding Exercises": "./src/data/projectsExercises.json"
@@ -51,16 +51,15 @@ export const Portfolio = () => {
 
   // Projects object when category is selected
   const projects = Object.keys(projectCategories).map(key => {
-    if (key === currentProjectCategory && !(key === "Featured")) {
+    if (key === currentProjectCategory) {
       return (
         <Projects
           key={key}
-          path={projectCategories[currentProjectCategory]}
+          projectCategory={key}
+          path={projectCategories[key]}
           externalLinks={externalLinks}
         />
       );
-    } else if (key === currentProjectCategory && key === "Featured") {
-      return <p>Well HELLO there!</p>;
     }
   });
 
