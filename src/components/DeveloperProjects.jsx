@@ -5,16 +5,15 @@ import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 
 export const DeveloperProjects = () => {
-
   // Define project categories attributes
   const projectCategories = {
+    Featured: ".src/data/projectsFeatured.json",
     "Full Stack": "./src/data/projectsFullStack.json",
     "Front End": "./src/data/projectsFrontEnd.json",
-    Mobile: "./src/data/projectsMobile.json",
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
 
-  // Get externalLinks as hash of tech keywords and tech description weblinks 
+  // Get externalLinks as hash of tech keywords and tech description weblinks
   const [externalLinks, setExternalLinks] = useState({});
   useEffect(() => {
     if (Object.keys(externalLinks).length === 0) {
@@ -26,7 +25,7 @@ export const DeveloperProjects = () => {
 
   // Set current project category state
   const [currentProjectCategory, setCurrentProjectCategory] = useState(
-    "Full Stack"
+    "Featured"
   );
 
   // Project Categories navlinks

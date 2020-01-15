@@ -80,7 +80,6 @@
       "live site with features in development": "https://development--gnosis-app.netlify.com",
       "client-side repository & documentation": "https://github.com/CA-ma/gnosis-client#gnosis-app",
       "api-side repository & documentation": "https://github.com/CA-ma/gnosis-api",
-      "mobile app repository & documentation": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app",
       "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
     }
   },
