@@ -78,7 +78,7 @@ export const NavBar = () => {
             window.open("https://github.com/maxAubain", "_blank");
           }}
         >
-          <IconSmallPlus src="./src/img/icon/github4.png" alt="github icon" />
+          <IconSmallPlus src="./src/img/icon/github.png" alt="github icon" />
         </a>
         <a
           onClick={() => {
@@ -86,7 +86,7 @@ export const NavBar = () => {
           }}
         >
           <IconSmallPlus
-            src="./src/img/icon/linkedin3.png"
+            src="./src/img/icon/linkedin.png"
             alt="linkedin icon"
           />
         </a>
