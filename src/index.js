@@ -13,10 +13,10 @@ import "./css/common.css";
 import "./css/education.css";
 import "./css/global.css";
 import "./css/portfolio.css";
-import "./css/projectCard.css";
+import "./css/project-card.css";
 import "./css/profile.css";
 import "./css/resume.css";
-import "./css/socialMedia.css";
+import "./css/social-media.css";
 
 import WebFont from "webfontloader";
 
