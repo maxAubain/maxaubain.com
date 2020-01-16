@@ -29,7 +29,7 @@ export const Recommendations = () => {
         <p>
           -{" "}
           <WebLink
-            linkText="Anna Alexander, Ph.D."
+            linkObj="Anna Alexander, Ph.D."
             url="https://www.linkedin.com/in/anna-alexander-78482021/"
             className="weblink"
           />

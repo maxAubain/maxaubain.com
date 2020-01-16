@@ -6,7 +6,7 @@ export const Profile = () => {
       <div className="intro">
         <div className="section-profile headshot-container">
           <div>
-            <img className="headshot" src="./src/img/headShot.png" />
+            <img className="headshot" src="./src/img/head-shot.png" />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>

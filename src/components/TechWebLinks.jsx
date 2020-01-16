@@ -12,7 +12,7 @@ export const TechWebLinks = ({ keyword, externalLinks }) => {
         <WebLink
           key={keyword}
           url={externalLinks[keyword]}
-          linkText={keyword}
+          linkObj={keyword}
           className="weblink"
         />
       );

@@ -1,14 +1,14 @@
 [
   {
     "id": "FS1",
-    "title": "Webpage Snapshot",
+    "title": "Browsershot",
     "image": {
       "path": "./src/img/icon/camera.png",
       "alt": "camera-icon"
     },
     "descriptionShort": "Browser screenshots provided with a SaaS platform.",
     "descriptionFull": [
-      "Webpage Snapshot is monolithic, full stack application with proof-of-concept functionality, implemented using the Ruby on Rails framework.  It is deployed using Heroku, a containerized hosting service.",
+      "Browsershot is monolithic, full stack application with proof-of-concept functionality, implemented using the Ruby on Rails framework.  It is deployed using Heroku, a containerized hosting service.",
       "The goal of the application is to generate, store, and show on-demand, browser snapshots of webpages designated by a user.  Images are stored by the hosting service using the native-to-Rails Active Storage framework, similar to Amazon's S3 storage.  However, free Heroku containers are reset daily, so while the database information for each snapshot request persists, the stored images are erased every 24 hrs.  Therefore, snapshots from past requests will likely be unavailable when browsing this app site, but new requests will show all images as desired."
     ],
     "tech": {
@@ -21,7 +21,7 @@
       "Project management tools": "none"
     },
     "links": {
-      "live site": "https://screenshot-capture.herokuapp.com/",
+      "live site": "https://browsershot-dashboard.herokuapp.com/",
       "repository & documentation": "https://github.com/maxAubain/DTC_screenshot#full-stack-application-capture-store-and-retrieve-website-screenshots-as-a-service"
     }
   },
