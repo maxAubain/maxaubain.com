@@ -1,0 +1,13 @@
+[
+  {
+    "id": "F1",
+    "title": "Browsershot",
+    "image": {
+      "path": "./src/img/browsershot.png",
+      "alt": "browsershot-image"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/"
+    }
+  }
+]
