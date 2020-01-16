@@ -4,6 +4,8 @@ import axios from "axios";
 import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 
+let navlinkSectionClassName, projectCategoryClassName;
+
 export const Portfolio = () => {
   // Define project categories attributes
   const projectCategories = {
@@ -29,7 +31,6 @@ export const Portfolio = () => {
   );
 
   // Project Categories navlinks
-  let navlinkSectionClassName;
   const ProjectCategoriesNavlinks = Object.keys(projectCategories).map(key => {
     key === currentProjectCategory
       ? (navlinkSectionClassName = "navlink-section-current")
@@ -64,12 +65,16 @@ export const Portfolio = () => {
   });
 
   if (Object.keys(externalLinks).length > 0) {
+    currentProjectCategory === "Featured"
+      ? (projectCategoryClassName =
+          "project-categories-wrapper project-categories-wrapper-featured")
+      : (projectCategoryClassName = "project-categories-wrapper");
     return (
       <>
         <div className="navlink-section-container">
           {ProjectCategoriesNavlinks}
         </div>
-        <div className="project-categories-wrapper">{projects}</div>
+        <div className={projectCategoryClassName}>{projects}</div>
       </>
     );
   } else {

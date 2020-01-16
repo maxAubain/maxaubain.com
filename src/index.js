@@ -10,9 +10,10 @@ import { NavBar } from "./components/Navbar";
 import { Resume } from "./components/Resume";
 
 import "./css/common.css";
-import "./css/Portfolio.css";
 import "./css/education.css";
 import "./css/global.css";
+import "./css/portfolio.css";
+import "./css/projectCard.css";
 import "./css/profile.css";
 import "./css/resume.css";
 import "./css/socialMedia.css";

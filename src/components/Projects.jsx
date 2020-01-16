@@ -25,7 +25,7 @@ export const Projects = ({ projectCategory, path, externalLinks }) => {
     } else {
       return (
         <div key={project.id}>
-          <ProjectCard project={project} externalLinks={externalLinks} />
+          <ProjectCard project={project} />
         </div>
       );
     }
