@@ -25,7 +25,7 @@ export const Project = ({ project, externalLinks }) => {
       <div key={key}>
         <WebLink
           url={project.links[key]}
-          linkText={key}
+          linkObj={key}
           className="project-details-link weblink"
         />
       </div>

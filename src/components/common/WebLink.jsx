@@ -1,6 +1,6 @@
 import React from "react";
 
-export const WebLink = ({ url, linkText, className }) => {
+export const WebLink = ({ url, linkObj, className }) => {
   return (
     <a
       onClick={() => {
@@ -8,7 +8,7 @@ export const WebLink = ({ url, linkText, className }) => {
       }}
       className={className}
     >
-      {linkText}
+      {linkObj}
     </a>
   );
 };

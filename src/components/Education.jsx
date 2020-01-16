@@ -43,7 +43,7 @@ export const Education = () => {
               properties of semiconductor materials. Alumnus of the{" "}
               <WebLink
                 url="http://maeresearch.ucsd.edu/bandaru/Students_Staff_meetings.htm"
-                linkText="Prof. Bandaru Research Group"
+                linkObj="Prof. Bandaru Research Group"
                 className="weblink"
               />
               .
@@ -80,7 +80,7 @@ export const Education = () => {
               thesis components. Alumnus of the{" "}
               <WebLink
                 url="https://baker.mse.cornell.edu/Alumni.html"
-                linkText="Prof. Baker Research Group"
+                linkObj="Prof. Baker Research Group"
                 className="weblink"
               />
               .
@@ -181,7 +181,7 @@ export const Education = () => {
               property. My registration is recorded in the USPTO's{" "}
               <WebLink
                 url="https://www.uspto.gov/web/offices/com/sol/og/2018/week26/TOC.htm"
-                linkText="Official Gazette"
+                linkObj="Official Gazette"
                 className="weblink"
               />
               .

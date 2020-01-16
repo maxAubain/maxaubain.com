@@ -3,20 +3,20 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { About } from "./components/About";
-import { DeveloperProjects } from "./components/DeveloperProjects";
+import { Portfolio } from "./components/Portfolio";
 import { EmailForm } from "./components/EmailForm";
 import { Footer } from "./components/Footer";
 import { NavBar } from "./components/Navbar";
 import { Resume } from "./components/Resume";
 
 import "./css/common.css";
-import "./css/developerProjects.css";
 import "./css/education.css";
 import "./css/global.css";
+import "./css/portfolio.css";
+import "./css/project-card.css";
 import "./css/profile.css";
 import "./css/resume.css";
-import "./css/socialMedia.css"
-
+import "./css/social-media.css";
 
 import WebFont from "webfontloader";
 
@@ -30,7 +30,7 @@ const App = () => {
             <Switch>
               <Redirect exact from="/" to="/about" />
               <Route path="/about" component={About} />
-              <Route path="/webDevelopment" component={DeveloperProjects} />
+              <Route path="/portfolio" component={Portfolio} />
               <Route path="/resume" component={Resume} />
               <Route path="/contact" component={EmailForm} />
             </Switch>

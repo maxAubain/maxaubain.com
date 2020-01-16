@@ -5,9 +5,9 @@ import { NavLink } from "react-router-dom";
 
 let navLinkClasses = {
   about: "",
-  webDevelopment: "",
+  portfolio: "",
   resume: "",
-  contact:""
+  contact: ""
 };
 
 export const NavBar = () => {
@@ -51,11 +51,11 @@ export const NavBar = () => {
           About
         </NavLink>
         <NavLink
-          className={navLinkClasses.webDevelopment}
-          to="webDevelopment"
+          className={navLinkClasses.portfolio}
+          to="portfolio"
           onClick={handleViewReset}
         >
-          Web Development
+          Portfolio
         </NavLink>
         <NavLink
           className={navLinkClasses.resume}
@@ -78,14 +78,17 @@ export const NavBar = () => {
             window.open("https://github.com/maxAubain", "_blank");
           }}
         >
-          <IconSmallPlus src="./src/img/icon/github4.png" alt="github icon" />
+          <IconSmallPlus src="./src/img/icon/github.png" alt="github icon" />
         </a>
         <a
           onClick={() => {
             window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
           }}
         >
-          <IconSmallPlus src="./src/img/icon/linkedin3.png" alt="linkedin icon" />
+          <IconSmallPlus
+            src="./src/img/icon/linkedin.png"
+            alt="linkedin icon"
+          />
         </a>
       </div>
     </div>
