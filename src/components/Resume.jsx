@@ -8,9 +8,10 @@ export const Resume = () => {
       <h4>
         <WebLink
           url="https://drive.google.com/open?id=1q5RSFeCHtSh95N2ofFrDlwvJRLO5XZ0f"
-          linkObj="Download resume with Google Drive"
+          linkObj="Download"
           className="weblink resume-link"
-        />
+        />{" "}
+        resume with Google Drive.
       </h4>
       <object
         className="pdf"
