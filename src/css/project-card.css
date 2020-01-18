@@ -37,6 +37,8 @@
 
 .featured-img {
   transition: transform 1.5s;
+  max-width: 100%;
+  height: auto;
 }
 
 .featured-category-title-container {
