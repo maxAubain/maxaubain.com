@@ -119,6 +119,12 @@ p {
   text-align: center;
 }
 
+@media only screen and (max-width: 420px) {
+  .footer-wrapper {
+    padding: 0 10px 0 10px;
+  }
+}
+
 /* Resume */
 .resume-link {
   margin: 0 0 0 15px;
