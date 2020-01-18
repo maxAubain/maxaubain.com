@@ -1,6 +1,7 @@
 [
   {
     "id": "F1",
+    "category": "Desktop App",
     "title": "Browsershot",
     "image": {
       "path": "./src/img/browsershot.png",
