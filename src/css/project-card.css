@@ -25,7 +25,7 @@
   justify-content: center;
 
   box-sizing: border-box;
-  height: 206px;
+  height: 201px;
   width: 256px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -39,16 +39,22 @@
   transition: transform 1.5s;
 }
 
-.featured-title {
+.featured-category-title-container {
   box-sizing: border-box;
-  height: 50px;
+  height: 55px;
   width: 256px;
-  padding: 13px 0 0 10px;
+  padding: 5px 10px 0 10px;
 
   background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
 
+.featured-category {
+  text-align: right;
+}
+
+.featured-title {
   color: rgb(216, 115, 0);
   font-size: 20px;
 }
