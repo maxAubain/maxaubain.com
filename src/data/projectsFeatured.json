@@ -1,18 +1,5 @@
 [
   {
-    "id": "F1",
-    "category": "Desktop Browser App",
-    "date_posted": "Jan 17, 2020",
-    "title": "Browsershot",
-    "image": {
-      "path": "./src/img/browsershot.png",
-      "alt": "browsershot-image"
-    },
-    "links": {
-      "live site": "https://browsershot-dashboard.herokuapp.com/"
-    }
-  },
-  {
     "id": "F2",
     "category": "Article",
     "date_posted": "Jan 21, 2020",
@@ -23,6 +10,19 @@
     },
     "links": {
       "live site": "https://medium.com/@maxaubain/git-pull-requests-with-templates-and-agile-in-mind-2cf73c760911"
+    }
+  },
+  {
+    "id": "F1",
+    "category": "Desktop Browser App",
+    "date_posted": "Jan 17, 2020",
+    "title": "Browsershot",
+    "image": {
+      "path": "./src/img/browsershot.png",
+      "alt": "browsershot-image"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/"
     }
   }
 ]
