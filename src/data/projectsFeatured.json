@@ -1,6 +1,19 @@
 [
   {
     "id": "F1",
+    "category": "Desktop Browser App",
+    "date_posted": "Jan 17, 2020",
+    "title": "Browsershot",
+    "image": {
+      "path": "./src/img/browsershot.png",
+      "alt": "browsershot-image"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/"
+    }
+  },
+  {
+    "id": "F2",
     "category": "Desktop App",
     "date_posted": "Jan 17, 2020",
     "title": "Browsershot",
