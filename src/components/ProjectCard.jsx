@@ -8,6 +8,7 @@ export const ProjectCard = ({ project }) => {
     <div className="featured-card">
       <div className="featured-category-title-container">
         <div className="featured-category">{project.category}</div>
+        <div /* className="featured-date" */>{project.date_posted}</div>
         <div className="featured-title">{project.title}</div>
       </div>
       <div className="featured-img-container">
