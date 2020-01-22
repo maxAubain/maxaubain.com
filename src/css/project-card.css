@@ -1,6 +1,6 @@
 .featured-container {
   box-sizing: border-box;
-  height: 276px;
+  height: 306px;
   width: 276px;
   padding: 10px;
 }
@@ -17,7 +17,7 @@
 
 .featured-card {
   box-sizing: border-box;
-  height: 256px;
+  height: 276px;
   border-radius: 5px;
 }
 
@@ -45,7 +45,7 @@
 
 .featured-category-title-container {
   box-sizing: border-box;
-  height: 55px;
+  height: 75px;
   width: 256px;
   padding: 5px 10px 0 10px;
 
@@ -57,6 +57,12 @@
 .featured-category {
   text-align: right;
   font-size: 15px;
+}
+
+.featured-date {
+  text-align: right;
+  font-size: 15px;
+  color: rgb(112, 128, 144);
 }
 
 .featured-title {
