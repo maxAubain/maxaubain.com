@@ -14,15 +14,15 @@
   },
   {
     "id": "F2",
-    "category": "Desktop App",
-    "date_posted": "Jan 17, 2020",
-    "title": "Browsershot",
+    "category": "Article",
+    "date_posted": "Jan 21, 2020",
+    "title": "Pull Request Templates",
     "image": {
-      "path": "./src/img/browsershot.png",
-      "alt": "browsershot-image"
+      "path": "./src/img/pull_request_templates.png",
+      "alt": "pull-request-templates-image"
     },
     "links": {
-      "live site": "https://browsershot-dashboard.herokuapp.com/"
+      "live site": "https://medium.com/@maxaubain/git-pull-requests-with-templates-and-agile-in-mind-2cf73c760911"
     }
   }
 ]
