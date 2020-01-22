@@ -6,7 +6,11 @@ export const ProjectCard = ({ project }) => {
   // Project Card object
   const card = (
     <div className="featured-card">
-      <div className="featured-title">{project.title}</div>
+      <div className="featured-category-title-container">
+        <div className="featured-category">{project.category}</div>
+        <div className="featured-date">{project.date_posted}</div>
+        <div className="featured-title">{project.title}</div>
+      </div>
       <div className="featured-img-container">
         <img src={project.image.path} className="featured-img" />
       </div>
