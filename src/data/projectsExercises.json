@@ -1,6 +1,31 @@
 [
   {
-    "id": "E1",
+    "id": "E6",
+    "title": "Static Server",
+    "image": {
+      "path": "./src/img/icon/server.png",
+      "alt": "server-icon"
+    },
+    "descriptionShort": "Node.js server for static html pages.",
+    "descriptionFull": [
+      "This project is a simple build of a backend server configured to serve static html pages, such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "The design is inspired by content from Ch. 2 of Web Development with Node & Express by Ethan Brown, 2nd ed."
+    ],
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "none",
+      "Application frameworks": "Node.js",
+      "Testing frameworks": "none",
+      "Libraries and modules": "http, fs",
+      "User Interface": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/maxAubain/node_server_http_static"
+    }
+  },
+  {
+    "id": "E5",
     "title": "Playdate",
     "image": {
       "path": "./src/img/icon/children.png",
@@ -28,7 +53,7 @@
     }
   },
   {
-    "id": "E2",
+    "id": "E4",
     "title": "BMI Calculator JS",
     "image": {
       "path": "./src/img/icon/calculator.png",
@@ -81,7 +106,7 @@
     }
   },
   {
-    "id": "E4",
+    "id": "E2",
     "title": "Library Manager",
     "image": {
       "path": "./src/img/icon/book.png",
@@ -106,7 +131,7 @@
     }
   },
   {
-    "id": "E5",
+    "id": "E1",
     "title": "ATM Simulator",
     "image": {
       "path": "./src/img/icon/atm.png",
