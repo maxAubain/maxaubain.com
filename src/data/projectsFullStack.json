@@ -45,12 +45,12 @@
       "Testing frameworks": "Cypress",
       "Libraries and modules": "React v16.9 with ES8, Express server, Express CORS, Axios, Body Parser",
       "User Interface": "Material-UI, HTML5, CSS3",
-      "Project management tools": "none"
+      "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://todo-list-client.netlify.com/",
-      "api site": "https://todo-list-is-here.herokuapp.com/",
-      "repository & documentation": "https://github.com/maxAubain/fullstack-sandbox/pulls"
+      "api site": "https://todo-list-js-server.herokuapp.com/",
+      "repository & documentation": "https://github.com/maxAubain/todo_javascript_stack"
     }
   },
   {

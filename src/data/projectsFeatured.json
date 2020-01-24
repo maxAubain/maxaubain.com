@@ -1,11 +1,24 @@
 [
   {
+    "id": "F3",
+    "category": "Desktop Browser App",
+    "date_posted": "Jan 24, 2020",
+    "title": "Todo List",
+    "image": {
+      "path": "./src/img/featured/todo_list.png",
+      "alt": "todo-list-image"
+    },
+    "links": {
+      "live site": "https://todo-list-client.netlify.com/"
+    }
+  },
+  {
     "id": "F2",
     "category": "Article",
     "date_posted": "Jan 21, 2020",
     "title": "Pull Request Templates",
     "image": {
-      "path": "./src/img/pull_request_templates.png",
+      "path": "./src/img/featured/pull_request_templates.png",
       "alt": "pull-request-templates-image"
     },
     "links": {
@@ -18,7 +31,7 @@
     "date_posted": "Jan 17, 2020",
     "title": "Browsershot",
     "image": {
-      "path": "./src/img/browsershot.png",
+      "path": "./src/img/featured/browsershot.png",
       "alt": "browsershot-image"
     },
     "links": {
