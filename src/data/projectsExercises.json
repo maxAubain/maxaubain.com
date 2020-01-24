@@ -8,7 +8,8 @@
     },
     "descriptionShort": "Node.js server for static html pages.",
     "descriptionFull": [
-      "[need description here]"
+      "This project is a simple build of a backend server configured to serve static html pages, such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "The design is inspired by content from Ch. 2 of Web Development with Node & Express by Ethan Brown, 2nd ed."
     ],
     "tech": {
       "Version control": "Github",
