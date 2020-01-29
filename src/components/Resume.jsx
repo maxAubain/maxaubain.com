@@ -15,7 +15,7 @@ export const Resume = () => {
       </h4>
       <object
         className="pdf"
-        data="./src/pdf/Max Aubain - Resume - 2020.pdf"
+        data="./src/pdf/Max Aubain - Resume.pdf"
         type="application/pdf"
       />
     </div>
