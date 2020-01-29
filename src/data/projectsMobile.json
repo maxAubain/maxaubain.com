@@ -14,7 +14,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "local",
-      "Application frameworks": "Node.js, Ionic",
+      "Application frameworks": "Node, Ionic",
       "Testing frameworks": "none",
       "Libraries and modules": "React v16 with ES6, Capacitor",
       "User Interface": "HTML5, CSS3",

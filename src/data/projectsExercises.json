@@ -1,20 +1,46 @@
 [
   {
-    "id": "E6",
-    "title": "Static Server",
+    "id": "E7",
+    "title": "API for static resources pt. 2",
     "image": {
       "path": "./src/img/icon/server.png",
       "alt": "server-icon"
     },
-    "descriptionShort": "Node.js server for static html pages.",
+    "descriptionShort": "Serving static pages and images with Node and Express.",
     "descriptionFull": [
-      "This project is a simple build of a backend server configured to serve static html pages, such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "This project is a simple build of a backend server configured to serve static html pages, for routes such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "Express helper methods are used for routing and Express-Handlebars enables a view engine.",
+      "The design is inspired by content from Ch. 3 of Web Development with Node & Express by Ethan Brown, 2nd ed."
+    ],
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "local",
+      "Application frameworks": "Node",
+      "Testing frameworks": "none",
+      "Libraries and modules": "Express, Express-Handlebars",
+      "User Interface": "HTML5",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/maxAubain/node_server_express_static"
+    }
+  },
+  {
+    "id": "E6",
+    "title": "API for static resources pt. 1",
+    "image": {
+      "path": "./src/img/icon/server.png",
+      "alt": "server-icon"
+    },
+    "descriptionShort": "Serving static text and images with Node.",
+    "descriptionFull": [
+      "This project is a simple build of a backend server configured to serve static text for routes, such as 'home' and 'about', with '404' and '500' error-catch routes.",
       "The design is inspired by content from Ch. 2 of Web Development with Node & Express by Ethan Brown, 2nd ed."
     ],
     "tech": {
       "Version control": "Github",
-      "Deployment": "none",
-      "Application frameworks": "Node.js",
+      "Deployment": "local",
+      "Application frameworks": "Node",
       "Testing frameworks": "none",
       "Libraries and modules": "http, fs",
       "User Interface": "none",
@@ -67,7 +93,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Github-pages",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "none",
       "User Interface": "HTML5, CSS3",
@@ -94,7 +120,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Github-pages",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "none",
       "User Interface": "HTML5, CSS3",
