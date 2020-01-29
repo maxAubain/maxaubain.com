@@ -14,7 +14,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "none",
       "Libraries and modules": "React v16.9 with ES8, Axios, Formspree",
       "User Interface": "HTML5, CSS3",
@@ -40,7 +40,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Cypress, Enzyme",
       "Libraries and modules": "React v16 with ES6",
       "User Interface": "HTML5, CSS3",
@@ -66,7 +66,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Mocha",
       "Libraries and modules": "jQuery",
       "User Interface": "HTML5, CSS3",
@@ -92,7 +92,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Github-pages",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Cucumber",
       "Libraries and modules": "none",
       "User Interface": "Semantic-UI, HTML5, CSS3",

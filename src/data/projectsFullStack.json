@@ -41,9 +41,9 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify, Heroku",
-      "Application frameworks": "Node.js",
+      "Application frameworks": "Node",
       "Testing frameworks": "Cypress",
-      "Libraries and modules": "React v16.9 with ES8, Express server, Express CORS, Axios, Body Parser",
+      "Libraries and modules": "React v16.9 with ES8, Express, Express CORS, Axios, Body Parser",
       "User Interface": "Material-UI, HTML5, CSS3",
       "Project management tools": "Jira"
     },
@@ -69,7 +69,7 @@
     "tech": {
       "Version control": "Github",
       "Deployment": "Netlify, Heroku, Semaphore CI, Coveralls",
-      "Application frameworks": "Node.js, Ruby on Rails",
+      "Application frameworks": "Node, Ruby on Rails",
       "Testing frameworks": "Cypress, Enzyme, Rspec",
       "Libraries and modules": "React v16 with ES6, Redux, Rails CORS, Stripe, Devise Token Auth, PostgreSQL",
       "User Interface": "Semantic-UI, HTML5, CSS3",
