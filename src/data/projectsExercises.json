@@ -1,7 +1,33 @@
 [
   {
+    "id": "E8",
+    "title": "Pull request template",
+    "image": {
+      "path": "./src/img/icon/template.png",
+      "alt": "template-icon"
+    },
+    "descriptionShort": "Give Github PRs consistent and useful descriptions.",
+    "descriptionFull": [
+      "This project includes a template file that can be included in a github repository to pre-populate the first comment of any PR with content.",
+      "The template I have created here includes categories such as Title, Owners, Summary, Challenges, References, UI, and Checklists.",
+      "A second template file is included with comments for suggestions on formatting and content."
+    ],
+    "tech": {
+      "Version control": "Github",
+      "Deployment": "Github",
+      "Application frameworks": "none",
+      "Testing frameworks": "none",
+      "Libraries and modules": "none",
+      "User Interface": "none",
+      "Project management tools": "none"
+    },
+    "links": {
+      "repository & documentation": "https://github.com/maxAubain/github_pull_request_templates"
+    }
+  },
+  {
     "id": "E7",
-    "title": "API for static resources pt. 2",
+    "title": "Node API - 2",
     "image": {
       "path": "./src/img/icon/server.png",
       "alt": "server-icon"
@@ -27,7 +53,7 @@
   },
   {
     "id": "E6",
-    "title": "API for static resources pt. 1",
+    "title": "Node API - 1",
     "image": {
       "path": "./src/img/icon/server.png",
       "alt": "server-icon"
