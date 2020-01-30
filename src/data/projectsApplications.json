@@ -11,9 +11,9 @@
       "Full description"
     ],
     "tech": {
-      "User interface": "browser / mobile app / CLI",
-      "App architectural pattern": "(MVC, REST, CORS with Client and API / monolithic API)",
-      "Hosting type": "(containerized, serverless) / local",
+      "User interface": "Web Browser / Mobile App / CLI",
+      "Architectural patterns": "(MVC, REST, CORS with Client and API / Monolithic API)",
+      "Hosting platforms": "... / Local",
       "Client-side": "",
       "Server-side": "",
       "Data": "",
@@ -23,6 +23,33 @@
     },
     "links": {
       "repository & documentation": ""
+    }
+  },
+  {
+    "id": "FS1",
+    "title": "Browsershot",
+    "image": {
+      "path": "./src/img/icon/camera.png",
+      "alt": "camera-icon"
+    },
+    "descriptionShort": "Browser screenshots provided with a SaaS platform.",
+    "descriptionFull": [
+      "This application generates, stores, and shows snapshots of webpages designated by a user.  Images are stored by on the hosting platform using the Rails framework Active Storage feature, similar to Amazon's S3 object storage service."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting platforms": "Heroku, Heroku Buildpacks",
+      "Client-side": "HTML5, CSS3",
+      "Server-side": "Ruby on Rails, Rspec, Ruby_webshot",
+      "Data": "PostgreSQL, Rails Active Storage",
+      "Continuous deployment / integration": "none",
+      "Version control": "Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/",
+      "repository & documentation": "https://github.com/maxAubain/browsershot"
     }
   }
 ]
