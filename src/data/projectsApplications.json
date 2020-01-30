@@ -59,6 +59,34 @@
   },
   {
     "id": "A3",
+    "title": "maxaubain.com",
+    "image": {
+      "path": "./src/img/icon/portfolio.png",
+      "alt": "portfolio-icon"
+    },
+    "descriptionShort": "My developer portfolio website.",
+    "descriptionFull": [
+      "This website is a single-page, client-side application implemented with React.",
+      "Notable features include dynamic layouts for mobile displays, routing with React Router, email messaging with the Formspree microservice, website copy passed to React components as 'props', and a script to procedurally populate projects' 'technology' section with external links."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "Single Page Site",
+      "Hosting tools": "Netlify",
+      "Client-side": "React, React Router, NPM, Axios, HTML5, CSS3, Formspree",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "Github-Netlify Checks",
+      "Version control": "Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://www.maxaubain.com/",
+      "repository & README.md": "https://github.com/maxAubain/maxaubain.com"
+    }
+  },
+  {
+    "id": "A4",
     "title": "Gnosis: Science News",
     "image": {
       "path": "./src/img/icon/news.png",
@@ -89,7 +117,7 @@
     }
   },
   {
-    "id": "A4",
+    "id": "A5",
     "title": "Gnosis Mobile App",
     "image": {
       "path": "./src/img/icon/news.png",
@@ -116,7 +144,7 @@
     }
   },
   {
-    "id": "A5",
+    "id": "A6",
     "title": "Articles Blog",
     "image": {
       "path": "./src/img/icon/blog.png",
@@ -141,6 +169,35 @@
     "links": {
       "live site": "https://an-article-posting-site.herokuapp.com/",
       "repository & README.md": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
+    }
+  },
+  {
+    "id": "A7",
+    "title": "Kibbles 'n Bites",
+    "image": {
+      "path": "./src/img/icon/food.png",
+      "alt": "food-icon"
+    },
+    "descriptionShort": "A luxury pet food menu.",
+    "descriptionFull": [
+      "This API, co-developed two other bootcamp students, shows a restaurant menu in the view with a procedurally generated category and product layout that is easily updatable, for example by a chef.",
+      "The Cartify gem/library is implemented to simulate the flow of placing an online order."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku",
+      "Client-side": "HTML5, CSS3, Haml",
+      "Server-side": "Rails, Rspec, Cucumber, Cartify",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "Semaphore CI, Coveralls",
+      "Version control": "Github",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://rails-slow-food.herokuapp.com/",
+      "repository & README.md": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2360231"
     }
   }
 ]
