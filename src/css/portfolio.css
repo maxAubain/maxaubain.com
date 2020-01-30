@@ -47,10 +47,6 @@
   margin: 8px;
 }
 
-.project-details-link:hover {
-  color: black;
-}
-
 .project-description-full-container {
   display: flex;
   flex-wrap: wrap;
