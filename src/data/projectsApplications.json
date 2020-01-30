@@ -1,31 +1,5 @@
 [
   {
-    "id": "id",
-    "title": "title",
-    "image": {
-      "path": "./src/img/icon/template.png",
-      "alt": "template-icon"
-    },
-    "descriptionShort": "Short description.",
-    "descriptionFull": [
-      "Full description"
-    ],
-    "tech": {
-      "User interface": "Web Browser / Mobile App / CLI",
-      "Architectural patterns": "(MVC, REST, CORS with Client and API / Monolithic API)",
-      "Hosting tools": "... / Local",
-      "Client-side": "",
-      "Server-side": "",
-      "Data": "",
-      "Continuous deployment / integration": "",
-      "Version control": "Github",
-      "Project management tools": ""
-    },
-    "links": {
-      "repository & README.md": ""
-    }
-  },
-  {
     "id": "A1",
     "title": "Browsershot",
     "image": {
@@ -112,6 +86,61 @@
       "client-side repository & README.md": "https://github.com/CA-ma/gnosis-client#gnosis-app",
       "api-side repository & README.md": "https://github.com/CA-ma/gnosis-api",
       "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
+    }
+  },
+  {
+    "id": "A4",
+    "title": "Gnosis Mobile App",
+    "image": {
+      "path": "./src/img/icon/news.png",
+      "alt": "news-icon"
+    },
+    "descriptionShort": "Gnosis 'repackaged' for iOS mobile devices.",
+    "descriptionFull": [
+      "Browser applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
+      "As such, the React client of Gnosis has been updated to an iOS mobile application and can be run locally using Apple's Xcode mobile app emulator."
+    ],
+    "tech": {
+      "User interface": "Xcode",
+      "Architectural patterns": "MVC, REST, CORS",
+      "Hosting tools": "Local only",
+      "Client-side": "React, Redux, NPM, Ionic, Capacitor, Axios, Semantic-UI, HTML5, CSS3",
+      "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "None",
+      "Version control": "Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "repository & README.md": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app"
+    }
+  },
+  {
+    "id": "A5",
+    "title": "Articles Blog",
+    "image": {
+      "path": "./src/img/icon/blog.png",
+      "alt": "blog-icon"
+    },
+    "descriptionShort": "Classic blog with CRUD methods.",
+    "descriptionFull": [
+      "This application demonstrates the Create, Read, Update, and Delete (CRUD) methods that are fundamental to RESTful APIs, in conjunction with user authentication functionality.",
+      "Please feel free to visit the live site, sign up, and leave a post or comment of your own."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku",
+      "Client-side": "HTML5, CSS3",
+      "Server-side": "Rails, Rspec, Cucumber, Devise",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "None",
+      "Version control": "Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://an-article-posting-site.herokuapp.com/",
+      "repository & README.md": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
     }
   }
 ]
