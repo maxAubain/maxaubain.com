@@ -7,7 +7,7 @@ export const Resume = () => {
     <div className="resume-wrapper">
       <h4>
         <WebLink
-          url="https://drive.google.com/open?id=1q5RSFeCHtSh95N2ofFrDlwvJRLO5XZ0f"
+          url="https://drive.google.com/file/d/1hrZhhpOOXbsASexTFAvGGbN2Qs73Jaue/view?usp=sharing"
           linkObj="Download"
           className="weblink resume-link"
         />{" "}
@@ -15,7 +15,7 @@ export const Resume = () => {
       </h4>
       <object
         className="pdf"
-        data="./src/pdf/Max Aubain - Resume.pdf"
+        data="./src/pdf/Max Aubain - Resume - 2020.pdf"
         type="application/pdf"
       />
     </div>
