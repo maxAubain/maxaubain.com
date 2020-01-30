@@ -11,7 +11,7 @@ PR Title form field above"
 - Summary description 1...
 
 ## Owners
-- Role: Name, contact information...
+- Developer: Max Aubain, @maxAubain
 
 ## Libraries / Dependencies / Frameworks Modified
 - [ADD / REMOVE / UPDATE] {Lib name} : {Lib function} : {Reason for change}
