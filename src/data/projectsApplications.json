@@ -13,7 +13,7 @@
     "tech": {
       "User interface": "Web Browser / Mobile App / CLI",
       "Architectural patterns": "(MVC, REST, CORS with Client and API / Monolithic API)",
-      "Hosting platforms": "... / Local",
+      "Hosting tools": "... / Local",
       "Client-side": "",
       "Server-side": "",
       "Data": "",
@@ -22,11 +22,11 @@
       "Project management tools": ""
     },
     "links": {
-      "repository & documentation": ""
+      "repository & README.md": ""
     }
   },
   {
-    "id": "FS1",
+    "id": "A1",
     "title": "Browsershot",
     "image": {
       "path": "./src/img/icon/camera.png",
@@ -34,14 +34,14 @@
     },
     "descriptionShort": "Browser screenshots provided with a SaaS platform.",
     "descriptionFull": [
-      "This application generates, stores, and shows snapshots of webpages designated by a user.  Images are stored by on the hosting platform using the Rails framework Active Storage feature, similar to Amazon's S3 object storage service."
+      "This application generates, stores, and shows images taken of webpages designated by a user.  Image files are stored on the hosting platform using the Rails framework Active Storage--a feature similar to Amazon's S3 object storage service."
     ],
     "tech": {
       "User interface": "Web Browser",
       "Architectural patterns": "MVC, REST, Monolithic API",
-      "Hosting platforms": "Heroku, Heroku Buildpacks",
+      "Hosting tools": "Heroku, Heroku Buildpacks",
       "Client-side": "HTML5, CSS3",
-      "Server-side": "Ruby on Rails, Rspec, Ruby_webshot",
+      "Server-side": "Rails, Rspec, Ruby_webshot",
       "Data": "PostgreSQL, Rails Active Storage",
       "Continuous deployment / integration": "none",
       "Version control": "Github",
@@ -49,7 +49,69 @@
     },
     "links": {
       "live site": "https://browsershot-dashboard.herokuapp.com/",
-      "repository & documentation": "https://github.com/maxAubain/browsershot"
+      "repository & README.md": "https://github.com/maxAubain/browsershot",
+      "PR development log": "https://github.com/maxAubain/browsershot/pulls?q=is%3Apr+is%3Aclosed"
+    }
+  },
+  {
+    "id": "A2",
+    "title": "React Todo List",
+    "image": {
+      "path": "./src/img/icon/checkbox.png",
+      "alt": "checkbox-icon"
+    },
+    "descriptionShort": "Todo list app with dynamic features.",
+    "descriptionFull": [
+      "This application is a dynamic, todo list tool.  Originally forked from a Sellpy repository, I implemented improvements that include autosaving, due dates, 'time remaining' calculator, checkbox completion, data persistence with a back-end, and client/API hosting.",
+      "Acceptance tests are scripted with the Cypress testing framework to verify features in the view."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "REST, CORS",
+      "Hosting tools": "Heroku, Netlify",
+      "Client-side": "React, NPM, Axios, Material-UI, HTML5, CSS3, Cypress",
+      "Server-side": "Node, Express, Body Parser, CORS",
+      "Data": "Mutatable vars",
+      "Continuous deployment / integration": "Github-Netlify Checks",
+      "Version control": "Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://todo-list-client.netlify.com/",
+      "repository & README.md": "https://github.com/maxAubain/todo_javascript_stack",
+      "PR development log": "https://github.com/maxAubain/todo_javascript_stack/pulls?q=is%3Apr+is%3Aclosed",
+      "Sellpy repository": "https://github.com/sellpy/fullstack-sandbox"
+    }
+  },
+  {
+    "id": "A3",
+    "title": "Gnosis: Science News",
+    "image": {
+      "path": "./src/img/icon/news.png",
+      "alt": "news-icon"
+    },
+    "descriptionShort": "Research news aggregator site.",
+    "descriptionFull": [
+      "Gnosis was planned and constructed by a team comprising myself and five other junior developers.",
+      "The application itself is a science news aggregation site with interconnected user roles for university 'subscribers', research group 'publishers', and member 'readers'.",
+      "Please refer to the 'client-side' documentation for detailed use of the app and developer credits."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, CORS",
+      "Hosting tools": "Heroku, Netlify",
+      "Client-side": "React, Redux, NPM, Axios, Semantic-UI, HTML5, CSS3, Cypress, Enzyme",
+      "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "Semaphore CI, Coveralls",
+      "Version control": "Github",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://gnosis-app.netlify.com",
+      "client-side repository & README.md": "https://github.com/CA-ma/gnosis-client#gnosis-app",
+      "api-side repository & README.md": "https://github.com/CA-ma/gnosis-api",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
     }
   }
 ]
