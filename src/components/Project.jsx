@@ -65,7 +65,7 @@ export const Project = ({ project, externalLinks }) => {
 
     return (
       <p key={key}>
-        {key}: {valueArray}.
+        <strong>{key}</strong>: {valueArray}.
       </p>
     );
   });
@@ -87,22 +87,23 @@ export const Project = ({ project, externalLinks }) => {
 
       <div className={projectContainerClassName}>
         <div className="project-details-padding">
-          <div className="project-details-link-container">
-            <strong>
-              <u>Project Links</u>
-            </strong>
-            {projectLinks}
-          </div>
           <div className="project-description-full-container">
-            <div className="project-description-full">
+            <div className="project-details-link-container">
+              <strong>
+                <u>Links</u>
+              </strong>
+              {projectLinks}
+              <br></br>
+              {/* <div className="project-description-full"> */}
               <strong>
                 <u>Description</u>
               </strong>
               {projectDescription}
+              {/* </div> */}
             </div>
-            <div className="project-stack">
+            <div className="project-tech">
               <strong>
-                <u>Technology Stack</u>
+                <u>Technology</u>
               </strong>
               {technologyStack}
             </div>
