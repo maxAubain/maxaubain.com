@@ -10,8 +10,9 @@ export const Portfolio = () => {
   // Define project categories attributes
   const projectCategories = {
     Featured: "./src/data/projectsFeatured.json",
-    "Full Stack": "./src/data/projectsFullStack.json",
-    "Front End": "./src/data/projectsFrontEnd.json",
+    "Applications": "./src/data/projectsApplications.json",
+    /*     "Full Stack": "./src/data/projectsFullStack.json",
+        "Front End": "./src/data/projectsFrontEnd.json", */
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
 
@@ -67,7 +68,7 @@ export const Portfolio = () => {
   if (Object.keys(externalLinks).length > 0) {
     currentProjectCategory === "Featured"
       ? (projectCategoryClassName =
-          "project-categories-wrapper project-categories-wrapper-featured")
+        "project-categories-wrapper project-categories-wrapper-featured")
       : (projectCategoryClassName = "project-categories-wrapper");
     return (
       <>
