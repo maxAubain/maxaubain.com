@@ -1,0 +1,28 @@
+[
+  {
+    "id": "id",
+    "title": "title",
+    "image": {
+      "path": "./src/img/icon/template.png",
+      "alt": "template-icon"
+    },
+    "descriptionShort": "Short description.",
+    "descriptionFull": [
+      "Full description"
+    ],
+    "tech": {
+      "User interface": "browser / mobile app / CLI",
+      "App architectural pattern": "(MVC, REST, CORS with Client and API / monolithic API)",
+      "Hosting type": "(containerized, serverless) / local",
+      "Client-side": "",
+      "Server-side": "",
+      "Data": "",
+      "Continuous deployment / integration": "",
+      "Version control": "Github",
+      "Project management tools": ""
+    },
+    "links": {
+      "repository & documentation": ""
+    }
+  }
+]
