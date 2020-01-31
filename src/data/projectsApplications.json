@@ -61,7 +61,7 @@
     "id": "A8",
     "title": "maxaubain.com",
     "image": {
-      "path": "./src/img/icon/portfolio.png",
+      "path": "favicon.png",
       "alt": "portfolio-icon"
     },
     "descriptionShort": "My developer portfolio website.",
