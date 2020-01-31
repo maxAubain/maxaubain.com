@@ -11,8 +11,6 @@ export const Portfolio = () => {
   const projectCategories = {
     Featured: "./src/data/projectsFeatured.json",
     "Applications": "./src/data/projectsApplications.json",
-    /*     "Full Stack": "./src/data/projectsFullStack.json",
-        "Front End": "./src/data/projectsFrontEnd.json", */
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
 
