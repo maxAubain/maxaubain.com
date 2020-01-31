@@ -17,7 +17,7 @@
       "Client-side": "HTML5, CSS3",
       "Server-side": "Rails, Rspec, Ruby_webshot",
       "Data": "PostgreSQL, Rails Active Storage",
-      "Continuous deployment / integration": "none",
+      "Continuous deployment / integration": "None",
       "Version control": "Git, Github",
       "Project management tools": "Jira"
     },
