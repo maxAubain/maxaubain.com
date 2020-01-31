@@ -6,23 +6,24 @@
       "path": "./src/img/icon/template.png",
       "alt": "template-icon"
     },
-    "descriptionShort": "Give Github PRs consistent and useful descriptions.",
+    "descriptionShort": "Github PRs with consistent descriptions.",
     "descriptionFull": [
-      "This project includes a template file that can be included in a github repository to pre-populate the first comment of any PR with content.",
-      "The template I have created here includes categories such as Title, Owners, Summary, Challenges, References, UI, and Checklists.",
-      "A second template file is included with comments for suggestions on formatting and content."
+      "This repository includes a text file that serves as a template in github repositories, to pre-populate the first comment of any PR with content.",
+      "The template contains categories such as Title, Owners, Summary, Challenges, References, UI, and Checklists."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "Github",
-      "Application frameworks": "none",
-      "Testing frameworks": "none",
-      "Libraries and modules": "none",
-      "User Interface": "none",
-      "Project management tools": "none"
+      "User interface": "Github",
+      "Architectural patterns": "None",
+      "Hosting tools": "Github",
+      "Client-side": "None",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "repository & documentation": "https://github.com/maxAubain/github_pull_request_templates"
+      "repository & README": "https://github.com/maxAubain/github_pull_request_templates"
     }
   },
   {
@@ -34,21 +35,23 @@
     },
     "descriptionShort": "Serving static pages and images with Node and Express.",
     "descriptionFull": [
-      "This project is a simple build of a backend server configured to serve static html pages, for routes such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "This project is a build of an API configured to serve static html pages, provide routes, and render views.",
       "Express helper methods are used for routing and Express-Handlebars enables a view engine.",
       "The design is inspired by content from Ch. 3 of Web Development with Node & Express by Ethan Brown, 2nd ed."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "local",
-      "Application frameworks": "Node",
-      "Testing frameworks": "none",
-      "Libraries and modules": "Express, Express-Handlebars",
-      "User Interface": "HTML5",
-      "Project management tools": "none"
+      "User interface": "Web Browser",
+      "Architectural patterns": "REST, Monolithic API",
+      "Hosting tools": "None",
+      "Client-side": "HTML5",
+      "Server-side": "Node, NPM, Express, Express-Handlebars",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "repository & documentation": "https://github.com/maxAubain/node_server_express_static"
+      "repository & README": "https://github.com/maxAubain/node_server_express_static"
     }
   },
   {
@@ -60,20 +63,22 @@
     },
     "descriptionShort": "Serving static text and images with Node.",
     "descriptionFull": [
-      "This project is a simple build of a backend server configured to serve static text for routes, such as 'home' and 'about', with '404' and '500' error-catch routes.",
+      "This project is a build of an API configured to serve static html pages and provide routes.",
       "The design is inspired by content from Ch. 2 of Web Development with Node & Express by Ethan Brown, 2nd ed."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "local",
-      "Application frameworks": "Node",
-      "Testing frameworks": "none",
-      "Libraries and modules": "http, fs",
-      "User Interface": "none",
-      "Project management tools": "none"
+      "User interface": "Web Browser",
+      "Architectural patterns": "REST, Monolithic API",
+      "Hosting tools": "None",
+      "Client-side": "HTML5",
+      "Server-side": "Node, NPM, http, fs",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "repository & documentation": "https://github.com/maxAubain/node_server_http_static"
+      "repository & README": "https://github.com/maxAubain/node_server_http_static"
     }
   },
   {
@@ -83,25 +88,24 @@
       "path": "./src/img/icon/children.png",
       "alt": "children-icon"
     },
-    "descriptionShort": "Parent-organized child care service.",
+    "descriptionShort": "Parent-organized child care.",
     "descriptionFull": [
-      "The Playdate application is inspired by real-world challenges faced by parents with young children.  With child care being expensive as a private service, communal sharing of care responsibilities between parents is a great way to improve quality of life for little monetary investment.  Making playdates for your kids can also form community and new friendships among adults.",
-      "Playdate is an SaaS application under development.  The goals of Daria Lykova, my co-developer, and I were to setup the CD/CI pipeline and code as much as we could within a week using TDD and BDD practices.",
-      "The WIP prototype can be viewed on the live site.  Feature tests can be run using a local instance of the application as described in the github documentation.  User stories to define features are stored and organized in the project management tool Pivotal Tracker."
+      "The Playdate application is a WIP inspired by real-world challenges faced by parents with young children.",
+      "The MVP of this SaaS, co-developed with Daria Lykova, is to develop a dashboard that helps connect parents whose children attend the same schools to coordinate friendship and shared childcare."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "Heroku, Semaphore CI, Coveralls",
-      "Application frameworks": "Ruby on Rails",
-      "Testing frameworks": "Cucumber, Rspec",
-      "Libraries and modules": "PostgreSQL",
-      "User Interface": "HTML5, CSS3",
-      "Project management tools": "Pivotal Tracker"
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku",
+      "Client-side": "HTML5, CSS3",
+      "Server-side": "Rails, Rspec, Cucumber",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "Semaphore CI, Coveralls",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "live site": "https://rails-playdate.herokuapp.com/",
-      "repository & documentation": "https://github.com/CA-ma/playdate-june2019",
-      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2370835"
+      "repository & README": "https://github.com/CA-ma/playdate-june2019"
     }
   },
   {
@@ -113,21 +117,22 @@
     },
     "descriptionShort": "Simple Body Mass Index calculator.",
     "descriptionFull": [
-      "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application on the live site performs the required calculations to produce a BMI value using Metric and Imperial units.",
-      "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
+      "The body mass 'index' is a scaled ratio of a person's height and weight.  This widget application performs calculations that produce a BMI value with Metric or Imperial units."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "Github-pages",
-      "Application frameworks": "Node",
-      "Testing frameworks": "Mocha",
-      "Libraries and modules": "none",
-      "User Interface": "HTML5, CSS3",
-      "Project management tools": "none"
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Github-Pages",
+      "Client-side": "NPM, Mocha, HTML5, CSS3",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
       "live site": "https://ca-ma.github.io/bmiCalcDeploy/src/index.html",
-      "repository & documentation": "https://github.com/CA-ma/bmiCalcDeploy#front-end-application-body-mass-index-bmi-caclulator"
+      "repository & README": "https://github.com/CA-ma/bmiCalcDeploy"
     }
   },
   {
@@ -139,22 +144,22 @@
     },
     "descriptionShort": "A classic interview coding problem.",
     "descriptionFull": [
-      "The FizzBuzz coding challenge has historically been a 'litmus test' for basic scripting acumen.  The requirement is simple: write a program that iterates through positive integers, and return Fizz if divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by 15.",
-      "Using the live site you can manually test the algorithm to see if it has been implemented properly.  If it doesn't look right, then your next FizzBuzz at the bar will be on me!",
-      "Acceptance and unit tests can be implemented upon building this application locally, as described in the github documentation."
+      "The FizzBuzz coding challenge has historically been a 'litmus test' for basic scripting acumen.  The requirement is simple: write a program that iterates through positive integers, and return Fizz if divisible by 3, Buzz if divisible by 5, and FizzBuzz if divisible by 15."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "Github-pages",
-      "Application frameworks": "Node",
-      "Testing frameworks": "Mocha",
-      "Libraries and modules": "none",
-      "User Interface": "HTML5, CSS3",
-      "Project management tools": "none"
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Github-Pages",
+      "Client-side": "NPM, Mocha, HTML5, CSS3",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
       "live site": "https://ca-ma.github.io/fizzbuzz_challenge/",
-      "repository & documentation": "https://github.com/CA-ma/fizzbuzz_challenge#challenge-fizzbuzz"
+      "repository & README": "https://github.com/CA-ma/fizzbuzz_challenge"
     }
   },
   {
@@ -166,20 +171,21 @@
     },
     "descriptionShort": "Managing a library collection with search function.",
     "descriptionFull": [
-      "The Library Manager has been developed to mimic the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability.",
-      "This exercise is configured to be run and tested locally, as described in the github documentation."
+      "The Library Manager has been developed to simulate the library system functionality that would be desired by a librarian, a library admin, and a library member, such as book checkout, book search, and book availability."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "local",
-      "Application frameworks": "Ruby",
-      "Testing frameworks": "Rspec",
-      "Libraries and modules": "none",
-      "User Interface": "CLI",
-      "Project management tools": "none"
+      "User interface": "CLI",
+      "Architectural patterns": "None",
+      "Hosting tools": "None",
+      "Client-side": "None",
+      "Server-side": "Ruby, Rspec",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "repository & documentation": "https://github.com/CA-ma/library-challenge#challenge-book-tracking-system-backend-for-library-applications"
+      "repository & README": "https://github.com/CA-ma/library-challenge"
     }
   },
   {
@@ -191,20 +197,21 @@
     },
     "descriptionShort": "Simulating ATM interactions with bank account member.",
     "descriptionFull": [
-      "The ATM Simulator has been developed to mimic the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl.",
-      "This exercise is configured to be run and tested locally, as described in the github documentation."
+      "The ATM Simulator has been developed to simulate the functionality of a bank member using an ATM, including account verification, and funds deposit and withdrawl."
     ],
     "tech": {
-      "Version control": "Github",
-      "Deployment": "local",
-      "Application frameworks": "Ruby",
-      "Testing frameworks": "Rspec",
-      "Libraries and modules": "none",
-      "User Interface": "CLI",
-      "Project management tools": "none"
+      "User interface": "CLI",
+      "Architectural patterns": "None",
+      "Hosting tools": "None",
+      "Client-side": "None",
+      "Server-side": "Ruby, Rspec",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
     },
     "links": {
-      "repository & documentation": "https://github.com/CA-ma/atm_challenge#atm-group-challenge"
+      "repository & README": "https://github.com/CA-ma/atm_challenge"
     }
   }
 ]
