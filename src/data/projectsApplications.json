@@ -18,12 +18,12 @@
       "Server-side": "Rails, Rspec, Ruby_webshot",
       "Data": "PostgreSQL, Rails Active Storage",
       "Continuous deployment / integration": "none",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://browsershot-dashboard.herokuapp.com/",
-      "repository & README.md": "https://github.com/maxAubain/browsershot",
+      "repository & README": "https://github.com/maxAubain/browsershot",
       "PR development log": "https://github.com/maxAubain/browsershot/pulls?q=is%3Apr+is%3Aclosed"
     }
   },
@@ -47,12 +47,12 @@
       "Server-side": "Node, Express, Body Parser, CORS",
       "Data": "Mutatable vars",
       "Continuous deployment / integration": "Github-Netlify Checks",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://todo-list-client.netlify.com/",
-      "repository & README.md": "https://github.com/maxAubain/todo_javascript_stack",
+      "repository & README": "https://github.com/maxAubain/todo_javascript_stack",
       "PR development log": "https://github.com/maxAubain/todo_javascript_stack/pulls?q=is%3Apr+is%3Aclosed",
       "Sellpy repository": "https://github.com/sellpy/fullstack-sandbox"
     }
@@ -67,22 +67,22 @@
     "descriptionShort": "My developer portfolio website.",
     "descriptionFull": [
       "This website is a single-page, client-side application implemented with React.",
-      "Notable features include dynamic layouts for mobile displays, routing with React Router, email messaging with the Formspree microservice, website copy passed to React components as 'props', and a script to procedurally populate projects' 'technology' section with external links."
+      "Notable features include dynamic layouts for mobile displays, routing with React Router, email messaging with the Formspree microservice, website copy is stored in JSON files and passed to React components as 'props', and a script to procedurally populate projects' 'technology' section with external links."
     ],
     "tech": {
       "User interface": "Web Browser",
-      "Architectural patterns": "Single Page Site",
+      "Architectural patterns": "Single Page App",
       "Hosting tools": "Netlify",
       "Client-side": "React, React Router, NPM, Axios, HTML5, CSS3, Formspree",
       "Server-side": "None",
-      "Data": "None",
+      "Data": "JSON",
       "Continuous deployment / integration": "Github-Netlify Checks",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "Jira"
     },
     "links": {
       "live site": "https://www.maxaubain.com/",
-      "repository & README.md": "https://github.com/maxAubain/maxaubain.com"
+      "repository & README": "https://github.com/maxAubain/maxaubain.com"
     }
   },
   {
@@ -106,13 +106,13 @@
       "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
       "Data": "PostgreSQL",
       "Continuous deployment / integration": "Semaphore CI, Coveralls",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "Pivotal Tracker"
     },
     "links": {
       "live site": "https://gnosis-app.netlify.com",
-      "client-side repository & README.md": "https://github.com/CA-ma/gnosis-client#gnosis-app",
-      "api-side repository & README.md": "https://github.com/CA-ma/gnosis-api",
+      "client-side repository & README": "https://github.com/CA-ma/gnosis-client#gnosis-app",
+      "api-side repository & README": "https://github.com/CA-ma/gnosis-api",
       "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
     }
   },
@@ -136,11 +136,11 @@
       "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
       "Data": "PostgreSQL",
       "Continuous deployment / integration": "None",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "None"
     },
     "links": {
-      "repository & README.md": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app"
+      "repository & README": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app"
     }
   },
   {
@@ -163,12 +163,12 @@
       "Server-side": "Rails, Rspec, Cucumber, Devise",
       "Data": "PostgreSQL",
       "Continuous deployment / integration": "None",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "None"
     },
     "links": {
       "live site": "https://an-article-posting-site.herokuapp.com/",
-      "repository & README.md": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
+      "repository & README": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
     }
   },
   {
@@ -191,13 +191,96 @@
       "Server-side": "Rails, Rspec, Cucumber, Cartify",
       "Data": "PostgreSQL",
       "Continuous deployment / integration": "Semaphore CI, Coveralls",
-      "Version control": "Github",
+      "Version control": "Git, Github",
       "Project management tools": "Pivotal Tracker"
     },
     "links": {
       "live site": "https://rails-slow-food.herokuapp.com/",
-      "repository & README.md": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+      "repository & README": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
       "project management dashboard": "https://www.pivotaltracker.com/n/projects/2360231"
+    }
+  },
+  {
+    "id": "A8",
+    "title": "Rock-Paper-Scissors",
+    "image": {
+      "path": "./src/img/icon/hand.png",
+      "alt": "rps-icon"
+    },
+    "descriptionShort": "The classic childhood game.",
+    "descriptionFull": [
+      "This application returns a calculated Body Mass Index (BMI), defined as the ratio of height to weight.",
+      "React components are used to organize form field inputs and display outputs, and modules perform client-side calculations."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Netlify",
+      "Client-side": "jQuery, NPM, HTML5, CSS3, Mocha",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://ca-ma-rps.netlify.com/",
+      "repository & README": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game"
+    }
+  },
+  {
+    "id": "A9",
+    "title": "React BMI Calculator",
+    "image": {
+      "path": "./src/img/icon/calculator.png",
+      "alt": "calculator-icon"
+    },
+    "descriptionShort": "Simple Body Mass Index calculator.",
+    "descriptionFull": [
+      "This application returns a calculated Body Mass Index (BMI), defined as the ratio of height to weight.",
+      "React components are used to organize form field inputs and display outputs, and modules perform client-side calculations."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "Single Page App",
+      "Hosting tools": "Netlify",
+      "Client-side": "React, NPM, HTML5, CSS3, Cypress, Enzyme",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://bmi-calc-react.netlify.com",
+      "repository & README": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator"
+    }
+  },
+  {
+    "id": "A10",
+    "title": "Address Book",
+    "image": {
+      "path": "./src/img/icon/contact.png",
+      "alt": "planner-icon"
+    },
+    "descriptionShort": "UI for digitally storing contacts.",
+    "descriptionFull": [
+      "The Address Book application implements styles from a content delivery network (CDN) and using session storage in the browser to enable CRUD functionality."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Github-Pages",
+      "Client-side": "NPM, HTML5, CSS3, Cucumber, Semantic-UI",
+      "Server-side": "None",
+      "Data": "sessionStorage",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/address_book_challenge/",
+      "repository & README": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book"
     }
   }
 ]
