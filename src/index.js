@@ -5,8 +5,8 @@ import ReactDOM from "react-dom";
 import { About } from "./components/About";
 import { Portfolio } from "./components/Portfolio";
 import { EmailForm } from "./components/EmailForm";
-import { Footer } from "./components/Footer";
-import { NavBar } from "./components/Navbar";
+import { Footer } from "./components/layouts/Footer";
+import { NavBar } from "./components/layouts/Navbar";
 import { Resume } from "./components/Resume";
 
 import "./css/common.css";
@@ -23,7 +23,7 @@ import WebFont from "webfontloader";
 const App = () => {
   return (
     <Route
-      render={({}) => (
+      render={({ }) => (
         <>
           <NavBar />
           <div className="page-content">
