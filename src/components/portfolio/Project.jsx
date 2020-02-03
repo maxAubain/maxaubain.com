@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import { IconSmall } from "./common/IconSmall";
-import { WebLink } from "./common/WebLink";
-import { TechWebLinks } from "../modules/TechWebLinks";
+import { IconSmall } from "../common/IconSmall";
+import { WebLink } from "../common/WebLink";
+import { TechWebLinks } from "../../modules/TechWebLinks";
 
 export const Project = ({ project, externalLinks }) => {
   // Show/hide Project object details functionality

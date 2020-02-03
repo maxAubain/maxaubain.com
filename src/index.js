@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { About } from "./components/about/About";
-import { Portfolio } from "./components/Portfolio";
+import { Portfolio } from "./components/portfolio/Portfolio";
 import { EmailForm } from "./components/contact/EmailForm";
 import { Footer } from "./components/layouts/Footer";
 import { NavBar } from "./components/layouts/Navbar";
