@@ -2,7 +2,7 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { About } from "./components/About";
+import { About } from "./components/about/About";
 import { Portfolio } from "./components/Portfolio";
 import { EmailForm } from "./components/EmailForm";
 import { Footer } from "./components/layouts/Footer";

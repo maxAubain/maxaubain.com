@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WebLink } from "./common/WebLink";
+import { WebLink } from "../common/WebLink";
 
 /* This component will need to be re-developed to a DRY
 configuration, storing the education data in a JSON and 
