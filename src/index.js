@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 
 import { About } from "./components/about/About";
 import { Portfolio } from "./components/Portfolio";
-import { EmailForm } from "./components/EmailForm";
+import { EmailForm } from "./components/contact/EmailForm";
 import { Footer } from "./components/layouts/Footer";
 import { NavBar } from "./components/layouts/Navbar";
 import { Resume } from "./components/Resume";
