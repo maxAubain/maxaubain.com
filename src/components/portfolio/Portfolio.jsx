@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
 import { Projects } from "./Projects";
 import { ProjectsCount } from "./ProjectsCount";
 
-let navlinkSectionClassName, projectCategoryClassName;
-
 export const Portfolio = () => {
-  // Define project categories attributes
-  const projectCategories = {
+  // Define hash of portfolio categories and project data source files
+  const portfolioCats = {
     Featured: "./src/data/projectsFeatured.json",
     "Applications": "./src/data/projectsApplications.json",
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
 
-  // Get externalLinks as hash of tech keywords and tech description weblinks
+  // Get externalLinks hash containing tech keywords with related weblinks
   const [externalLinks, setExternalLinks] = useState({});
   useEffect(() => {
     if (Object.keys(externalLinks).length === 0) {
@@ -24,56 +21,59 @@ export const Portfolio = () => {
     }
   });
 
-  // Set current project category state
-  const [currentProjectCategory, setCurrentProjectCategory] = useState(
+  // Set Portfolio state with initial portfolio category
+  const [curPortfolioCat, setCurPortfolioCat] = useState(
     "Featured"
   );
 
-  // Project Categories navlinks
-  const ProjectCategoriesNavlinks = Object.keys(projectCategories).map(key => {
-    key === currentProjectCategory
-      ? (navlinkSectionClassName = "navlink-section-current")
-      : (navlinkSectionClassName = "navlink-section");
+  // Portfolio categories navlinks style (selected / unselected)
+  let navlinkCN
+  const PortfolioCatsNavlinks = Object.keys(portfolioCats).map(key => {
+    key === curPortfolioCat
+      ? (navlinkCN = "navlink-section-current")
+      : (navlinkCN = "navlink-section");
 
     return (
       <div
         key={key}
-        className={navlinkSectionClassName}
+        className={navlinkCN}
         onClick={() => {
-          setCurrentProjectCategory(key);
+          setCurPortfolioCat(key);
         }}
       >
         {key}
-        <ProjectsCount path={projectCategories[key]} />
+        <ProjectsCount path={portfolioCats[key]} />
       </div>
     );
   });
 
-  // Projects object when category is selected
-  const projects = Object.keys(projectCategories).map(key => {
-    if (key === currentProjectCategory) {
+  // Projects object of the particular portfolio category ( selected )
+  const portfolioCatContent = Object.keys(portfolioCats).map(key => {
+    if (key === curPortfolioCat) {
       return (
         <Projects
           key={key}
           projectCategory={key}
-          path={projectCategories[key]}
+          path={portfolioCats[key]}
           externalLinks={externalLinks}
         />
       );
     }
   });
 
+  // When externalLinks data is loaded, content is displayed
+  let portfolioCatContentCN;
   if (Object.keys(externalLinks).length > 0) {
-    currentProjectCategory === "Featured"
-      ? (projectCategoryClassName =
+    curPortfolioCat === "Featured"
+      ? (portfolioCatContentCN =
         "project-categories-wrapper project-categories-wrapper-featured")
-      : (projectCategoryClassName = "project-categories-wrapper");
+      : (portfolioCatContentCN = "project-categories-wrapper");
     return (
       <>
         <div className="navlink-section-container">
-          {ProjectCategoriesNavlinks}
+          {PortfolioCatsNavlinks}
         </div>
-        <div className={projectCategoryClassName}>{projects}</div>
+        <div className={portfolioCatContentCN}>{portfolioCatContent}</div>
       </>
     );
   } else {
