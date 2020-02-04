@@ -1,10 +1,15 @@
 [
   {
-    "id": "1",
-    "post": "This is a post."
-  },
-  {
-    "id": "2",
-    "post": "This is a post."
+    "id": "B1",
+    "date_posted": "Jan. 31st, 2020",
+    "date_updated": "Feb. 2nd, 2020",
+    "title": "A Blog To End All Blogs",
+    "subtitle": "A post to end all posts",
+    "quote": "This is quotable.",
+    "image": {
+      "src": "./src/img/social-media-preview.png",
+      "caption": "Social media preview"
+    },
+    "paragraph": "This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
   }
 ]
