@@ -4,7 +4,7 @@ import { Content } from "./Content";
 import { ContentItemsCount } from "./ContentItemsCount";
 
 export const Portfolio = () => {
-  // Define hash of portfolio categories and project data source files
+  // Define hash of portfolio categories and content data source files
   const portfolioCats = {
     Featured: "./src/data/projectsFeatured.json",
     "Blog Posts": "./src/data/postsBlog.json",
@@ -12,11 +12,11 @@ export const Portfolio = () => {
     "Coding Exercises": "./src/data/projectsExercises.json"
   };
 
-  // Get externalLinks hash containing tech keywords with related weblinks
+  // Get externalLinks data containing tech keywords with related weblinks
   const [externalLinks, setExternalLinks] = useState({});
   useEffect(() => {
     if (Object.keys(externalLinks).length === 0) {
-      axios.get("./src/data/externalLinks.json").then(response => {
+      axios.get("./src/data/linksExternal.json").then(response => {
         setExternalLinks(response.data);
       });
     }
@@ -27,7 +27,7 @@ export const Portfolio = () => {
     "Featured"
   );
 
-  // Portfolio categories navlinks style (selected / unselected)
+  // Portfolio categories navlinks objects, with style (selected / unselected)
   let navlinkCN
   const PortfolioCatsNavlinks = Object.keys(portfolioCats).map(key => {
     key === curPortfolioCat
@@ -48,7 +48,7 @@ export const Portfolio = () => {
     );
   });
 
-  // Projects object of the particular portfolio category ( selected )
+  // Content object of the particular portfolio category ( selected )
   const portfolioCatContent = Object.keys(portfolioCats).map(key => {
     if (key === curPortfolioCat) {
       return (
