@@ -17,20 +17,20 @@ export const Content = ({ contentCat, path, externalLinks }) => {
 
   // Generate content items object dependent on content category
   let contentItem;
-  const contentItems = content.map(project => {
+  const contentItems = content.map(item => {
     switch (contentCat) {
       case "Featured":
-        contentItem = <ProjectCard project={project} />
+        contentItem = <ProjectCard project={item} />
         break;
       case "Applications":
-        contentItem = <Project project={project} externalLinks={externalLinks} />
+        contentItem = <Project project={item} externalLinks={externalLinks} />
         break;
       case "Coding Exercises":
-        contentItem = <Project project={project} externalLinks={externalLinks} />
+        contentItem = <Project project={item} externalLinks={externalLinks} />
         break;
     }
     return (
-      <div key={project.id}>
+      <div key={item.id}>
         {contentItem}
       </div>
     )
