@@ -7,6 +7,7 @@ export const Portfolio = () => {
   // Define hash of portfolio categories and project data source files
   const portfolioCats = {
     Featured: "./src/data/projectsFeatured.json",
+    "Blog Posts": "./src/data/postsBlog.json",
     "Applications": "./src/data/projectsApplications.json",
     "Coding Exercises": "./src/data/projectsExercises.json"
   };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Project } from "./Project";
 import { ProjectCard } from "./ProjectCard";
+import { BlogPost } from "./BlogPost";
 
 export const Content = ({ contentCat, path, externalLinks }) => {
 
@@ -21,6 +22,9 @@ export const Content = ({ contentCat, path, externalLinks }) => {
     switch (contentCat) {
       case "Featured":
         contentItem = <ProjectCard project={item} />
+        break;
+      case "Blog Posts":
+        contentItem = <BlogPost post={item} />
         break;
       case "Applications":
         contentItem = <Project project={item} externalLinks={externalLinks} />
@@ -43,6 +47,9 @@ export const Content = ({ contentCat, path, externalLinks }) => {
       case "Featured":
         portfolioCatContentCN =
           "project-categories-wrapper project-categories-wrapper-featured"
+        break;
+      case "Blog Posts":
+        portfolioCatContentCN = "project-categories-wrapper"
         break;
       case "Applications":
         portfolioCatContentCN = "project-categories-wrapper"
