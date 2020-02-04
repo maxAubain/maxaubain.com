@@ -16,32 +16,45 @@ export const Content = ({ contentCat, path, externalLinks }) => {
   });
 
   // Generate content items object dependent on content category
+  let contentItem;
   const contentItems = content.map(project => {
     switch (contentCat) {
       case "Featured":
-        return (
-          <div key={project.id}>
-            <ProjectCard project={project} />
-          </div>
-        );
+        contentItem = <ProjectCard project={project} />
+        break;
       case "Applications":
-        return (
-          <div key={project.id}>
-            <Project project={project} externalLinks={externalLinks} />
-          </div>
-        );
+        contentItem = <Project project={project} externalLinks={externalLinks} />
+        break;
       case "Coding Exercises":
-        return (
-          <div key={project.id}>
-            <Project project={project} externalLinks={externalLinks} />
-          </div>
-        );
+        contentItem = <Project project={project} externalLinks={externalLinks} />
+        break;
     }
+    return (
+      <div key={project.id}>
+        {contentItem}
+      </div>
+    )
   });
 
-  // If content has been set, return content items
+  // If content has been set, return content items wrapped in associated layout styles
+  let portfolioCatContentCN;
   if (content.length > 0) {
-    return <>{contentItems}</>;
+    switch (contentCat) {
+      case "Featured":
+        portfolioCatContentCN =
+          "project-categories-wrapper project-categories-wrapper-featured"
+        break;
+      case "Applications":
+        portfolioCatContentCN = "project-categories-wrapper"
+        break;
+      case "Coding Exercises":
+        portfolioCatContentCN = "project-categories-wrapper"
+        break;
+    }
+    return (
+      <div className={portfolioCatContentCN}>
+        {contentItems}
+      </div>);
   } else {
     return <></>;
   }

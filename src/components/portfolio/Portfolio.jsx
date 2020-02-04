@@ -62,18 +62,13 @@ export const Portfolio = () => {
   });
 
   // When externalLinks data is loaded, content is displayed
-  let portfolioCatContentCN;
   if (Object.keys(externalLinks).length > 0) {
-    curPortfolioCat === "Featured"
-      ? (portfolioCatContentCN =
-        "project-categories-wrapper project-categories-wrapper-featured")
-      : (portfolioCatContentCN = "project-categories-wrapper");
     return (
       <>
         <div className="navlink-section-container">
           {PortfolioCatsNavlinks}
         </div>
-        <div className={portfolioCatContentCN}>{portfolioCatContent}</div>
+        {portfolioCatContent}
       </>
     );
   } else {
