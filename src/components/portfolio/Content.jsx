@@ -22,13 +22,13 @@ export const Content = ({ contentCat, path, externalLinks }) => {
       case "Featured":
         contentItem = <ProjectCard project={item} />
         break;
-      case "Blog Posts":
+      case "Blog":
         contentItem = <BlogPost post={item} />
         break;
-      case "Applications":
+      case "Apps":
         contentItem = <Project project={item} externalLinks={externalLinks} />
         break;
-      case "Coding Exercises":
+      case "Exercises":
         contentItem = <Project project={item} externalLinks={externalLinks} />
         break;
     }
@@ -47,13 +47,13 @@ export const Content = ({ contentCat, path, externalLinks }) => {
         portfolioCatContentCN =
           "project-categories-wrapper project-categories-wrapper-featured"
         break;
-      case "Blog Posts":
+      case "Blog":
         portfolioCatContentCN = "project-categories-wrapper"
         break;
-      case "Applications":
+      case "Apps":
         portfolioCatContentCN = "project-categories-wrapper"
         break;
-      case "Coding Exercises":
+      case "Exercises":
         portfolioCatContentCN = "project-categories-wrapper"
         break;
     }

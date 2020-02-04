@@ -7,9 +7,9 @@ export const Portfolio = () => {
   // Define hash of portfolio categories and content data source files
   const portfolioCats = {
     Featured: "./src/data/projectsFeatured.json",
-    "Blog Posts": "./src/data/postsBlog.json",
-    "Applications": "./src/data/projectsApplications.json",
-    "Coding Exercises": "./src/data/projectsExercises.json"
+    "Blog": "./src/data/postsBlog.json",
+    "Apps": "./src/data/projectsApplications.json",
+    "Exercises": "./src/data/projectsExercises.json"
   };
 
   // Get externalLinks data containing tech keywords with related weblinks
