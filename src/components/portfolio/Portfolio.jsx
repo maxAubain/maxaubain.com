@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Content } from "./Content";
-import { ProjectsCount } from "./ProjectsCount";
+import { ContentItemsCount } from "./ContentItemsCount";
 
 export const Portfolio = () => {
   // Define hash of portfolio categories and project data source files
@@ -42,7 +42,7 @@ export const Portfolio = () => {
         }}
       >
         {key}
-        <ProjectsCount path={portfolioCats[key]} />
+        <ContentItemsCount path={portfolioCats[key]} />
       </div>
     );
   });
