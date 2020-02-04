@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Projects } from "./Projects";
+import { Content } from "./Content";
 import { ProjectsCount } from "./ProjectsCount";
 
 export const Portfolio = () => {
@@ -51,9 +51,9 @@ export const Portfolio = () => {
   const portfolioCatContent = Object.keys(portfolioCats).map(key => {
     if (key === curPortfolioCat) {
       return (
-        <Projects
+        <Content
           key={key}
-          projectCategory={key}
+          contentCat={key}
           path={portfolioCats[key]}
           externalLinks={externalLinks}
         />
