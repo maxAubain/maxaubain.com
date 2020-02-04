@@ -2,12 +2,12 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 
-import { About } from "./components/About";
-import { Portfolio } from "./components/Portfolio";
-import { EmailForm } from "./components/EmailForm";
-import { Footer } from "./components/Footer";
-import { NavBar } from "./components/Navbar";
-import { Resume } from "./components/Resume";
+import { About } from "./components/about/About";
+import { Portfolio } from "./components/portfolio/Portfolio";
+import { EmailForm } from "./components/contact/EmailForm";
+import { Footer } from "./components/layouts/Footer";
+import { NavBar } from "./components/layouts/Navbar";
+import { Resume } from "./components/resume/Resume";
 
 import "./css/common.css";
 import "./css/education.css";
@@ -23,7 +23,7 @@ import WebFont from "webfontloader";
 const App = () => {
   return (
     <Route
-      render={({}) => (
+      render={({ }) => (
         <>
           <NavBar />
           <div className="page-content">

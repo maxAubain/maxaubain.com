@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { IconSmallPlus } from "./common/IconSmallPlus";
+import { IconSmallPlus } from "../common/IconSmallPlus";
 import { NavLink } from "react-router-dom";
 
 let navLinkClasses = {
