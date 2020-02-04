@@ -5,8 +5,7 @@ import { ProjectCard } from "./ProjectCard";
 import { BlogPost } from "./BlogPost";
 
 export const Content = ({ contentCat, path, externalLinks }) => {
-
-  // If content has not been set, get content items from file
+  // If content has not been set, get content items data from file
   const [content, setContent] = useState([]);
   useEffect(() => {
     if (content.length === 0) {
