@@ -1,6 +1,6 @@
 import React from "react";
 
-import { WebLink } from "../components/common/WebLink";
+import { WebLink } from "../common/WebLink";
 
 let keyArray, i, link;
 
