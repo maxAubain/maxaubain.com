@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Project } from "./Project";
 import { ProjectCard } from "./ProjectCard";
-import { BlogPost } from "./BlogPost";
+import { BlogPostPreview } from "./BlogPostPreview";
 
 export const Content = ({ contentCat, path, externalLinks }) => {
   // If content has not been set, get content items data from file
@@ -23,7 +23,7 @@ export const Content = ({ contentCat, path, externalLinks }) => {
         contentItem = <ProjectCard project={item} />
         break;
       case "Blog":
-        contentItem = <BlogPost post={item} />
+        contentItem = <BlogPostPreview post={item} />
         break;
       case "Apps":
         contentItem = <Project project={item} externalLinks={externalLinks} />
