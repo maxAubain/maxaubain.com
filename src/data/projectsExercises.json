@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": "E8",
     "title": "Pull request template",
     "image": {
@@ -33,7 +32,7 @@
       "path": "./src/img/icon/server.png",
       "alt": "server-icon"
     },
-    "descriptionShort": "Serving static pages and images with Node and Express.",
+    "descriptionShort": "Serving static pages and images with Node, Express.",
     "descriptionFull": [
       "This project is a build of an API configured to serve static html pages, provide routes, and render views.",
       "Express helper methods are used for routing and Express-Handlebars enables a view engine.",
