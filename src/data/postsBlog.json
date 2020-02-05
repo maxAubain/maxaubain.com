@@ -1,10 +1,71 @@
-[
-  {
-    "id": "1",
-    "post": "This is a post."
+[{
+    "id": "B2",
+    "header": {
+      "date": {
+        "post": "Jan. 31st, 2020",
+        "update": "Feb. 2nd, 2020"
+      },
+      "title": {
+        "main": "Main Title 2",
+        "subtitle": "Subtitle 2"
+      },
+      "image": {
+        "src": "./src/img/social-media-preview.png"
+      }
+    },
+    "body": [{
+        "quote": "This is quotable."
+      },
+      {
+        "paragraph": "This is a post paragraph1. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      },
+      {
+        "image": {
+          "src": "./src/img/social-media-preview.png",
+          "caption": "Social media preview"
+        }
+      },
+      {
+        "paragraph": "This is a post paragraph2. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      },
+      {
+        "paragraph": "This is a post paragraph3. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      }
+    ]
   },
   {
-    "id": "2",
-    "post": "This is a post."
+    "id": "B1",
+    "header": {
+      "date": {
+        "post": "Jan. 3rd, 2020",
+        "update": ""
+      },
+      "title": {
+        "main": "Main Title",
+        "subtitle": "Subtitle"
+      },
+      "image": {
+        "src": "./src/img/social-media-preview.png"
+      }
+    },
+    "body": [{
+        "quote": "This is quotable."
+      },
+      {
+        "paragraph": "This is a post paragraph1. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      },
+      {
+        "image": {
+          "src": "./src/img/social-media-preview.png",
+          "caption": "Social media preview"
+        }
+      },
+      {
+        "paragraph": "This is a post paragraph2. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      },
+      {
+        "paragraph": "This is a post paragraph3. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      }
+    ]
   }
 ]

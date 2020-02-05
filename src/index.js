@@ -9,6 +9,7 @@ import { Footer } from "./components/layouts/Footer";
 import { NavBar } from "./components/layouts/Navbar";
 import { Resume } from "./components/resume/Resume";
 
+import "./css/blog-post-preview.css"
 import "./css/common.css";
 import "./css/education.css";
 import "./css/global.css";

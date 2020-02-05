@@ -149,7 +149,7 @@
   }
 
   .project-summary {
-    width: 845px;
+    width: 836px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
@@ -170,7 +170,7 @@
   .project-details-container {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    width: 845px;
+    width: 836px;
   }
 
   .project-description-full,
