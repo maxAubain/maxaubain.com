@@ -6,28 +6,28 @@ export const BlogPostPreview = ({ post }) => {
   post.header.date.update === "" ?
     date = (
       <>
-        Posted: {post.header.date.post}
+        {post.header.date.post}
       </>
     )
     :
     date = (
       <>
-        Posted: {post.header.date.post}, Updated: {post.header.date.update}
+        {post.header.date.post}, revised: {post.header.date.update}
       </>)
 
   // Body paragraphs object
-  const bodyPreview = post.body.map(bodyObject => {
+  const body = post.body.map(bodyObject => {
     if (Object.keys(bodyObject)[0] === "paragraph") {
-      return (<p>{bodyObject.paragraph}</p>)
+      return (<>{bodyObject.paragraph}</>)
     }
   })
 
   return (
-    <>
-      <div>{post.header.title.main}</div>
-      <div>{post.header.title.subtitle}</div>
-      <div>{date}</div>
-      <div>{bodyPreview}</div>
-    </>
+    <div className="bpp-container">
+      <div className="bpp-title">{post.header.title.main}</div>
+      <div className="bpp-subtitle">{post.header.title.subtitle}</div>
+      <div className="bpp-date">{date}</div>
+      <div className="bpp-body">{body}</div>
+    </div>
   )
 }
