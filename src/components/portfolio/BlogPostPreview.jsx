@@ -12,7 +12,7 @@ export const BlogPostPreview = ({ post }) => {
     :
     date = (
       <>
-        {post.header.date.post}, revised: {post.header.date.update}
+        {post.header.date.post} -- last revised {post.header.date.update}
       </>)
 
   // Body paragraphs object

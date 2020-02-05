@@ -6,8 +6,8 @@
         "update": "Feb. 2nd, 2020"
       },
       "title": {
-        "main": "Main Title",
-        "subtitle": "Subtitle"
+        "main": "Main Title 2",
+        "subtitle": "Subtitle 2"
       },
       "image": {
         "src": "./src/img/social-media-preview.png"
@@ -37,12 +37,12 @@
     "id": "B1",
     "header": {
       "date": {
-        "post": "Feb. 3rd, 2020",
+        "post": "Jan. 3rd, 2020",
         "update": ""
       },
       "title": {
-        "main": "Main Title 2",
-        "subtitle": "Subtitle 2"
+        "main": "Main Title",
+        "subtitle": "Subtitle"
       },
       "image": {
         "src": "./src/img/social-media-preview.png"
