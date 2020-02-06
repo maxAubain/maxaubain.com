@@ -13,7 +13,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/ucsd.png"
+              src="../src/img/icon/ucsd.png"
               alt="dev-icon"
               height="160px"
               width="160px"
@@ -55,7 +55,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/cornell.png"
+              src="../src/img/icon/cornell.png"
               alt="cornell-icon"
               height="200px"
               width="200px"
@@ -92,7 +92,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/craftacademy.png"
+              src="../src/img/icon/craftacademy.png"
               alt="craftacademy-icon"
               height="200px"
               width="200px"
@@ -123,7 +123,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/ucsd.png"
+              src="../src/img/icon/ucsd.png"
               alt="ucsd-icon"
               height="160px"
               width="160px"
@@ -156,7 +156,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/pli.png"
+              src="../src/img/icon/pli.png"
               alt="pli-icon"
               height="160px"
               width="160px"

@@ -6,7 +6,7 @@ export const Profile = () => {
       <div className="intro">
         <div className="section-profile headshot-container">
           <div>
-            <img className="headshot" src="./src/img/head-shot.png" />
+            <img className="headshot" src="../src/img/head-shot.png" />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
@@ -35,7 +35,7 @@ export const Profile = () => {
         <div className="feature-title">
           <div>
             <img
-              src="./src/img/icon/developer.png"
+              src="../src/img/icon/developer.png"
               alt="dev-icon"
               height="100px"
               width="100px"
@@ -64,7 +64,7 @@ export const Profile = () => {
         <div className="feature-title">
           <div>
             <img
-              src="./src/img/icon/project-manager.png"
+              src="../src/img/icon/project-manager.png"
               alt="PM-icon"
               height="100px"
               width="100px"
@@ -91,7 +91,7 @@ export const Profile = () => {
         <div className="feature-title">
           <div>
             <img
-              src="./src/img/icon/analyst.png"
+              src="../src/img/icon/analyst.png"
               alt="analyst-icon"
               height="100px"
               width="100px"
