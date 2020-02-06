@@ -21,8 +21,36 @@ import "./css/social-media.css";
 
 import WebFont from "webfontloader";
 
+// Handles routes parameters
+const routesParams = {
+  "about": {
+    "path": "/about",
+    "component": About
+  },
+  "portfolio": {
+    "path": "/portfolio",
+    "component": Portfolio
+  },
+  "resume": {
+    "path": "/resume",
+    "component": Resume
+  },
+  "contact": {
+    "path": "/contact",
+    "component": EmailForm
+  },
+}
+
 const App = () => {
+  // Routes object to render children components
+  const routes = Object.keys(routesParams).map(key => {
+    return (
+      <Route key={key} path={routesParams[key].path} component={routesParams[key].component} />
+    )
+  })
+
   return (
+    // Establish initial route to condigure location.pathname
     <Route
       render={({ }) => (
         <>
@@ -30,10 +58,7 @@ const App = () => {
           <div className="page-content">
             <Switch>
               <Redirect exact from="/" to="/about" />
-              <Route path="/about" component={About} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/contact" component={EmailForm} />
+              {routes}
             </Switch>
           </div>
           <Footer />
