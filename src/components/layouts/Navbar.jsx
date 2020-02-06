@@ -1,28 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { IconSmallPlus } from "../common/IconSmallPlus";
 import { NavLink } from "react-router-dom";
+import { navLinksParams } from "../../router/navLinks.js"
 
-// Handle navLinks and socialMedia parameters
-const navLinksParams = {
-  "about": {
-    "label": "About",
-    "className": ""
-  },
-  "portfolio": {
-    "label": "Portfolio",
-    "className": ""
-  },
-  "resume": {
-    "label": "Resume",
-    "className": ""
-  },
-  "contact": {
-    "label": "Contact",
-    "className": ""
-  }
-}
-
-const socialMediaParams = {
+// Handle socialMediaIcons parameters
+const socialMediaIconsParams = {
   "github": {
     "url": "https://github.com/maxAubain",
     "image": {
@@ -64,39 +46,36 @@ export const NavBar = () => {
     });
   }
 
-  // Handle assignment of highlighted style for navLinksParams dependent on current path
-  Object.keys(navLinksParams).forEach(key => {
-    `/${key}` === location.pathname
-      ? Object.assign(navLinksParams[key], { "className": "navlink-current" })
-      : Object.assign(navLinksParams[key], { "className": "navlink" })
-  });
+  // NavLinks object with current NavLink highlighting style
+  const navLinks = Object.keys(navLinksParams.navBar).map(key => {
+    location.pathname.toString().includes(`/${key}`)
+      ? Object.assign(navLinksParams.navBar[key], { "className": "navlink-current" })
+      : Object.assign(navLinksParams.navBar[key], { "className": "navlink" })
 
-  // NavLinks object
-  const navLinks = Object.keys(navLinksParams).map(key => {
     return (
       <NavLink
         key={key}
-        className={navLinksParams[key].className}
-        to={`/${key}`}
+        className={navLinksParams.navBar[key].className}
+        to={navLinksParams.navBar[key].path}
         onClick={handleViewReset}
       >
-        {navLinksParams[key].label}
+        {navLinksParams.navBar[key].label}
       </NavLink>
     )
   })
 
   // Social media link/icons object
-  const socialMedia = Object.keys(socialMediaParams).map(key => {
+  const socialMediaIcons = Object.keys(socialMediaIconsParams).map(key => {
     return (
       <a
         key={key}
         onClick={() => {
-          window.open(`${socialMediaParams[key].url}`, "_blank");
+          window.open(`${socialMediaIconsParams[key].url}`, "_blank");
         }}
       >
         <IconSmallPlus
-          src={socialMediaParams[key].image.path}
-          alt={socialMediaParams[key].image.alt}
+          src={socialMediaIconsParams[key].image.path}
+          alt={socialMediaIconsParams[key].image.alt}
         />
       </a>
     )
@@ -108,7 +87,7 @@ export const NavBar = () => {
         {navLinks}
       </div>
       <div className="navbar-social">
-        {socialMedia}
+        {socialMediaIcons}
       </div>
     </div>
   );
