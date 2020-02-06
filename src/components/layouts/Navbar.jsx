@@ -3,7 +3,7 @@ import { IconSmallPlus } from "../common/IconSmallPlus";
 import { NavLink } from "react-router-dom";
 
 // Handle navLinks and socialMedia parameters
-const navLinks = {
+const navLinksParams = {
   "about": {
     "label": "About",
     "className": ""
@@ -22,7 +22,7 @@ const navLinks = {
   }
 }
 
-const socialMedia = {
+const socialMediaParams = {
   "github": {
     "url": "https://github.com/maxAubain",
     "image": {
@@ -64,38 +64,39 @@ export const NavBar = () => {
     });
   }
 
-  // Handle assignment of highlighted style for navLinks dependent on current path
-  Object.keys(navLinks).forEach(key => {
+  // Handle assignment of highlighted style for navLinksParams dependent on current path
+  Object.keys(navLinksParams).forEach(key => {
     `/${key}` === location.pathname
-      ? Object.assign(navLinks[key], { "className": "navlink-current" })
-      : Object.assign(navLinks[key], { "className": "navlink" })
+      ? Object.assign(navLinksParams[key], { "className": "navlink-current" })
+      : Object.assign(navLinksParams[key], { "className": "navlink" })
   });
 
-  // Navbar NavLinks object
-  const navLinksObj = Object.keys(navLinks).map(key => {
+  // NavLinks object
+  const navLinks = Object.keys(navLinksParams).map(key => {
     return (
       <NavLink
         key={key}
-        className={navLinks[key].className}
+        className={navLinksParams[key].className}
         to={`/${key}`}
         onClick={handleViewReset}
       >
-        {navLinks[key].label}
+        {navLinksParams[key].label}
       </NavLink>
     )
   })
 
   // Social media link/icons object
-  const socialMediaObj = Object.keys(socialMedia).map(key => {
+  const socialMedia = Object.keys(socialMediaParams).map(key => {
     return (
       <a
+        key={key}
         onClick={() => {
-          window.open(`${socialMedia[key].url}`, "_blank");
+          window.open(`${socialMediaParams[key].url}`, "_blank");
         }}
       >
         <IconSmallPlus
-          src={socialMedia[key].image.path}
-          alt={socialMedia[key].image.alt}
+          src={socialMediaParams[key].image.path}
+          alt={socialMediaParams[key].image.alt}
         />
       </a>
     )
@@ -104,10 +105,10 @@ export const NavBar = () => {
   return (
     <div className={navBarContCN}>
       <div className="navbar-navlinks">
-        {navLinksObj}
+        {navLinks}
       </div>
       <div className="navbar-social">
-        {socialMediaObj}
+        {socialMedia}
       </div>
     </div>
   );
