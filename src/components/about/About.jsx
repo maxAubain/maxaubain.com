@@ -1,51 +1,27 @@
-import React, { useState } from "react";
-
-import { Education } from "./Education"
-import { Profile } from "./Profile"
-import { Recommendations } from "./Recommendations";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { navLinksParams } from "../../router/navLinks"
 
 export const About = () => {
-  const components = ["Profile", "Recommendations", "Education"];
-  const [currentComponent, setCurrentComponent] = useState(components[0]);
-
-  let navlinkSectionClassName;
-  const componentsSelectors = components.map(component => {
-    component === currentComponent
-      ? (navlinkSectionClassName = "navlink-section-current")
-      : (navlinkSectionClassName = "navlink-section");
-
+  // NavLinks object with current NavLink highlighting style
+  const navLinks = Object.keys(navLinksParams.about).map(key => {
     return (
-      <div
-        key={component}
-        className={navlinkSectionClassName}
-        onClick={() => {
-          setCurrentComponent(component);
-        }}
+      <NavLink
+        key={key}
+        className="navlink-section"
+        activeClassName="navlink-section-current"
+        to={navLinksParams.about[key].path}
       >
-        {component}
-      </div>
-    );
-  });
-
-  let component;
-  switch (currentComponent) {
-    case "Profile":
-      component = <Profile />;
-      break;
-    case "Recommendations":
-      component = <Recommendations />;
-      break;
-    case "Education":
-      component = <Education />
-      break;
-  }
+        {navLinksParams.about[key].label}
+      </NavLink>
+    )
+  })
 
   return (
     <>
       <div className="navlink-section-container">
-        {componentsSelectors}
+        {navLinks}
       </div>
-      {component}
     </>
-  );
+  )
 };
