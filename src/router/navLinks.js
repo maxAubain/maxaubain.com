@@ -6,7 +6,7 @@ export const navLinksParams = {
     },
     "portfolio": {
       "label": "Portfolio",
-      "path": "/portfolio"
+      "path": "/portfolio/featured"
     },
     "resume": {
       "label": "Resume",
@@ -30,5 +30,27 @@ export const navLinksParams = {
       "label": "Education",
       "path": "/about/education"
     }
-  }
+  },
+  "portfolio": {
+    "featured": {
+      "label": "Featured",
+      "path": "/portfolio/featured",
+      "dataPath": "../../src/data/projectsFeatured.json"
+    },
+    "blog": {
+      "label": "Blog",
+      "path": "/portfolio/blog",
+      "dataPath": "../../src/data/postsBlog.json"
+    },
+    "apps": {
+      "label": "Apps",
+      "path": "/portfolio/apps",
+      "dataPath": "../../src/data/projectsApplications.json"
+    },
+    "exercises": {
+      "label": "Exercises",
+      "path": "/portfolio/exercises",
+      "dataPath": "../../src/data/projectsExercises.json"
+    }
+  },
 }
