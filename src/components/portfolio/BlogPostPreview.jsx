@@ -4,16 +4,9 @@ export const BlogPostPreview = ({ post }) => {
   // Date element with 'posted' and 'updated'
   let date
   post.header.date.update === "" ?
-    date = (
-      <>
-        {post.header.date.post}
-      </>
-    )
+    date = (<>{post.header.date.post}</>)
     :
-    date = (
-      <>
-        {post.header.date.post} -- last revised {post.header.date.update}
-      </>)
+    date = (<>{post.header.date.post} -- last revised {post.header.date.update}</>)
 
   // Body paragraphs object
   const body = post.body.map(bodyObject => {

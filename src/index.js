@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
-
 import { Footer } from "./components/layouts/Footer";
 import { NavBar } from "./components/layouts/Navbar";
-import { routesParams } from "./router/routes.js"
+import { routesParams } from "./router/routes.js";
 
 import "./css/blog-post-preview.css"
 import "./css/common.css";
