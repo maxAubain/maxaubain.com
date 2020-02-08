@@ -54,3 +54,20 @@ export const navLinksParams = {
     }
   },
 }
+
+export const socialMediaIconsParams = {
+  "github": {
+    "url": "https://github.com/maxAubain",
+    "image": {
+      "path": "./src/img/icon/github.png",
+      "alt": "github-icon"
+    }
+  },
+  "linkedin": {
+    "url": "https://www.linkedin.com/in/maxaubain/",
+    "image": {
+      "path": "./src/img/icon/linkedin.png",
+      "alt": "linkedin-icon"
+    }
+  }
+}

@@ -13,39 +13,43 @@ import { Resume } from "../components/resume/Resume";
 export const routesParams = {
   "about": {
     "path": "/about",
-    "component": About
-  },
-  "about/profile": {
-    "path": "/about/profile",
-    "component": Profile
-  },
-  "about/recommendations": {
-    "path": "/about/recommendations",
-    "component": Recommendations
-  },
-  "about/education": {
-    "path": "/about/education",
-    "component": Education
+    "component": About,
+    "children": {
+      "about/profile": {
+        "path": "/about/profile",
+        "component": Profile
+      },
+      "about/recommendations": {
+        "path": "/about/recommendations",
+        "component": Recommendations
+      },
+      "about/education": {
+        "path": "/about/education",
+        "component": Education
+      }
+    },
   },
   "portfolio": {
     "path": "/portfolio",
-    "component": Portfolio
-  },
-  "portfolio/featured": {
-    "path": "/portfolio/featured",
-    "component": Featured
-  },
-  "portfolio/blog": {
-    "path": "/portfolio/blog",
-    "component": Blog
-  },
-  "portfolio/apps": {
-    "path": "/portfolio/apps",
-    "component": Apps
-  },
-  "portfolio/exercises": {
-    "path": "/portfolio/exercises",
-    "component": Exercises
+    "component": Portfolio,
+    "children": {
+      "portfolio/featured": {
+        "path": "/portfolio/featured",
+        "component": Featured
+      },
+      "portfolio/blog": {
+        "path": "/portfolio/blog",
+        "component": Blog
+      },
+      "portfolio/apps": {
+        "path": "/portfolio/apps",
+        "component": Apps
+      },
+      "portfolio/exercises": {
+        "path": "/portfolio/exercises",
+        "component": Exercises
+      },
+    }
   },
   "resume": {
     "path": "/resume",
