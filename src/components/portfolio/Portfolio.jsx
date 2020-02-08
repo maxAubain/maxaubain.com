@@ -1,78 +1,43 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Content } from "./Content";
+import React from "react";
+import { NavLink, Route } from "react-router-dom";
 import { ContentItemsCount } from "./ContentItemsCount";
+import { navLinksParams } from "../../router/links";
+import { routesParams } from "../../router/routes";
 
 export const Portfolio = () => {
-  // Define hash of portfolio categories and content data source files
-  const portfolioCats = {
-    Featured: "./src/data/projectsFeatured.json",
-    "Blog": "./src/data/postsBlog.json",
-    "Apps": "./src/data/projectsApplications.json",
-    "Exercises": "./src/data/projectsExercises.json"
-  };
 
-  // Get externalLinks data containing tech keywords with related weblinks
-  const [externalLinks, setExternalLinks] = useState({});
-  useEffect(() => {
-    if (Object.keys(externalLinks).length === 0) {
-      axios.get("./src/data/linksExternal.json").then(response => {
-        setExternalLinks(response.data);
-      });
-    }
-  });
-
-  // Set Portfolio state with initial portfolio category
-  const [curPortfolioCat, setCurPortfolioCat] = useState(
-    "Featured"
-  );
-
-  // Portfolio categories navlinks objects, with style (selected / unselected)
-  let navlinkCN
-  const PortfolioCatsNavlinks = Object.keys(portfolioCats).map(key => {
-    key === curPortfolioCat
-      ? (navlinkCN = "navlink-section-current")
-      : (navlinkCN = "navlink-section");
-
+  // Navlinks object
+  const navLinks = Object.keys(navLinksParams.portfolio).map(key => {
     return (
-      <div
+      <NavLink
         key={key}
-        className={navlinkCN}
-        onClick={() => {
-          setCurPortfolioCat(key);
-        }}
+        className="navlink-section"
+        activeClassName="navlink-section-current"
+        to={navLinksParams.portfolio[key].path}
       >
-        {key}
-        <ContentItemsCount path={portfolioCats[key]} />
-      </div>
-    );
-  });
+        {navLinksParams.portfolio[key].label}
+        <ContentItemsCount path={navLinksParams.portfolio[key].dataPath} />
+      </NavLink>
+    )
+  })
 
-  // Content object of the particular portfolio category ( selected )
-  const portfolioCatContent = Object.keys(portfolioCats).map(key => {
-    if (key === curPortfolioCat) {
-      return (
-        <Content
-          key={key}
-          contentCat={key}
-          path={portfolioCats[key]}
-          externalLinks={externalLinks}
-        />
-      );
-    }
-  });
-
-  // When externalLinks data is loaded, content is displayed
-  if (Object.keys(externalLinks).length > 0) {
+  // Routes object
+  const routes = Object.keys(routesParams.portfolio.children).map(key => {
     return (
-      <>
-        <div className="navlink-section-container">
-          {PortfolioCatsNavlinks}
-        </div>
-        {portfolioCatContent}
-      </>
-    );
-  } else {
-    return <></>;
-  }
+      <Route
+        key={key}
+        path={routesParams.portfolio.children[key].path}
+        component={routesParams.portfolio.children[key].component}
+      />
+    )
+  })
+
+  return (
+    <>
+      <div className="navlink-section-container">
+        {navLinks}
+      </div>
+      {routes}
+    </>
+  );
 };
