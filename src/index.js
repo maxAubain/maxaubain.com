@@ -26,19 +26,16 @@ const App = () => {
   })
 
   return (
-    // Establish initial route to configure location.pathname
-    <Route
-      render={({ }) => (
-        <>
-          <NavBar />
-          <div className="page-content">
-            <Redirect exact from="/" to="/about/profile" />
-            {routes}
-          </div>
-          <Footer />
-        </>
-      )}
-    />
+    <>
+      <NavBar />
+      <div className="page-content">
+        {routes}
+      </div>
+      <Footer />
+
+      <Redirect from="/" to="/about" />
+      <Redirect from="/about" to="/about/profile" />
+    </>
   );
 };
 
