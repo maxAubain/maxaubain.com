@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { navLinksParams } from "../../router/navLinks";
-import { ProjectCard } from "./ProjectCard";
+import { navLinksParams } from "../../router/links";
+import { FeaturedItemCard } from "./FeaturedItemCard";
 
 export const Featured = () => {
   // If content has not been set, get content items data from file
-  const [content, setContent] = useState([]);
+  const [featuredContent, setFeaturedContent] = useState([]);
   useEffect(() => {
-    if (content.length === 0) {
+    if (featuredContent.length === 0) {
       axios.get(navLinksParams.portfolio.featured.dataPath).then(response => {
-        setContent(response.data);
+        setFeaturedContent(response.data);
       });
     }
   });
 
-  let contentItem;
-  const contentItems = content.map(item => {
-    contentItem = <ProjectCard project={item} />
+  const featuredContentItems = featuredContent.map(featuredContentitem => {
     return (
-      <div key={item.id}>
-        {contentItem}
+      <div key={featuredContentitem.id}>
+        <FeaturedItemCard featuredContentItem={featuredContentitem} />
       </div>
     )
   });
@@ -27,7 +25,7 @@ export const Featured = () => {
   return (
     <div className="project-categories-wrapper 
     project-categories-wrapper-featured">
-      {contentItems}
+      {featuredContentItems}
     </div>
   )
 }
