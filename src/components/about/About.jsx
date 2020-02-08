@@ -1,9 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { navLinksParams } from "../../router/navLinks"
+import { NavLink, Route } from "react-router-dom";
+import { navLinksParams } from "../../router/links";
+import { routesParams } from "../../router/routes";
 
 export const About = () => {
-  // NavLinks object with current NavLink highlighting style
+  // NavLinks object with NavLink highlighting style
   const navLinks = Object.keys(navLinksParams.about).map(key => {
     return (
       <NavLink
@@ -17,11 +18,23 @@ export const About = () => {
     )
   })
 
+  // Routes object
+  const routes = Object.keys(routesParams.about.children).map(key => {
+    return (
+      <Route
+        key={key}
+        path={routesParams.about.children[key].path}
+        component={routesParams.about.children[key].component}
+      />
+    )
+  })
+
   return (
     <>
       <div className="navlink-section-container">
         {navLinks}
       </div>
+      {routes}
     </>
   )
 };
