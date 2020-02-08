@@ -1,28 +1,10 @@
 import React, { useState, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { IconSmallPlus } from "../common/IconSmallPlus";
-import { NavLink } from "react-router-dom";
-import { navLinksParams } from "../../router/navLinks.js"
-
-// Handle socialMediaIcons parameters
-const socialMediaIconsParams = {
-  "github": {
-    "url": "https://github.com/maxAubain",
-    "image": {
-      "path": "./src/img/icon/github.png",
-      "alt": "github-icon"
-    }
-  },
-  "linkedin": {
-    "url": "https://www.linkedin.com/in/maxaubain/",
-    "image": {
-      "path": "./src/img/icon/linkedin.png",
-      "alt": "linkedin-icon"
-    }
-  }
-}
+import { navLinksParams, socialMediaIconsParams } from "../../router/links.js";
 
 export const NavBar = () => {
-  // Handle navbar shadow on scroll
+  // Handles navbar shadow on scroll
   const [navBarContCN, setNavBarContCN] = useState(
     "navbar-container"
   );
@@ -37,7 +19,7 @@ export const NavBar = () => {
     window.addEventListener("scroll", handleNavBarShadow);
   });
 
-  // Handle view reset on navlink click
+  // Handles view reset on navlink click
   const handleViewReset = () => {
     window.scrollTo({
       top: 0,
@@ -46,7 +28,13 @@ export const NavBar = () => {
     });
   }
 
-  // NavLinks object with current NavLink highlighting style
+  // Handles updating component for navLinks className update
+  let location = useLocation();
+  useEffect(() => {
+    /* console.log("Track location: ", location.pathname) */
+  }, [location])
+
+  // NavLinks object with NavLink highlighting style
   const navLinks = Object.keys(navLinksParams.navBar).map(key => {
     location.pathname.toString().includes(`/${key}`)
       ? Object.assign(navLinksParams.navBar[key], { "className": "navlink-current" })
@@ -60,11 +48,11 @@ export const NavBar = () => {
         onClick={handleViewReset}
       >
         {navLinksParams.navBar[key].label}
-      </NavLink>
+      </NavLink >
     )
   })
 
-  // Social media link/icons object
+  // Social media icons links object
   const socialMediaIcons = Object.keys(socialMediaIconsParams).map(key => {
     return (
       <a
