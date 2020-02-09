@@ -34,6 +34,8 @@ export const Apps = () => {
   });
 
   return (
-    <>{projects}</>
+    <div className="project-categories-wrapper">
+      {projects}
+    </div>
   )
 }

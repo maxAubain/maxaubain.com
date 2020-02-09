@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Project } from "./Project";
-import { ProjectCard } from "./ProjectCard";
+import { FeaturedItemCard } from "./FeaturedItemCard";
 import { BlogPostPreview } from "./BlogPostPreview";
 
 export const Content = ({ contentCat, path, externalLinks }) => {

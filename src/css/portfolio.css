@@ -67,7 +67,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 420px) {
   .project-categories-wrapper {
-    margin: 30px 0 0 0;
+    margin: 32px 0 0 0;
   }
 
   .project-categories-wrapper-featured {
@@ -100,7 +100,7 @@
 /* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .project-categories-wrapper {
-    margin: 30px 0 0 0;
+    margin: 32px 0 0 0;
   }
 
   .project-categories-wrapper-featured {
@@ -137,7 +137,7 @@
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .project-categories-wrapper {
-    margin: 30px 0 0 10px;
+    margin: 32px 0 0 10px;
   }
 
   .project-categories-wrapper-featured {

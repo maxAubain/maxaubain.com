@@ -39,9 +39,10 @@ body {
 }
 
 .navlink-section-current {
-  margin: 10px;
-  font-size: 20px;
-  cursor: pointer;
+  color: #0f84e4;
+}
+
+.navlink-section-current:hover {
   color: #0f84e4;
 }
 

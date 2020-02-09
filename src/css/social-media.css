@@ -45,7 +45,7 @@ textarea.email-form-input {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0 0 0;
+  margin: 18px 0 0 0;
   font-size: 16px;
 }
 
@@ -74,7 +74,7 @@ textarea.email-form-input {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .feature-form {
-    margin: 20px 10px 0 10px;
+    margin: 18px 10px 0 10px;
     border-radius: 5px;
   }
 }
