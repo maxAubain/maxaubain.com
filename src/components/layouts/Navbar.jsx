@@ -30,9 +30,7 @@ export const NavBar = () => {
 
   // Handles updating component for navLinks className update
   let location = useLocation();
-  useEffect(() => {
-    /* console.log("Track location: ", location.pathname) */
-  }, [location])
+  useEffect(() => { }, [location])
 
   // NavLinks object with NavLink highlighting style
   const navLinks = Object.keys(navLinksParams.navBar).map(key => {

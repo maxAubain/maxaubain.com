@@ -4,7 +4,7 @@ import { navLinksParams } from "../../router/links";
 import { FeaturedItemCard } from "./FeaturedItemCard";
 
 export const Featured = () => {
-  // If content has not been set, get content items data from file
+  // Get content items data from file
   const [featuredContent, setFeaturedContent] = useState([]);
   useEffect(() => {
     if (featuredContent.length === 0) {

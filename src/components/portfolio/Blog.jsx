@@ -4,7 +4,7 @@ import { navLinksParams } from "../../router/links";
 import { BlogPostPreview } from "./BlogPostPreview";
 
 export const Blog = () => {
-  // If blogPosts has not been set, get blogPosts items data from file
+  // Get blogPosts items data from file
   const [blogPosts, setBlogPosts] = useState([]);
   useEffect(() => {
     if (blogPosts.length === 0) {
