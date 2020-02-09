@@ -7,16 +7,16 @@ export const BlogPostPreview = ({ post }) => {
     ? date = (<>{post.header.date.post}</>)
     : date = (<>{post.header.date.post} -- last revised {post.header.date.update}</>)
 
-  // Blog body paragraphs object
-  let key = 0
-  const body = post.body.map(bodyObject => {
-    if (Object.keys(bodyObject)[0].includes("p")) {
-      key++
-      return (<div key={key}>{bodyObject.paragraph}</div>)
+  // Retrieve first paragraph text from post body object
+  const getFirstParagraph = function (bodyHashArray) {
+    for (let iPostBody = 0; iPostBody < bodyHashArray.length; iPostBody++) {
+      if (Object.keys(bodyHashArray[iPostBody])[0] === "paragraph") {
+        return bodyHashArray[iPostBody].paragraph
+      }
     }
-  })
+  }
+  const body = getFirstParagraph(post.body)
 
-  // Formatted blog post preview object
   return (
     <div className="bpp-container">
       <div className="bpp-title">{post.header.title.main}</div>
