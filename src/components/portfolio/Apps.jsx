@@ -6,9 +6,11 @@ import { Project } from './Project'
 export const Apps = () => {
   // Get externalLinks data from file containing tech keywords with related weblinks
   const [externalLinks, setExternalLinks] = useState({})
+  const [isExternalLinksLoaded, setIsExternalLinksLoaded] = useState(false)
   useEffect(() => {
     axios.get('../../src/data/linksExternal.json').then(response => {
       setExternalLinks(response.data)
+      setIsExternalLinksLoaded(true)
     })
   }, [])
 
@@ -24,9 +26,13 @@ export const Apps = () => {
 
   const projects = apps.map(project => {
     return (
-      <div key={project.id}>
-        <Project project={project} externalLinks={externalLinks} />
-      </div>
+      <>
+        {isExternalLinksLoaded && (
+          <div key={project.id}>
+            <Project project={project} externalLinks={externalLinks} />
+          </div>
+        )}
+      </>
     )
   })
 
