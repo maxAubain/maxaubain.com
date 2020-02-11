@@ -3,7 +3,7 @@
     "id": "A10",
     "title": "Browsershot",
     "image": {
-      "path": "./src/img/icon/camera.png",
+      "path": "../src/img/icon/camera.png",
       "alt": "camera-icon"
     },
     "descriptionShort": "Browser screenshots provided with a SaaS platform.",
@@ -31,7 +31,7 @@
     "id": "A9",
     "title": "React Todo List",
     "image": {
-      "path": "./src/img/icon/checkbox.png",
+      "path": "../src/img/icon/checkbox.png",
       "alt": "checkbox-icon"
     },
     "descriptionShort": "Todo list app with dynamic features.",
@@ -61,7 +61,7 @@
     "id": "A8",
     "title": "maxaubain.com",
     "image": {
-      "path": "favicon.png",
+      "path": "../../favicon.png",
       "alt": "portfolio-icon"
     },
     "descriptionShort": "My developer portfolio website.",
@@ -89,7 +89,7 @@
     "id": "A7",
     "title": "Gnosis: Science News",
     "image": {
-      "path": "./src/img/icon/news.png",
+      "path": "../src/img/icon/news.png",
       "alt": "news-icon"
     },
     "descriptionShort": "Research news aggregator site.",
@@ -120,7 +120,7 @@
     "id": "A6",
     "title": "Gnosis Mobile App",
     "image": {
-      "path": "./src/img/icon/news.png",
+      "path": "../src/img/icon/news.png",
       "alt": "news-icon"
     },
     "descriptionShort": "Gnosis 'repackaged' for iOS mobile devices.",
@@ -147,7 +147,7 @@
     "id": "A5",
     "title": "Articles Blog",
     "image": {
-      "path": "./src/img/icon/blog.png",
+      "path": "../src/img/icon/blog.png",
       "alt": "blog-icon"
     },
     "descriptionShort": "Classic blog with CRUD methods.",
@@ -175,7 +175,7 @@
     "id": "A4",
     "title": "Kibbles 'n Bites",
     "image": {
-      "path": "./src/img/icon/food.png",
+      "path": "../src/img/icon/food.png",
       "alt": "food-icon"
     },
     "descriptionShort": "A luxury pet food menu.",
@@ -204,7 +204,7 @@
     "id": "A3",
     "title": "Rock-Paper-Scissors",
     "image": {
-      "path": "./src/img/icon/hand.png",
+      "path": "../src/img/icon/hand.png",
       "alt": "rps-icon"
     },
     "descriptionShort": "The classic childhood game.",
@@ -232,7 +232,7 @@
     "id": "A2",
     "title": "React BMI Calculator",
     "image": {
-      "path": "./src/img/icon/calculator.png",
+      "path": "../src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
     "descriptionShort": "Simple Body Mass Index calculator.",
@@ -260,7 +260,7 @@
     "id": "A1",
     "title": "Address Book",
     "image": {
-      "path": "./src/img/icon/contact.png",
+      "path": "../src/img/icon/contact.png",
       "alt": "planner-icon"
     },
     "descriptionShort": "UI for digitally storing contacts.",

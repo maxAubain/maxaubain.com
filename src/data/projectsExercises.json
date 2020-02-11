@@ -1,8 +1,9 @@
-[{
+[
+  {
     "id": "E8",
     "title": "Pull request template",
     "image": {
-      "path": "./src/img/icon/template.png",
+      "path": "../src/img/icon/template.png",
       "alt": "template-icon"
     },
     "descriptionShort": "Github PRs with consistent descriptions.",
@@ -29,7 +30,7 @@
     "id": "E7",
     "title": "Node API - 2",
     "image": {
-      "path": "./src/img/icon/server.png",
+      "path": "../src/img/icon/server.png",
       "alt": "server-icon"
     },
     "descriptionShort": "Serving static pages and images with Node, Express.",
@@ -57,7 +58,7 @@
     "id": "E6",
     "title": "Node API - 1",
     "image": {
-      "path": "./src/img/icon/server.png",
+      "path": "../src/img/icon/server.png",
       "alt": "server-icon"
     },
     "descriptionShort": "Serving static text and images with Node.",
@@ -84,7 +85,7 @@
     "id": "E5",
     "title": "Playdate",
     "image": {
-      "path": "./src/img/icon/children.png",
+      "path": "../src/img/icon/children.png",
       "alt": "children-icon"
     },
     "descriptionShort": "Parent-organized child care.",
@@ -111,7 +112,7 @@
     "id": "E4",
     "title": "BMI Calculator JS",
     "image": {
-      "path": "./src/img/icon/calculator.png",
+      "path": "../src/img/icon/calculator.png",
       "alt": "calculator-icon"
     },
     "descriptionShort": "Simple Body Mass Index calculator.",
@@ -138,7 +139,7 @@
     "id": "E3",
     "title": "FizzBuzz",
     "image": {
-      "path": "./src/img/icon/fizz.png",
+      "path": "../src/img/icon/fizz.png",
       "alt": "fizzbuzz-icon"
     },
     "descriptionShort": "A classic interview coding problem.",
@@ -165,7 +166,7 @@
     "id": "E2",
     "title": "Library Manager",
     "image": {
-      "path": "./src/img/icon/book.png",
+      "path": "../src/img/icon/book.png",
       "alt": "book icon"
     },
     "descriptionShort": "Managing a library collection with search function.",
@@ -191,7 +192,7 @@
     "id": "E1",
     "title": "ATM Simulator",
     "image": {
-      "path": "./src/img/icon/atm.png",
+      "path": "../src/img/icon/atm.png",
       "alt": "atm icon"
     },
     "descriptionShort": "Simulating ATM interactions with bank account member.",

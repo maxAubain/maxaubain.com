@@ -1,96 +1,76 @@
-import React, { useState, useEffect } from "react";
-
-import { IconSmallPlus } from "../common/IconSmallPlus";
-import { NavLink } from "react-router-dom";
-
-let navLinkClasses = {
-  about: "",
-  portfolio: "",
-  resume: "",
-  contact: ""
-};
+import React, { useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+import { IconSmallPlus } from '../common/IconSmallPlus'
+import { navLinksParams, socialMediaIconsParams } from '../../router/links.js'
 
 export const NavBar = () => {
-  // Handle navbar shadow
-  const [navBarContainerClass, setNavBarContainerClass] = useState(
-    "navbar-container"
-  );
+  // Handles navbar shadow on scroll
+  const [navBarContCN, setNavBarContCN] = useState('navbar-container')
+
   const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
-      ? setNavBarContainerClass("navbar-container floating-navbar")
-      : setNavBarContainerClass("navbar-container");
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleNavBarShadow);
-  });
+      ? setNavBarContCN('navbar-container floating-navbar')
+      : setNavBarContCN('navbar-container')
+  }
 
-  // Handle view reset on navlink click
-  const handleViewReset = () =>
+  useEffect(() => {
+    window.addEventListener('scroll', handleNavBarShadow)
+  })
+
+  // Handles view reset on navlink click
+  const handleViewReset = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "auto"
-    });
+      behavior: 'auto',
+    })
+  }
 
-  // Handle Navlink style classes
-  // navLinkClasses are not stored in State to avoid an infinite loop on render
-  Object.keys(navLinkClasses).forEach(key => {
-    `/${key}` === location.pathname
-      ? Object.assign(navLinkClasses, { [key]: "navlink-current" })
-      : Object.assign(navLinkClasses, { [key]: "navlink" });
-  });
+  // Handles updating component for navLinks className update
+  let location = useLocation()
+  useEffect(() => {}, [location])
+
+  // NavLinks object with NavLink highlighting style
+  const navLinks = Object.keys(navLinksParams.navBar).map(key => {
+    location.pathname.toString().includes(`/${key}`)
+      ? Object.assign(navLinksParams.navBar[key], {
+          className: 'navlink-current',
+        })
+      : Object.assign(navLinksParams.navBar[key], { className: 'navlink' })
+
+    return (
+      <NavLink
+        key={key}
+        className={navLinksParams.navBar[key].className}
+        to={navLinksParams.navBar[key].path}
+        onClick={handleViewReset}
+      >
+        {navLinksParams.navBar[key].label}
+      </NavLink>
+    )
+  })
+
+  // Social media icons links object
+  const socialMediaIcons = Object.keys(socialMediaIconsParams).map(key => {
+    return (
+      <a
+        key={key}
+        onClick={() => {
+          window.open(`${socialMediaIconsParams[key].url}`, '_blank')
+        }}
+      >
+        <IconSmallPlus
+          src={socialMediaIconsParams[key].image.path}
+          alt={socialMediaIconsParams[key].image.alt}
+        />
+      </a>
+    )
+  })
 
   return (
-    <div className={navBarContainerClass}>
-      <div className="navbar-navlinks">
-        <NavLink
-          className={navLinkClasses.about}
-          to="/about"
-          onClick={handleViewReset}
-        >
-          About
-        </NavLink>
-        <NavLink
-          className={navLinkClasses.portfolio}
-          to="portfolio"
-          onClick={handleViewReset}
-        >
-          Portfolio
-        </NavLink>
-        <NavLink
-          className={navLinkClasses.resume}
-          to="resume"
-          onClick={handleViewReset}
-        >
-          Resume
-        </NavLink>
-        <NavLink
-          className={navLinkClasses.contact}
-          to="contact"
-          onClick={handleViewReset}
-        >
-          Contact
-        </NavLink>
-      </div>
-      <div className="navbar-social">
-        <a
-          onClick={() => {
-            window.open("https://github.com/maxAubain", "_blank");
-          }}
-        >
-          <IconSmallPlus src="./src/img/icon/github.png" alt="github icon" />
-        </a>
-        <a
-          onClick={() => {
-            window.open("https://www.linkedin.com/in/maxaubain/", "_blank");
-          }}
-        >
-          <IconSmallPlus
-            src="./src/img/icon/linkedin.png"
-            alt="linkedin icon"
-          />
-        </a>
-      </div>
+    <div className={navBarContCN}>
+      <div className="navbar-navlinks">{navLinks}</div>
+      <div className="navbar-social">{socialMediaIcons}</div>
     </div>
-  );
-};
+  )
+}

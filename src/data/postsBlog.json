@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": "B2",
     "header": {
       "date": {
@@ -13,7 +14,8 @@
         "src": "./src/img/social-media-preview.png"
       }
     },
-    "body": [{
+    "body": [
+      {
         "quote": "This is quotable."
       },
       {
@@ -48,7 +50,8 @@
         "src": "./src/img/social-media-preview.png"
       }
     },
-    "body": [{
+    "body": [
+      {
         "quote": "This is quotable."
       },
       {

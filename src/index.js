@@ -1,13 +1,9 @@
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
-
-import { About } from "./components/about/About";
-import { Portfolio } from "./components/portfolio/Portfolio";
-import { EmailForm } from "./components/contact/EmailForm";
 import { Footer } from "./components/layouts/Footer";
 import { NavBar } from "./components/layouts/Navbar";
-import { Resume } from "./components/resume/Resume";
+import { routesParams } from "./router/routes.js";
 
 import "./css/blog-post-preview.css"
 import "./css/common.css";
@@ -22,24 +18,24 @@ import "./css/social-media.css";
 import WebFont from "webfontloader";
 
 const App = () => {
+  // Routes object
+  const routes = Object.keys(routesParams).map(key => {
+    return (
+      <Route key={key} path={routesParams[key].path} component={routesParams[key].component} />
+    )
+  })
+
   return (
-    <Route
-      render={({ }) => (
-        <>
-          <NavBar />
-          <div className="page-content">
-            <Switch>
-              <Redirect exact from="/" to="/about" />
-              <Route path="/about" component={About} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/contact" component={EmailForm} />
-            </Switch>
-          </div>
-          <Footer />
-        </>
-      )}
-    />
+    <>
+      <NavBar />
+      <div className="page-content">
+        {routes}
+      </div>
+      <Footer />
+
+      <Redirect from="/" to="/about" />
+      <Redirect from="/about" to="/about/profile" />
+    </>
   );
 };
 

@@ -1,51 +1,38 @@
-import React, { useState } from "react";
-
-import { Education } from "./Education"
-import { Profile } from "./Profile"
-import { Recommendations } from "./Recommendations";
+import React from 'react'
+import { NavLink, Route } from 'react-router-dom'
+import { navLinksParams } from '../../router/links'
+import { routesParams } from '../../router/routes'
 
 export const About = () => {
-  const components = ["Profile", "Recommendations", "Education"];
-  const [currentComponent, setCurrentComponent] = useState(components[0]);
-
-  let navlinkSectionClassName;
-  const componentsSelectors = components.map(component => {
-    component === currentComponent
-      ? (navlinkSectionClassName = "navlink-section-current")
-      : (navlinkSectionClassName = "navlink-section");
-
+  // NavLinks object with NavLink highlighting style
+  const navLinks = Object.keys(navLinksParams.about).map(key => {
     return (
-      <div
-        key={component}
-        className={navlinkSectionClassName}
-        onClick={() => {
-          setCurrentComponent(component);
-        }}
+      <NavLink
+        key={key}
+        className="navlink-section"
+        activeClassName="navlink-section-current"
+        to={navLinksParams.about[key].path}
       >
-        {component}
-      </div>
-    );
-  });
+        {navLinksParams.about[key].label}
+      </NavLink>
+    )
+  })
 
-  let component;
-  switch (currentComponent) {
-    case "Profile":
-      component = <Profile />;
-      break;
-    case "Recommendations":
-      component = <Recommendations />;
-      break;
-    case "Education":
-      component = <Education />
-      break;
-  }
+  // Routes object
+  const routes = Object.keys(routesParams.about.children).map(key => {
+    return (
+      <Route
+        key={key}
+        path={routesParams.about.children[key].path}
+        component={routesParams.about.children[key].component}
+      />
+    )
+  })
 
   return (
     <>
-      <div className="navlink-section-container">
-        {componentsSelectors}
-      </div>
-      {component}
+      <div className="navlink-section-container">{navLinks}</div>
+      {routes}
     </>
-  );
-};
+  )
+}

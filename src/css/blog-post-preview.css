@@ -1,7 +1,6 @@
 .bpp-container {
   background-color: white;
-  box-sizing: border-box;
-  margin: 0 0 15px 0;
+  margin: 10px 0 20px 0;
 }
 
 .bpp-title {
@@ -17,7 +16,6 @@
 .bpp-date {
   font-size: 14px;
   color: rgb(112, 128, 144);
-  font-style: italic;
   padding: 4px 8px 4px 8px;
 }
 

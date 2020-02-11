@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 export const IconSmall = props => {
   return (
@@ -9,5 +9,5 @@ export const IconSmall = props => {
       height="30"
       width="30"
     ></img>
-  );
-};
+  )
+}

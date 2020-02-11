@@ -1,194 +1,73 @@
-import React from "react";
-
-import { WebLink } from "../common/WebLink";
-
-/* This component will need to be re-developed to a DRY
-configuration, storing the education data in a JSON and 
-programmatically rendering the education entries. */
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import { WebLink } from '../common/WebLink'
 
 export const Education = () => {
-  return (
-    <>
-      <div className="education-section education-feature">
+  const [ed, setEd] = useState([])
+  useEffect(() => {
+    if (ed.length === 0) {
+      axios.get('../../src/data/dataEducation.json').then(response => {
+        setEd(response.data)
+      })
+    }
+  })
+
+  // Education cards object
+  const edCards = ed.map(edItem => {
+    // Optional weblink object
+    let edWebLink
+    edItem.webLink.url
+      ? (edWebLink = (
+          <>
+            {' '}
+            <WebLink
+              url={edItem.webLink.url}
+              linkObj={edItem.webLink.linkObj}
+              className={edItem.webLink.className}
+            />
+            .
+          </>
+        ))
+      : (edWebLink = <></>)
+
+    return (
+      <div key={edItem.id} className="education-section education-feature">
         <div className="education-feature-title">
           <div>
             <img
-              src="./src/img/icon/ucsd.png"
-              alt="dev-icon"
-              height="160px"
-              width="160px"
+              src={edItem.img.src}
+              alt={edItem.img.alt}
+              height={edItem.img.height}
+              width={edItem.img.width}
             />
           </div>
-          <b>
-            University of California, <br />
-            San Diego
-          </b>
+          <div className="education-title">
+            {edItem.institution.topLine} <br />
+            {edItem.institution.botLine}
+          </div>
         </div>
         <div className="education-feature-description">
-          <b>
-            <p>
-              Doctor of Philosophy
-              <br />
-              Materials Science and Engineering
-            </p>
-          </b>
-          <p>
-            La Jolla, California, USA
+          <p className="education-title">
+            {edItem.degree}
             <br />
-            2013
+            {edItem.discipline}
+          </p>
+          <p className="education-setting">
+            {edItem.location}
+            <br />
+            {edItem.year}
           </p>
           <p>
-            <i>
-              Dissertation degree acheived by simulating and measuring physical
-              properties of semiconductor materials. Alumnus of the{" "}
-              <WebLink
-                url="http://maeresearch.ucsd.edu/bandaru/Students_Staff_meetings.htm"
-                linkObj="Prof. Bandaru Research Group"
-                className="weblink"
-              />
-              .
-            </i>
+            {edItem.body}
+            {edWebLink}
           </p>
         </div>
       </div>
-      <div className="education-section education-feature">
-        <div className="education-feature-title">
-          <div>
-            <img
-              src="./src/img/icon/cornell.png"
-              alt="cornell-icon"
-              height="200px"
-              width="200px"
-            />
-          </div>
-          <b>Cornell University</b>
-        </div>
-        <div className="education-feature-description">
-          <b>
-            Bachelors of Science
-            <br />
-            Materials Science and Engineering
-          </b>
-          <p>
-            Ithaca, New York, USA
-            <br />
-            2007
-          </p>
-          <p>
-            <i>
-              A well rounded engineering degree with experimental research and
-              thesis components. Alumnus of the{" "}
-              <WebLink
-                url="https://baker.mse.cornell.edu/Alumni.html"
-                linkObj="Prof. Baker Research Group"
-                className="weblink"
-              />
-              .
-            </i>
-          </p>
-        </div>
-      </div>
-      <div className="education-section education-feature">
-        <div className="education-feature-title">
-          <div>
-            <img
-              src="./src/img/icon/craftacademy.png"
-              alt="craftacademy-icon"
-              height="200px"
-              width="200px"
-            />
-          </div>
-          <b>Craft Academy</b>
-        </div>
-        <div className="education-feature-description">
-          <b>
-            Bootcamp Student
-            <br />
-            Full Stack Development
-          </b>
-          <p>
-            Stockholm, Sweden
-            <br />
-            2019
-          </p>
-          <p>
-            <i>
-              Mastered web development fundamentals and Agile principles in a
-              laboratory setting, 60 hours per week over 16 weeks.
-            </i>
-          </p>
-        </div>
-      </div>
-      <div className="education-section education-feature">
-        <div className="education-feature-title">
-          <div>
-            <img
-              src="./src/img/icon/ucsd.png"
-              alt="ucsd-icon"
-              height="160px"
-              width="160px"
-            />
-          </div>
-          <b>
-            UCSD Leadership and <br /> Teamwork Program
-          </b>
-        </div>
-        <div className="education-feature-description">
-          <b>
-            Leadership Trainee
-            <br />
-            Engineering and Business Management
-          </b>
-          <p>
-            La Jolla, California, USA
-            <br />
-            2015
-          </p>
-          <p>
-            <i>
-              Studied personality, motivation, and case studies involving work
-              psychology and ethics.
-            </i>
-          </p>
-        </div>
-      </div>
-      <div className="education-section education-feature">
-        <div className="education-feature-title">
-          <div>
-            <img
-              src="./src/img/icon/pli.png"
-              alt="pli-icon"
-              height="160px"
-              width="160px"
-            />
-          </div>
-          <b>Practicing Law Institute</b>
-        </div>
-        <div className="education-feature-description">
-          <b>
-            Patent Agent, Reg. No. 77,295
-            <br />
-            Independent Study course for the USPTO Bar Exam
-          </b>
-          <p>
-            USA
-            <br />
-            2018
-          </p>
-          <p>
-            <i>
-              Studied laws, rules, and procedures for evaluating intellectual
-              property. My registration is recorded in the USPTO's{" "}
-              <WebLink
-                url="https://www.uspto.gov/web/offices/com/sol/og/2018/week26/TOC.htm"
-                linkObj="Official Gazette"
-                className="weblink"
-              />
-              .
-            </i>
-          </p>
-        </div>
-      </div>
-    </>
-  );
-};
+    )
+  })
+  if (ed.length != 0) {
+    return <div className="education-container">{edCards}</div>
+  } else {
+    return <></>
+  }
+}
