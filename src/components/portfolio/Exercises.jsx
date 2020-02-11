@@ -7,22 +7,18 @@ export const Exercises = () => {
   // Get externalLinks data from file containing tech keywords with related weblinks
   const [externalLinks, setExternalLinks] = useState({})
   useEffect(() => {
-    if (Object.keys(externalLinks).length === 0) {
-      axios.get('../../src/data/linksExternal.json').then(response => {
-        setExternalLinks(response.data)
-      })
-    }
-  })
+    axios.get('../../src/data/linksExternal.json').then(response => {
+      setExternalLinks(response.data)
+    })
+  }, [])
 
   // Get projectsExercises data from file
   const [exercises, setExercises] = useState([])
   useEffect(() => {
-    if (exercises.length === 0) {
-      axios.get(navLinksParams.portfolio.exercises.dataPath).then(response => {
-        setExercises(response.data)
-      })
-    }
-  })
+    axios.get(navLinksParams.portfolio.exercises.dataPath).then(response => {
+      setExercises(response.data)
+    })
+  }, [])
 
   // Exercises projects object
   const projects = exercises.map(project => {
@@ -33,9 +29,9 @@ export const Exercises = () => {
     )
   })
 
-  if (externalLinks.length != 0) {
-    return <div className="project-categories-wrapper">{projects}</div>
-  } else {
-    return <></>
-  }
+  return (
+    <>
+      <div className="project-categories-wrapper">{projects}</div>
+    </>
+  )
 }
