@@ -1,5 +1,6 @@
 .education-section {
-  min-height: 280px; height: auto;
+  min-height: 280px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,14 +21,30 @@
   max-width: 600px;
 }
 
+.education-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.education-setting {
+  color: rgb(112, 128, 144);
+  font-size: 14px;
+}
+
+.education-container {
+  margin: 24px 0 0 0;
+}
+
 @media only screen and (max-width: 420px) {
   .education-feature {
     width: 100%;
     flex-wrap: wrap;
   }
+
   .education-feature-title {
     min-width: 25%
   }
+
   .education-feature-description {
     min-width: 65%;
   }
@@ -39,9 +56,11 @@
     width: 100%;
     flex-wrap: wrap;
   }
+
   .education-feature-title {
     min-width: 35%
   }
+
   .education-feature-description {
     min-width: 55%;
   }
@@ -53,12 +72,15 @@
     margin: 20px 10px 0 10px;
     border-radius: 5px;
   }
-  
+
   .education-feature-title {
     min-width: 35%;
-    display: flex; flex-direction: column; justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
   }
+
   .education-feature-description {
     min-width: 55%;
   }
