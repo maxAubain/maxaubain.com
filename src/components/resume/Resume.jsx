@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-import { WebLink } from "../common/WebLink";
+import { WebLink } from '../common/WebLink'
 
 export const Resume = () => {
   return (
@@ -10,7 +10,7 @@ export const Resume = () => {
           url="https://drive.google.com/file/d/1hrZhhpOOXbsASexTFAvGGbN2Qs73Jaue/view?usp=sharing"
           linkObj="Download"
           className="weblink resume-link"
-        />{" "}
+        />{' '}
         resume with Google Drive.
       </h4>
       <object
@@ -19,5 +19,5 @@ export const Resume = () => {
         type="application/pdf"
       />
     </div>
-  );
-};
+  )
+}

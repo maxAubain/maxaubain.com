@@ -1,11 +1,10 @@
-import React from "react";
-import { NavLink, Route } from "react-router-dom";
-import { ContentItemsCount } from "./ContentItemsCount";
-import { navLinksParams } from "../../router/links";
-import { routesParams } from "../../router/routes";
+import React from 'react'
+import { NavLink, Route } from 'react-router-dom'
+import { ContentItemsCount } from './ContentItemsCount'
+import { navLinksParams } from '../../router/links'
+import { routesParams } from '../../router/routes'
 
 export const Portfolio = () => {
-
   // Navlinks object
   const navLinks = Object.keys(navLinksParams.portfolio).map(key => {
     return (
@@ -34,10 +33,8 @@ export const Portfolio = () => {
 
   return (
     <>
-      <div className="navlink-section-container">
-        {navLinks}
-      </div>
+      <div className="navlink-section-container">{navLinks}</div>
       {routes}
     </>
-  );
-};
+  )
+}

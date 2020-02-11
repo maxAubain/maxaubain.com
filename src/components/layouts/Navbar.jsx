@@ -1,42 +1,42 @@
-import React, { useState, useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
-import { IconSmallPlus } from "../common/IconSmallPlus";
-import { navLinksParams, socialMediaIconsParams } from "../../router/links.js";
+import React, { useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
+import { IconSmallPlus } from '../common/IconSmallPlus'
+import { navLinksParams, socialMediaIconsParams } from '../../router/links.js'
 
 export const NavBar = () => {
   // Handles navbar shadow on scroll
-  const [navBarContCN, setNavBarContCN] = useState(
-    "navbar-container"
-  );
+  const [navBarContCN, setNavBarContCN] = useState('navbar-container')
 
   const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
-      ? setNavBarContCN("navbar-container floating-navbar")
-      : setNavBarContCN("navbar-container");
-  };
+      ? setNavBarContCN('navbar-container floating-navbar')
+      : setNavBarContCN('navbar-container')
+  }
 
   useEffect(() => {
-    window.addEventListener("scroll", handleNavBarShadow);
-  });
+    window.addEventListener('scroll', handleNavBarShadow)
+  })
 
   // Handles view reset on navlink click
   const handleViewReset = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "auto"
-    });
+      behavior: 'auto',
+    })
   }
 
   // Handles updating component for navLinks className update
-  let location = useLocation();
-  useEffect(() => { }, [location])
+  let location = useLocation()
+  useEffect(() => {}, [location])
 
   // NavLinks object with NavLink highlighting style
   const navLinks = Object.keys(navLinksParams.navBar).map(key => {
     location.pathname.toString().includes(`/${key}`)
-      ? Object.assign(navLinksParams.navBar[key], { "className": "navlink-current" })
-      : Object.assign(navLinksParams.navBar[key], { "className": "navlink" })
+      ? Object.assign(navLinksParams.navBar[key], {
+          className: 'navlink-current',
+        })
+      : Object.assign(navLinksParams.navBar[key], { className: 'navlink' })
 
     return (
       <NavLink
@@ -46,7 +46,7 @@ export const NavBar = () => {
         onClick={handleViewReset}
       >
         {navLinksParams.navBar[key].label}
-      </NavLink >
+      </NavLink>
     )
   })
 
@@ -56,7 +56,7 @@ export const NavBar = () => {
       <a
         key={key}
         onClick={() => {
-          window.open(`${socialMediaIconsParams[key].url}`, "_blank");
+          window.open(`${socialMediaIconsParams[key].url}`, '_blank')
         }}
       >
         <IconSmallPlus
@@ -69,12 +69,8 @@ export const NavBar = () => {
 
   return (
     <div className={navBarContCN}>
-      <div className="navbar-navlinks">
-        {navLinks}
-      </div>
-      <div className="navbar-social">
-        {socialMediaIcons}
-      </div>
+      <div className="navbar-navlinks">{navLinks}</div>
+      <div className="navbar-social">{socialMediaIcons}</div>
     </div>
-  );
-};
+  )
+}

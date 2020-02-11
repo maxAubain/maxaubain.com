@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React, { useState } from 'react'
 
-import { IconSmall } from "../common/IconSmall";
-import { WebLink } from "../common/WebLink";
-import { TechWebLinks } from "./TechWebLinks";
+import { IconSmall } from '../common/IconSmall'
+import { WebLink } from '../common/WebLink'
+import { TechWebLinks } from './TechWebLinks'
 
 export const Project = ({ project, externalLinks }) => {
   // Show/hide Project object details functionality
   const [projectAttributes, setProjectAttributes] = useState({
-    hidden: true
-  });
+    hidden: true,
+  })
 
-  let projectContainerClassName, projectSummaryTitleClassName;
+  let projectContainerClassName, projectSummaryTitleClassName
   if (projectAttributes.hidden) {
-    projectContainerClassName = "project-details-container hidden";
-    projectSummaryTitleClassName = "project-summary-title";
+    projectContainerClassName = 'project-details-container hidden'
+    projectSummaryTitleClassName = 'project-summary-title'
   } else {
-    projectContainerClassName = "project-details-container";
-    projectSummaryTitleClassName = "project-summary-title-current";
+    projectContainerClassName = 'project-details-container'
+    projectSummaryTitleClassName = 'project-summary-title-current'
   }
 
   // Project Links object
@@ -29,19 +29,19 @@ export const Project = ({ project, externalLinks }) => {
           className="project-details-link weblink"
         />
       </div>
-    );
-  });
+    )
+  })
 
   // Description object
   const projectDescription = project.descriptionFull.map(paragraph => {
-    return <p key={paragraph}>{paragraph}</p>;
-  });
+    return <p key={paragraph}>{paragraph}</p>
+  })
 
   // Technology Stack object
-  let valueArray, valueArraylength, i;
+  let valueArray, valueArraylength, i
   const technologyStack = Object.keys(project.tech).map(key => {
-    valueArray = project.tech[key].split(", "); // e.g. valueArray = ["Netlify", "Heroku"]
-    valueArraylength = valueArray.length;
+    valueArray = project.tech[key].split(', ') // e.g. valueArray = ["Netlify", "Heroku"]
+    valueArraylength = valueArray.length
 
     // Replace each string value with weblink object in array
     for (i = 0; i < valueArraylength; i++) {
@@ -53,13 +53,13 @@ export const Project = ({ project, externalLinks }) => {
           keyword={valueArray[i]}
           externalLinks={externalLinks}
         />
-      );
+      )
     }
 
     // Insert ", " value between adjacent weblink objects in array
     if (valueArraylength > 1) {
       for (i = 1; i < 2 * valueArraylength - 2; i = i + 2) {
-        valueArray.splice(i, 0, ", ");
+        valueArray.splice(i, 0, ', ')
       }
     }
 
@@ -67,15 +67,15 @@ export const Project = ({ project, externalLinks }) => {
       <p key={key}>
         <strong>{key}</strong>: {valueArray}.
       </p>
-    );
-  });
+    )
+  })
 
   return (
     <>
       <div
         className="project-summary"
         onClick={() => {
-          setProjectAttributes({ hidden: !projectAttributes.hidden });
+          setProjectAttributes({ hidden: !projectAttributes.hidden })
         }}
       >
         <IconSmall src={project.image.path} alt={project.image.alt} />
@@ -111,5 +111,5 @@ export const Project = ({ project, externalLinks }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}

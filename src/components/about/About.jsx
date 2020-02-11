@@ -1,7 +1,7 @@
-import React from "react";
-import { NavLink, Route } from "react-router-dom";
-import { navLinksParams } from "../../router/links";
-import { routesParams } from "../../router/routes";
+import React from 'react'
+import { NavLink, Route } from 'react-router-dom'
+import { navLinksParams } from '../../router/links'
+import { routesParams } from '../../router/routes'
 
 export const About = () => {
   // NavLinks object with NavLink highlighting style
@@ -31,10 +31,8 @@ export const About = () => {
 
   return (
     <>
-      <div className="navlink-section-container">
-        {navLinks}
-      </div>
+      <div className="navlink-section-container">{navLinks}</div>
       {routes}
     </>
   )
-};
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import { WebLink } from "../common/WebLink";
+import React from 'react'
+import { WebLink } from '../common/WebLink'
 
 export const FeaturedItemCard = ({ featuredContentItem }) => {
   const card = (
@@ -13,11 +13,11 @@ export const FeaturedItemCard = ({ featuredContentItem }) => {
         <img src={featuredContentItem.image.path} className="featured-img" />
       </div>
     </div>
-  );
+  )
 
   return (
     <div key={featuredContentItem.id} className="featured-container">
-      <WebLink url={featuredContentItem.links["live site"]} linkObj={card} />
+      <WebLink url={featuredContentItem.links['live site']} linkObj={card} />
     </div>
-  );
-};
+  )
+}
