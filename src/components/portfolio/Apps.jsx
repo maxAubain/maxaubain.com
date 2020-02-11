@@ -33,5 +33,9 @@ export const Apps = () => {
     )
   })
 
-  return <div className="project-categories-wrapper">{projects}</div>
+  if (apps.length != 0) {
+    return <div className="project-categories-wrapper">{projects}</div>
+  } else {
+    return <></>
+  }
 }

@@ -22,12 +22,16 @@ export const Featured = () => {
     )
   })
 
-  return (
-    <div
-      className="project-categories-wrapper 
+  if (featuredContent.length != 0) {
+    return (
+      <div
+        className="project-categories-wrapper 
     project-categories-wrapper-featured"
-    >
-      {featuredContentItems}
-    </div>
-  )
+      >
+        {featuredContentItems}
+      </div>
+    )
+  } else {
+    return <></>
+  }
 }

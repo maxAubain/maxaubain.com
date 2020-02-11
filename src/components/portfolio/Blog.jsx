@@ -23,5 +23,9 @@ export const Blog = () => {
     )
   })
 
-  return <div className="project-categories-wrapper">{blogPostPreviews}</div>
+  if (blogPosts.length != 0) {
+    return <div className="project-categories-wrapper">{blogPostPreviews}</div>
+  } else {
+    return <></>
+  }
 }

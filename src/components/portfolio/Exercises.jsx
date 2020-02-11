@@ -33,5 +33,9 @@ export const Exercises = () => {
     )
   })
 
-  return <div className="project-categories-wrapper">{projects}</div>
+  if (externalLinks.length != 0) {
+    return <div className="project-categories-wrapper">{projects}</div>
+  } else {
+    return <></>
+  }
 }
