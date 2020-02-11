@@ -5,12 +5,10 @@ import { WebLink } from '../common/WebLink'
 export const Education = () => {
   const [ed, setEd] = useState([])
   useEffect(() => {
-    if (ed.length === 0) {
-      axios.get('../../src/data/dataEducation.json').then(response => {
-        setEd(response.data)
-      })
-    }
-  })
+    axios.get('../../src/data/dataEducation.json').then(response => {
+      setEd(response.data)
+    })
+  }, [])
 
   // Education cards object
   const edCards = ed.map(edItem => {

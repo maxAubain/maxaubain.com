@@ -7,12 +7,10 @@ export const Featured = () => {
   // Get content items data from file
   const [featuredContent, setFeaturedContent] = useState([])
   useEffect(() => {
-    if (featuredContent.length === 0) {
-      axios.get(navLinksParams.portfolio.featured.dataPath).then(response => {
-        setFeaturedContent(response.data)
-      })
-    }
-  })
+    axios.get(navLinksParams.portfolio.featured.dataPath).then(response => {
+      setFeaturedContent(response.data)
+    })
+  }, [])
 
   const featuredContentItems = featuredContent.map(featuredContentitem => {
     return (
