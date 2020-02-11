@@ -65,6 +65,9 @@ export const Education = () => {
       </div>
     )
   })
-
-  return <div className="education-container">{edCards}</div>
+  if (ed.length != 0) {
+    return <div className="education-container">{edCards}</div>
+  } else {
+    return <></>
+  }
 }
