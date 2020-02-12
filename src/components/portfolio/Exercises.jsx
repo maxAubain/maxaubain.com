@@ -26,18 +26,18 @@ export const Exercises = () => {
   const projects = exercises.map(project => {
     return (
       <>
-        {isExternalLinksLoaded && (
-          <div key={project.id}>
-            <Project project={project} externalLinks={externalLinks} />
-          </div>
-        )}
+        <div key={project.id}>
+          <Project project={project} externalLinks={externalLinks} />
+        </div>
       </>
     )
   })
 
   return (
     <>
-      <div className="project-categories-wrapper">{projects}</div>
+      {isExternalLinksLoaded && (
+        <div className="project-categories-wrapper">{projects}</div>
+      )}
     </>
   )
 }
