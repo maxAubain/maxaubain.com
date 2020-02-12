@@ -3,69 +3,75 @@ import axios from 'axios'
 import { WebLink } from '../common/WebLink'
 
 export const Education = () => {
-  const [ed, setEd] = useState([])
+  const [eduContent, setEduContent] = useState([])
+  const [isContentLoaded, setIsContentLoaded] = useState(false)
   useEffect(() => {
     axios.get('../../src/data/dataEducation.json').then(response => {
-      setEd(response.data)
+      setEduContent(response.data)
+      setIsContentLoaded(true)
     })
   }, [])
 
   // Education cards object
-  const edCards = ed.map(edItem => {
+  const eduCards = eduContent.map(eduContentItem => {
     // Optional weblink object
-    let edWebLink
-    edItem.webLink.url
-      ? (edWebLink = (
+    let eduWebLink
+    eduContentItem.webLink.url
+      ? (eduWebLink = (
           <>
             {' '}
             <WebLink
-              url={edItem.webLink.url}
-              linkObj={edItem.webLink.linkObj}
-              className={edItem.webLink.className}
+              url={eduContentItem.webLink.url}
+              linkObj={eduContentItem.webLink.linkObj}
+              className={eduContentItem.webLink.className}
             />
             .
           </>
         ))
-      : (edWebLink = <></>)
+      : (eduWebLink = <></>)
 
     return (
-      <div key={edItem.id} className="education-section education-feature">
+      <div
+        key={eduContentItem.id}
+        className="education-section education-feature"
+      >
         <div className="education-feature-title">
           <div>
             <img
-              src={edItem.img.src}
-              alt={edItem.img.alt}
-              height={edItem.img.height}
-              width={edItem.img.width}
+              src={eduContentItem.img.src}
+              alt={eduContentItem.img.alt}
+              height={eduContentItem.img.height}
+              width={eduContentItem.img.width}
             />
           </div>
           <div className="education-title">
-            {edItem.institution.topLine} <br />
-            {edItem.institution.botLine}
+            {eduContentItem.institution.topLine} <br />
+            {eduContentItem.institution.botLine}
           </div>
         </div>
         <div className="education-feature-description">
           <p className="education-title">
-            {edItem.degree}
+            {eduContentItem.degree}
             <br />
-            {edItem.discipline}
+            {eduContentItem.discipline}
           </p>
           <p className="education-setting">
-            {edItem.location}
+            {eduContentItem.location}
             <br />
-            {edItem.year}
+            {eduContentItem.year}
           </p>
           <p>
-            {edItem.body}
-            {edWebLink}
+            {eduContentItem.body}
+            {eduWebLink}
           </p>
         </div>
       </div>
     )
   })
-  if (ed.length != 0) {
-    return <div className="education-container">{edCards}</div>
-  } else {
-    return <></>
-  }
+
+  return (
+    <>
+      {isContentLoaded && <div className="education-container">{eduCards}</div>}
+    </>
+  )
 }

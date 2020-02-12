@@ -16,8 +16,10 @@ export const FeaturedItemCard = ({ featuredContentItem }) => {
   )
 
   return (
-    <div key={featuredContentItem.id} className="featured-container">
-      <WebLink url={featuredContentItem.links['live site']} linkObj={card} />
-    </div>
+    <>
+      <div key={featuredContentItem.id} className="featured-container">
+        <WebLink url={featuredContentItem.links['live site']} linkObj={card} />
+      </div>
+    </>
   )
 }
