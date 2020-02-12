@@ -6,9 +6,11 @@ import { FeaturedItemCard } from './FeaturedItemCard'
 export const Featured = () => {
   // Get content items data from file
   const [featuredContent, setFeaturedContent] = useState([])
+  const [isContentLoaded, setIsContentLoaded] = useState(false)
   useEffect(() => {
     axios.get(navLinksParams.portfolio.featured.dataPath).then(response => {
       setFeaturedContent(response.data)
+      setIsContentLoaded(true)
     })
   }, [])
 
@@ -20,16 +22,16 @@ export const Featured = () => {
     )
   })
 
-  if (featuredContent.length != 0) {
-    return (
-      <div
-        className="project-categories-wrapper 
+  return (
+    <>
+      {isContentLoaded && (
+        <div
+          className="project-categories-wrapper 
     project-categories-wrapper-featured"
-      >
-        {featuredContentItems}
-      </div>
-    )
-  } else {
-    return <></>
-  }
+        >
+          {featuredContentItems}
+        </div>
+      )}
+    </>
+  )
 }
