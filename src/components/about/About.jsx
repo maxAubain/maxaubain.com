@@ -1,9 +1,23 @@
 import React from 'react'
 import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
-import { navLinksParams } from '../../router/links'
 import { Profile } from './Profile'
 import { Education } from './Education'
 import { Recommendations } from './Recommendations'
+
+const navLinksParams = {
+  profile: {
+    label: 'Profile',
+    path: '/about/profile',
+  },
+  recommendations: {
+    label: 'Recommendations',
+    path: '/about/recommendations',
+  },
+  education: {
+    label: 'Education',
+    path: '/about/education',
+  },
+}
 
 const routesParams = {
   'about/profile': {
@@ -22,15 +36,15 @@ const routesParams = {
 
 export const About = () => {
   // NavLinks object with NavLink highlighting style
-  const navLinks = Object.keys(navLinksParams.about).map(key => {
+  const navLinks = Object.keys(navLinksParams).map(key => {
     return (
       <NavLink
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={navLinksParams.about[key].path}
+        to={navLinksParams[key].path}
       >
-        {navLinksParams.about[key].label}
+        {navLinksParams[key].label}
       </NavLink>
     )
   })

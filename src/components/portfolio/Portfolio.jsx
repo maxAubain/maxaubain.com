@@ -1,11 +1,33 @@
 import React from 'react'
 import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
-import { navLinksParams } from '../../router/links'
 import { Featured } from './Featured'
 import { Blog } from './Blog'
 import { Apps } from './Apps'
 import { Exercises } from './Exercises'
+
+const navLinksParams = {
+  featured: {
+    label: 'Featured',
+    path: '/portfolio/featured',
+    dataPath: '../../src/data/projectsFeatured.json',
+  },
+  blog: {
+    label: 'Blog',
+    path: '/portfolio/blog',
+    dataPath: '../../src/data/postsBlog.json',
+  },
+  apps: {
+    label: 'Apps',
+    path: '/portfolio/apps',
+    dataPath: '../../src/data/projectsApplications.json',
+  },
+  exercises: {
+    label: 'Exercises',
+    path: '/portfolio/exercises',
+    dataPath: '../../src/data/projectsExercises.json',
+  },
+}
 
 const routesParams = {
   'portfolio/featured': {
@@ -28,16 +50,16 @@ const routesParams = {
 
 export const Portfolio = () => {
   // Navlinks object
-  const navLinks = Object.keys(navLinksParams.portfolio).map(key => {
+  const navLinks = Object.keys(navLinksParams).map(key => {
     return (
       <NavLink
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={navLinksParams.portfolio[key].path}
+        to={navLinksParams[key].path}
       >
-        {navLinksParams.portfolio[key].label}
-        <ContentItemsCount path={navLinksParams.portfolio[key].dataPath} />
+        {navLinksParams[key].label}
+        <ContentItemsCount path={navLinksParams[key].dataPath} />
       </NavLink>
     )
   })
