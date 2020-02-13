@@ -2,11 +2,11 @@ export const navLinksParams = {
   "navBar": {
     "about": {
       "label": "About",
-      "path": "/about/profile"
+      "path": "/about"
     },
     "portfolio": {
       "label": "Portfolio",
-      "path": "/portfolio/featured"
+      "path": "/portfolio"
     },
     "resume": {
       "label": "Resume",

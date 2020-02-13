@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Route } from 'react-router-dom'
+import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
 import { navLinksParams } from '../../router/links'
 import { routesParams } from '../../router/routes'
@@ -34,7 +34,10 @@ export const Portfolio = () => {
   return (
     <>
       <div className="navlink-section-container">{navLinks}</div>
-      {routes}
+      <Switch>
+        {routes}
+        <Redirect from="/portfolio" to="/portfolio/featured" />
+      </Switch>
     </>
   )
 }

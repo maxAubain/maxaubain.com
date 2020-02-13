@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Footer } from "./components/layouts/Footer";
@@ -29,12 +29,12 @@ const App = () => {
     <>
       <NavBar />
       <div className="page-content">
-        {routes}
+        <Switch>
+          {routes}
+          <Redirect from="/" to="/about" />
+        </Switch>
       </div>
       <Footer />
-
-      <Redirect from="/" to="/about" />
-      <Redirect from="/about" to="/about/profile" />
     </>
   );
 };
