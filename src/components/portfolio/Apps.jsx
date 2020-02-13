@@ -26,11 +26,11 @@ export const Apps = () => {
 
   const projects = apps.map(project => {
     return (
-      <>
-        <div key={project.id}>
-          <Project project={project} externalLinks={externalLinks} />
-        </div>
-      </>
+      <Project
+        key={project.id}
+        project={project}
+        externalLinks={externalLinks}
+      />
     )
   })
 

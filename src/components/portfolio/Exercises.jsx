@@ -25,11 +25,11 @@ export const Exercises = () => {
   // Exercises projects object
   const projects = exercises.map(project => {
     return (
-      <>
-        <div key={project.id}>
-          <Project project={project} externalLinks={externalLinks} />
-        </div>
-      </>
+      <Project
+        key={project.id}
+        project={project}
+        externalLinks={externalLinks}
+      />
     )
   })
 
