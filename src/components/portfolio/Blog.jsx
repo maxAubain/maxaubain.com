@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { navLinksParams } from '../../router/links'
 import { BlogPostPreview } from './BlogPostPreview'
 
 export const Blog = () => {
   const [blogPosts, setBlogPosts] = useState([])
-  const [isContentLoaded, setIsContentLoaded] = useState(false)
+  const [isBlogPostsLoaded, setIsBlogPostsLoaded] = useState(false)
+  const blogPostsPath = '../../src/data/postsBlog.json'
   useEffect(() => {
-    axios.get(navLinksParams.portfolio.blog.dataPath).then(response => {
+    axios.get(blogPostsPath).then(response => {
       setBlogPosts(response.data)
-      setIsContentLoaded(true)
+      setIsBlogPostsLoaded(true)
     })
   }, [])
 
@@ -23,7 +23,7 @@ export const Blog = () => {
 
   return (
     <>
-      {isContentLoaded && (
+      {isBlogPostsLoaded && (
         <div className="project-categories-wrapper">{blogPostPreviews}</div>
       )}
     </>

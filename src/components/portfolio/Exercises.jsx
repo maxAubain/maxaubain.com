@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { navLinksParams } from '../../router/links'
 import { Project } from './Project'
 
 export const Exercises = () => {
   // Get externalLinks data from file containing tech keywords with related weblinks
   const [externalLinks, setExternalLinks] = useState({})
   const [isExternalLinksLoaded, setIsExternalLinksLoaded] = useState(false)
+  const externalLinksPath = '../../src/data/linksExternal.json'
   useEffect(() => {
-    axios.get('../../src/data/linksExternal.json').then(response => {
+    axios.get(externalLinksPath).then(response => {
       setExternalLinks(response.data)
       setIsExternalLinksLoaded(true)
     })
@@ -16,9 +16,12 @@ export const Exercises = () => {
 
   // Get projectsExercises data from file
   const [exercises, setExercises] = useState([])
+  const [isExercisesLoaded, setIsExercisesLoaded] = useState(false)
+  const exercisesPath = '../../src/data/projectsApplications.json'
   useEffect(() => {
-    axios.get(navLinksParams.portfolio.exercises.dataPath).then(response => {
+    axios.get(exercisesPath).then(response => {
       setExercises(response.data)
+      setIsExercisesLoaded(true)
     })
   }, [])
 
@@ -35,7 +38,7 @@ export const Exercises = () => {
 
   return (
     <>
-      {isExternalLinksLoaded && (
+      {isExternalLinksLoaded && isExercisesLoaded && (
         <div className="project-categories-wrapper">{projects}</div>
       )}
     </>
