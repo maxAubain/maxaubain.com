@@ -1,21 +1,41 @@
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
-import React from "react";
-import ReactDOM from "react-dom";
-import { Footer } from "./components/layouts/Footer";
-import { NavBar } from "./components/layouts/Navbar";
-import { routesParams } from "./router/routes.js";
-
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom"
+import React from "react"
+import ReactDOM from "react-dom"
+import { Footer } from "./components/layouts/Footer"
+import { NavBar } from "./components/layouts/Navbar"
+import { About } from "./components/about/About"
+import { Portfolio } from "./components/portfolio/Portfolio"
+import { Resume } from "./components/resume/Resume"
+import { EmailForm } from "./components/contact/EmailForm"
 import "./css/blog-post-preview.css"
-import "./css/common.css";
-import "./css/education.css";
-import "./css/global.css";
-import "./css/portfolio.css";
-import "./css/project-card.css";
-import "./css/profile.css";
-import "./css/resume.css";
-import "./css/social-media.css";
+import "./css/common.css"
+import "./css/education.css"
+import "./css/global.css"
+import "./css/portfolio.css"
+import "./css/project-card.css"
+import "./css/profile.css"
+import "./css/resume.css"
+import "./css/social-media.css"
+import WebFont from "webfontloader"
 
-import WebFont from "webfontloader";
+const routesParams = {
+  "about": {
+    "path": "/about",
+    "component": About,
+  },
+  "portfolio": {
+    "path": "/portfolio",
+    "component": Portfolio,
+  },
+  "resume": {
+    "path": "/resume",
+    "component": Resume
+  },
+  "contact": {
+    "path": "/contact",
+    "component": EmailForm
+  }
+}
 
 const App = () => {
   // Routes object

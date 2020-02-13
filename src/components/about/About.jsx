@@ -1,7 +1,24 @@
 import React from 'react'
 import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
 import { navLinksParams } from '../../router/links'
-import { routesParams } from '../../router/routes'
+import { Profile } from './Profile'
+import { Education } from './Education'
+import { Recommendations } from './Recommendations'
+
+const routesParams = {
+  'about/profile': {
+    path: '/about/profile',
+    component: Profile,
+  },
+  'about/recommendations': {
+    path: '/about/recommendations',
+    component: Recommendations,
+  },
+  'about/education': {
+    path: '/about/education',
+    component: Education,
+  },
+}
 
 export const About = () => {
   // NavLinks object with NavLink highlighting style
@@ -19,12 +36,12 @@ export const About = () => {
   })
 
   // Routes object
-  const routes = Object.keys(routesParams.about.children).map(key => {
+  const routes = Object.keys(routesParams).map(key => {
     return (
       <Route
         key={key}
-        path={routesParams.about.children[key].path}
-        component={routesParams.about.children[key].component}
+        path={routesParams[key].path}
+        component={routesParams[key].component}
       />
     )
   })

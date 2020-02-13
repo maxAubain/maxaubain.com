@@ -2,7 +2,29 @@ import React from 'react'
 import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
 import { navLinksParams } from '../../router/links'
-import { routesParams } from '../../router/routes'
+import { Featured } from './Featured'
+import { Blog } from './Blog'
+import { Apps } from './Apps'
+import { Exercises } from './Exercises'
+
+const routesParams = {
+  'portfolio/featured': {
+    path: '/portfolio/featured',
+    component: Featured,
+  },
+  'portfolio/blog': {
+    path: '/portfolio/blog',
+    component: Blog,
+  },
+  'portfolio/apps': {
+    path: '/portfolio/apps',
+    component: Apps,
+  },
+  'portfolio/exercises': {
+    path: '/portfolio/exercises',
+    component: Exercises,
+  },
+}
 
 export const Portfolio = () => {
   // Navlinks object
@@ -21,12 +43,12 @@ export const Portfolio = () => {
   })
 
   // Routes object
-  const routes = Object.keys(routesParams.portfolio.children).map(key => {
+  const routes = Object.keys(routesParams).map(key => {
     return (
       <Route
         key={key}
-        path={routesParams.portfolio.children[key].path}
-        component={routesParams.portfolio.children[key].component}
+        path={routesParams[key].path}
+        component={routesParams[key].component}
       />
     )
   })
