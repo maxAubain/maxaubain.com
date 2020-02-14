@@ -1,61 +1,57 @@
 import React from 'react'
-import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
+import {
+  NavLink,
+  Route,
+  Redirect,
+  Switch,
+  useRouteMatch,
+} from 'react-router-dom'
 import { Profile } from './Profile'
 import { Education } from './Education'
 import { Recommendations } from './Recommendations'
 
-const navLinksParams = {
+const routerParams = {
   profile: {
     label: 'Profile',
-    path: '/about/profile',
+    relPath: '/profile',
+    component: Profile,
   },
   recommendations: {
     label: 'Recommendations',
-    path: '/about/recommendations',
+    relPath: '/recommendations',
+    component: Recommendations,
   },
   education: {
     label: 'Education',
-    path: '/about/education',
-  },
-}
-
-const routesParams = {
-  'about/profile': {
-    path: '/about/profile',
-    component: Profile,
-  },
-  'about/recommendations': {
-    path: '/about/recommendations',
-    component: Recommendations,
-  },
-  'about/education': {
-    path: '/about/education',
+    relPath: '/education',
     component: Education,
   },
 }
 
 export const About = () => {
+  let { url, path } = useRouteMatch()
+
   // NavLinks object with NavLink highlighting style
-  const navLinks = Object.keys(navLinksParams).map(key => {
+  const navLinks = Object.keys(routerParams).map(key => {
     return (
       <NavLink
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={navLinksParams[key].path}
+        to={url + routerParams[key].relPath}
       >
-        {navLinksParams[key].label}
+        {routerParams[key].label}
       </NavLink>
     )
   })
 
   // Routes object
-  const routes = Object.keys(routesParams).map(key => {
+  const routes = Object.keys(routerParams).map(key => {
     return (
       <Route
         key={key}
-        path={routesParams[key].path}
-        component={routesParams[key].component}
+        path={path + routerParams[key].relPath}
+        component={routerParams[key].component}
       />
     )
   })
