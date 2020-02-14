@@ -1,76 +1,69 @@
 import React from 'react'
-import { NavLink, Route, Redirect, Switch } from 'react-router-dom'
+import {
+  NavLink,
+  Route,
+  Redirect,
+  Switch,
+  useRouteMatch,
+} from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
 import { Featured } from './Featured'
 import { Blog } from './Blog'
 import { Apps } from './Apps'
 import { Exercises } from './Exercises'
 
-const navLinksParams = {
+const routerParams = {
   featured: {
     label: 'Featured',
-    path: '/portfolio/featured',
+    relPath: '/featured',
+    component: Featured,
     dataPath: '../../src/data/projectsFeatured.json',
   },
   blog: {
     label: 'Blog',
-    path: '/portfolio/blog',
+    relPath: '/blog',
+    component: Blog,
     dataPath: '../../src/data/postsBlog.json',
   },
   apps: {
     label: 'Apps',
-    path: '/portfolio/apps',
+    relPath: '/apps',
+    component: Apps,
     dataPath: '../../src/data/projectsApplications.json',
   },
   exercises: {
     label: 'Exercises',
-    path: '/portfolio/exercises',
+    relPath: '/exercises',
+    component: Exercises,
     dataPath: '../../src/data/projectsExercises.json',
   },
 }
 
-const routesParams = {
-  'portfolio/featured': {
-    path: '/portfolio/featured',
-    component: Featured,
-  },
-  'portfolio/blog': {
-    path: '/portfolio/blog',
-    component: Blog,
-  },
-  'portfolio/apps': {
-    path: '/portfolio/apps',
-    component: Apps,
-  },
-  'portfolio/exercises': {
-    path: '/portfolio/exercises',
-    component: Exercises,
-  },
-}
-
 export const Portfolio = () => {
+  let { path, url } = useRouteMatch()
+
   // Navlinks object
-  const navLinks = Object.keys(navLinksParams).map(key => {
+  const navLinks = Object.keys(routerParams).map(key => {
     return (
       <NavLink
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={navLinksParams[key].path}
+        to={url + routerParams[key].relPath}
       >
-        {navLinksParams[key].label}
-        <ContentItemsCount path={navLinksParams[key].dataPath} />
+        {routerParams[key].label}
+        <ContentItemsCount path={routerParams[key].dataPath} />
       </NavLink>
     )
   })
 
   // Routes object
-  const routes = Object.keys(routesParams).map(key => {
+  const routes = Object.keys(routerParams).map(key => {
     return (
       <Route
         key={key}
-        path={routesParams[key].path}
-        component={routesParams[key].component}
+        path={path + routerParams[key].relPath}
+        component={routerParams[key].component}
       />
     )
   })

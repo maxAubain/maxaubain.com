@@ -17,7 +17,7 @@ export const Exercises = () => {
   // Get projectsExercises data from file
   const [exercises, setExercises] = useState([])
   const [isExercisesLoaded, setIsExercisesLoaded] = useState(false)
-  const exercisesPath = '../../src/data/projectsApplications.json'
+  const exercisesPath = '../../src/data/projectsExercises.json'
   useEffect(() => {
     axios.get(exercisesPath).then(response => {
       setExercises(response.data)
