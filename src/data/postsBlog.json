@@ -1,6 +1,7 @@
 [
   {
     "id": "B2",
+    "relPath": "/blog-post-2",
     "header": {
       "date": {
         "post": "Jan. 31st, 2020",
@@ -37,6 +38,7 @@
   },
   {
     "id": "B1",
+    "relPath": "/blog-post-1",
     "header": {
       "date": {
         "post": "Jan. 3rd, 2020",
