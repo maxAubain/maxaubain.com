@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink, useRouteMatch } from 'react-router-dom'
 
 export const BlogPostPreview = ({ post }) => {
   // Date element with 'posted' and conditional 'revised' values
@@ -19,14 +20,15 @@ export const BlogPostPreview = ({ post }) => {
       }
     }
   }
-  const body = getFirstParagraph(post.body)
 
+  let { url } = useRouteMatch()
   return (
     <div className="bpp-container">
       <div className="bpp-title">{post.header.title.main}</div>
       <div className="bpp-subtitle">{post.header.title.subtitle}</div>
       <div className="bpp-date">{date}</div>
-      <div className="bpp-body">{body}</div>
+      <div className="bpp-body">{getFirstParagraph(post.body)}</div>
+      <NavLink to={`${url}${post.relPath}`}>read more</NavLink>
     </div>
   )
 }
