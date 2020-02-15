@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import axios from 'axios'
-import { BlogPostPreview } from './BlogPostPreview'
+import { BlogPostPreviews } from './BlogPostPreviews'
+import { BlogPost } from './BlogPost'
 
 export const Blog = () => {
   const [blogPosts, setBlogPosts] = useState([])
@@ -13,18 +15,18 @@ export const Blog = () => {
     })
   }, [])
 
-  const blogPostPreviews = blogPosts.map(post => {
-    return (
-      <div key={post.id}>
-        <BlogPostPreview post={post} />
-      </div>
-    )
-  })
-
+  let { path } = useRouteMatch()
   return (
     <>
       {isBlogPostsLoaded && (
-        <div className="project-categories-wrapper">{blogPostPreviews}</div>
+        <Switch>
+          <Route exact path={path}>
+            <BlogPostPreviews blogPosts={blogPosts} />
+          </Route>
+          <Route path={`${path}/:blogPostId`}>
+            <BlogPost />
+          </Route>
+        </Switch>
       )}
     </>
   )
