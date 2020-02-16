@@ -24,7 +24,7 @@ export const Blog = () => {
             <BlogPostPreviews blogPosts={blogPosts} />
           </Route>
           <Route path={`${path}/:blogPostId`}>
-            <BlogPost />
+            <BlogPost blogPosts={blogPosts} />
           </Route>
         </Switch>
       )}
