@@ -49,7 +49,7 @@ export const Portfolio = () => {
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={url + routerParams[key].relPath}
+        to={`${url}${routerParams[key].relPath}`}
       >
         {routerParams[key].label}
         <ContentItemsCount path={routerParams[key].dataPath} />
@@ -62,7 +62,7 @@ export const Portfolio = () => {
     return (
       <Route
         key={key}
-        path={path + routerParams[key].relPath}
+        path={`${path}${routerParams[key].relPath}`}
         component={routerParams[key].component}
       />
     )
