@@ -38,7 +38,7 @@ export const About = () => {
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={url + routerParams[key].relPath}
+        to={`${url}${routerParams[key].relPath}`}
       >
         {routerParams[key].label}
       </NavLink>
@@ -50,7 +50,7 @@ export const About = () => {
     return (
       <Route
         key={key}
-        path={path + routerParams[key].relPath}
+        path={`${path}${routerParams[key].relPath}`}
         component={routerParams[key].component}
       />
     )
