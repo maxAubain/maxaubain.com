@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useParams, useRouteMatch } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { NavLinkUpRoute } from '../common/NavLinkUpRoute'
 
 export const BlogPost = ({ blogPosts }) => {
