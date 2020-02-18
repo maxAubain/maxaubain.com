@@ -1,6 +1,7 @@
 [
   {
     "id": "B2",
+    "relPath": "/blog-post-2",
     "header": {
       "date": {
         "post": "Jan. 31st, 2020",
@@ -11,7 +12,8 @@
         "subtitle": "Subtitle 2"
       },
       "image": {
-        "src": "./src/img/social-media-preview.png"
+        "src": "/src/img/social-media-preview.png",
+        "alt": "alt-text"
       }
     },
     "body": [
@@ -23,7 +25,9 @@
       },
       {
         "image": {
-          "src": "./src/img/social-media-preview.png",
+          "src": "/src/img/social-media-preview.png",
+          "alt": "alt-text",
+          "width": "100%",
           "caption": "Social media preview"
         }
       },
@@ -37,6 +41,7 @@
   },
   {
     "id": "B1",
+    "relPath": "/blog-post-1",
     "header": {
       "date": {
         "post": "Jan. 3rd, 2020",
@@ -47,7 +52,8 @@
         "subtitle": "Subtitle"
       },
       "image": {
-        "src": "./src/img/social-media-preview.png"
+        "src": "",
+        "alt": "alt-text"
       }
     },
     "body": [
@@ -59,7 +65,9 @@
       },
       {
         "image": {
-          "src": "./src/img/social-media-preview.png",
+          "src": "",
+          "alt": "alt-text",
+          "width": "",
           "caption": "Social media preview"
         }
       },

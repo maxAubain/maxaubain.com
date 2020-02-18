@@ -20,12 +20,21 @@
 }
 
 .bpp-body {
-  padding: 4px 16px 4px 16px;
+  padding: 0 16px 0 16px;
   display: inline-block;
+}
+
+.second-paragraph {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   box-sizing: border-box;
+}
+
+.bpp-navlink-container {
+  width: 100%;
+  text-align: right;
+  padding: 0 0 10px 0;
 }
 
 @media only screen and (min-width: 961px) {

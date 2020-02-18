@@ -1,7 +1,42 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { IconSmallPlus } from '../common/IconSmallPlus'
-import { navLinksParams, socialMediaIconsParams } from '../../router/links.js'
+
+const navLinksParams = {
+  about: {
+    label: 'About',
+    path: '/about',
+  },
+  portfolio: {
+    label: 'Portfolio',
+    path: '/portfolio',
+  },
+  resume: {
+    label: 'Resume',
+    path: '/resume',
+  },
+  contact: {
+    label: 'Contact',
+    path: '/contact',
+  },
+}
+
+const socialMediaIconsParams = {
+  github: {
+    url: 'https://github.com/maxAubain',
+    image: {
+      path: '../../src/img/icon/github.png',
+      alt: 'github-icon',
+    },
+  },
+  linkedin: {
+    url: 'https://www.linkedin.com/in/maxaubain/',
+    image: {
+      path: '../../src/img/icon/linkedin.png',
+      alt: 'linkedin-icon',
+    },
+  },
+}
 
 export const NavBar = () => {
   // Handles navbar shadow on scroll
@@ -31,21 +66,21 @@ export const NavBar = () => {
   useEffect(() => {}, [location])
 
   // NavLinks object with NavLink highlighting style
-  const navLinks = Object.keys(navLinksParams.navBar).map(key => {
+  const navLinks = Object.keys(navLinksParams).map(key => {
     location.pathname.toString().includes(`/${key}`)
-      ? Object.assign(navLinksParams.navBar[key], {
+      ? Object.assign(navLinksParams[key], {
           className: 'navlink-current',
         })
-      : Object.assign(navLinksParams.navBar[key], { className: 'navlink' })
+      : Object.assign(navLinksParams[key], { className: 'navlink' })
 
     return (
       <NavLink
         key={key}
-        className={navLinksParams.navBar[key].className}
-        to={navLinksParams.navBar[key].path}
+        className={navLinksParams[key].className}
+        to={navLinksParams[key].path}
         onClick={handleViewReset}
       >
-        {navLinksParams.navBar[key].label}
+        {navLinksParams[key].label}
       </NavLink>
     )
   })

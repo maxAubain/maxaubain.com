@@ -1,30 +1,57 @@
 import React from 'react'
-import { NavLink, Route } from 'react-router-dom'
-import { navLinksParams } from '../../router/links'
-import { routesParams } from '../../router/routes'
+import {
+  NavLink,
+  Route,
+  Redirect,
+  Switch,
+  useRouteMatch,
+} from 'react-router-dom'
+import { Profile } from './Profile'
+import { Education } from './Education'
+import { Recommendations } from './Recommendations'
+
+const routerParams = {
+  profile: {
+    label: 'Profile',
+    relPath: '/profile',
+    component: Profile,
+  },
+  recommendations: {
+    label: 'Recommendations',
+    relPath: '/recommendations',
+    component: Recommendations,
+  },
+  education: {
+    label: 'Education',
+    relPath: '/education',
+    component: Education,
+  },
+}
 
 export const About = () => {
+  let { url, path } = useRouteMatch()
+
   // NavLinks object with NavLink highlighting style
-  const navLinks = Object.keys(navLinksParams.about).map(key => {
+  const navLinks = Object.keys(routerParams).map(key => {
     return (
       <NavLink
         key={key}
         className="navlink-section"
         activeClassName="navlink-section-current"
-        to={navLinksParams.about[key].path}
+        to={`${url}${routerParams[key].relPath}`}
       >
-        {navLinksParams.about[key].label}
+        {routerParams[key].label}
       </NavLink>
     )
   })
 
   // Routes object
-  const routes = Object.keys(routesParams.about.children).map(key => {
+  const routes = Object.keys(routerParams).map(key => {
     return (
       <Route
         key={key}
-        path={routesParams.about.children[key].path}
-        component={routesParams.about.children[key].component}
+        path={`${path}${routerParams[key].relPath}`}
+        component={routerParams[key].component}
       />
     )
   })
@@ -32,7 +59,10 @@ export const About = () => {
   return (
     <>
       <div className="navlink-section-container">{navLinks}</div>
-      {routes}
+      <Switch>
+        {routes}
+        <Redirect from="/about" to="/about/profile" />
+      </Switch>
     </>
   )
 }

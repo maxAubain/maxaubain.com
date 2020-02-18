@@ -1,30 +1,32 @@
 import React, { useState, useEffect } from 'react'
+import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import axios from 'axios'
-import { navLinksParams } from '../../router/links'
-import { BlogPostPreview } from './BlogPostPreview'
+import { BlogPostPreviews } from './BlogPostPreviews'
+import { BlogPost } from './BlogPost'
 
 export const Blog = () => {
   const [blogPosts, setBlogPosts] = useState([])
-  const [isContentLoaded, setIsContentLoaded] = useState(false)
+  const [isBlogPostsLoaded, setIsBlogPostsLoaded] = useState(false)
+  const blogPostsPath = '../../src/data/postsBlog.json'
   useEffect(() => {
-    axios.get(navLinksParams.portfolio.blog.dataPath).then(response => {
+    axios.get(blogPostsPath).then(response => {
       setBlogPosts(response.data)
-      setIsContentLoaded(true)
+      setIsBlogPostsLoaded(true)
     })
   }, [])
 
-  const blogPostPreviews = blogPosts.map(post => {
-    return (
-      <div key={post.id}>
-        <BlogPostPreview post={post} />
-      </div>
-    )
-  })
-
+  let { path } = useRouteMatch()
   return (
     <>
-      {isContentLoaded && (
-        <div className="project-categories-wrapper">{blogPostPreviews}</div>
+      {isBlogPostsLoaded && (
+        <Switch>
+          <Route exact path={path}>
+            <BlogPostPreviews blogPosts={blogPosts} />
+          </Route>
+          <Route path={`${path}/:blogPostId`}>
+            <BlogPost blogPosts={blogPosts} />
+          </Route>
+        </Switch>
       )}
     </>
   )

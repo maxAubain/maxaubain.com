@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-        loader: 'url-loader?limit=100000' 
+        loader: 'url-loader?limit=100000'
       }
     ]
   },
@@ -33,7 +33,7 @@ module.exports = {
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
     watchContentBase: true,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 }
