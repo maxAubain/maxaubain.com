@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams, useRouteMatch } from 'react-router-dom'
+import { NavLinkUpRoute } from '../common/NavLinkUpRoute'
 
 export const BlogPost = ({ blogPosts }) => {
   // Extract blog post data from array of blog posts by blogPostId
@@ -55,25 +56,27 @@ export const BlogPost = ({ blogPosts }) => {
     }
   })
 
-  // Return formatted blog post
+  // Formatted blog post
+  const blogPost = (
+    <div className="bp-container">
+      <div className="bpp-title">{post.header.title.main}</div>
+      <div className="bpp-subtitle">{post.header.title.subtitle}</div>
+      <div className="bpp-date">{date}</div>
+      <img
+        className="bp-header-image"
+        src={post.header.image.src}
+        alt={post.header.image.alt}
+      />
+      <div className="bp-body">{postBody}</div>
+    </div>
+  )
+
   return (
     <>
       <div className="bp-navlink-container">
-        <NavLink to="/portfolio/blog" className="navlink">
-          &larr; back to blog
-        </NavLink>
+        <NavLinkUpRoute linkObj="&larr; back to blog" />
       </div>
-      <div className="bp-container">
-        <div className="bpp-title">{post.header.title.main}</div>
-        <div className="bpp-subtitle">{post.header.title.subtitle}</div>
-        <div className="bpp-date">{date}</div>
-        <img
-          className="bp-header-image"
-          src={post.header.image.src}
-          alt={post.header.image.alt}
-        />
-        <div className="bp-body">{postBody}</div>
-      </div>
+      {blogPost}
     </>
   )
 }
