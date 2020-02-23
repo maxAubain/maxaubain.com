@@ -46,7 +46,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
-    filename: "[name].[hash].bundle.js"
+    filename: module.exports.mode === 'production' ? '[name].[chunkhash].js' : '[name].[hash].js'
   },
   devServer: {
     contentBase: path.join(__dirname, "/"),
