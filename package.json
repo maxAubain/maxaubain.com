@@ -15,7 +15,6 @@
     "file-loader": "^4.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-pose": "^4.0.10",
     "react-router-dom": "^5.1.2",
     "url-loader": "^2.3.0",
     "webfontloader": "^1.6.28"
