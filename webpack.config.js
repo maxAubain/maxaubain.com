@@ -1,6 +1,7 @@
 const path = require("path")
 const webpack = require("webpack")
 const TerserPlugin = require('terser-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -55,5 +56,8 @@ module.exports = {
     watchContentBase: true,
     historyApiFallback: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin()
+  ]
 }
