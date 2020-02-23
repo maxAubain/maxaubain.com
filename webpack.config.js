@@ -1,5 +1,6 @@
 const path = require("path")
 const webpack = require("webpack")
+const fs = require("fs")
 
 module.exports = {
   entry: "./src/index.js",
@@ -26,7 +27,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
-    filename: "bundle.js"
+    filename: "[name].[hash].bundle.js"
   },
   devServer: {
     contentBase: path.join(__dirname, "/"),
@@ -37,3 +38,6 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 }
+
+const fileArray = fs.readdirSync(module.exports.output.path)
+console.log(fileArray)
