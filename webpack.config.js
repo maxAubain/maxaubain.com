@@ -1,6 +1,5 @@
 const path = require("path")
 const webpack = require("webpack")
-const fs = require("fs")
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
@@ -43,6 +42,3 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()]
 }
-
-const fileArray = fs.readdirSync(module.exports.output.path)
-console.log(fileArray)
