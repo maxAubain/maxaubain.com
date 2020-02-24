@@ -28,7 +28,7 @@ let config = {
       }
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx"] },
+  resolve: { extensions: ["*", ".js", ".jsx", ".css"] },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
