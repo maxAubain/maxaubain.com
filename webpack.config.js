@@ -59,6 +59,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'Max Aubain',
+      template: 'index-template.html',
       favicon: './favicon.png',
       meta: {
         viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
