@@ -1,6 +1,6 @@
 import React from 'react'
 import { FeaturedContentCard } from './FeaturedContentCard'
-import featuredContentData from '../../../data/featured-content'
+import featuredContentData from '../../../global/data/featured-content'
 
 export const Featured = () => {
   const featuredContentItems = featuredContentData.map(featuredContentitem => {

@@ -1,13 +1,13 @@
 import React from 'react'
-import { App } from './App'
-import appsData from '../../../data/applications'
-import externalLinksData from '../../../data/external-links'
+import { Application } from './Application'
+import appsData from '../../../global/data/applications'
+import externalLinksData from '../../../global/data/external-links'
 
-export const Apps = () => {
+export const Applications = () => {
   // Apps data object
   const apps = appsData.map(appData => {
     return (
-      <App
+      <Application
         key={appData.id}
         appData={appData}
         externalLinksData={externalLinksData}

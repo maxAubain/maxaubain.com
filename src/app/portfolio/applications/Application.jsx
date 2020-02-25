@@ -3,7 +3,7 @@ import { IconSmall } from '../../common/IconSmall'
 import { WebLink } from '../../common/WebLink'
 import { TechWebLinks } from '../../common/TechWebLinks'
 
-export const App = ({ appData, externalLinksData }) => {
+export const Application = ({ appData, externalLinksData }) => {
   // Show/hide app object details functionality
   const [projectAttributes, setProjectAttributes] = useState({
     hidden: true,

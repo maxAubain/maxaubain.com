@@ -1,6 +1,6 @@
 import React from 'react'
 import { WebLink } from '../../common/WebLink'
-import educationData from '../../../data/education-history'
+import educationData from '../../../global/data/education-history'
 
 export const Education = () => {
   // Education cards object

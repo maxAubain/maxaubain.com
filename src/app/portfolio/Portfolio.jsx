@@ -9,10 +9,10 @@ import {
 import { ContentItemsCount } from './ContentItemsCount'
 import { Featured } from './featured/Featured'
 import { Blog } from './blog/Blog'
-import { Apps } from './apps/Apps'
-import featuredContentData from '../../data/featured-content'
-import blogPostsData from '../../data/blog-posts'
-import applicationsData from '../../data/applications.json'
+import { Applications } from './applications/Applications'
+import featuredContentData from '../../global/data/featured-content'
+import blogPostsData from '../../global/data/blog-posts'
+import applicationsData from '../../global/data/applications'
 
 const routerParams = {
   featured: {
@@ -30,7 +30,7 @@ const routerParams = {
   apps: {
     label: 'Apps',
     relPath: '/apps',
-    component: Apps,
+    component: Applications,
     data: applicationsData,
   },
 }

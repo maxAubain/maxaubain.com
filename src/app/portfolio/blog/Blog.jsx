@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { BlogPostPreviews } from './BlogPostPreviews'
 import { BlogPost } from './BlogPost'
-import blogPostsData from '../../../data/blog-posts'
+import blogPostsData from '../../../global/data/blog-posts'
 
 export const Blog = () => {
   let { path } = useRouteMatch()
