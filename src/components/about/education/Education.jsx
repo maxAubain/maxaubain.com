@@ -1,18 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios'
+import React from 'react'
 import { WebLink } from '../../common/WebLink'
 const dataEducation = require('./data/education-history.json')
 
 export const Education = () => {
-  /*   const [eduContent, setEduContent] = useState([])
-  const [isContentLoaded, setIsContentLoaded] = useState(false)
-  useEffect(() => {
-    axios.get(DataEducation).then(response => {
-      setEduContent(response.data)
-      setIsContentLoaded(true)
-    })
-  }, []) */
-
   // Education cards object
   const eduCards = dataEducation.map(eduContentItem => {
     // Optional weblink object
@@ -32,6 +22,7 @@ export const Education = () => {
       : (eduWebLink = <></>)
 
     return (
+      // Education card object
       <div
         key={eduContentItem.id}
         className="education-section education-feature"
@@ -72,9 +63,7 @@ export const Education = () => {
 
   return (
     <>
-      {/* {isContentLoaded && */}{' '}
       <div className="education-container">{eduCards}</div>
-      {/* } */}
     </>
   )
 }
