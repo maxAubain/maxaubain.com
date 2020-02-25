@@ -12,20 +12,21 @@ let config = {
   },
   module: {
     rules: [
-      {
+      { // For transpiling JS ES6 and later
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         loader: "babel-loader",
         options: { presets: ["@babel/env"] }
       },
-      {
+      { // For loading stylesheets
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
       },
-      {
+      { // For loading images and fonts
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
         loader: 'url-loader?limit=100000'
       }
+      // For loading .json files, json-loader is default in webpack
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx", ".css"] },
@@ -42,7 +43,7 @@ let config = {
           test: /[\\/]node_modules[\\/]/,
           name(module) {
             const packageName = module.context.match(/[\\/]node_modules[\\/](.*?)([\\/]|$)/)[1];
-            return `npm.${packageName.replace('@', '')}`; // Fix for .NET servers
+            return `node_modules.${packageName.replace('@', '')}`; // Fix for .NET servers
           },
         },
       },
@@ -57,14 +58,14 @@ let config = {
   },
 }
 
+//  Function to return module parameters set by mode: dev / prod
 module.exports = (env, argv) => {
-  // Development mode
   if (argv.mode === 'development') {
-    /* config.devtool = 'source-map'; */
+    /* config.devtool = 'source-map'; */  // Devtool determines type of exported source map
     config.output.filename = '[name].js';
     config.plugins = [
-      new webpack.HotModuleReplacementPlugin(),
-      new HtmlWebpackPlugin({
+      new webpack.HotModuleReplacementPlugin(), // Enables dynamic compiling of assets by dev server when local changes are made
+      new HtmlWebpackPlugin({ // Dynamically generates index.html with the following params
         title: 'Max Aubain',
         template: 'index-template.html',
         favicon: './favicon.png',
@@ -79,12 +80,11 @@ module.exports = (env, argv) => {
     ];
   }
 
-  // Production mode
   if (argv.mode === 'production') {
     config.output.filename = '[name].[chunkhash].js';
     config.plugins = [
-      new CleanWebpackPlugin(),
-      new HtmlWebpackPlugin({
+      new CleanWebpackPlugin(),  // Deletes old contents in /dist before repopulating folder with latest build assets
+      new HtmlWebpackPlugin({  // Dynamically generates index.html with the following params
         title: 'Max Aubain',
         template: 'index-template.html',
         favicon: './favicon.png',
