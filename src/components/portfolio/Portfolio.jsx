@@ -7,7 +7,7 @@ import {
   useRouteMatch,
 } from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
-import { Featured } from './Featured'
+import { Featured } from './featured/Featured'
 import { Blog } from './blog/Blog'
 import { Apps } from './apps/Apps'
 
@@ -16,19 +16,19 @@ const routerParams = {
     label: 'Featured',
     relPath: '/featured',
     component: Featured,
-    dataPath: '../../src/data/projectsFeatured.json',
+    dataPath: '../../data/featured-content.json',
   },
   blog: {
     label: 'Blog',
     relPath: '/blog',
     component: Blog,
-    dataPath: '../../src/data/postsBlog.json',
+    dataPath: '../../data/blog-posts.json',
   },
   apps: {
     label: 'Apps',
     relPath: '/apps',
     component: Apps,
-    dataPath: '../../src/data/projectsApplications.json',
+    dataPath: '../../data/applications.json',
   },
 }
 

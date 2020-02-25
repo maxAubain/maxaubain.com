@@ -5,7 +5,7 @@
     "date_posted": "Jan 24, 2020",
     "title": "React Todo List",
     "image": {
-      "path": "../../src/img/featured/todo_list.png",
+      "path": "./img/todo_list.png",
       "alt": "todo-list-image"
     },
     "links": {
@@ -18,7 +18,7 @@
     "date_posted": "Jan 21, 2020",
     "title": "Pull Request Templates",
     "image": {
-      "path": "../../src/img/featured/pull_request_templates.png",
+      "path": "./img/pull_request_templates.png",
       "alt": "pull-request-templates-image"
     },
     "links": {
@@ -31,7 +31,7 @@
     "date_posted": "Jan 17, 2020",
     "title": "Browsershot",
     "image": {
-      "path": "../../src/img/featured/browsershot.png",
+      "path": "./img/browsershot.png",
       "alt": "browsershot-image"
     },
     "links": {

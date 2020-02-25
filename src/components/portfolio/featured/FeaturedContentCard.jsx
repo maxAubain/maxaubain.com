@@ -1,7 +1,7 @@
 import React from 'react'
-import { WebLink } from '../common/WebLink'
+import { WebLink } from '../../common/WebLink'
 
-export const FeaturedItemCard = ({ featuredContentItem }) => {
+export const FeaturedContentCard = ({ featuredContentItem }) => {
   const card = (
     <div className="featured-card">
       <div className="featured-category-title-container">
@@ -10,7 +10,10 @@ export const FeaturedItemCard = ({ featuredContentItem }) => {
         <div className="featured-title">{featuredContentItem.title}</div>
       </div>
       <div className="featured-img-container">
-        <img src={featuredContentItem.image.path} className="featured-img" />
+        <img
+          src={require(`${featuredContentItem.image.path}`)}
+          className="featured-img"
+        />
       </div>
     </div>
   )
