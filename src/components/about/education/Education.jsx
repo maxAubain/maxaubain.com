@@ -1,6 +1,6 @@
 import React from 'react'
 import { WebLink } from '../../common/WebLink'
-const dataEducation = require('./data/education-history.json')
+import dataEducation from '../../../data/education-history'
 
 export const Education = () => {
   // Education cards object
