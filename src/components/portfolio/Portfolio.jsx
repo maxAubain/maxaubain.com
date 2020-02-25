@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import { ContentItemsCount } from './ContentItemsCount'
 import { Featured } from './Featured'
-import { Blog } from './Blog'
+import { Blog } from './blog/Blog'
 import { Apps } from './apps/Apps'
 
 const routerParams = {

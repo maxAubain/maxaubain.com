@@ -1,8 +1,8 @@
 import React from 'react'
 import { BlogPostPreview } from './BlogPostPreview'
 
-export const BlogPostPreviews = ({ blogPosts }) => {
-  const blogPostPreviews = blogPosts.map(post => {
+export const BlogPostPreviews = ({ blogPostsData }) => {
+  const blogPostPreviews = blogPostsData.map(post => {
     return (
       <div key={post.id}>
         <BlogPostPreview post={post} />

@@ -1,18 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { NavLinkUpRoute } from '../common/NavLinkUpRoute'
+import { NavLinkUpRoute } from '../../common/NavLinkUpRoute'
 
-export const BlogPost = ({ blogPosts }) => {
+export const BlogPost = ({ blogPostsData }) => {
   // Extract blog post data from array of blog posts by blogPostId
   let { blogPostId } = useParams()
-  const getPost = blogPosts => {
-    for (let iBlogPosts = 0; iBlogPosts < blogPosts.length; iBlogPosts++) {
-      if (blogPosts[iBlogPosts].relPath == `/${blogPostId}`) {
-        return blogPosts[iBlogPosts]
+  const getPost = blogPostsData => {
+    for (let iBlogPosts = 0; iBlogPosts < blogPostsData.length; iBlogPosts++) {
+      if (blogPostsData[iBlogPosts].relPath == `/${blogPostId}`) {
+        return blogPostsData[iBlogPosts]
       }
     }
   }
-  const post = getPost(blogPosts)
+  const post = getPost(blogPostsData)
 
   // Date object
   let date
@@ -34,7 +34,7 @@ export const BlogPost = ({ blogPosts }) => {
         return (
           <div className="bp-image-container" key={returnKey}>
             <img
-              src={bodyElement.image.src}
+              src={require(`${bodyElement.image.src}`)}
               alt={bodyElement.image.alt}
               width={bodyElement.image.width}
             />
@@ -64,7 +64,7 @@ export const BlogPost = ({ blogPosts }) => {
       <div className="bpp-date">{date}</div>
       <img
         className="bp-header-image"
-        src={post.header.image.src}
+        src={require(`${post.header.image.src}`)}
         alt={post.header.image.alt}
       />
       <div className="bp-body">{postBody}</div>
