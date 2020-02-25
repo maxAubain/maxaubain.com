@@ -3,7 +3,7 @@ import { IconSmall } from '../../common/IconSmall'
 import { WebLink } from '../../common/WebLink'
 import { TechWebLinks } from '../../common/TechWebLinks'
 
-export const App = ({ appData, externalLinks }) => {
+export const App = ({ appData, externalLinksData }) => {
   // Show/hide app object details functionality
   const [projectAttributes, setProjectAttributes] = useState({
     hidden: true,
@@ -50,7 +50,7 @@ export const App = ({ appData, externalLinks }) => {
         <TechWebLinks
           key={valueArray[i]}
           keyword={valueArray[i]}
-          externalLinks={externalLinks}
+          externalLinksData={externalLinksData}
         />
       )
     }

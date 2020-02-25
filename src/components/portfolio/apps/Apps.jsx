@@ -1,16 +1,16 @@
 import React from 'react'
 import { App } from './App'
-import dataApps from '../../../data/applications'
-import dataLinksExternal from '../../../data/linksExternal'
+import appsData from '../../../data/applications'
+import externalLinksData from '../../../data/external-links'
 
 export const Apps = () => {
   // Apps data object
-  const apps = dataApps.map(appData => {
+  const apps = appsData.map(appData => {
     return (
       <App
         key={appData.id}
         appData={appData}
-        externalLinks={dataLinksExternal}
+        externalLinksData={externalLinksData}
       />
     )
   })

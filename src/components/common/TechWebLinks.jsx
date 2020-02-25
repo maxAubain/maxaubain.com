@@ -4,14 +4,14 @@ import { WebLink } from './WebLink'
 
 let keyArray, i, link
 
-export const TechWebLinks = ({ keyword, externalLinks }) => {
-  keyArray = Object.keys(externalLinks) // e.g. keyArray = ["Axios", "Body Parser", "Cartify",...]
+export const TechWebLinks = ({ keyword, externalLinksData }) => {
+  keyArray = Object.keys(externalLinksData) // e.g. keyArray = ["Axios", "Body Parser", "Cartify",...]
   for (i = 0; i < keyArray.length; i++) {
     if (keyArray[i] == keyword) {
       link = (
         <WebLink
           key={keyword}
-          url={externalLinks[keyword]}
+          url={externalLinksData[keyword]}
           linkObj={keyword}
           className="weblink"
         />
