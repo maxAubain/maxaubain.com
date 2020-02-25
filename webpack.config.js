@@ -29,7 +29,7 @@ let config = {
       // For loading .json files, json-loader is default in webpack
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".css"] },
+  resolve: { extensions: ["*", ".js", ".jsx", ".css", ".json", ".png"] },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
@@ -54,7 +54,6 @@ let config = {
     port: 3000,
     watchContentBase: true,
     historyApiFallback: true,
-    open: true,
   },
 }
 
