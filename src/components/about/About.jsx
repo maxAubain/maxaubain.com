@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 import { Profile } from './profile/Profile'
 import { Education } from './education/Education'
-import { Recommendations } from './Recommendations'
+import { Recommendations } from './recommendations/Recommendations'
 
 const routerParams = {
   profile: {
