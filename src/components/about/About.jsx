@@ -7,7 +7,7 @@ import {
   useRouteMatch,
 } from 'react-router-dom'
 import { Profile } from './Profile'
-import { Education } from './Education'
+import { Education } from './education/Education'
 import { Recommendations } from './Recommendations'
 
 const routerParams = {

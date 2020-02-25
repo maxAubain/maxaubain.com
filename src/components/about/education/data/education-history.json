@@ -2,8 +2,8 @@
   {
     "id": "E1",
     "img": {
-      "src": "../src/img/icon/ucsd.png",
-      "alt": "dev-icon",
+      "src": "./img/ucsd.png",
+      "alt": "ucsd-seal-icon",
       "height": "160",
       "width": "160"
     },
@@ -25,8 +25,8 @@
   {
     "id": "E2",
     "img": {
-      "src": "../src/img/icon/cornell.png",
-      "alt": "cornell-icon",
+      "src": "./img/cornell.png",
+      "alt": "cornell-seal-icon",
       "height": "200",
       "width": "200"
     },
@@ -48,8 +48,8 @@
   {
     "id": "E3",
     "img": {
-      "src": "../src/img/icon/craftacademy.png",
-      "alt": "craftacademy-icon",
+      "src": "./img/craftacademy.png",
+      "alt": "craft-academy-icon",
       "height": "200",
       "width": "200"
     },
@@ -71,8 +71,8 @@
   {
     "id": "E4",
     "img": {
-      "src": "../src/img/icon/pli.png",
-      "alt": "pli-icon",
+      "src": "./img/pli.png",
+      "alt": "practicing-law-institute-icon",
       "height": "160",
       "width": "160"
     },

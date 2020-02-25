@@ -1,15 +1,17 @@
 import React from 'react'
 import { IconMed } from '../common/IconMed'
-import HeadShot from '../../img/head-shot.png'
+import ImgHeadShot from '../../img/head-shot.png'
+import IconDeveloper from '../../img/icon/developer.png'
+import IconProjectManager from '../../img/icon/project-manager.png'
+import IconAnalyst from '../../img/icon/analyst.png'
 
 export const Profile = () => {
-  console.log(HeadShot)
   return (
     <>
       <div className="intro">
         <div className="section-profile headshot-container">
           <div>
-            <img className="headshot" src={HeadShot} alt="image-max-face" />
+            <img className="headshot" src={ImgHeadShot} alt="image-max-face" />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
@@ -37,7 +39,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed src="../src/img/icon/developer.png" alt="developer-icon" />
+            <IconMed src={IconDeveloper} alt="developer-icon" />
           </div>
           <br />
           Full Stack Developer
@@ -61,10 +63,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed
-              src="../src/img/icon/project-manager.png"
-              alt="project-manager-icon"
-            />
+            <IconMed src={IconProjectManager} alt="project-manager-icon" />
           </div>
           <br />
           Project Manager
@@ -86,7 +85,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed src="../src/img/icon/analyst.png" alt="analyst-icon" />
+            <IconMed src={IconAnalyst} alt="analyst-icon" />
           </div>
           <br />
           Analyst

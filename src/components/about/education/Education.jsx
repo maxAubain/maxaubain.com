@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { WebLink } from '../common/WebLink'
+import { WebLink } from '../../common/WebLink'
+const dataEducation = require('./data/education-history.json')
 
 export const Education = () => {
-  const [eduContent, setEduContent] = useState([])
+  /*   const [eduContent, setEduContent] = useState([])
   const [isContentLoaded, setIsContentLoaded] = useState(false)
   useEffect(() => {
-    axios.get('../../src/data/dataEducation.json').then(response => {
+    axios.get(DataEducation).then(response => {
       setEduContent(response.data)
       setIsContentLoaded(true)
     })
-  }, [])
+  }, []) */
 
   // Education cards object
-  const eduCards = eduContent.map(eduContentItem => {
+  const eduCards = dataEducation.map(eduContentItem => {
     // Optional weblink object
     let eduWebLink
     eduContentItem.webLink.url
@@ -38,7 +39,7 @@ export const Education = () => {
         <div className="education-feature-title">
           <div>
             <img
-              src={eduContentItem.img.src}
+              src={require(`${eduContentItem.img.src}`)}
               alt={eduContentItem.img.alt}
               height={eduContentItem.img.height}
               width={eduContentItem.img.width}
@@ -71,7 +72,9 @@ export const Education = () => {
 
   return (
     <>
-      {isContentLoaded && <div className="education-container">{eduCards}</div>}
+      {/* {isContentLoaded && */}{' '}
+      <div className="education-container">{eduCards}</div>
+      {/* } */}
     </>
   )
 }
