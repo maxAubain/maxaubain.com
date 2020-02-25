@@ -1,9 +1,9 @@
 import React from 'react'
-import { IconMed } from '../common/IconMed'
-import ImgHeadShot from '../../img/head-shot.png'
-import IconDeveloper from '../../img/icon/developer.png'
-import IconProjectManager from '../../img/icon/project-manager.png'
-import IconAnalyst from '../../img/icon/analyst.png'
+import { IconMed } from '../../common/IconMed'
+import ImgHeadShot from './img/head-shot.png'
+import IconDeveloper from './img/developer.png'
+import IconProjectManager from './img/project-manager.png'
+import IconAnalyst from './img/analyst.png'
 
 export const Profile = () => {
   return (

@@ -6,7 +6,7 @@ import {
   Switch,
   useRouteMatch,
 } from 'react-router-dom'
-import { Profile } from './Profile'
+import { Profile } from './profile/Profile'
 import { Education } from './education/Education'
 import { Recommendations } from './Recommendations'
 
