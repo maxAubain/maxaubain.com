@@ -66,6 +66,7 @@ export const BlogPost = ({ blogPostsData }) => {
         className="bp-header-image"
         src={require(`${post.header.image.src}`)}
         alt={post.header.image.alt}
+        width="100%"
       />
       <div className="bp-body">{postBody}</div>
     </div>
