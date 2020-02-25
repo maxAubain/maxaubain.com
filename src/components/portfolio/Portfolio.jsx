@@ -9,8 +9,7 @@ import {
 import { ContentItemsCount } from './ContentItemsCount'
 import { Featured } from './Featured'
 import { Blog } from './Blog'
-import { Apps } from './Apps'
-import { Exercises } from './Exercises'
+import { Apps } from './apps/Apps'
 
 const routerParams = {
   featured: {
@@ -30,12 +29,6 @@ const routerParams = {
     relPath: '/apps',
     component: Apps,
     dataPath: '../../src/data/projectsApplications.json',
-  },
-  exercises: {
-    label: 'Exercises',
-    relPath: '/exercises',
-    component: Exercises,
-    dataPath: '../../src/data/projectsExercises.json',
   },
 }
 
