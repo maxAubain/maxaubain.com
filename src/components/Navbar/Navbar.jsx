@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from './node_modules/react'
-import { NavLink, useLocation } from './node_modules/react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import { IconSmallPlus } from '../common/IconSmallPlus'
 
 const navLinksParams = {
@@ -11,10 +11,6 @@ const navLinksParams = {
     label: 'Portfolio',
     path: '/portfolio',
   },
-  /* resume: {
-    label: 'Resume',
-    path: '/resume',
-  }, */
   contact: {
     label: 'Contact',
     path: '/contact',
