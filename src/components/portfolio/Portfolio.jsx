@@ -10,25 +10,28 @@ import { ContentItemsCount } from './ContentItemsCount'
 import { Featured } from './featured/Featured'
 import { Blog } from './blog/Blog'
 import { Apps } from './apps/Apps'
+import featuredContentData from '../../data/featured-content'
+import blogPostsData from '../../data/blog-posts'
+import applicationsData from '../../data/applications.json'
 
 const routerParams = {
   featured: {
     label: 'Featured',
     relPath: '/featured',
     component: Featured,
-    dataPath: '../../data/featured-content.json',
+    data: featuredContentData,
   },
   blog: {
     label: 'Blog',
     relPath: '/blog',
     component: Blog,
-    dataPath: '../../data/blog-posts.json',
+    data: blogPostsData,
   },
   apps: {
     label: 'Apps',
     relPath: '/apps',
     component: Apps,
-    dataPath: '../../data/applications.json',
+    data: applicationsData,
   },
 }
 
@@ -45,7 +48,7 @@ export const Portfolio = () => {
         to={`${url}${routerParams[key].relPath}`}
       >
         {routerParams[key].label}
-        <ContentItemsCount path={routerParams[key].dataPath} />
+        <ContentItemsCount data={routerParams[key].data} />
       </NavLink>
     )
   })
