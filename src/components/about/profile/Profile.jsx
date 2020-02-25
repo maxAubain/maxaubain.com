@@ -1,9 +1,9 @@
 import React from 'react'
 import { IconMed } from '../../common/IconMed'
-import ImgHeadShot from './img/head-shot'
-import IconDeveloper from './img/developer'
-import IconProjectManager from './img/project-manager'
-import IconAnalyst from './img/analyst'
+import headShotImage from './img/head-shot'
+import developerIcon from './img/developer'
+import projectManagerIcon from './img/project-manager'
+import analystIcon from './img/analyst'
 
 export const Profile = () => {
   return (
@@ -11,7 +11,11 @@ export const Profile = () => {
       <div className="intro">
         <div className="section-profile headshot-container">
           <div>
-            <img className="headshot" src={ImgHeadShot} alt="image-max-face" />
+            <img
+              className="headshot"
+              src={headShotImage}
+              alt="image-max-face"
+            />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
@@ -39,7 +43,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed src={IconDeveloper} alt="developer-icon" />
+            <IconMed src={developerIcon} alt="developer-icon" />
           </div>
           <br />
           Full Stack Developer
@@ -63,7 +67,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed src={IconProjectManager} alt="project-manager-icon" />
+            <IconMed src={projectManagerIcon} alt="project-manager-icon" />
           </div>
           <br />
           Project Manager
@@ -85,7 +89,7 @@ export const Profile = () => {
       <div className="section-profile feature-profile">
         <div className="feature-title">
           <div>
-            <IconMed src={IconAnalyst} alt="analyst-icon" />
+            <IconMed src={analystIcon} alt="analyst-icon" />
           </div>
           <br />
           Analyst

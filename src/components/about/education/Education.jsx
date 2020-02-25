@@ -1,10 +1,10 @@
 import React from 'react'
 import { WebLink } from '../../common/WebLink'
-import dataEducation from '../../../data/education-history'
+import educationData from '../../../data/education-history'
 
 export const Education = () => {
   // Education cards object
-  const eduCards = dataEducation.map(eduContentItem => {
+  const eduCards = educationData.map(eduContentItem => {
     // Optional weblink object
     let eduWebLink
     eduContentItem.webLink.url
