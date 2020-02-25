@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { WebLink } from '../common/WebLink'
 
 export const Resume = () => {

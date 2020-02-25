@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer"
 import { NavBar } from "./components/Navbar"
 import { About } from "./components/about/About"
 import { Portfolio } from "./components/portfolio/Portfolio"
-import { Resume } from "./components/resume/Resume"
+/* import { Resume } from "./components/resume/Resume" */
 import { EmailForm } from "./components/contact/EmailForm"
 import "./css/blog-post"
 import "./css/blog-post-preview"
@@ -28,10 +28,10 @@ const routesParams = {
     "path": "/portfolio",
     "component": Portfolio,
   },
-  "resume": {
+  /* "resume": {
     "path": "/resume",
     "component": Resume
-  },
+  }, */
   "contact": {
     "path": "/contact",
     "component": EmailForm

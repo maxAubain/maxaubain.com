@@ -11,10 +11,10 @@ const navLinksParams = {
     label: 'Portfolio',
     path: '/portfolio',
   },
-  resume: {
+  /* resume: {
     label: 'Resume',
     path: '/resume',
-  },
+  }, */
   contact: {
     label: 'Contact',
     path: '/contact',
