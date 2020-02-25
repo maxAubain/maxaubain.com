@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
-import { IconSmallPlus } from './common/IconSmallPlus'
+import React, { useState, useEffect } from './node_modules/react'
+import { NavLink, useLocation } from './node_modules/react-router-dom'
+import { IconSmallPlus } from '../common/IconSmallPlus'
 
 const navLinksParams = {
   about: {
@@ -25,14 +25,14 @@ const socialMediaIconsParams = {
   github: {
     url: 'https://github.com/maxAubain',
     image: {
-      path: '../../src/img/icon/github.png',
+      path: './img/github.png',
       alt: 'github-icon',
     },
   },
   linkedin: {
     url: 'https://www.linkedin.com/in/maxaubain/',
     image: {
-      path: '../../src/img/icon/linkedin.png',
+      path: './img/linkedin.png',
       alt: 'linkedin-icon',
     },
   },
@@ -95,7 +95,7 @@ export const NavBar = () => {
         }}
       >
         <IconSmallPlus
-          src={socialMediaIconsParams[key].image.path}
+          src={require(`${socialMediaIconsParams[key].image.path}`)}
           alt={socialMediaIconsParams[key].image.alt}
         />
       </a>

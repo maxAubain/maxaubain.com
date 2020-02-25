@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom"
 import React from "react"
 import ReactDOM from "react-dom"
 import { Footer } from "./components/Footer"
-import { NavBar } from "./components/Navbar"
+import { NavBar } from "./components/Navbar/Navbar"
 import { About } from "./components/about/About"
 import { Portfolio } from "./components/portfolio/Portfolio"
 /* import { Resume } from "./components/resume/Resume" */
