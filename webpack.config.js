@@ -24,7 +24,7 @@ let config = {
       },
       { // For loading images and fonts
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-        loader: 'url-loader?limit=100000'
+        loader: 'url-loader'
       }
       // For loading .json files, json-loader is default in webpack
     ]
