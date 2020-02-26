@@ -3,6 +3,7 @@ import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { BlogPostPreviews } from './BlogPostPreviews'
 import { BlogPost } from './BlogPost'
 import blogPostsList from '../../../global/data/blogPosts/blog-posts-list'
+const blogPostsDataPath = 'global/data/blogPosts/'
 
 export const Blog = () => {
   let { path } = useRouteMatch()
@@ -10,11 +11,17 @@ export const Blog = () => {
     <>
       <Switch>
         <Route exact path={path}>
-          <BlogPostPreviews blogPostsList={blogPostsList} />
+          <BlogPostPreviews
+            blogPostsList={blogPostsList}
+            blogPostsDataPath={blogPostsDataPath}
+          />
         </Route>
-        {/* <Route path={`${path}/:blogPostId`}>
-          <BlogPost blogPostsData={blogPostsData} />
-        </Route> */}
+        <Route path={`${path}/:blogPostId`}>
+          <BlogPost
+            blogPostsList={blogPostsList}
+            blogPostsDataPath={blogPostsDataPath}
+          />
+        </Route>
       </Switch>
     </>
   )
