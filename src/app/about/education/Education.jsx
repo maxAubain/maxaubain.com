@@ -1,5 +1,5 @@
 import React from 'react'
-import { WebLink } from '../../common/WebLink'
+import { WebLink } from '../../../global/components/WebLink'
 import educationData from '../../../global/data/education-history'
 
 export const Education = () => {

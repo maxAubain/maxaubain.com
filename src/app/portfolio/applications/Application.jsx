@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { IconSmall } from '../../common/IconSmall'
-import { WebLink } from '../../common/WebLink'
-import { TechWebLinks } from '../../common/TechWebLinks'
+import { IconSmall } from '../../../global/components/IconSmall'
+import { WebLink } from '../../../global/components/WebLink'
+import { TechWebLinks } from './TechWebLinks'
 
 export const Application = ({ appData, externalLinksData }) => {
   // Show/hide app object details functionality

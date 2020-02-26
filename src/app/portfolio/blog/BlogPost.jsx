@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { NavLinkUpRoute } from '../../common/NavLinkUpRoute'
+import { NavLinkUpRoute } from '../../../global/components/NavLinkUpRoute'
 
 export const BlogPost = ({ blogPostsData }) => {
   // Extract blog post data from array of blog posts by blogPostId
