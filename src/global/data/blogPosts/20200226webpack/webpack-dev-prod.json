@@ -1,5 +1,4 @@
 {
-  "relPath": "/webpack-dev-prod",
   "header": {
     "date": {
       "post": "Feb. xx, 2020",
@@ -10,7 +9,7 @@
       "subtitle": "Examining options for a single page application, and more"
     },
     "image": {
-      "src": "./img/webpack-logo.png",
+      "src": "img/webpack-logo.png",
       "alt": "webpack-logo"
     }
   },
