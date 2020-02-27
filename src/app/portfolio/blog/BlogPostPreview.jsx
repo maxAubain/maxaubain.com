@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink, useRouteMatch } from 'react-router-dom'
+import { useRouteMatch } from 'react-router-dom'
+import { NavLinkTop } from '../../../global/components/NavLinkTop'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   // Date element with 'posted' and conditional 'revised' values
@@ -59,9 +60,11 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
         {getSecondParagraph(blogPostData.body)}
       </p>
       <div className="bpp-navlink-container">
-        <NavLink to={`${url}/${postId}`} className="navlink">
-          read more &rarr;
-        </NavLink>
+        <NavLinkTop
+          to={`${url}/${postId}`}
+          className="navlink"
+          linkObj={<>read more &rarr;</>}
+        />
       </div>
     </div>
   )
