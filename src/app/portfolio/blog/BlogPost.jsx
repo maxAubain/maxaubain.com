@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { NavLinkUpRoute } from '../../../global/components/NavLinkUpRoute'
 import { NavLinkUpRouteTop } from '../../../global/components/NavLinkUpRouteTop'
+import { WebLink } from '../../../global/components/WebLink'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   // Extract blog post data from array of blog posts by blogPostId
@@ -46,7 +47,6 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
             <div className="bp-image-caption">{bodyElement.image.caption}</div>
           </div>
         )
-
       case 'paragraph':
         return (
           <div className="bp-paragraph-container" key={divKey}>
@@ -60,6 +60,19 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
           </div>
         )
     }
+  })
+
+  const postFootnotes = post.footnotes.map(footnoteElement => {
+    return (
+      <div className="bp-footnote-container" key={footnoteElement.number}>
+        [{footnoteElement.number}]{' '}
+        <WebLink
+          url={footnoteElement.url}
+          className="weblink"
+          linkObj={footnoteElement.text}
+        />
+      </div>
+    )
   })
 
   // Formatted blog post
@@ -78,18 +91,16 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         width="100%"
       />
       <div className="bp-body">{postBody}</div>
+      <div className="bp-footnotes-container">{postFootnotes}</div>
     </div>
   )
 
   return (
-    <>
-      <div className="bp-navlink-container">
-        <NavLinkUpRoute linkObj="&larr; back to blog" />
-      </div>
+    <div className="project-categories-wrapper">
       {blogPost}
       <div className="bp-navlink-container">
         <NavLinkUpRouteTop linkObj="&larr; back to blog" />
       </div>
-    </>
+    </div>
   )
 }

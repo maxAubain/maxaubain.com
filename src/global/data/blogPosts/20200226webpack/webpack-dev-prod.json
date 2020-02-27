@@ -32,7 +32,14 @@
       "paragraph": "This is a post paragraph3. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
     },
     {
-      "quote": "Disclosure: all media (e.g. images, logos, brand names, etc.) and statements referencing webpack (TM) are intended for use in accordance with OpenJS policies (https://openjsf.org/wp-content/uploads/sites/84/2019/10/OpenJS-Foundation-Trademark-Policy-2019-10-22.pdf)."
+      "quote": "ments referencing wplomark-Policy-2019-10-22.pdf)."
+    }
+  ],
+  "footnotes": [
+    {
+      "number": 1,
+      "text": "Media (e.g. images, logos, brand names, etc.) and statements referencing webpack (TM) are intended for use in this post in accordance with OpenJS policies.",
+      "url": "https://openjsf.org/wp-content/uploads/sites/84/2019/10/OpenJS-Foundation-Trademark-Policy-2019-10-22.pdf"
     }
   ]
 }
