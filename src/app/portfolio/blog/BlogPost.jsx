@@ -1,18 +1,23 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { NavLinkUpRoute } from '../../../global/components/NavLinkUpRoute'
+import { NavLinkUpRouteTop } from '../../../global/components/NavLinkUpRouteTop'
 
-export const BlogPost = ({ blogPostsData }) => {
+export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   // Extract blog post data from array of blog posts by blogPostId
   let { blogPostId } = useParams()
-  const getPost = blogPostsData => {
-    for (let iBlogPosts = 0; iBlogPosts < blogPostsData.length; iBlogPosts++) {
-      if (blogPostsData[iBlogPosts].relPath == `/${blogPostId}`) {
-        return blogPostsData[iBlogPosts]
-      }
+  const blogPostDataPath = blogPostsList.map(post => {
+    if (post.id === blogPostId) {
+      return blogPostsDataPath + post.path + '/' + post.id
     }
-  }
-  const post = getPost(blogPostsData)
+  })[0]
+  const post = require('../../../' + blogPostDataPath)
+
+  const blogPostFolderPath = blogPostsList.map(post => {
+    if (post.id === blogPostId) {
+      return blogPostsDataPath + post.path
+    }
+  })[0]
 
   // Date object
   let date
@@ -25,14 +30,14 @@ export const BlogPost = ({ blogPostsData }) => {
       ))
 
   // Render blog post body comprising quotes, images, and paragraphs
-  let returnKey = -1
+  let divKey = -1
   const postBody = post.body.map(bodyElement => {
-    returnKey = returnKey + 1
+    divKey = divKey + 1
     let hashKey = Object.keys(bodyElement)[0]
     switch (hashKey) {
       case 'image':
-        return (
-          <div className="bp-image-container" key={returnKey}>
+        return bodyElement.image.src === '' ? null : (
+          <div className="bp-image-container" key={divKey}>
             <img
               src={require(`${bodyElement.image.src}`)}
               alt={bodyElement.image.alt}
@@ -41,15 +46,16 @@ export const BlogPost = ({ blogPostsData }) => {
             <div className="bp-image-caption">{bodyElement.image.caption}</div>
           </div>
         )
+
       case 'paragraph':
         return (
-          <div className="bp-paragraph-container" key={returnKey}>
+          <div className="bp-paragraph-container" key={divKey}>
             <p>{bodyElement.paragraph}</p>
           </div>
         )
       case 'quote':
         return (
-          <div className="bp-quote-container" key={returnKey}>
+          <div className="bp-quote-container" key={divKey}>
             <p>{bodyElement.quote}</p>
           </div>
         )
@@ -64,7 +70,10 @@ export const BlogPost = ({ blogPostsData }) => {
       <div className="bpp-date">{date}</div>
       <img
         className="bp-header-image"
-        src={require(`${post.header.image.src}`)}
+        src={require('../../../' +
+          blogPostFolderPath +
+          '/' +
+          post.header.image.src)}
         alt={post.header.image.alt}
         width="100%"
       />
@@ -78,6 +87,9 @@ export const BlogPost = ({ blogPostsData }) => {
         <NavLinkUpRoute linkObj="&larr; back to blog" />
       </div>
       {blogPost}
+      <div className="bp-navlink-container">
+        <NavLinkUpRouteTop linkObj="&larr; back to blog" />
+      </div>
     </>
   )
 }

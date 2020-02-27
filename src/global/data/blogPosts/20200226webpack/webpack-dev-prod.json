@@ -1,0 +1,38 @@
+{
+  "header": {
+    "date": {
+      "post": "Feb. xx, 2020",
+      "update": ""
+    },
+    "title": {
+      "main": "Using webpack as a utility for development and production",
+      "subtitle": "Examining options for a single page application, and more"
+    },
+    "image": {
+      "src": "img/webpack-logo.png",
+      "alt": "webpack-logo"
+    }
+  },
+  "body": [
+    {
+      "paragraph": "This is a post paragraph1. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+    },
+    {
+      "image": {
+        "src": "",
+        "alt": "alt-text",
+        "width": "",
+        "caption": "Social media preview"
+      }
+    },
+    {
+      "paragraph": "This is a post paragraph2. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+    },
+    {
+      "paragraph": "This is a post paragraph3. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+    },
+    {
+      "quote": "Disclosure: all media (e.g. images, logos, brand names, etc.) and statements referencing webpack (TM) are intended for use in accordance with OpenJS policies (https://openjsf.org/wp-content/uploads/sites/84/2019/10/OpenJS-Foundation-Trademark-Policy-2019-10-22.pdf)."
+    }
+  ]
+}

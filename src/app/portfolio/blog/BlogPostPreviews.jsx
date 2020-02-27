@@ -1,11 +1,17 @@
 import React from 'react'
 import { BlogPostPreview } from './BlogPostPreview'
 
-export const BlogPostPreviews = ({ blogPostsData }) => {
-  const blogPostPreviews = blogPostsData.map(post => {
+export const BlogPostPreviews = ({ blogPostsList, blogPostsDataPath }) => {
+  const blogPostPreviews = blogPostsList.map(post => {
+    let blogPostDataPath = blogPostsDataPath + post.path
+    let blogPostData = require('../../../' + blogPostDataPath + '/' + post.id)
     return (
       <div key={post.id}>
-        <BlogPostPreview post={post} />
+        <BlogPostPreview
+          blogPostData={blogPostData}
+          blogPostDataPath={blogPostDataPath}
+          postId={post.id}
+        />
       </div>
     )
   })

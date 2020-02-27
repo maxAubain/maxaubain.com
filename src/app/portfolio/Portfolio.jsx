@@ -11,7 +11,7 @@ import { Featured } from './featured/Featured'
 import { Blog } from './blog/Blog'
 import { Applications } from './applications/Applications'
 import featuredContentData from '../../global/data/featured-content'
-import blogPostsData from '../../global/data/blog-posts'
+import blogPostsData from '../../global/data/blogPosts/blog-posts-list'
 import applicationsData from '../../global/data/applications'
 
 const routerParams = {
