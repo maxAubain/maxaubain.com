@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, useRouteMatch } from 'react-router-dom'
 
-export const BlogPostPreview = ({ blogPostData }) => {
+export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   // Date element with 'posted' and conditional 'revised' values
   let date
   blogPostData.header.date.update === ''
@@ -45,12 +45,21 @@ export const BlogPostPreview = ({ blogPostData }) => {
       <div className="bpp-title">{blogPostData.header.title.main}</div>
       <div className="bpp-subtitle">{blogPostData.header.title.subtitle}</div>
       <div className="bpp-date">{date}</div>
+      <img
+        className="bp-header-image"
+        src={require('../../../' +
+          blogPostDataPath +
+          '/' +
+          blogPostData.header.image.src)}
+        alt={blogPostData.header.image.alt}
+        width="100%"
+      />
       <p className="bpp-body">{getFirstParagraph(blogPostData.body)}</p>
       <p className="bpp-body second-paragraph">
         {getSecondParagraph(blogPostData.body)}
       </p>
       <div className="bpp-navlink-container">
-        <NavLink to={`${url}${blogPostData.relPath}`} className="navlink">
+        <NavLink to={`${url}/${postId}`} className="navlink">
           read more &rarr;
         </NavLink>
       </div>
