@@ -1,12 +1,12 @@
 {
   "header": {
     "date": {
-      "post": "Feb. xx, 2020",
+      "post": "Feb. 26, 2020",
       "update": ""
     },
     "title": {
-      "main": "Using webpack as a utility for development and production",
-      "subtitle": "Examining options for a single page application, and more"
+      "main": "Webpack - a utility for development and production",
+      "subtitle": "A review of functionality and value added for a React SPA in NodeJS"
     },
     "image": {
       "src": "img/webpack-logo.png",
