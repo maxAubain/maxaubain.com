@@ -12,18 +12,7 @@ import "./global/css/project-card"
 import "./global/css/profile"
 import "./global/css/resume"
 import "./global/css/social-media"
-import WebFont from "webfontloader"
+import './global/fonts/arial'
 
-// Installs custom google font
-WebFont.load({
-  google: {
-    families: ["Muli"]
-  }
-});
-
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("app")
-);
+ReactDOM.render(<BrowserRouter> <App /> </BrowserRouter>,
+  document.getElementById("app"));
