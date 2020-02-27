@@ -42,10 +42,10 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
 
   let { url } = useRouteMatch()
   return (
-    <div className="bpp-container">
-      <div className="bpp-title">{blogPostData.header.title.main}</div>
-      <div className="bpp-subtitle">{blogPostData.header.title.subtitle}</div>
-      <div className="bpp-date">{date}</div>
+    <div className="bp-container">
+      <div className="bp-title">{blogPostData.header.title.main}</div>
+      <div className="bp-subtitle">{blogPostData.header.title.subtitle}</div>
+      <div className="bp-date">{date}</div>
       <img
         className="bp-header-image"
         src={require('../../../' +
@@ -55,8 +55,8 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
         alt={blogPostData.header.image.alt}
         width="100%"
       />
-      <p className="bpp-body">{getFirstParagraph(blogPostData.body)}</p>
-      <p className="bpp-body second-paragraph">
+      <p className="bpp-paragraph">{getFirstParagraph(blogPostData.body)}</p>
+      <p className="bpp-paragraph second-paragraph">
         {getSecondParagraph(blogPostData.body)}
       </p>
       <div className="bpp-navlink-container">

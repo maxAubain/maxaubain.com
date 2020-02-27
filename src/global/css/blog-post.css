@@ -3,6 +3,22 @@
   margin: 10px 0 20px 0;
 }
 
+.bp-title {
+  font-size: 32px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-subtitle {
+  font-size: 20px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-date {
+  font-size: 14px;
+  color: rgb(112, 128, 144);
+  padding: 4px 8px 4px 8px;
+}
+
 .bp-header-image {
   max-width: 100%;
 }
@@ -40,7 +56,6 @@
   .bp-container {
     max-width: 836px;
     border-radius: 5px;
-    margin-left: 10px;
   }
 
   .bp-body {

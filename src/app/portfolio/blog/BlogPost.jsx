@@ -65,9 +65,9 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   // Formatted blog post
   const blogPost = (
     <div className="bp-container">
-      <div className="bpp-title">{post.header.title.main}</div>
-      <div className="bpp-subtitle">{post.header.title.subtitle}</div>
-      <div className="bpp-date">{date}</div>
+      <div className="bp-title">{post.header.title.main}</div>
+      <div className="bp-subtitle">{post.header.title.subtitle}</div>
+      <div className="bp-date">{date}</div>
       <img
         className="bp-header-image"
         src={require('../../../' +
