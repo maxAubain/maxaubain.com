@@ -15,7 +15,25 @@
   },
   "body": [
     {
-      "paragraph": "This is a post paragraph1. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
+      "paragraph": "webpack[1] is a mature JS library.  its a utility, like a utility knife is useful from the kitchen, to the garage, to work"
+    },
+    {
+      "quote": "If you have never used webpack, there are two concepts that will aid in understanding the toolset it offers."
+    },
+    {
+      "paragraph": "1. It has development and production modes, which have have vastly different or even opposing objectives."
+    },
+    {
+      "paragraph": "2. It is a community developed library, with many plugins to add niche functionality.  This is good, because it offers plugins for what people use and find high value.  It also make it as light weight.  However, it can also be disorienting for newcomers who are unfamiliar with the development history of the library.  One has to get granular to really understand its value."
+    },
+    {
+      "paragraph": "I will describe what I have learned and high level communication about how I have used it.  There are many detailed examples in docs and blogs."
+    },
+    {
+      "paragraph": "section divider"
+    },
+    {
+      "paragraph": "development : "
     },
     {
       "image": {
@@ -24,15 +42,6 @@
         "width": "",
         "caption": "Social media preview"
       }
-    },
-    {
-      "paragraph": "This is a post paragraph2. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
-    },
-    {
-      "paragraph": "This is a post paragraph3. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph. This is a post paragraph."
-    },
-    {
-      "quote": "ments referencing wplomark-Policy-2019-10-22.pdf)."
     }
   ],
   "footnotes": [
