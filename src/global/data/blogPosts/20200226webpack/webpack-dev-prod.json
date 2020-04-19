@@ -27,6 +27,30 @@
       "paragraph": "While Webpack has many different types of tools, they all support static asset management.  What are static assets?  Fonts, stylesheets, images, pdfs, even React components... any file, element, or structure in the webpage DOM that is not expected to mutate once loaded on the webpage; a front end (connected to a REST API) is comprised of these static assets. The default configuration of a webpage is to load the static assets in the order in which they 'hit' the browser, which can lead to long or messy-looking page loads -- a true eyesore and sure way to lose the visitor's confidence.  The key concept to keep in mind when thinking about how to use Webpack is that it lets the developer customize the grouping of assets so that they are rendered in memory efficient and user friendly ways."
     },
     {
+      "image": {
+        "src": "img/unbundled.png",
+        "alt": "unbundled-app",
+        "width": "300px",
+        "caption": "Unbundled application asset import flow."
+      }
+    },
+    {
+      "image": {
+        "src": "img/bundled.png",
+        "alt": "bundled-app",
+        "width": "300px",
+        "caption": "Bundled application asset import flow."
+      }
+    },
+    {
+      "image": {
+        "src": "img/codesplit.png",
+        "alt": "unbundled-app",
+        "width": "300px",
+        "caption": "Codesplit application asset import flow."
+      }
+    },
+    {
       "divide": ""
     },
     {
@@ -40,14 +64,6 @@
     },
     {
       "paragraph": "Webpack immediately offers two benefits with its 'standard' configuration.  First, it uses minimization algorithms (essentially removing unsed characters in the code) so that each bundled asset is reduced in size, thus browser load time can be reduced.  Second, it allows for configuration of bundles, enabling certain assets to be bundled, and therefore loaded, together.  This second feature enables "
-    },
-    {
-      "image": {
-        "src": "",
-        "alt": "alt-text",
-        "width": "",
-        "caption": "Social media preview"
-      }
     }
   ],
   "footnotes": [

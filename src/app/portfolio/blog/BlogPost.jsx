@@ -39,7 +39,10 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         return bodyElement.image.src === '' ? null : (
           <div className="bp-image-container" key={divKey}>
             <img
-              src={require(`${bodyElement.image.src}`)}
+              src={require('../../../' +
+                blogPostFolderPath +
+                '/' +
+                bodyElement.image.src)}
               alt={bodyElement.image.alt}
               width={bodyElement.image.width}
             />
