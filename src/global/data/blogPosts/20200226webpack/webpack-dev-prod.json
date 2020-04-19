@@ -33,7 +33,7 @@
       "paragraph": "I will describe what I have learned and high level communication about how I have used it.  There are many detailed examples in docs and blogs."
     },
     {
-      "paragraph": "section divider"
+      "divide": ""
     },
     {
       "paragraph": "DEVELOPMENT"
@@ -61,7 +61,7 @@
     },
     {
       "number": 2,
-      "text": "Using webpack to split optimized assets into chunks for faster browser reload",
+      "text": "Using webpack to split optimized assets into chunks for faster browser reload.",
       "url": "https://medium.com/hackernoon/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758"
     }
   ]

@@ -29,7 +29,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         </>
       ))
 
-  // Render blog post body comprising quotes, images, and paragraphs
+  // Render blog post body comprising content and styles
   let divKey = -1
   const postBody = post.body.map(bodyElement => {
     divKey = divKey + 1
@@ -56,6 +56,12 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         return (
           <div className="bp-quote-container" key={divKey}>
             <p>{bodyElement.quote}</p>
+          </div>
+        )
+      case 'divide':
+        return (
+          <div className="bp-divide-container" key={divKey}>
+            <p>&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;</p>
           </div>
         )
     }
