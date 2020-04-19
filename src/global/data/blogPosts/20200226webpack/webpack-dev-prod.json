@@ -5,8 +5,8 @@
       "update": ""
     },
     "title": {
-      "main": "Webpack - a utility for development and production",
-      "subtitle": "A review of functionality and value added for a React SPA in NodeJS"
+      "main": "Webpack - a utility for managing front end static assets",
+      "subtitle": "A review of functionality and value added, with examples from a React app"
     },
     "image": {
       "src": "img/webpack-logo.png",
@@ -14,9 +14,6 @@
     }
   },
   "body": [
-    {
-      "paragraph": "INTRODUCTION"
-    },
     {
       "paragraph": "Webpack [1] is an essential library used in the Node ecosystem, and integral with the optimizing and 'packaging' of static assets in the front end.  The library is a utility -- as in, it has various, but separate, uses throughout the application.  The value of its multiple functions are dependent on the context in which they are used, much like the various 'blades' of Swiss Army Knife are useful in opening cardboard boxes, filing nails, or unfastening a screw."
     },
