@@ -1,6 +1,5 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { NavLinkUpRoute } from '../../../global/components/NavLinkUpRoute'
 import { NavLinkUpRouteTop } from '../../../global/components/NavLinkUpRouteTop'
 import { WebLink } from '../../../global/components/WebLink'
 
