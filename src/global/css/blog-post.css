@@ -45,11 +45,15 @@
 }
 
 .bp-quote-container {
-  font-style: italic;
   margin: 32px 15% 32px 15%;
   padding: 0 8px 0 8px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-left: 3px solid rgb(112, 128, 144);
+}
+
+.bp-quote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 150%;
 }
 
 .bp-divide-container {

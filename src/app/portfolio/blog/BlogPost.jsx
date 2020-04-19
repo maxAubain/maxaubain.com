@@ -55,7 +55,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       case 'quote':
         return (
           <div className="bp-quote-container" key={divKey}>
-            <p>{bodyElement.quote}</p>
+            <p className="bp-quote">{bodyElement.quote}</p>
           </div>
         )
       case 'divide':
