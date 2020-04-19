@@ -24,10 +24,13 @@
       "quote": "The value of [Webpack's] multiple functions are dependent on the context in which they are used, much like the various 'blades' of Swiss Army Knife are useful in opening cardboard boxes, filing nails, or unfastening a screw."
     },
     {
-      "paragraph": "The two contexts which drive the configuration of Webpack are how the developer plans to use it development mode or production mode.  For example, an asset tree can be exported in a development build, which can help track and troubleshoot the location and hierarchy of assets.  However, revealing the asset tree in production would a major security vulnuerability.  Some of the fundamental Webpack tools and the contexts for their implementation will be discussed in detail later on."
+      "paragraph": "The two contexts which drive the configuration of Webpack are how the developer plans to use it in development mode or production mode.  For example, an asset tree can be exported for review in a development build, which can help track and troubleshoot the location and hierarchy of assets.  However, revealing the asset tree in production would a critical security vulnuerability.  Some of the fundamental Webpack tools and the contexts for their implementation will be discussed in detail later on."
     },
     {
-      "paragraph": "While Webpack has many different types of tools, they all support static asset management.  What are static assets?  Fonts, stylesheets, images, pdfs, even React components... any file, element, or structure in the webpage DOM that is not expected to mutate once loaded on the webpage.  In the next two sections I will discuss how Webpack manages assets in development and production for website front end optimization and improvement of developer quality of life."
+      "paragraph": "While Webpack has many different types of tools, they all support static asset management.  What are static assets?  Fonts, stylesheets, images, pdfs, even React components... any file, element, or structure in the webpage DOM that is not expected to mutate once loaded on the webpage.  The key concept to keep in mind when thinking about how to use Webpack is that a front end (connected to a REST API) is comprised of these static assets and the default configuration is to load them in the order in which they 'hit' the browser, which can lead to long or messy-looking page loads -- a true eyesore and sure way to lose the visitor's confidence."
+    },
+    {
+      "paragraph": "In the next two sections I will discuss how Webpack manages assets in development and production for website front end optimization and improvement of the developer's quality of life."
     },
     {
       "divide": ""
