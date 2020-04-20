@@ -101,15 +101,11 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       />
       <div className="bp-body">{postBody}</div>
       <div className="bp-footnotes-container">{postFootnotes}</div>
-    </div>
-  )
-
-  return (
-    <div className="project-categories-wrapper">
-      {blogPost}
       <div className="bp-navlink-container">
-        <NavLinkUpRouteTop linkObj="&larr; back to blog" />
+        <NavLinkUpRouteTop linkObj="&larr; back to blog posts" />
       </div>
     </div>
   )
+
+  return <div className="project-categories-wrapper">{blogPost}</div>
 }
