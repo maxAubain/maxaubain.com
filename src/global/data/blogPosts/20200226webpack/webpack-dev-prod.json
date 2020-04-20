@@ -6,7 +6,7 @@
     },
     "title": {
       "main": "Webpack - a utility for managing front end static assets",
-      "subtitle": "A review of functionality and value added, with examples from a React app"
+      "subtitle": "A review of functionality and value added"
     },
     "image": {
       "src": "img/webpack-logo.png",
@@ -72,7 +72,24 @@
       "divide": ""
     },
     {
-      "paragraph": "On the development mode side of using Webpack, I have found a number of tools that greatly improve my quality of life as a developer.  For example, as the patterns used to delay or accerlate asset loading gets complex, sometimes it is useful to perform a 'bundle analysis' []. "
+      "paragraph": "On the development mode side of using Webpack, I have found a number of tools that greatly improve my quality of life as a developer.  As a first example, as the patterns used to delay or accelerate asset loading gets complex, sometimes it is useful to perform a 'bundle analysis' [9] to monitor bundle file sizes as shown in the example below."
+    },
+    {
+      "image": {
+        "src": "img/bundle-list.png",
+        "alt": "bundle-list",
+        "width": "100%",
+        "caption": "I have bundled the Node modules for caching optimization, but have yet to optimize my main application (as Webpack warns with '[big]'!)."
+      }
+    },
+    {
+      "paragraph": "Secondly, Webpack also provides a development server that can 'hot' load [10] a React app, such that any changes to the code sensed by the development server, in real time, will reflect in the browser without having to reload the browser or restart the server.  It is hard to understate the convenience of this feature!"
+    },
+    {
+      "paragraph": "A third feature I found useful lies on the DevOps side, in my situation where the bundle file names become auto-generated with hashes or dates.  Each bundle must be included in `index.html` via a script tag, like any javascript file, but it becomes impossibly time-consuming to add each bundle manually after a new build.  Luckily, the Webpack community is active and skilled, and so a quick setup of the HtmlWebpackPlugin [11] generates the html file with all of the needed header and script tags, and the CleanWebpackPlugin [12] removes outdated bundles."
+    },
+    {
+      "paragraph": "In conclusion, Webpack is a mature, well maintained JS library that can help manage front end assets.  If you would like to see an example of how many of these features are implemented in a React single-page app, please visit my github page [13]."
     }
   ],
   "footnotes": [
@@ -120,6 +137,26 @@
       "number": 9,
       "text": "Webpack: bundle analysis.",
       "url": "https://webpack.js.org/guides/code-splitting/#bundle-analysis"
+    },
+    {
+      "number": 10,
+      "text": "Webpack: hot module replacement.",
+      "url": "https://webpack.js.org/concepts/hot-module-replacement/"
+    },
+    {
+      "number": 11,
+      "text": "Webpack: auto-generate html file plugin.",
+      "url": "https://webpack.js.org/plugins/html-webpack-plugin/"
+    },
+    {
+      "number": 12,
+      "text": "Github: /dist folder cleaner plugin for webpack.",
+      "url": "https://github.com/johnagan/clean-webpack-plugin"
+    },
+    {
+      "number": 13,
+      "text": "Github: example of Webpack configuration file for this website.",
+      "url": "https://github.com/maxAubain/maxaubain.com/blob/master/webpack.config.js"
     }
   ]
 }
