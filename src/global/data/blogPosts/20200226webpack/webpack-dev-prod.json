@@ -8,6 +8,7 @@
       "main": "Webpack - a utility for managing front end static assets",
       "subtitle": "A review of functionality and value added"
     },
+    "author": "Max Aubain",
     "image": {
       "src": "img/webpack-logo.png",
       "alt": "webpack-logo"

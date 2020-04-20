@@ -89,6 +89,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       <div className="bp-title">{post.header.title.main}</div>
       <div className="bp-subtitle">{post.header.title.subtitle}</div>
       <div className="bp-date">{date}</div>
+      <div className="bp-author">Written by {post.header.author}</div>
       <img
         className="bp-header-image"
         src={require('../../../' +

@@ -19,6 +19,11 @@
   padding: 4px 8px 4px 8px;
 }
 
+.bp-author {
+  font-size: 14px;
+  padding: 4px 8px 4px 8px;
+}
+
 .bp-header-image {
   max-width: 100%;
 }
@@ -64,7 +69,7 @@
 }
 
 .bp-footnote-container {
-  padding: 0 0 20px 0;
+  padding: 0 0 5px 0;
 }
 
 .bp-footnotes-container {
