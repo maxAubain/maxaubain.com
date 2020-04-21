@@ -90,7 +90,7 @@
       "paragraph": "A third feature I found useful lies on the DevOps side, in my situation where the bundle file names become auto-generated with hashes or dates.  Each bundle must be included in `index.html` via a script tag, like any javascript file, but it becomes impossibly time-consuming to add each bundle manually after a new build.  Luckily, the Webpack community is active and skilled, and so a quick setup of the HtmlWebpackPlugin [11] generates the html file with all of the needed header and script tags, and the CleanWebpackPlugin [12] removes outdated bundles."
     },
     {
-      "paragraph": "In conclusion, Webpack is a mature, well maintained JS library that can help manage front end assets.  If you would like to see an example of how many of these features are implemented in a React single-page app, please visit my github page [13]."
+      "paragraph": "In conclusion, Webpack is a mature, well maintained JS library that can help manage front end assets.  If you would like to see an example of how many of these features are implemented in a React single-page app, please visit my github page and check out the Webpack configuration file, `webpack.config.js` [13]."
     }
   ],
   "footnotes": [
