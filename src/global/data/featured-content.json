@@ -1,0 +1,54 @@
+[
+  {
+    "id": "F4",
+    "category": "Blog post",
+    "date_posted": "Feb 26, 2020",
+    "title": "Managing static assets",
+    "image": {
+      "path": "./img/webpack_logo.png",
+      "alt": "webpack-logo-image"
+    },
+    "links": {
+      "live site": "https://www.maxaubain.com/portfolio/blog/webpack-static-assets"
+    }
+  },
+  {
+    "id": "F3",
+    "category": "Desktop Browser App",
+    "date_posted": "Jan 24, 2020",
+    "title": "React Todo List",
+    "image": {
+      "path": "./img/todo_list.png",
+      "alt": "todo-list-image"
+    },
+    "links": {
+      "live site": "https://todo-list-client.netlify.com/"
+    }
+  },
+  {
+    "id": "F2",
+    "category": "Medium Article",
+    "date_posted": "Jan 21, 2020",
+    "title": "Pull Request Templates",
+    "image": {
+      "path": "./img/pull_request_templates.png",
+      "alt": "pull-request-templates-image"
+    },
+    "links": {
+      "live site": "https://medium.com/@maxaubain/git-pull-requests-with-templates-and-agile-in-mind-2cf73c760911"
+    }
+  },
+  {
+    "id": "F1",
+    "category": "Desktop Browser App",
+    "date_posted": "Jan 17, 2020",
+    "title": "Browsershot",
+    "image": {
+      "path": "./img/browsershot.png",
+      "alt": "browsershot-image"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/"
+    }
+  }
+]

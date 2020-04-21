@@ -1,0 +1,286 @@
+[
+  {
+    "id": "A10",
+    "title": "Browsershot",
+    "image": {
+      "path": "./img/camera.png",
+      "alt": "camera-icon"
+    },
+    "descriptionShort": "Browser screenshots provided with a SaaS platform.",
+    "descriptionFull": [
+      "This application generates, stores, and shows images taken of webpages designated by a user.  Image files are stored on the hosting platform using the Rails framework Active Storage--a feature similar to Amazon's S3 object storage service."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku, Heroku Buildpacks",
+      "Client-side": "HTML5, CSS3",
+      "Server-side": "Rails, Rspec, Ruby_webshot",
+      "Data": "PostgreSQL, Rails Active Storage",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://browsershot-dashboard.herokuapp.com/",
+      "repository & README": "https://github.com/maxAubain/browsershot",
+      "PR development log": "https://github.com/maxAubain/browsershot/pulls?q=is%3Apr+is%3Aclosed"
+    }
+  },
+  {
+    "id": "A9",
+    "title": "React Todo List",
+    "image": {
+      "path": "./img/checkbox.png",
+      "alt": "checkbox-icon"
+    },
+    "descriptionShort": "Todo list app with dynamic features.",
+    "descriptionFull": [
+      "This application is a dynamic, todo list tool.  Originally forked from a Sellpy repository, I implemented improvements that include autosaving, due dates, 'time remaining' calculator, checkbox completion, data persistence with a back-end, and client/API hosting.",
+      "Acceptance tests are scripted with the Cypress testing framework to verify features in the view."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "REST, CORS",
+      "Hosting tools": "Heroku, Netlify",
+      "Client-side": "React, NPM, Axios, Material-UI, HTML5, CSS3, Cypress",
+      "Server-side": "Node, Express, Body Parser, CORS",
+      "Data": "Mutatable vars",
+      "Continuous deployment / integration": "Github-Netlify Checks",
+      "Version control": "Git, Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://todo-list-client.netlify.com/",
+      "repository & README": "https://github.com/maxAubain/todo_javascript_stack",
+      "PR development log": "https://github.com/maxAubain/todo_javascript_stack/pulls?q=is%3Apr+is%3Aclosed",
+      "Sellpy repository": "https://github.com/sellpy/fullstack-sandbox"
+    }
+  },
+  {
+    "id": "A8",
+    "title": "maxaubain.com",
+    "image": {
+      "path": "./img/favicon.png",
+      "alt": "portfolio-icon"
+    },
+    "descriptionShort": "My developer portfolio website.",
+    "descriptionFull": [
+      "This website is a single-page, client-side application implemented with React.",
+      "Notable features include dynamic layouts for mobile displays, routing with React Router, email messaging with the Formspree microservice, website copy is stored in JSON files and passed to React components as 'props', and a script to procedurally populate projects' 'technology' section with external links."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "Single Page App",
+      "Hosting tools": "Netlify",
+      "Client-side": "React, React Router, NPM, Axios, HTML5, CSS3, Formspree",
+      "Server-side": "None",
+      "Data": "JSON",
+      "Continuous deployment / integration": "Github-Netlify Checks",
+      "Version control": "Git, Github",
+      "Project management tools": "Jira"
+    },
+    "links": {
+      "live site": "https://www.maxaubain.com/",
+      "repository & README": "https://github.com/maxAubain/maxaubain.com"
+    }
+  },
+  {
+    "id": "A7",
+    "title": "Gnosis: Science News",
+    "image": {
+      "path": "./img/news.png",
+      "alt": "news-icon"
+    },
+    "descriptionShort": "Research news aggregator site.",
+    "descriptionFull": [
+      "Gnosis was planned and constructed by a team comprising myself and five other junior developers.",
+      "The application itself is a science news aggregation site with interconnected user roles for university 'subscribers', research group 'publishers', and member 'readers'.",
+      "Please refer to the 'client-side' documentation for detailed use of the app and developer credits."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, CORS",
+      "Hosting tools": "Heroku, Netlify",
+      "Client-side": "React, Redux, NPM, Axios, Semantic-UI, HTML5, CSS3, Cypress, Enzyme",
+      "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "Semaphore CI, Coveralls",
+      "Version control": "Git, Github",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://gnosis-app.netlify.com",
+      "client-side repository & README": "https://github.com/CA-ma/gnosis-client#gnosis-app",
+      "api-side repository & README": "https://github.com/CA-ma/gnosis-api",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2384164"
+    }
+  },
+  {
+    "id": "A6",
+    "title": "Gnosis Mobile App",
+    "image": {
+      "path": "./img/news.png",
+      "alt": "news-icon"
+    },
+    "descriptionShort": "Gnosis 'repackaged' for iOS mobile devices.",
+    "descriptionFull": [
+      "Browser applications can be 'repackaged' as mobile applications, for example by using the Capacitor library within the Ionic framework.",
+      "As such, the React client of Gnosis has been updated to an iOS mobile application and can be run locally using Apple's Xcode mobile app emulator."
+    ],
+    "tech": {
+      "User interface": "Xcode",
+      "Architectural patterns": "MVC, REST, CORS",
+      "Hosting tools": "Local only",
+      "Client-side": "React, Redux, NPM, Ionic, Capacitor, Axios, Semantic-UI, HTML5, CSS3",
+      "Server-side": "Rails, Rspec, CORS, Stripe, Devise Token Auth",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "repository & README": "https://github.com/CA-ma/gnosis-client/tree/ionic_mobile#gnosis-app"
+    }
+  },
+  {
+    "id": "A5",
+    "title": "Articles Blog",
+    "image": {
+      "path": "./img/blog.png",
+      "alt": "blog-icon"
+    },
+    "descriptionShort": "Classic blog with CRUD methods.",
+    "descriptionFull": [
+      "This application demonstrates the Create, Read, Update, and Delete (CRUD) methods that are fundamental to RESTful APIs, in conjunction with user authentication functionality.",
+      "Please feel free to visit the live site, sign up, and leave a post or comment of your own."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku",
+      "Client-side": "HTML5, CSS3",
+      "Server-side": "Rails, Rspec, Cucumber, Devise",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://an-article-posting-site.herokuapp.com/",
+      "repository & README": "https://github.com/CA-ma/rails_bdd#full-stack-application-article-publishing-site"
+    }
+  },
+  {
+    "id": "A4",
+    "title": "Kibbles 'n Bites",
+    "image": {
+      "path": "./img/food.png",
+      "alt": "food-icon"
+    },
+    "descriptionShort": "A luxury pet food menu.",
+    "descriptionFull": [
+      "This API, co-developed two other bootcamp students, shows a restaurant menu in the view with a procedurally generated category and product layout that is easily updatable, for example by a chef.",
+      "The Cartify gem/library is implemented to simulate the flow of placing an online order."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "MVC, REST, Monolithic API",
+      "Hosting tools": "Heroku",
+      "Client-side": "HTML5, CSS3, Haml",
+      "Server-side": "Rails, Rspec, Cucumber, Cartify",
+      "Data": "PostgreSQL",
+      "Continuous deployment / integration": "Semaphore CI, Coveralls",
+      "Version control": "Git, Github",
+      "Project management tools": "Pivotal Tracker"
+    },
+    "links": {
+      "live site": "https://rails-slow-food.herokuapp.com/",
+      "repository & README": "https://github.com/CA-ma/the_kombuchas-slowfood-june-2019/tree/master#full-stack-application-kibbles-n-bites-pet-restaurant-site",
+      "project management dashboard": "https://www.pivotaltracker.com/n/projects/2360231"
+    }
+  },
+  {
+    "id": "A3",
+    "title": "Rock-Paper-Scissors",
+    "image": {
+      "path": "./img/hand.png",
+      "alt": "rps-icon"
+    },
+    "descriptionShort": "The classic childhood game.",
+    "descriptionFull": [
+      "This application returns a calculated Body Mass Index (BMI), defined as the ratio of height to weight.",
+      "React components are used to organize form field inputs and display outputs, and modules perform client-side calculations."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Netlify",
+      "Client-side": "jQuery, NPM, HTML5, CSS3, Mocha",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://ca-ma-rps.netlify.com/",
+      "repository & README": "https://github.com/CA-ma/RPS_challenge_npm#front-end-application-rock-paper-scissors-rps-game"
+    }
+  },
+  {
+    "id": "A2",
+    "title": "React BMI Calculator",
+    "image": {
+      "path": "./img/calculator.png",
+      "alt": "calculator-icon"
+    },
+    "descriptionShort": "Simple Body Mass Index calculator.",
+    "descriptionFull": [
+      "This application returns a calculated Body Mass Index (BMI), defined as the ratio of height to weight.",
+      "React components are used to organize form field inputs and display outputs, and modules perform client-side calculations."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "Single Page App",
+      "Hosting tools": "Netlify",
+      "Client-side": "React, NPM, HTML5, CSS3, Cypress, Enzyme",
+      "Server-side": "None",
+      "Data": "None",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://bmi-calc-react.netlify.com",
+      "repository & README": "https://github.com/CA-ma/challenge_bmi_calc_react#front-end-application-body-mass-index-calculator"
+    }
+  },
+  {
+    "id": "A1",
+    "title": "Address Book",
+    "image": {
+      "path": "./img/contact.png",
+      "alt": "planner-icon"
+    },
+    "descriptionShort": "UI for digitally storing contacts.",
+    "descriptionFull": [
+      "The Address Book application implements styles from a content delivery network (CDN) and using session storage in the browser to enable CRUD functionality."
+    ],
+    "tech": {
+      "User interface": "Web Browser",
+      "Architectural patterns": "None",
+      "Hosting tools": "Github-Pages",
+      "Client-side": "NPM, HTML5, CSS3, Cucumber, Semantic-UI",
+      "Server-side": "None",
+      "Data": "sessionStorage",
+      "Continuous deployment / integration": "None",
+      "Version control": "Git, Github",
+      "Project management tools": "None"
+    },
+    "links": {
+      "live site": "https://ca-ma.github.io/address_book_challenge/",
+      "repository & README": "https://github.com/CA-ma/address_book_challenge#front-end-application-address-book"
+    }
+  }
+]

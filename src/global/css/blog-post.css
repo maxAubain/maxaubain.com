@@ -1,0 +1,102 @@
+.bp-container {
+  background-color: white;
+  margin: 10px 0 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bp-title {
+  font-size: 32px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-subtitle {
+  font-size: 20px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-date {
+  font-size: 14px;
+  color: rgb(112, 128, 144);
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-author {
+  font-size: 14px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-header-image {
+  max-width: 100%;
+}
+
+.bp-navlink-container {
+  text-align: left;
+  padding: 7px 0 0 10px;
+}
+
+.bp-image-container {
+  box-sizing: border-box;
+  margin: 20px 16px 40px 16px;
+  text-align: center;
+}
+
+.bp-image-caption {
+  text-align: center;
+  color: rgb(112, 128, 144);
+}
+
+.bp-paragraph-container {
+  margin: 0 8px 0 8px;
+  padding: 0 8px 0 8px;
+}
+
+.bp-quote-container {
+  margin: 32px 15% 32px 15%;
+  padding: 0 8px 0 8px;
+  border-left: 3px solid rgb(112, 128, 144);
+}
+
+.bp-quote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.bp-divide-container {
+  text-align: center;
+  font-size: 72px;
+  color: rgb(112, 128, 144);
+  padding: 10px 0 10px 0;
+}
+
+.bp-footnote-container {
+  padding: 0 0 5px 0;
+}
+
+.bp-footnotes-container {
+  border-top: 1px solid rgb(112, 128, 144);
+  margin: 0 16px 0 16px;
+  padding: 20px 0 0 0;
+}
+
+@media only screen and (min-width: 961px) {
+  .bp-container {
+    max-width: 836px;
+    border-radius: 5px;
+  }
+
+  .bp-body {
+    max-width: 836px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .bp-container {
+    max-width: 100vw;
+  }
+
+  .bp-body {
+    max-width: 100vw;
+  }
+}
