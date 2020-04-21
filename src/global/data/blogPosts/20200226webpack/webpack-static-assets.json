@@ -96,7 +96,7 @@
   "footnotes": [
     {
       "number": 1,
-      "text": "Media (e.g. images, logos, brand names, etc.) and statements referencing webpack (TM) are intended for use in this post in accordance with OpenJS policies.",
+      "text": "Webpack: media (e.g. images, logos, brand names, etc.) and statements referencing webpack (TM) are intended for use in this post in accordance with OpenJS policies.",
       "url": "https://openjsf.org/wp-content/uploads/sites/84/2019/10/OpenJS-Foundation-Trademark-Policy-2019-10-22.pdf"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "number": 4,
-      "text": "Using webpack to split optimized assets into chunks for faster browser reload.",
+      "text": "Hackernoon blog, David Gilbertson: Using webpack to split optimized assets into chunks for faster browser reload.",
       "url": "https://medium.com/hackernoon/the-100-correct-way-to-split-your-chunks-with-webpack-f8a9df5b7758"
     },
     {
