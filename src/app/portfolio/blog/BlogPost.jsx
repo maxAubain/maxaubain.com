@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { NavLinkUpRoute } from '../../../global/components/NavLinkUpRoute'
 import { NavLinkUpRouteTop } from '../../../global/components/NavLinkUpRouteTop'
+import { WebLink } from '../../../global/components/WebLink'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   // Extract blog post data from array of blog posts by blogPostId
@@ -29,7 +29,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         </>
       ))
 
-  // Render blog post body comprising quotes, images, and paragraphs
+  // Render blog post body comprising content and styles
   let divKey = -1
   const postBody = post.body.map(bodyElement => {
     divKey = divKey + 1
@@ -39,14 +39,16 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         return bodyElement.image.src === '' ? null : (
           <div className="bp-image-container" key={divKey}>
             <img
-              src={require(`${bodyElement.image.src}`)}
+              src={require('../../../' +
+                blogPostFolderPath +
+                '/' +
+                bodyElement.image.src)}
               alt={bodyElement.image.alt}
               width={bodyElement.image.width}
             />
             <div className="bp-image-caption">{bodyElement.image.caption}</div>
           </div>
         )
-
       case 'paragraph':
         return (
           <div className="bp-paragraph-container" key={divKey}>
@@ -56,18 +58,38 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       case 'quote':
         return (
           <div className="bp-quote-container" key={divKey}>
-            <p>{bodyElement.quote}</p>
+            <p className="bp-quote">{bodyElement.quote}</p>
+          </div>
+        )
+      case 'divide':
+        return (
+          <div className="bp-divide-container" key={divKey}>
+            <p>&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;</p>
           </div>
         )
     }
   })
 
+  const postFootnotes = post.footnotes.map(footnoteElement => {
+    return (
+      <div className="bp-footnote-container" key={footnoteElement.number}>
+        [{footnoteElement.number}]{' '}
+        <WebLink
+          url={footnoteElement.url}
+          className="weblink"
+          linkObj={footnoteElement.text}
+        />
+      </div>
+    )
+  })
+
   // Formatted blog post
   const blogPost = (
     <div className="bp-container">
-      <div className="bpp-title">{post.header.title.main}</div>
-      <div className="bpp-subtitle">{post.header.title.subtitle}</div>
-      <div className="bpp-date">{date}</div>
+      <div className="bp-title">{post.header.title.main}</div>
+      <div className="bp-subtitle">{post.header.title.subtitle}</div>
+      <div className="bp-date">{date}</div>
+      <div className="bp-author">Written by {post.header.author}</div>
       <img
         className="bp-header-image"
         src={require('../../../' +
@@ -78,18 +100,12 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         width="100%"
       />
       <div className="bp-body">{postBody}</div>
+      <div className="bp-footnotes-container">{postFootnotes}</div>
+      <div className="bp-navlink-container">
+        <NavLinkUpRouteTop linkObj="&larr; back to blog posts" />
+      </div>
     </div>
   )
 
-  return (
-    <>
-      <div className="bp-navlink-container">
-        <NavLinkUpRoute linkObj="&larr; back to blog" />
-      </div>
-      {blogPost}
-      <div className="bp-navlink-container">
-        <NavLinkUpRouteTop linkObj="&larr; back to blog" />
-      </div>
-    </>
-  )
+  return <div className="project-categories-wrapper">{blogPost}</div>
 }

@@ -1,6 +1,29 @@
 .bp-container {
   background-color: white;
   margin: 10px 0 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bp-title {
+  font-size: 32px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-subtitle {
+  font-size: 20px;
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-date {
+  font-size: 14px;
+  color: rgb(112, 128, 144);
+  padding: 4px 8px 4px 8px;
+}
+
+.bp-author {
+  font-size: 14px;
+  padding: 4px 8px 4px 8px;
 }
 
 .bp-header-image {
@@ -14,7 +37,7 @@
 
 .bp-image-container {
   box-sizing: border-box;
-  margin: 0 16px 0 16px;
+  margin: 20px 16px 40px 16px;
   text-align: center;
 }
 
@@ -29,18 +52,38 @@
 }
 
 .bp-quote-container {
-  font-style: italic;
   margin: 32px 15% 32px 15%;
   padding: 0 8px 0 8px;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  border-left: 3px solid rgb(112, 128, 144);
+}
+
+.bp-quote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.bp-divide-container {
+  text-align: center;
+  font-size: 72px;
+  color: rgb(112, 128, 144);
+  padding: 10px 0 10px 0;
+}
+
+.bp-footnote-container {
+  padding: 0 0 5px 0;
+}
+
+.bp-footnotes-container {
+  border-top: 1px solid rgb(112, 128, 144);
+  margin: 0 16px 0 16px;
+  padding: 20px 0 0 0;
 }
 
 @media only screen and (min-width: 961px) {
   .bp-container {
     max-width: 836px;
     border-radius: 5px;
-    margin-left: 10px;
   }
 
   .bp-body {

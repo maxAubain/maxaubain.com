@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink, useRouteMatch } from 'react-router-dom'
+import { useRouteMatch } from 'react-router-dom'
+import { NavLinkTop } from '../../../global/components/NavLinkTop'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   // Date element with 'posted' and conditional 'revised' values
@@ -41,10 +42,11 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
 
   let { url } = useRouteMatch()
   return (
-    <div className="bpp-container">
-      <div className="bpp-title">{blogPostData.header.title.main}</div>
-      <div className="bpp-subtitle">{blogPostData.header.title.subtitle}</div>
-      <div className="bpp-date">{date}</div>
+    <div className="bp-container">
+      <div className="bp-title">{blogPostData.header.title.main}</div>
+      <div className="bp-subtitle">{blogPostData.header.title.subtitle}</div>
+      <div className="bp-date">{date}</div>
+      <div className="bp-author">Written by {blogPostData.header.author}</div>
       <img
         className="bp-header-image"
         src={require('../../../' +
@@ -54,14 +56,16 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
         alt={blogPostData.header.image.alt}
         width="100%"
       />
-      <p className="bpp-body">{getFirstParagraph(blogPostData.body)}</p>
-      <p className="bpp-body second-paragraph">
+      <p className="bpp-paragraph">{getFirstParagraph(blogPostData.body)}</p>
+      <p className="bpp-paragraph second-paragraph">
         {getSecondParagraph(blogPostData.body)}
       </p>
       <div className="bpp-navlink-container">
-        <NavLink to={`${url}/${postId}`} className="navlink">
-          read more &rarr;
-        </NavLink>
+        <NavLinkTop
+          to={`${url}/${postId}`}
+          className="navlink"
+          linkObj={<>read more &rarr;</>}
+        />
       </div>
     </div>
   )

@@ -1,5 +1,18 @@
 [
   {
+    "id": "F4",
+    "category": "Blog post",
+    "date_posted": "Feb 26, 2020",
+    "title": "Managing static assets",
+    "image": {
+      "path": "./img/webpack_logo.png",
+      "alt": "webpack-logo-image"
+    },
+    "links": {
+      "live site": "https://www.maxaubain.com/portfolio/blog/webpack-static-assets"
+    }
+  },
+  {
     "id": "F3",
     "category": "Desktop Browser App",
     "date_posted": "Jan 24, 2020",
