@@ -1,0 +1,30 @@
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  background-color: rgb(212, 239, 255);
+  border-bottom: 1px solid white;
+}
+
+.floating-navbar {
+  border-radius: 2px;
+  box-shadow: 0px 1px 10px #999;
+}
+
+.navbar-navlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.navbar-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}

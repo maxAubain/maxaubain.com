@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
-import { NavLinkTop } from '../../../global/components/NavLinkTop'
+import { NavLinkTop } from '../../../global/components/link/NavLinkTop'
 import './style/blog-post-preview'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {

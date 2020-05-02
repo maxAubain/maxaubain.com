@@ -10,16 +10,6 @@ body {
 }
 
 /* Tags */
-.navlink {
-  text-decoration: none;
-  margin: 10px 8px 10px 8px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-
-.navlink:hover {
-  color: rgb(100, 100, 100);
-}
 
 .navlink-current {
   margin: 10px 8px 10px 8px;
@@ -70,38 +60,6 @@ a {
 p {
   line-height: 20px;
   margin: 10px 0 10px 0;
-}
-
-/* NavBar */
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  width: 100vw;
-  background-color: rgb(212, 239, 255);
-  border-bottom: 1px solid white;
-}
-
-.floating-navbar {
-  border-radius: 2px;
-  box-shadow: 0px 1px 10px #999;
-}
-
-.navbar-navlinks {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.navbar-social {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 /* Page content */

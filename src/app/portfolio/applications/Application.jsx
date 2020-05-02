@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { IconSmall } from '../../../global/components/IconSmall'
-import { WebLink } from '../../../global/components/WebLink'
+import { IconSmall } from '../../../global/components/icon/IconSmall'
+import { WebLink } from '../../../global/components/link/WebLink'
 import { TechWebLinks } from './TechWebLinks'
 
 export const Application = ({ appData, externalLinksData }) => {

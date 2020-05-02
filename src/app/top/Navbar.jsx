@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-import { IconSmallPlus } from '../../global/components/IconSmallPlus'
+import { IconSmallPlus } from '../../global/components/icon/IconSmallPlus'
+import './style/social-media'
+import './style/navbar'
 
 const navLinksParams = {
   about: {

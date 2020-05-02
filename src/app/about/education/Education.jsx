@@ -1,5 +1,5 @@
 import React from 'react'
-import { WebLink } from '../../../global/components/WebLink'
+import { WebLink } from '../../../global/components/link/WebLink'
 import educationData from '../../../global/data/education-history'
 import './style/education'
 
