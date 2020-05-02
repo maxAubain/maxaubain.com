@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
 import { NavLinkTop } from '../../../global/components/NavLinkTop'
+import './style/blog-post-preview'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   // Date element with 'posted' and conditional 'revised' values

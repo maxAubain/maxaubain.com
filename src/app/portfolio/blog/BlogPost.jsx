@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { NavLinkUpRouteTop } from '../../../global/components/NavLinkUpRouteTop'
 import { WebLink } from '../../../global/components/WebLink'
+import './style/blog-post'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   // Extract blog post data from array of blog posts by blogPostId
