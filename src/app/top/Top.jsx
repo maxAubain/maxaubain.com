@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
-import { Footer } from './Footer'
+import { Footer } from './footer/Footer'
 import { NavBar } from './Navbar'
 import { About } from './about/About'
 import { Portfolio } from './portfolio/Portfolio'
