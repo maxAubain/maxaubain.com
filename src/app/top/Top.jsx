@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
-import { NavBar } from './Navbar'
+import { NavBar } from './navbar/Navbar'
 import { About } from './about/About'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
