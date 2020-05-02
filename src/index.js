@@ -1,10 +1,10 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter } from "react-router-dom"
-import { App } from './app/top/App'
-import "./global/components/icon/style/icon"
-import "./global/components/link/style/link"
+import { Top } from './app/top/Top'
+import "./app/global/icons/style/icons"
+import "./app/global/links/style/links"
 import './global/fonts/arial'
 
-ReactDOM.render(<BrowserRouter> <App /> </BrowserRouter>,
+ReactDOM.render(<BrowserRouter> <Top /> </BrowserRouter>,
   document.getElementById("app"));

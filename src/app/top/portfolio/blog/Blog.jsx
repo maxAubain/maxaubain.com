@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { BlogPostPreviews } from './BlogPostPreviews'
 import { BlogPost } from './BlogPost'
-import blogPostsList from '../../../global/data/blogPosts/blog-posts-list'
+import blogPostsList from '../../../../global/data/blogPosts/blog-posts-list'
 const blogPostsDataPath = 'global/data/blogPosts/'
 
 export const Blog = () => {

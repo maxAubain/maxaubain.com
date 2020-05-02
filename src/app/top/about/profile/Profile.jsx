@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconMed } from '../../../global/components/icon/IconMed'
+import { IconMed } from '../../../global/icons/IconMed'
 import headShotImage from './img/head-shot'
 import developerIcon from './img/developer'
 import projectManagerIcon from './img/project-manager'

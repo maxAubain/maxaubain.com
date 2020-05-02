@@ -1,9 +1,7 @@
 import React from 'react'
-
-import { WebLink } from '../../../global/components/link/WebLink'
+import { WebLink } from '../../../global/links/WebLink'
 
 let keyArray, i, link
-
 export const TechWebLinks = ({ keyword, externalLinksData }) => {
   keyArray = Object.keys(externalLinksData) // e.g. keyArray = ["Axios", "Body Parser", "Cartify",...]
   for (i = 0; i < keyArray.length; i++) {
