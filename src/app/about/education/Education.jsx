@@ -1,11 +1,10 @@
 import React from 'react'
 import { WebLink } from '../../../global/components/WebLink'
 import educationData from '../../../global/data/education-history'
+import './style/education'
 
 export const Education = () => {
-  // Education cards object
   const eduCards = educationData.map(eduContentItem => {
-    // Optional weblink object
     let eduWebLink
     eduContentItem.webLink.url
       ? (eduWebLink = (
@@ -22,7 +21,6 @@ export const Education = () => {
       : (eduWebLink = <></>)
 
     return (
-      // Education card object
       <div
         key={eduContentItem.id}
         className="education-section education-feature"
