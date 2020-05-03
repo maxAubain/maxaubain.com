@@ -38,10 +38,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         return bodyElement.image.src === '' ? null : (
           <div className="bp-image-container" key={divKey}>
             <img
-              src={require('' +
-                blogPostFolderPath +
-                '/' +
-                bodyElement.image.src)}
+              src={require('' + blogPostFolderPath + bodyElement.image.src)}
               alt={bodyElement.image.alt}
               width={bodyElement.image.width}
             />
@@ -90,7 +87,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       <div className="bp-author">Written by {post.header.author}</div>
       <img
         className="bp-header-image"
-        src={require('' + blogPostFolderPath + '/' + post.header.image.src)}
+        src={require('' + blogPostFolderPath + post.header.image.src)}
         alt={post.header.image.alt}
         width="100%"
       />
