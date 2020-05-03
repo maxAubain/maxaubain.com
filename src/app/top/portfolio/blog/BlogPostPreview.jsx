@@ -1,19 +1,14 @@
 import React from 'react'
 import { useRouteMatch } from 'react-router-dom'
+import { BlogPostHeader } from './BlogPostHeader'
 import { NavLinkTop } from '../../../global/links/NavLinkTop'
 import './style/blog-post-preview'
 
-export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
-  let date
-  blogPostData.header.date.updated === ''
-    ? (date = <>{blogPostData.header.date.post}</>)
-    : (date = (
-        <>
-          {blogPostData.header.date.post} -- last revised{' '}
-          {blogPostData.header.date.updated}
-        </>
-      ))
-
+export const BlogPostPreview = ({
+  blogPostData,
+  blogPostFolderPath,
+  postId,
+}) => {
   const getFirstParagraph = function(bodyHashArray) {
     for (let iPostBody = 0; iPostBody < bodyHashArray.length; iPostBody++) {
       if (Object.keys(bodyHashArray[iPostBody])[0] === 'paragraph') {
@@ -42,15 +37,9 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   let { url } = useRouteMatch()
   return (
     <div className="bp-container">
-      <div className="bp-title">{blogPostData.header.title.main}</div>
-      <div className="bp-subtitle">{blogPostData.header.title.subtitle}</div>
-      <div className="bp-date">{date}</div>
-      <div className="bp-author">Written by {blogPostData.header.author}</div>
-      <img
-        className="bp-header-image"
-        src={require('' + blogPostDataPath + blogPostData.header.image.src)}
-        alt={blogPostData.header.image.alt}
-        width="100%"
+      <BlogPostHeader
+        blogPostData={blogPostData}
+        blogPostFolderPath={blogPostFolderPath}
       />
       <p className="bpp-paragraph">{getFirstParagraph(blogPostData.body)}</p>
       <p className="bpp-paragraph second-paragraph">

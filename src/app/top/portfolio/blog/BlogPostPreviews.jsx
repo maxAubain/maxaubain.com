@@ -3,13 +3,13 @@ import { BlogPostPreview } from './BlogPostPreview'
 
 export const BlogPostPreviews = ({ blogPostsList, blogPostsDataPath }) => {
   const blogPostPreviews = blogPostsList.map(post => {
-    let blogPostDataPath = blogPostsDataPath + post.path
-    let blogPostData = require('' + blogPostDataPath + '/' + post.id)
+    let blogPostFolderPath = blogPostsDataPath + post.path
+    let blogPostData = require('' + blogPostFolderPath + '/' + post.id)
     return (
       <div key={post.id}>
         <BlogPostPreview
           blogPostData={blogPostData}
-          blogPostDataPath={blogPostDataPath}
+          blogPostFolderPath={blogPostFolderPath}
           postId={post.id}
         />
       </div>
