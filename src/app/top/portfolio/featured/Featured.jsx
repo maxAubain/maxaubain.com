@@ -1,6 +1,6 @@
 import React from 'react'
 import { FeaturedContentCard } from './FeaturedContentCard'
-import featuredContentData from '../../../../global/data/featured-content'
+import featuredContentData from './data/featured-content'
 import './style/featured'
 
 export const Featured = () => {
