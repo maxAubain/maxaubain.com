@@ -1,4 +1,5 @@
 import React from 'react'
+import './style/blog-post-header'
 
 export const BlogPostHeader = ({ blogPostData, blogPostFolderPath }) => {
   const date = blogPostData.header.date.post
