@@ -48,7 +48,7 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
       <div className="bp-author">Written by {blogPostData.header.author}</div>
       <img
         className="bp-header-image"
-        src={require('./' +
+        src={require('' +
           blogPostDataPath +
           '/' +
           blogPostData.header.image.src)}

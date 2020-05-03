@@ -3,7 +3,7 @@ import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { BlogPostPreviews } from './BlogPostPreviews'
 import { BlogPost } from './BlogPost'
 import blogPostsList from './data/blog-posts-list'
-const blogPostsDataPath = 'data/blogPosts/'
+const blogPostsDataPath = './data/blogPosts/'
 
 export const Blog = () => {
   let { path } = useRouteMatch()
