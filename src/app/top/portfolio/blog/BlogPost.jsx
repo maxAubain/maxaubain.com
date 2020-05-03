@@ -5,14 +5,13 @@ import { WebLink } from '../../../global/links/WebLink'
 import './style/blog-post'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
-  // Extract blog post data from array of blog posts by blogPostId
   let { blogPostId } = useParams()
   const blogPostDataPath = blogPostsList.map(post => {
     if (post.id === blogPostId) {
       return blogPostsDataPath + post.path + '/' + post.id
     }
   })[0]
-  const post = require('../../../' + blogPostDataPath)
+  const post = require('./' + blogPostDataPath)
 
   const blogPostFolderPath = blogPostsList.map(post => {
     if (post.id === blogPostId) {
@@ -20,7 +19,6 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
     }
   })[0]
 
-  // Date object
   let date
   post.header.date.update === ''
     ? (date = <>{post.header.date.post}</>)
@@ -40,7 +38,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
         return bodyElement.image.src === '' ? null : (
           <div className="bp-image-container" key={divKey}>
             <img
-              src={require('../../../' +
+              src={require('./' +
                 blogPostFolderPath +
                 '/' +
                 bodyElement.image.src)}
@@ -84,7 +82,6 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
     )
   })
 
-  // Formatted blog post
   const blogPost = (
     <div className="bp-container">
       <div className="bp-title">{post.header.title.main}</div>
@@ -93,10 +90,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
       <div className="bp-author">Written by {post.header.author}</div>
       <img
         className="bp-header-image"
-        src={require('../../../' +
-          blogPostFolderPath +
-          '/' +
-          post.header.image.src)}
+        src={require('./' + blogPostFolderPath + '/' + post.header.image.src)}
         alt={post.header.image.alt}
         width="100%"
       />

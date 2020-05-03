@@ -4,7 +4,6 @@ import { NavLinkTop } from '../../../global/links/NavLinkTop'
 import './style/blog-post-preview'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
-  // Date element with 'posted' and conditional 'revised' values
   let date
   blogPostData.header.date.update === ''
     ? (date = <>{blogPostData.header.date.post}</>)
@@ -15,7 +14,6 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
         </>
       ))
 
-  // Retrieve first paragraph text from post body object
   const getFirstParagraph = function(bodyHashArray) {
     for (let iPostBody = 0; iPostBody < bodyHashArray.length; iPostBody++) {
       if (Object.keys(bodyHashArray[iPostBody])[0] === 'paragraph') {
@@ -50,7 +48,7 @@ export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
       <div className="bp-author">Written by {blogPostData.header.author}</div>
       <img
         className="bp-header-image"
-        src={require('../../../' +
+        src={require('./' +
           blogPostDataPath +
           '/' +
           blogPostData.header.image.src)}
