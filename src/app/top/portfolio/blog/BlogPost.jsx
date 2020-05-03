@@ -6,31 +6,30 @@ import './style/blog-post'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   let { blogPostId } = useParams()
-  const blogPostDataPath = blogPostsList.map(post => {
-    if (post.id === blogPostId) {
-      return blogPostsDataPath + post.path + '/' + post.id
+  const [blogPostDataPath, blogPostFolderPath] = blogPostsList.map(
+    blogPostData => {
+      if (blogPostData.id === blogPostId) {
+        return [
+          blogPostsDataPath + blogPostData.path + '/' + blogPostData.id,
+          blogPostsDataPath + blogPostData.path,
+        ]
+      }
     }
-  })[0]
-  const post = require('' + blogPostDataPath)
-
-  const blogPostFolderPath = blogPostsList.map(post => {
-    if (post.id === blogPostId) {
-      return blogPostsDataPath + post.path
-    }
-  })[0]
+  )[0]
+  const blogPostData = require('' + blogPostDataPath)
 
   let date
-  post.header.date.update === ''
-    ? (date = <>{post.header.date.post}</>)
+  blogPostData.header.date.update === ''
+    ? (date = <>{blogPostData.header.date.post}</>)
     : (date = (
         <>
-          {post.header.date.post} -- last revised {post.header.date.update}
+          {blogPostData.header.date.post} -- last revised{' '}
+          {blogPostData.header.date.update}
         </>
       ))
 
-  // Render blog post body comprising content and styles
   let divKey = -1
-  const postBody = post.body.map(bodyElement => {
+  const postBody = blogPostData.body.map(bodyElement => {
     divKey = divKey + 1
     let hashKey = Object.keys(bodyElement)[0]
     switch (hashKey) {
@@ -66,7 +65,7 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
     }
   })
 
-  const postFootnotes = post.footnotes.map(footnoteElement => {
+  const postFootnotes = blogPostData.footnotes.map(footnoteElement => {
     return (
       <div className="bp-footnote-container" key={footnoteElement.number}>
         [{footnoteElement.number}]{' '}
@@ -81,14 +80,14 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
 
   const blogPost = (
     <div className="bp-container">
-      <div className="bp-title">{post.header.title.main}</div>
-      <div className="bp-subtitle">{post.header.title.subtitle}</div>
+      <div className="bp-title">{blogPostData.header.title.main}</div>
+      <div className="bp-subtitle">{blogPostData.header.title.subtitle}</div>
       <div className="bp-date">{date}</div>
-      <div className="bp-author">Written by {post.header.author}</div>
+      <div className="bp-author">Written by {blogPostData.header.author}</div>
       <img
         className="bp-header-image"
-        src={require('' + blogPostFolderPath + post.header.image.src)}
-        alt={post.header.image.alt}
+        src={require('' + blogPostFolderPath + blogPostData.header.image.src)}
+        alt={blogPostData.header.image.alt}
         width="100%"
       />
       <div className="bp-body">{postBody}</div>
