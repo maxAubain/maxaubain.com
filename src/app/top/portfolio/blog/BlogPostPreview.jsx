@@ -5,12 +5,12 @@ import './style/blog-post-preview'
 
 export const BlogPostPreview = ({ blogPostData, blogPostDataPath, postId }) => {
   let date
-  blogPostData.header.date.update === ''
+  blogPostData.header.date.updated === ''
     ? (date = <>{blogPostData.header.date.post}</>)
     : (date = (
         <>
           {blogPostData.header.date.post} -- last revised{' '}
-          {blogPostData.header.date.update}
+          {blogPostData.header.date.updated}
         </>
       ))
 
