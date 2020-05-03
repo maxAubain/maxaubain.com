@@ -1,6 +1,6 @@
 import React from 'react'
 import { WebLink } from '../../../global/links/WebLink'
-import educationData from '../../../../global/data/education-history'
+import educationData from './data/education-history'
 import './style/education'
 
 export const Education = () => {
