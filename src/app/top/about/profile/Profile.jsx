@@ -9,31 +9,31 @@ import './style/profile'
 export const Profile = () => {
   return (
     <>
-      <div className="intro">
-        <div className="section-profile headshot-container">
+      <div className="profile intro">
+        <div className="profile section-profile headshot-container">
           <div>
             <img
-              className="headshot"
+              className="profile headshot"
               src={headShotImage}
               alt="image-max-face"
             />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
-        <div className="section-profile headline-container">
-          <div className="headline-item">
+        <div className="profile section-profile headline-container">
+          <div className="profile headline-item">
             <p>
               Technical expert with over 10 years of experience researching,
               developing, and prototyping emerging technologies.
             </p>
           </div>
-          <div className="headline-item">
+          <div className="profile headline-item">
             <p>
               Recently moved back to the USA from Sweden and enjoying a New
               England lifestyle.
             </p>
           </div>
-          <div className="headline-item">
+          <div className="profile headline-item">
             <p>
               Sci-fi fan and engineer at heart. I often wonder, "And, how could
               that be used?"
@@ -41,15 +41,15 @@ export const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="section-profile feature-profile">
-        <div className="feature-title">
+      <div className="profile section-profile feature-profile">
+        <div className="profile feature-title">
           <div>
             <IconMed src={developerIcon} alt="developer-icon" />
           </div>
           <br />
           Full Stack Developer
         </div>
-        <div className="feature-description">
+        <div className="profile feature-description">
           <p>
             Max has written applications in a number of languages throughout his
             engineering career, from lab test automation in Labview to numerical
@@ -65,15 +65,15 @@ export const Profile = () => {
           </p>
         </div>
       </div>
-      <div className="section-profile feature-profile">
-        <div className="feature-title">
+      <div className="profile section-profile feature-profile">
+        <div className="profile feature-title">
           <div>
             <IconMed src={projectManagerIcon} alt="project-manager-icon" />
           </div>
           <br />
           Project Manager
         </div>
-        <div className="feature-description">
+        <div className="profile feature-description">
           <p>
             Max has technical project manager experience and is passionate about
             enhancing the quality of products through business flow development.
@@ -87,15 +87,15 @@ export const Profile = () => {
           </p>
         </div>
       </div>
-      <div className="section-profile feature-profile">
-        <div className="feature-title">
+      <div className="profile section-profile feature-profile">
+        <div className="profile feature-title">
           <div>
             <IconMed src={analystIcon} alt="analyst-icon" />
           </div>
           <br />
           Analyst
         </div>
-        <div className="feature-description">
+        <div className="profile feature-description">
           <p>
             Max has a unique combination of professional experiences that have
             shaped his analytic abilities and skills.
