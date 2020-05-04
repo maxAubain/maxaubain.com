@@ -18,11 +18,8 @@ export const Profile = () => {
       return <p key={paragraph.slice(0, 10)}>{paragraph}</p>
     })
     return (
-      <div
-        key={description.id}
-        className="profile section-profile feature-profile"
-      >
-        <div className="profile feature-title">
+      <div key={description.id} className="profile section feature-profile">
+        <div className="profile role-image">
           <div>
             <IconMed
               src={require(`${description.img.src}`)}
@@ -32,17 +29,15 @@ export const Profile = () => {
           <br />
           {description.roleTitle}
         </div>
-        <div className="profile feature-description">
-          {descriptionParagraphs}
-        </div>
+        <div className="profile role-description">{descriptionParagraphs}</div>
       </div>
     )
   })
 
   return (
     <>
-      <div className="profile intro">
-        <div className="profile section-profile headshot-container">
+      <div className="profile personal">
+        <div className="profile section headshot-container">
           <div>
             <img
               className="profile headshot"
@@ -52,7 +47,7 @@ export const Profile = () => {
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
-        <div className="profile section-profile headline-container">
+        <div className="profile section headline-container">
           {personalDescriptions}
         </div>
       </div>
