@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import './style/navlink'
 
 export const NavLinkTop = ({ key, to, className, linkObj }) => {
   const handleViewReset = () => {

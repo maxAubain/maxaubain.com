@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink, useRouteMatch } from 'react-router-dom'
+import './style/navlink'
 
 export const NavLinkUpRouteTop = ({ linkObj }) => {
   const goUpOneRoute = url => {
