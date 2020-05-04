@@ -4,64 +4,63 @@ import educationData from './data/education-history'
 import './style/education'
 
 export const Education = () => {
-  const eduCards = educationData.map(eduContentItem => {
-    let eduWebLink
-    eduContentItem.webLink.url
-      ? (eduWebLink = (
+  const educationHighlights = educationData.map(educationHighlightData => {
+    let refWebLink
+    educationHighlightData.webLink.url
+      ? (refWebLink = (
           <>
             {' '}
             <WebLink
-              url={eduContentItem.webLink.url}
-              linkObj={eduContentItem.webLink.linkObj}
-              className={eduContentItem.webLink.className}
+              url={educationHighlightData.webLink.url}
+              linkObj={educationHighlightData.webLink.linkObj}
+              className={educationHighlightData.webLink.className}
             />
             .
           </>
         ))
-      : (eduWebLink = <></>)
+      : (refWebLink = <></>)
 
-    return (
-      <div
-        key={eduContentItem.id}
-        className="education-section education-feature"
-      >
-        <div className="education-feature-title">
+    let educationHighlight = (
+      <div key={educationHighlightData.id} className="education highlight">
+        <div className="education logo-and-name">
           <div>
             <img
-              src={require(`${eduContentItem.img.src}`)}
-              alt={eduContentItem.img.alt}
-              height={eduContentItem.img.height}
-              width={eduContentItem.img.width}
+              src={require(`${educationHighlightData.img.src}`)}
+              alt={educationHighlightData.img.alt}
+              height={educationHighlightData.img.height}
+              width={educationHighlightData.img.width}
             />
           </div>
-          <div className="education-title">
-            {eduContentItem.institution.topLine} <br />
-            {eduContentItem.institution.botLine}
+          <div className="education name">
+            {educationHighlightData.institution.topLine} <br />
+            {educationHighlightData.institution.botLine}
           </div>
         </div>
-        <div className="education-feature-description">
-          <p className="education-title">
-            {eduContentItem.degree}
+        <div className="education details">
+          <p className="education degree">
+            {educationHighlightData.degree}
             <br />
-            {eduContentItem.discipline}
+            {educationHighlightData.discipline}
           </p>
-          <p className="education-setting">
-            {eduContentItem.location}
+          <p className="education place-and-grad-date">
+            {educationHighlightData.location}
             <br />
-            {eduContentItem.year}
+            {educationHighlightData.year}
           </p>
           <p>
-            {eduContentItem.body}
-            {eduWebLink}
+            {educationHighlightData.body}
+            {refWebLink}
           </p>
         </div>
       </div>
     )
+
+    return educationHighlight
   })
 
   return (
     <>
-      <div className="education-container">{eduCards}</div>
+      <div className="education container">{educationHighlights}</div>
     </>
   )
 }
