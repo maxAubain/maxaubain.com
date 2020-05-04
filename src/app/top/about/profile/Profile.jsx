@@ -1,12 +1,44 @@
 import React from 'react'
 import { IconMed } from '../../../global/icons/IconMed'
-import headShotImage from './img/head-shot'
-import developerIcon from './img/developer'
-import projectManagerIcon from './img/project-manager'
-import analystIcon from './img/analyst'
+import personalDescriptionsData from './data/personal-descriptions.json'
+import roleDescriptionsData from './data/role-descriptions'
 import './style/profile'
 
 export const Profile = () => {
+  const personalDescriptions = personalDescriptionsData.map(description => {
+    return (
+      <p key={description.slice(0, 10)} className="profile headline-item">
+        {description}
+      </p>
+    )
+  })
+
+  const roleDescriptions = roleDescriptionsData.map(description => {
+    let descriptionParagraphs = description.paragraphs.map(paragraph => {
+      return <p key={paragraph.slice(0, 10)}>{paragraph}</p>
+    })
+    return (
+      <div
+        key={description.id}
+        className="profile section-profile feature-profile"
+      >
+        <div className="profile feature-title">
+          <div>
+            <IconMed
+              src={require(`${description.img.src}`)}
+              alt={description.img.alt}
+            />
+          </div>
+          <br />
+          {description.roleTitle}
+        </div>
+        <div className="profile feature-description">
+          {descriptionParagraphs}
+        </div>
+      </div>
+    )
+  })
+
   return (
     <>
       <div className="profile intro">
@@ -14,104 +46,17 @@ export const Profile = () => {
           <div>
             <img
               className="profile headshot"
-              src={headShotImage}
+              src={require('./img/head-shot')}
               alt="image-max-face"
             />
           </div>
           <div>Max Aubain, Ph.D.</div>
         </div>
         <div className="profile section-profile headline-container">
-          <div className="profile headline-item">
-            <p>
-              Technical expert with over 10 years of experience researching,
-              developing, and prototyping emerging technologies.
-            </p>
-          </div>
-          <div className="profile headline-item">
-            <p>
-              Recently moved back to the USA from Sweden and enjoying a New
-              England lifestyle.
-            </p>
-          </div>
-          <div className="profile headline-item">
-            <p>
-              Sci-fi fan and engineer at heart. I often wonder, "And, how could
-              that be used?"
-            </p>
-          </div>
+          {personalDescriptions}
         </div>
       </div>
-      <div className="profile section-profile feature-profile">
-        <div className="profile feature-title">
-          <div>
-            <IconMed src={developerIcon} alt="developer-icon" />
-          </div>
-          <br />
-          Full Stack Developer
-        </div>
-        <div className="profile feature-description">
-          <p>
-            Max has written applications in a number of languages throughout his
-            engineering career, from lab test automation in Labview to numerical
-            integration in MATLAB.
-          </p>
-          <p>
-            Now, he is laser focused on web development. His core competences
-            include Agile development, testing frameworks, Ruby on Rails, and
-            ReactJS.
-          </p>
-          <p>
-            Development-centered opportunities are his next ideal career move.
-          </p>
-        </div>
-      </div>
-      <div className="profile section-profile feature-profile">
-        <div className="profile feature-title">
-          <div>
-            <IconMed src={projectManagerIcon} alt="project-manager-icon" />
-          </div>
-          <br />
-          Project Manager
-        </div>
-        <div className="profile feature-description">
-          <p>
-            Max has technical project manager experience and is passionate about
-            enhancing the quality of products through business flow development.
-            He thrives when working on interdisciplinary projects and is
-            energized by the prospect of bringing structure to the chaos of
-            building something new.
-          </p>
-          <p>
-            His experience includes Scrum Master in Agile development settings
-            and product reliability management in the semiconductor industry.
-          </p>
-        </div>
-      </div>
-      <div className="profile section-profile feature-profile">
-        <div className="profile feature-title">
-          <div>
-            <IconMed src={analystIcon} alt="analyst-icon" />
-          </div>
-          <br />
-          Analyst
-        </div>
-        <div className="profile feature-description">
-          <p>
-            Max has a unique combination of professional experiences that have
-            shaped his analytic abilities and skills.
-          </p>
-          <p>
-            He has passed the U.S. Patent Bar Exam and worked as a registered
-            Patent Agent. As an inventor, he is an author of two semiconductor
-            device patents.
-          </p>
-          <p>
-            His analytical foundation lies in the completion of an engineering
-            Ph.D. that resulted in the publication of three peer reviewed
-            journal articles.
-          </p>
-        </div>
-      </div>
+      {roleDescriptions}
     </>
   )
 }
