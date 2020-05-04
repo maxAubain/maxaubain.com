@@ -1,5 +1,5 @@
 .education {
-  .highlight {
+  &.highlight {
     min-height: 280px;
     height: auto;
     display: flex;
@@ -9,70 +9,68 @@
     background-color: white;
   }
 
-  .logo-and-name {
+  &.logo-and-name {
     margin: 20px 0 0 0;
     text-align: center;
   }
 
-  .details {
+  &.details {
     margin: 20px 20px 0 20px;
     max-width: 600px;
   }
 
-  .name,
-  .degree {
+  &.name,
+  &.degree {
     font-size: 18px;
     font-weight: bold;
   }
 
-  .place-and-grad-date {
+  &.place-and-grad-date {
     color: rgb(112, 128, 144);
     font-size: 14px;
   }
 
-  .container {
+  &.container {
     margin: 24px 0 0 0;
   }
 
   @media only screen and (max-width: 420px) {
-    .highlight {
+    &.highlight {
       width: 100%;
       flex-wrap: wrap;
     }
 
-    .logo-and-name {
+    &.logo-and-name {
       min-width: 25%;
     }
 
-    .details {
+    &.details {
       min-width: 65%;
     }
   }
 
-  /* Tablet Styles */
   @media only screen and (min-width: 421px) and (max-width: 960px) {
-    .highlight {
+    &.highlight {
       width: 100%;
       flex-wrap: wrap;
     }
 
-    .logo-and-name {
+    &.logo-and-name {
       min-width: 35%;
     }
 
-    .details {
+    &.details {
       min-width: 55%;
     }
   }
 
-  /* Desktop Styles */
   @media only screen and (min-width: 961px) {
-    .highlight {
+    &.highlight {
       margin: 20px 10px 0 10px;
       border-radius: 5px;
     }
 
-    .logo-and-name {
+    &.logo-and-name {
       min-width: 35%;
       display: flex;
       flex-direction: column;
@@ -80,7 +78,7 @@
       text-align: center;
     }
 
-    .details {
+    &.details {
       min-width: 55%;
     }
   }
