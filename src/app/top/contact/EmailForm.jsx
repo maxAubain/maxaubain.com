@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './style/email-form'
 
 export const EmailForm = () => {
   const [status, setStatus] = useState('')
@@ -22,56 +23,49 @@ export const EmailForm = () => {
     xhr.send(data)
   }
   return (
-    <div className="email-wrapper">
-      <div className="section-form feature-form">
-        <form
-          onSubmit={submitForm}
-          action="https://formspree.io/xnqjjqeq"
-          method="POST"
-          className="email-form"
-        >
+    <div className="email container section-form feature-form">
+      <form
+        onSubmit={submitForm}
+        action="https://formspree.io/xnqjjqeq"
+        method="POST"
+        className="email form-container"
+      >
+        <p>
+          For professional inquiries, please leave your contact information and
+          a brief message.
+        </p>
+        <p>Or, email me at maxaubain [at] protonmail [dot] com.</p>
+        <label className="email form-label">Name</label>
+        <input type="text" name="name" className="email form-input" required />
+        <label className="email form-label">Company</label>
+        <input
+          type="text"
+          name="company"
+          className="email form-input"
+          required
+        />
+        <label className="email form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          className="email form-input"
+          required
+        />
+        <label className="email form-label">Message</label>
+        <textarea name="message" className="email form-input" required />
+        <br />
+        {status === 'SUCCESS' ? (
+          <p>Thanks! I will get back to you soon.</p>
+        ) : (
+          <button className="email submit-button">Submit</button>
+        )}
+        {status === 'ERROR' && (
           <p>
-            For professional inquiries, please leave your contact information
-            and a brief message.
+            Ooops! There was an error. Please make sure each section is
+            accurately completed, and re-submit.
           </p>
-          <p>Or, email me at maxaubain [at] protonmail [dot] com.</p>
-          <label className="email-form-label">Name</label>
-          <input
-            type="text"
-            name="name"
-            className="email-form-input"
-            required
-          />
-          <label className="email-form-label">Company</label>
-          <input
-            type="text"
-            name="company"
-            className="email-form-input"
-            required
-          />
-          <label className="email-form-label">Email</label>
-          <input
-            type="email"
-            name="email"
-            className="email-form-input"
-            required
-          />
-          <label className="email-form-label">Message</label>
-          <textarea name="message" className="email-form-input" required />
-          <br />
-          {status === 'SUCCESS' ? (
-            <p>Thanks! I will get back to you soon.</p>
-          ) : (
-            <button className="email-submit-button">Submit</button>
-          )}
-          {status === 'ERROR' && (
-            <p>
-              Ooops! There was an error. Please make sure each section is
-              accurately completed, and re-submit.
-            </p>
-          )}
-        </form>
-      </div>
+        )}
+      </form>
     </div>
   )
 }
