@@ -5,3 +5,23 @@
   min-height: 100vh;
   width: 100vw;
 }
+
+@media only screen and (max-width: 420px) {
+  .page-content {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .page-content {
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .page-content {
+    width: 860px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
