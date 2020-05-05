@@ -5,7 +5,6 @@ import { NavBar } from './navbar/Navbar'
 import { About } from './about/About'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
-import './style/global'
 
 const routesParams = {
   about: {

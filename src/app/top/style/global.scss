@@ -4,49 +4,6 @@ body {
   background-color: rgb(212, 239, 255);
 }
 
-/* Tags */
-
-.navlink-current {
-  margin: 10px 8px 10px 8px;
-  font-size: 20px;
-  color: #0f84e4;
-}
-
-.navlink-section {
-  margin: 10px 5px 10px 5px;
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-}
-
-.navlink-section:hover {
-  color: rgb(100, 100, 100);
-}
-
-.navlink-section-current {
-  color: #0f84e4;
-}
-
-.navlink-section-current:hover {
-  color: #0f84e4;
-}
-
-.navlink-section-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  border-bottom: 1px solid white;
-  width: 100%;
-}
-
-.weblink {
-  color: rgb(216, 115, 0);
-}
-
-.weblink:hover {
-  color: rgb(238, 163, 77);
-}
-
 a {
   text-decoration: none;
   cursor: pointer;
@@ -57,7 +14,6 @@ p {
   margin: 10px 0 10px 0;
 }
 
-/* Page content */
 .page-content {
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +22,6 @@ p {
   width: 100vw;
 }
 
-/* Media query configuration */
-/* Smartphone Styles */
 @media only screen and (max-width: 420px) {
   .page-content {
     padding-top: 50px;
@@ -76,13 +30,8 @@ p {
   .navbar-navlinks {
     width: 100vw;
   }
-
-  .navlink-section-container {
-    margin: 5px 0 5px 0;
-  }
 }
 
-/* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .page-content {
     padding-top: 50px;
@@ -91,13 +40,8 @@ p {
   .navbar-navlinks {
     width: 100vw;
   }
-
-  .navlink-section-container {
-    margin: 5px 0 0 0;
-  }
 }
 
-/* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .page-content {
     width: 860px;
@@ -111,9 +55,5 @@ p {
 
   .navbar-social {
     min-width: 200px;
-  }
-
-  .navlink-section-container {
-    margin: 5px 0 0 0;
   }
 }

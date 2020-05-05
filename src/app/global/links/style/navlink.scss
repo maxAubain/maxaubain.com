@@ -1,3 +1,5 @@
+/* Imported in index.js */
+
 .navlink {
   text-decoration: none;
   margin: 10px 8px 10px 8px;
@@ -7,4 +9,55 @@
 
 .navlink:hover {
   color: rgb(100, 100, 100);
+}
+
+.navlink-current {
+  margin: 10px 8px 10px 8px;
+  font-size: 20px;
+  color: #0f84e4;
+}
+
+.navlink-section {
+  margin: 10px 5px 10px 5px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.navlink-section:hover {
+  color: rgb(100, 100, 100);
+}
+
+.navlink-section-current {
+  color: #0f84e4;
+}
+
+.navlink-section-current:hover {
+  color: #0f84e4;
+}
+
+.navlink-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+@media only screen and (max-width: 420px) {
+  .navlink-section-container {
+    margin: 5px 0 5px 0;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 960px) {
+  .navlink-section-container {
+    margin: 5px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 961px) {
+  .navlink-section-container {
+    margin: 5px 0 0 0;
+  }
 }
