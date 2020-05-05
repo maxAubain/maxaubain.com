@@ -1,39 +1,40 @@
 /* Imported in index.js */
+@use '../../style/colors';
 
 .navlink {
   text-decoration: none;
   margin: 10px 8px 10px 8px;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: colors.$black;
 }
 
 .navlink:hover {
-  color: rgb(100, 100, 100);
+  color: colors.$gray;
 }
 
 .navlink-current {
   margin: 10px 8px 10px 8px;
   font-size: 20px;
-  color: #0f84e4;
+  color: colors.$blue;
 }
 
 .navlink-section {
   margin: 10px 5px 10px 5px;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: colors.$black;
   cursor: pointer;
 }
 
 .navlink-section:hover {
-  color: rgb(100, 100, 100);
+  color: colors.$gray;
 }
 
 .navlink-section-current {
-  color: #0f84e4;
+  color: colors.$blue;
 }
 
 .navlink-section-current:hover {
-  color: #0f84e4;
+  color: colors.$blue;
 }
 
 .navlink-section-container {
