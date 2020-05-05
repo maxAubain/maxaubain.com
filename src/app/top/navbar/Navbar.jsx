@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { IconSmallPlus } from '../../global/icons/IconSmallPlus'
-import './style/social-media'
 import './style/navbar'
 
 const navLinksParams = {
@@ -37,7 +36,6 @@ const socialMediaIconsParams = {
 }
 
 export const NavBar = () => {
-  // Handles navbar shadow on scroll
   const [navBarContCN, setNavBarContCN] = useState('navbar-container')
 
   const handleNavBarShadow = event => {
@@ -50,7 +48,6 @@ export const NavBar = () => {
     window.addEventListener('scroll', handleNavBarShadow)
   })
 
-  // Handles view reset on navlink click
   const handleViewReset = () => {
     window.scrollTo({
       top: 0,
@@ -59,11 +56,9 @@ export const NavBar = () => {
     })
   }
 
-  // Handles updating component for navLinks className update
   let location = useLocation()
   useEffect(() => {}, [location])
 
-  // NavLinks object with NavLink highlighting style
   const navLinks = Object.keys(navLinksParams).map(key => {
     location.pathname.toString().includes(`/${key}`)
       ? Object.assign(navLinksParams[key], {
@@ -83,7 +78,6 @@ export const NavBar = () => {
     )
   })
 
-  // Social media icons links object
   const socialMediaIcons = Object.keys(socialMediaIconsParams).map(key => {
     return (
       <a
