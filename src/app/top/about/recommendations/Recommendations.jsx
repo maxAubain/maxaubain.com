@@ -1,11 +1,14 @@
 import React from 'react'
 import { WebLink } from '../../../global/links/WebLink'
+import './style/recommendations'
 
 export const Recommendations = () => {
   return (
-    <div className="education-container">
-      <div className="section-profile feature-profile">
+    <div className="recommendations container">
+      <div className="recommendations highlight">
         <div className="feature-description">
+          <div className="recommendations label">#1</div>
+          <div className="recommendations label date">Sept. 22, 2019</div>
           <p>
             "Max mentored me for 3 years in grad school and managed me as an
             intern at Silanna.

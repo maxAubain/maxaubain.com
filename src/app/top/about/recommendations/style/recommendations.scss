@@ -1,0 +1,52 @@
+.recommendations {
+  &.container {
+    margin: 24px 0 0 0;
+  }
+
+  &.highlight {
+    min-height: 280px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    padding: 0 20px 0 20px;
+    background-color: white;
+  }
+
+  &.label {
+    text-align: right;
+    &.date {
+      color: rgb(112, 128, 144);
+    }
+  }
+
+  @media only screen and (max-width: 420px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &.logo-and-name {
+      min-width: 25%;
+    }
+
+    &.details {
+      min-width: 65%;
+    }
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 960px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.highlight {
+      margin: 20px 10px 0 10px;
+      border-radius: 5px;
+    }
+  }
+}
