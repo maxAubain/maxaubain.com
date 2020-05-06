@@ -11,15 +11,21 @@ export const BlogPostHeader = ({ blogPostData, blogPostFolderPath }) => {
 
   return (
     <>
-      <div className="bp-title">{blogPostData.header.title.main}</div>
-      <div className="bp-subtitle">{blogPostData.header.title.subtitle}</div>
-      <div className="bp-date">
+      <div className="blog-post-header title">
+        {blogPostData.header.title.main}
+      </div>
+      <div className="blog-post-header subtitle">
+        {blogPostData.header.title.subtitle}
+      </div>
+      <div className="blog-post-header date">
         {date}
         {dateUpdated}
       </div>
-      <div className="bp-author">Written by {blogPostData.header.author}</div>
+      <div className="blog-post-header author">
+        Written by {blogPostData.header.author}
+      </div>
       <img
-        className="bp-header-image"
+        className="blog-post-header image"
         src={require('' + blogPostFolderPath + blogPostData.header.image.src)}
         alt={blogPostData.header.image.alt}
         width="100%"

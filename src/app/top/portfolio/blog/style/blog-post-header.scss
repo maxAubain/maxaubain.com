@@ -1,26 +1,27 @@
 @use 'src/app/global/style/colors';
+.blog-post-header {
+  &.title {
+    font-size: 32px;
+    padding: 4px 8px 4px 8px;
+  }
 
-.bp-title {
-  font-size: 32px;
-  padding: 4px 8px 4px 8px;
-}
+  &.subtitle {
+    font-size: 20px;
+    padding: 4px 8px 4px 8px;
+  }
 
-.bp-subtitle {
-  font-size: 20px;
-  padding: 4px 8px 4px 8px;
-}
+  &.date {
+    font-size: 14px;
+    color: colors.$gray;
+    padding: 4px 8px 4px 8px;
+  }
 
-.bp-date {
-  font-size: 14px;
-  color: colors.$gray;
-  padding: 4px 8px 4px 8px;
-}
+  &.author {
+    font-size: 14px;
+    padding: 4px 8px 4px 8px;
+  }
 
-.bp-author {
-  font-size: 14px;
-  padding: 4px 8px 4px 8px;
-}
-
-.bp-header-image {
-  max-width: 100%;
+  &.image {
+    max-width: 100%;
+  }
 }

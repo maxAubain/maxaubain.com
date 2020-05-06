@@ -39,7 +39,6 @@ const routerParams = {
 export const Portfolio = () => {
   let { path, url } = useRouteMatch()
 
-  // Navlinks object
   const navLinks = Object.keys(routerParams).map(key => {
     return (
       <NavLink
@@ -54,7 +53,6 @@ export const Portfolio = () => {
     )
   })
 
-  // Routes object
   const routes = Object.keys(routerParams).map(key => {
     return (
       <Route
