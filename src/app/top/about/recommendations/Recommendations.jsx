@@ -1,5 +1,5 @@
 import React from 'react'
-import { WebLink } from '../../../global/links/WebLink'
+import { WebLink } from 'links/WebLink'
 import './style/recommendations'
 
 export const Recommendations = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { BlogPostHeader } from './BlogPostHeader'
-import { NavLinkUpRouteTop } from '../../../global/links/NavLinkUpRouteTop'
-import { WebLink } from '../../../global/links/WebLink'
+import { NavLinkUpRouteTop } from 'links/NavLinkUpRouteTop'
+import { WebLink } from 'links/WebLink'
 import './style/blog-post'
 
 export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {

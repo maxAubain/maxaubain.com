@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconMed } from '../../../global/icons/IconMed'
+import { IconMed } from 'icons/IconMed'
 import personalDescriptionsData from './data/personal-descriptions.json'
 import roleDescriptionsData from './data/role-descriptions'
 import './style/profile'

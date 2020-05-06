@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { IconSmall } from '../../../global/icons/IconSmall'
-import { WebLink } from '../../../global/links/WebLink'
+import { IconSmall } from 'icons/IconSmall'
+import { WebLink } from 'links/WebLink'
 import { TechWebLinks } from './TechWebLinks'
 import './style/application'
 
