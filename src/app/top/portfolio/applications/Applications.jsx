@@ -2,6 +2,7 @@ import React from 'react'
 import { Application } from './Application'
 import appsData from './data/applications'
 import externalLinksData from './data/external-links'
+import './style/applications'
 
 export const Applications = () => {
   const apps = appsData.map(appData => {
@@ -16,7 +17,7 @@ export const Applications = () => {
 
   return (
     <>
-      <div className="app-categories-wrapper">{apps}</div>
+      <div className="applications container">{apps}</div>
     </>
   )
 }
