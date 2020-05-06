@@ -1,3 +1,5 @@
+@use '../../../../global/style/colors';
+
 .recommendations {
   &.container {
     margin: 24px 0 0 0;
@@ -11,14 +13,14 @@
     align-items: center;
     margin: 20px 0 0 0;
     padding: 20px;
-    background-color: white;
+    background-color: colors.$white;
     box-sizing: border-box;
   }
 
   &.label {
     text-align: right;
     &.date {
-      color: rgb(112, 128, 144);
+      color: colors.$gray;
     }
   }
 

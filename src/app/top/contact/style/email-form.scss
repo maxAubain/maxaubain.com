@@ -1,3 +1,5 @@
+@use '../../../global/style/colors';
+
 .email {
   &.container {
     margin: 46px 0 0 0;
@@ -7,7 +9,7 @@
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    background-color: white;
+    background-color: colors.$white;
   }
 
   @media only screen and (max-width: 420px) {
@@ -43,9 +45,9 @@
 
   &.submit-button {
     border-radius: 3px;
-    border: 1px black solid;
+    border: 1px colors.$black solid;
     font-size: 16px;
-    background-color: white;
+    background-color: colors.$white;
     box-shadow: 0 0 5px #bebebe;
     padding: 3px;
   }
@@ -58,7 +60,7 @@
   textarea.form-input {
     box-shadow: inset 0 0 5px #bebebe;
     border-radius: 3px;
-    border: 1px black solid;
+    border: 1px colors.$black solid;
     font-size: 16px;
     width: 300px;
     padding: 10px;

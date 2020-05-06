@@ -1,3 +1,5 @@
+@use '../../../../global/style/colors';
+
 .featured-container {
   box-sizing: border-box;
   height: 306px;
@@ -7,7 +9,7 @@
 
 @media only screen and (min-width: 961px) {
   .featured-container:hover .featured-title {
-    color: rgb(238, 163, 77);
+    color: colors.$light-orange;
   }
 
   .featured-container:hover .featured-img {
@@ -31,7 +33,7 @@
   width: 256px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border: 3px solid white;
+  border: 3px solid colors.$white;
 
   overflow: hidden;
 
@@ -50,7 +52,7 @@
   width: 256px;
   padding: 5px 10px 0 10px;
 
-  background-color: white;
+  background-color: colors.$white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
@@ -63,10 +65,10 @@
 .featured-date {
   text-align: right;
   font-size: 15px;
-  color: rgb(112, 128, 144);
+  color: colors.$gray;
 }
 
 .featured-title {
-  color: rgb(216, 115, 0);
+  color: colors.$orange;
   font-size: 20px;
 }

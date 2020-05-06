@@ -1,33 +1,33 @@
-/* Page styling */
-/* Configures collapsible menu */
+@use '../../../global/style/colors';
+
 .project-summary {
-  background-color: white;
+  background-color: colors.$white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   cursor: pointer;
   margin: 12px 0 0 0;
-  border-bottom: 3px solid rgb(212, 239, 255);
+  border-bottom: 3px solid colors.$light-blue;
 }
 
 .project-summary-title {
   font-size: 20px;
   padding: 8px 8px 0 8px;
-  color: rgb(0, 0, 0);
+  color: colors.$black;
 }
 
 .project-summary-title:hover {
-  color: rgb(100, 100, 100);
+  color: colors.$gray;
 }
 
 .project-summary-title-current {
   font-size: 20px;
   padding: 8px 8px 0 8px;
-  color: #0f84e4;
+  color: colors.$blue;
 }
 
 .project-details-container {
-  background-color: white;
+  background-color: colors.$white;
 }
 
 .hidden {
@@ -67,8 +67,6 @@
   margin: 30px 0 0 0;
 }
 
-/* Styles based on queries of the screen width */
-/* Mobile Styles */
 @media only screen and (max-width: 420px) {
   .project-categories-wrapper {
     margin: 32px 0 0 0;
@@ -101,7 +99,6 @@
   }
 }
 
-/* Tablet Styles */
 @media only screen and (min-width: 421px) and (max-width: 960px) {
   .project-categories-wrapper {
     margin: 32px 0 0 0;
@@ -138,7 +135,6 @@
   }
 }
 
-/* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .project-categories-wrapper {
     margin: 32px 0 0 10px;

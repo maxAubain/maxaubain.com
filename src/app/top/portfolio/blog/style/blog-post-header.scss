@@ -1,3 +1,5 @@
+@use '../../../../global/style/colors';
+
 .bp-title {
   font-size: 32px;
   padding: 4px 8px 4px 8px;
@@ -10,7 +12,7 @@
 
 .bp-date {
   font-size: 14px;
-  color: rgb(112, 128, 144);
+  color: colors.$gray;
   padding: 4px 8px 4px 8px;
 }
 

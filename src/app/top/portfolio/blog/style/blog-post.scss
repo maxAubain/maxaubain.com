@@ -1,5 +1,7 @@
+@use '../../../../global/style/colors';
+
 .bp-container {
-  background-color: white;
+  background-color: colors.$white;
   margin: 10px 0 20px 0;
   padding: 20px;
   box-sizing: border-box;
@@ -18,7 +20,7 @@
 
 .bp-image-caption {
   text-align: center;
-  color: rgb(112, 128, 144);
+  color: colors.$gray;
 }
 
 .bp-paragraph-container {
@@ -29,7 +31,7 @@
 .bp-quote-container {
   margin: 32px 15% 32px 15%;
   padding: 0 8px 0 8px;
-  border-left: 3px solid rgb(112, 128, 144);
+  border-left: 3px solid colors.$gray;
 }
 
 .bp-quote {
@@ -41,7 +43,7 @@
 .bp-divide-container {
   text-align: center;
   font-size: 72px;
-  color: rgb(112, 128, 144);
+  color: colors.$gray;
   padding: 10px 0 10px 0;
 }
 
@@ -50,7 +52,7 @@
 }
 
 .bp-footnotes-container {
-  border-top: 1px solid rgb(112, 128, 144);
+  border-top: 1px solid colors.$gray;
   margin: 0 16px 0 16px;
   padding: 20px 0 0 0;
 }

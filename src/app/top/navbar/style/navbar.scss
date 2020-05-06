@@ -1,10 +1,12 @@
+@use '../../../global/style/colors';
+
 .navbar-container {
   display: flex;
   justify-content: center;
   position: fixed;
   width: 100vw;
-  background-color: rgb(212, 239, 255);
-  border-bottom: 1px solid white;
+  background-color: colors.$light-blue;
+  border-bottom: 1px solid colors.$white;
 }
 
 .floating-navbar {

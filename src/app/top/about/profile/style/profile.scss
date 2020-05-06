@@ -1,3 +1,5 @@
+@use '../../../../global/style/colors';
+
 .profile {
   &.personal {
     display: flex;
@@ -10,19 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  &.button-container {
-    min-height: 60px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    background-color: rgb(212, 239, 255);
-    flex-wrap: wrap;
   }
 
   &.headshot-container {
@@ -43,7 +32,7 @@
   }
 
   &.feature-profile {
-    background-color: white;
+    background-color: colors.$white;
   }
 
   &.role-image {
