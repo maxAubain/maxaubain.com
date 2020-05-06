@@ -29,7 +29,14 @@ let config = {
       // For loading .json files, json-loader is default in webpack
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".sass", ".scss", ".json", ".png", ".ttf"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx", ".sass", ".scss", ".json", ".png", ".ttf"],
+    alias: {
+      links: path.resolve(__dirname, 'src/app/global/links'),
+      icons: path.resolve(__dirname, 'src/app/global/icons'),
+      style: path.resolve(__dirname, 'src/app/global/style')
+    }
+  },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],
