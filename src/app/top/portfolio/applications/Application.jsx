@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { IconSmall } from '../../../global/icons/IconSmall'
 import { WebLink } from '../../../global/links/WebLink'
 import { TechWebLinks } from './TechWebLinks'
+import './style/application'
 
 export const Application = ({ appData, externalLinksData }) => {
-  // Show/hide app object details functionality
   const [projectAttributes, setProjectAttributes] = useState({
     hidden: true,
   })
@@ -18,7 +18,6 @@ export const Application = ({ appData, externalLinksData }) => {
     projectSummaryTitleClassName = 'project-summary-title-current'
   }
 
-  // Project Links object
   const projectLinks = Object.keys(appData.links).map(key => {
     return (
       <div key={key}>
@@ -31,18 +30,15 @@ export const Application = ({ appData, externalLinksData }) => {
     )
   })
 
-  // Description object
   const projectDescription = appData.descriptionFull.map(paragraph => {
     return <p key={paragraph}>{paragraph}</p>
   })
 
-  // Technology Stack object
   let valueArray, valueArraylength, i
   const technologyStack = Object.keys(appData.tech).map(key => {
     valueArray = appData.tech[key].split(', ') // e.g. valueArray = ["Netlify", "Heroku"]
     valueArraylength = valueArray.length
 
-    // Replace each string value with weblink object in array
     for (i = 0; i < valueArraylength; i++) {
       valueArray.splice(
         i,
