@@ -14,12 +14,7 @@ export const Featured = () => {
 
   return (
     <>
-      <div
-        className="project-categories-wrapper 
-    project-categories-wrapper-featured"
-      >
-        {featuredContentItems}
-      </div>
+      <div className="featured container">{featuredContentItems}</div>
     </>
   )
 }
