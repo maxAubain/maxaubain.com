@@ -13,7 +13,6 @@ import { Applications } from './applications/Applications'
 import featuredContentData from './featured/data/featured-content'
 import blogPostsData from './blog/data/blog-posts-list'
 import applicationsData from './applications/data/applications'
-import './style/portfolio'
 
 const routerParams = {
   featured: {
