@@ -36,22 +36,24 @@ export const BlogPostPreview = ({
 
   let { url } = useRouteMatch()
   return (
-    <div className="bp-container">
+    <>
       <BlogPostHeader
         blogPostData={blogPostData}
         blogPostFolderPath={blogPostFolderPath}
       />
-      <p className="bpp-paragraph">{getFirstParagraph(blogPostData.body)}</p>
-      <p className="bpp-paragraph second-paragraph">
+      <p className="blog-post-preview paragraph">
+        {getFirstParagraph(blogPostData.body)}
+      </p>
+      <p className="blog-post-preview paragraph second-paragraph">
         {getSecondParagraph(blogPostData.body)}
       </p>
-      <div className="bpp-navlink-container">
+      <div className=" blog-post-preview navlink-container">
         <NavLinkTop
           to={`${url}/${postId}`}
           className="navlink"
           linkObj={<>read more &rarr;</>}
         />
       </div>
-    </div>
+    </>
   )
 }

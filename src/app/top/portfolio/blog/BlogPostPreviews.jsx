@@ -16,5 +16,5 @@ export const BlogPostPreviews = ({ blogPostsList, blogPostsDataPath }) => {
     )
   })
 
-  return <div className="project-categories-wrapper">{blogPostPreviews}</div>
+  return <>{blogPostPreviews}</>
 }
