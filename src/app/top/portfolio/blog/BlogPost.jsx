@@ -26,30 +26,32 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
     switch (hashKey) {
       case 'image':
         return bodyElement.image.src === '' ? null : (
-          <div className="bp-image-container" key={divKey}>
+          <div className="blog-post image-container" key={divKey}>
             <img
               src={require('' + blogPostFolderPath + bodyElement.image.src)}
               alt={bodyElement.image.alt}
               width={bodyElement.image.width}
             />
-            <div className="bp-image-caption">{bodyElement.image.caption}</div>
+            <div className="blog-post image-caption">
+              {bodyElement.image.caption}
+            </div>
           </div>
         )
       case 'paragraph':
         return (
-          <div className="bp-paragraph-container" key={divKey}>
+          <div className="blog-post paragraph-container" key={divKey}>
             <p>{bodyElement.paragraph}</p>
           </div>
         )
       case 'quote':
         return (
-          <div className="bp-quote-container" key={divKey}>
-            <p className="bp-quote">{bodyElement.quote}</p>
+          <div className="blog-post quote-container" key={divKey}>
+            <p className="blog-post quote">{bodyElement.quote}</p>
           </div>
         )
       case 'divide':
         return (
-          <div className="bp-divide-container" key={divKey}>
+          <div className="blog-post divide-container" key={divKey}>
             <p>&middot;&nbsp;&nbsp;&middot;&nbsp;&nbsp;&middot;</p>
           </div>
         )
@@ -58,7 +60,10 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
 
   const postFootnotes = blogPostData.footnotes.map(footnoteElement => {
     return (
-      <div className="bp-footnote-container" key={footnoteElement.number}>
+      <div
+        className="blog-post footnote-container"
+        key={footnoteElement.number}
+      >
         [{footnoteElement.number}]{' '}
         <WebLink
           url={footnoteElement.url}
@@ -70,18 +75,18 @@ export const BlogPost = ({ blogPostsList, blogPostsDataPath }) => {
   })
 
   const blogPost = (
-    <div className="bp-container">
+    <>
       <BlogPostHeader
         blogPostData={blogPostData}
         blogPostFolderPath={blogPostFolderPath}
       />
-      <div className="bp-body">{postBody}</div>
-      <div className="bp-footnotes-container">{postFootnotes}</div>
-      <div className="bp-navlink-container">
+      <div className="blog-post body">{postBody}</div>
+      <div className="blog-post footnotes-container">{postFootnotes}</div>
+      <div className="blog-post navlink-container">
         <NavLinkUpRouteTop linkObj="&larr; back to blog posts" />
       </div>
-    </div>
+    </>
   )
 
-  return <div className="project-categories-wrapper">{blogPost}</div>
+  return <>{blogPost}</>
 }
