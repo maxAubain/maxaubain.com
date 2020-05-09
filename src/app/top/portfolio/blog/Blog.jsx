@@ -9,23 +9,21 @@ const blogPostsDataPath = './data/blogPosts'
 export const Blog = () => {
   let { path } = useRouteMatch()
   return (
-    <div className="project-categories-wrapper">
-      <div className="blog container">
-        <Switch>
-          <Route exact path={path}>
-            <BlogPostPreviews
-              blogPostsList={blogPostsList}
-              blogPostsDataPath={blogPostsDataPath}
-            />
-          </Route>
-          <Route path={`${path}/:blogPostId`}>
-            <BlogPost
-              blogPostsList={blogPostsList}
-              blogPostsDataPath={blogPostsDataPath}
-            />
-          </Route>
-        </Switch>
-      </div>
+    <div className="blog container">
+      <Switch>
+        <Route exact path={path}>
+          <BlogPostPreviews
+            blogPostsList={blogPostsList}
+            blogPostsDataPath={blogPostsDataPath}
+          />
+        </Route>
+        <Route path={`${path}/:blogPostId`}>
+          <BlogPost
+            blogPostsList={blogPostsList}
+            blogPostsDataPath={blogPostsDataPath}
+          />
+        </Route>
+      </Switch>
     </div>
   )
 }
