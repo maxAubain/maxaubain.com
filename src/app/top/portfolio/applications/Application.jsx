@@ -11,11 +11,11 @@ export const Application = ({ appData, externalLinksData }) => {
 
   let projectContainerClassName, projectSummaryTitleClassName
   if (projectAttributes.hidden) {
-    projectContainerClassName = 'project-details-container hidden'
-    projectSummaryTitleClassName = 'project-summary-title'
+    projectContainerClassName = 'application hidden'
+    projectSummaryTitleClassName = 'application title-short'
   } else {
-    projectContainerClassName = 'project-details-container'
-    projectSummaryTitleClassName = 'project-summary-title-current'
+    projectContainerClassName = ''
+    projectSummaryTitleClassName = 'application title-short-current'
   }
 
   const projectLinks = Object.keys(appData.links).map(key => {
@@ -24,7 +24,7 @@ export const Application = ({ appData, externalLinksData }) => {
         <WebLink
           url={appData.links[key]}
           linkObj={key}
-          className="project-details-link weblink"
+          className="application links-container weblink"
         />
       </div>
     )
@@ -36,7 +36,7 @@ export const Application = ({ appData, externalLinksData }) => {
 
   let valueArray, valueArraylength, i
   const technologyStack = Object.keys(appData.tech).map(key => {
-    valueArray = appData.tech[key].split(', ') // e.g. valueArray = ["Netlify", "Heroku"]
+    valueArray = appData.tech[key].split(', ')
     valueArraylength = valueArray.length
 
     for (i = 0; i < valueArraylength; i++) {
@@ -51,7 +51,6 @@ export const Application = ({ appData, externalLinksData }) => {
       )
     }
 
-    // Insert ", " value between adjacent weblink objects in array
     if (valueArraylength > 1) {
       for (i = 1; i < 2 * valueArraylength - 2; i = i + 2) {
         valueArray.splice(i, 0, ', ')
@@ -68,7 +67,7 @@ export const Application = ({ appData, externalLinksData }) => {
   return (
     <>
       <div
-        className="project-summary"
+        className="application container-short"
         onClick={() => {
           setProjectAttributes({ hidden: !projectAttributes.hidden })
         }}
@@ -78,33 +77,29 @@ export const Application = ({ appData, externalLinksData }) => {
           alt={appData.image.alt}
         />
         <div className={projectSummaryTitleClassName}>{appData.title}</div>
-        <div className="project-summary-description">
+        <div className="application description-short">
           {appData.descriptionShort}
         </div>
       </div>
 
       <div className={projectContainerClassName}>
-        <div className="project-details-padding">
-          <div className="project-description-full-container">
-            <div className="project-details-link-container">
-              <strong>
-                <u>Links</u>
-              </strong>
-              {projectLinks}
-              <br></br>
-              {/* <div className="project-description-full"> */}
-              <strong>
-                <u>Description</u>
-              </strong>
-              {projectDescription}
-              {/* </div> */}
-            </div>
-            <div className="project-tech">
-              <strong>
-                <u>Technology</u>
-              </strong>
-              {technologyStack}
-            </div>
+        <div className="application links-description-technology-container">
+          <div className="application links-description-container">
+            <strong>
+              <u>Links</u>
+            </strong>
+            {projectLinks}
+            <br></br>
+            <strong>
+              <u>Description</u>
+            </strong>
+            {projectDescription}
+          </div>
+          <div className="application technology-container">
+            <strong>
+              <u>Technology</u>
+            </strong>
+            {technologyStack}
           </div>
         </div>
       </div>
