@@ -1,0 +1,134 @@
+@use 'src/app/global/style/colors';
+@use 'src/app/global/style/fonts';
+
+.application {
+  &.container-short {
+    background-color: colors.$white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 12px 0 0 0;
+    border-bottom: 3px solid colors.$light-blue;
+  }
+
+  &.title-short {
+    font-size: 20px;
+    padding: 8px 8px 0 8px;
+    color: colors.$black;
+  }
+
+  &.title-short:hover {
+    color: colors.$gray;
+  }
+
+  &.title-short-current {
+    font-size: 20px;
+    padding: 8px 8px 0 8px;
+    color: colors.$blue;
+  }
+
+  &.hidden {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  &.category-label {
+    font-family: fonts.$titles-and-headers;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  &.links-description-technology-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    background-color: colors.$white;
+    box-sizing: border-box;
+  }
+
+  .links-container {
+    margin: 8px;
+  }
+
+  &.technology-container {
+    padding: 10px 8px 8px 8px;
+  }
+
+  &.links-description-container {
+    padding: 10px 8px 8px 8px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    &.title-short {
+      width: 80%;
+    }
+
+    &.description-short {
+      width: 100%;
+      padding: 0 0 8px 8px;
+    }
+
+    &.links-description-container {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 960px) {
+    &.title-short {
+      width: 40%;
+    }
+
+    &.title-short-current {
+      width: 40%;
+    }
+
+    &.description-short {
+      width: 45%;
+      padding: 9px 0 0 0;
+    }
+
+    &.links-description-container {
+      width: 45%;
+    }
+
+    &.technology-container {
+      width: 45%;
+    }
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.container-short {
+      width: 836px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &.title-short {
+      width: 40%;
+    }
+
+    &.title-short-current {
+      width: 40%;
+    }
+
+    &.description-short {
+      width: 50%;
+      padding: 9px 0 0 0;
+    }
+
+    &.links-description-container {
+      width: 45%;
+    }
+
+    &.technology-container {
+      width: 45%;
+    }
+
+    &.links-description-technology-container {
+      width: 836px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

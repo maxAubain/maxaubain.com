@@ -19,8 +19,8 @@ let config = {
         options: { presets: ["@babel/env"] }
       },
       { // For loading stylesheets
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.s[ac]ss$/,
+        use: ["style-loader", "css-loader", 'sass-loader']
       },
       { // For loading images and fonts
         test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
@@ -29,7 +29,14 @@ let config = {
       // For loading .json files, json-loader is default in webpack
     ]
   },
-  resolve: { extensions: ["*", ".js", ".jsx", ".css", ".json", ".png", ".ttf"] },
+  resolve: {
+    extensions: ["*", ".js", ".jsx", ".sass", ".scss", ".json", ".png", ".ttf"],
+    alias: {
+      links: path.resolve(__dirname, 'src/app/global/links'),
+      icons: path.resolve(__dirname, 'src/app/global/icons'),
+      style: path.resolve(__dirname, 'src/app/global/style')
+    }
+  },
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()],

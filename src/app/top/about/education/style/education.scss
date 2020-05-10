@@ -1,0 +1,90 @@
+@use 'src/app/global/style/colors';
+@use 'src/app/global/style/fonts';
+
+.education {
+  &.highlight {
+    min-height: 280px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    background-color: colors.$white;
+  }
+
+  &.logo-and-name {
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  &.details {
+    margin: 20px 20px 0 20px;
+    max-width: 600px;
+  }
+
+  &.name,
+  &.degree {
+    font-size: 24px;
+    font-family: fonts.$titles-and-headers;
+    line-height: 24px;
+  }
+
+  &.place-and-grad-date {
+    color: colors.$gray;
+    font-size: 14px;
+    font-family: fonts.$dates-and-places;
+  }
+
+  &.container {
+    margin: 24px 0 0 0;
+  }
+
+  @media only screen and (max-width: 420px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &.logo-and-name {
+      min-width: 25%;
+    }
+
+    &.details {
+      min-width: 65%;
+    }
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 960px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &.logo-and-name {
+      min-width: 35%;
+    }
+
+    &.details {
+      min-width: 55%;
+    }
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.highlight {
+      margin: 20px 10px 0 10px;
+      border-radius: 5px;
+    }
+
+    &.logo-and-name {
+      min-width: 35%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    &.details {
+      min-width: 55%;
+    }
+  }
+}

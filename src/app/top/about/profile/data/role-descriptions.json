@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "roleTitle": "Full Stack Developer",
+    "img": {
+      "src": "./img/developer.png",
+      "alt": "developer-icon"
+    },
+    "paragraphs": [
+      "Max has written applications in a number of languages throughout his engineering career, from lab test automation in Labview to numerical integration in MATLAB.",
+      "Now, he is laser focused on web development. His core competences include Agile development, testing frameworks, Ruby on Rails, and ReactJS.",
+      "Development-centered opportunities are his next ideal career move."
+    ]
+  },
+  {
+    "id": 2,
+    "roleTitle": "Project Manager",
+    "img": {
+      "src": "./img/project-manager.png",
+      "alt": "project-manager-icon"
+    },
+    "paragraphs": [
+      "Max has technical project manager experience and is passionate about enhancing the quality of products through business flow development. He thrives when working on interdisciplinary projects and is energized by the prospect of bringing structure to the chaos of building something new.",
+      "His experience includes Scrum Master in Agile development settings and product reliability management in the semiconductor industry."
+    ]
+  },
+  {
+    "id": 3,
+    "roleTitle": "Analyst",
+    "img": {
+      "src": "./img/analyst.png",
+      "alt": "analyst-icon"
+    },
+    "paragraphs": [
+      "Max has a unique combination of professional experiences that have shaped his analytic abilities and skills.",
+      "He has passed the U.S. Patent Bar Exam and worked as a registered Patent Agent. As an inventor, he is an author of two semiconductor device patents.",
+      "His analytical foundation lies in the completion of an engineering Ph.D. that resulted in the publication of three peer reviewed journal articles."
+    ]
+  }
+]

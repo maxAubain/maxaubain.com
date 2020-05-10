@@ -1,0 +1,17 @@
+@use 'src/app/global/style/fonts';
+
+body {
+  margin: 0 auto;
+  font-family: fonts.$default;
+  background-color: rgb(212, 239, 255);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+p {
+  line-height: 20px;
+  margin: 10px 0 10px 0;
+}

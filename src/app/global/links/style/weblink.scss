@@ -1,0 +1,9 @@
+/* Imported in index.js */
+@use '../../style/colors';
+.weblink {
+  color: colors.$orange;
+}
+
+.weblink:hover {
+  color: colors.$light-orange;
+}

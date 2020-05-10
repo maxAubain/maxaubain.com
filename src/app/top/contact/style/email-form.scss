@@ -1,0 +1,69 @@
+@use 'src/app/global/style/colors';
+
+.email {
+  &.container {
+    margin: 46px 0 0 0;
+    min-height: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: colors.$white;
+  }
+
+  @media only screen and (max-width: 420px) {
+    &.container {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 960px) {
+    &.container {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.container {
+      border-radius: 5px;
+    }
+  }
+
+  &.form-container {
+    padding: 20px;
+    max-width: 350px;
+  }
+
+  &.form-label {
+    font-size: 20px;
+    display: block;
+    margin: 15px 0 5px 0;
+  }
+
+  &.submit-button {
+    border-radius: 3px;
+    border: 1px colors.$black solid;
+    font-size: 16px;
+    background-color: colors.$white;
+    box-shadow: 0 0 5px #bebebe;
+    padding: 3px;
+  }
+
+  textarea.form-input {
+    height: 100px;
+  }
+
+  input.form-input,
+  textarea.form-input {
+    box-shadow: inset 0 0 5px #bebebe;
+    border-radius: 3px;
+    border: 1px colors.$black solid;
+    font-size: 16px;
+    width: 300px;
+    padding: 10px;
+    font-family: Arial;
+  }
+}
