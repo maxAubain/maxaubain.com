@@ -1,0 +1,81 @@
+@use 'src/app/global/style/colors';
+
+.blog-post {
+  &.container {
+    background-color: colors.$white;
+    margin: 10px 0 20px 0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  &.navlink-container {
+    text-align: left;
+    padding: 7px 0 0 10px;
+  }
+
+  &.image-container {
+    box-sizing: border-box;
+    margin: 20px 16px 40px 16px;
+    text-align: center;
+  }
+
+  &.image-caption {
+    text-align: center;
+    color: colors.$gray;
+  }
+
+  &.paragraph-container {
+    margin: 0 8px 0 8px;
+    padding: 0 8px 0 8px;
+  }
+
+  &.quote-container {
+    margin: 32px 15% 32px 15%;
+    padding: 0 8px 0 8px;
+    border-left: 3px solid colors.$gray;
+  }
+
+  &.quote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &.divide-container {
+    text-align: center;
+    font-size: 72px;
+    color: colors.$gray;
+    padding: 10px 0 10px 0;
+  }
+
+  &.footnote-container {
+    padding: 0 0 5px 0;
+  }
+
+  &.footnotes-container {
+    border-top: 1px solid colors.$gray;
+    margin: 0 16px 0 16px;
+    padding: 20px 0 0 0;
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.container {
+      max-width: 836px;
+      border-radius: 5px;
+    }
+
+    &.body {
+      max-width: 836px;
+    }
+  }
+
+  @media only screen and (max-width: 960px) {
+    &.container {
+      max-width: 100vw;
+    }
+
+    &.body {
+      max-width: 100vw;
+    }
+  }
+}

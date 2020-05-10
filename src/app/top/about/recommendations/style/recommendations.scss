@@ -1,0 +1,57 @@
+@use 'src/app/global/style/colors';
+@use 'src/app/global/style/fonts';
+
+.recommendations {
+  &.container {
+    margin: 24px 0 0 0;
+  }
+
+  &.highlight {
+    min-height: 280px;
+    height: auto;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    background-color: colors.$white;
+    box-sizing: border-box;
+  }
+
+  &.date {
+    text-align: right;
+    color: colors.$gray;
+    font-family: fonts.$dates-and-places;
+  }
+
+  &.link {
+    font-family: fonts.$titles-and-headers;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 420px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    &.logo-and-name {
+      min-width: 25%;
+    }
+
+    &.details {
+      min-width: 65%;
+    }
+  }
+
+  @media only screen and (min-width: 421px) and (max-width: 960px) {
+    &.highlight {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media only screen and (min-width: 961px) {
+    &.highlight {
+      margin: 20px 10px 0 10px;
+      border-radius: 5px;
+    }
+  }
+}
