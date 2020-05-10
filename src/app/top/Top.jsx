@@ -37,7 +37,7 @@ export const Top = () => {
   return (
     <>
       <NavBar />
-      <div className="page-content">
+      <div className="top content">
         <Switch>
           {routes}
           <Redirect from="/" to="/about" />
