@@ -1,6 +1,8 @@
+@use 'src/app/global/style/fonts';
+
 body {
   margin: 0 auto;
-  font-family: Arial;
+  font-family: fonts.$default;
   background-color: rgb(212, 239, 255);
 }
 

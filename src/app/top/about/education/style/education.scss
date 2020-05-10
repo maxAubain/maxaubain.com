@@ -1,4 +1,5 @@
 @use 'src/app/global/style/colors';
+@use 'src/app/global/style/fonts';
 
 .education {
   &.highlight {
@@ -23,13 +24,15 @@
 
   &.name,
   &.degree {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 24px;
+    font-family: fonts.$titles-and-headers;
+    line-height: 24px;
   }
 
   &.place-and-grad-date {
     color: colors.$gray;
     font-size: 14px;
+    font-family: fonts.$dates-and-places;
   }
 
   &.container {

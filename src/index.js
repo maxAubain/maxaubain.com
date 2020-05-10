@@ -5,7 +5,6 @@ import { Top } from './app/top/Top'
 import 'links/style/navlink'
 import 'links/style/weblink'
 import 'style/global'
-import 'style/fonts/arial'
 
 ReactDOM.render(<BrowserRouter> <Top /> </BrowserRouter>,
   document.getElementById("app"));

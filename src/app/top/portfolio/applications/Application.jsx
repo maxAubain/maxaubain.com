@@ -85,20 +85,14 @@ export const Application = ({ appData, externalLinksData }) => {
       <div className={projectContainerClassName}>
         <div className="application links-description-technology-container">
           <div className="application links-description-container">
-            <strong>
-              <u>Links</u>
-            </strong>
+            <div className="application category-label">Links</div>
             {projectLinks}
             <br></br>
-            <strong>
-              <u>Description</u>
-            </strong>
+            <div className="application category-label">Description</div>
             {projectDescription}
           </div>
           <div className="application technology-container">
-            <strong>
-              <u>Technology</u>
-            </strong>
+            <div className="application category-label">Technology Stack</div>
             {technologyStack}
           </div>
         </div>

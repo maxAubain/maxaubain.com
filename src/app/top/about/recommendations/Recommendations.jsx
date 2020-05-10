@@ -7,8 +7,7 @@ export const Recommendations = () => {
     <div className="recommendations container">
       <div className="recommendations highlight">
         <div className="feature-description">
-          <div className="recommendations label">#1</div>
-          <div className="recommendations label date">Sept. 22, 2019</div>
+          <div className="recommendations date">Sept. 22, 2019</div>
           <p>
             "Max mentored me for 3 years in grad school and managed me as an
             intern at Silanna.
@@ -22,7 +21,6 @@ export const Recommendations = () => {
             months to reason through things, while easily making decisions
             quickly and with limited information.
           </p>
-
           <p>
             He is an effective and transparent manager, and is great at always
             being available even while being extremely productive himself. He

@@ -45,7 +45,7 @@ export const Profile = () => {
               alt="image-max-face"
             />
           </div>
-          <div>Max Aubain, Ph.D.</div>
+          <div className="profile name">Max Aubain, Ph.D.</div>
         </div>
         <div className="profile section headline-container">
           {personalDescriptions}
