@@ -1,42 +1,29 @@
 import React from 'react'
 import { WebLink } from 'links/WebLink'
+import recommendationsData from './data/recommendations'
 import './style/recommendations'
 
 export const Recommendations = () => {
-  return (
-    <div className="recommendations container">
-      <div className="recommendations highlight">
-        <div className="feature-description">
-          <div className="recommendations date">Sept. 22, 2019</div>
-          <p>
-            "Max mentored me for 3 years in grad school and managed me as an
-            intern at Silanna.
-          </p>
-          <p>
-            Max is thorough and is very good at precise, complex, detail
-            oriented work. The work he delivers and manages through others is
-            high quality, even in fast paced, constantly changing and high
-            pressure environments. Max communicates with others and makes
-            decisions with the calm and level headnesses of someone who has
-            months to reason through things, while easily making decisions
-            quickly and with limited information.
-          </p>
-          <p>
-            He is an effective and transparent manager, and is great at always
-            being available even while being extremely productive himself. He
-            consistently develops the skills of those he works with while
-            fostering independence and growth."
-          </p>
-          <p>
-            -{' '}
-            <WebLink
-              linkObj="Anna Alexander, Ph.D."
-              url="https://www.linkedin.com/in/anna-alexander-78482021/"
-              className="weblink"
-            />
-          </p>
-        </div>
+  const recommendationHighlights = recommendationsData.map(recommendation => {
+    let paragraphs = recommendation.paragraphs.map(paragraph => {
+      return <p>{paragraph}</p>
+    })
+    return (
+      <div key={recommendation.id} className="recommendations highlight">
+        <div className="recommendations date">{recommendation.date}</div>
+        {paragraphs}
+        <p>
+          -{' '}
+          <WebLink
+            linkObj={recommendation.id}
+            url={recommendation.url}
+            className="weblink recommendations link"
+          />
+        </p>
       </div>
-    </div>
+    )
+  })
+  return (
+    <div className="recommendations container">{recommendationHighlights}</div>
   )
 }

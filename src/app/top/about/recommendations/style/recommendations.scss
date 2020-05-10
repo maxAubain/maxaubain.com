@@ -9,9 +9,6 @@
   &.highlight {
     min-height: 280px;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 20px 0 0 0;
     padding: 20px;
     background-color: colors.$white;
@@ -22,6 +19,11 @@
     text-align: right;
     color: colors.$gray;
     font-family: fonts.$dates-and-places;
+  }
+
+  &.link {
+    font-family: fonts.$titles-and-headers;
+    font-size: 20px;
   }
 
   @media only screen and (max-width: 420px) {
