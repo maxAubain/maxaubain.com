@@ -36,12 +36,12 @@ const socialMediaIconsParams = {
 }
 
 export const NavBar = () => {
-  const [navBarContCN, setNavBarContCN] = useState('navbar-container')
+  const [navBarContCN, setNavBarContCN] = useState('navbar container')
 
   const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
-      ? setNavBarContCN('navbar-container floating-navbar')
-      : setNavBarContCN('navbar-container')
+      ? setNavBarContCN('navbar container floating')
+      : setNavBarContCN('navbar container')
   }
 
   useEffect(() => {
@@ -96,8 +96,8 @@ export const NavBar = () => {
 
   return (
     <div className={navBarContCN}>
-      <div className="navbar-navlinks">{navLinks}</div>
-      <div className="navbar-social">{socialMediaIcons}</div>
+      <div className="navbar navlinks">{navLinks}</div>
+      <div className="navbar social">{socialMediaIcons}</div>
     </div>
   )
 }
