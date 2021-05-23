@@ -2,15 +2,15 @@ import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
 import { NavBar } from './navbar/Navbar'
-import { About } from './about/About'
+import { Profile } from './profile/Profile'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
 import './style/top'
 
 const routesParams = {
-  about: {
-    path: '/about',
-    component: About,
+  profile: {
+    path: '/profile',
+    component: Profile,
   },
   portfolio: {
     path: '/portfolio',
@@ -40,7 +40,7 @@ export const Top = () => {
       <div className="top content">
         <Switch>
           {routes}
-          <Redirect from="/" to="/about" />
+          <Redirect from="/" to="/profile" />
         </Switch>
       </div>
       <Footer />

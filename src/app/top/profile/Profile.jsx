@@ -6,15 +6,15 @@ import {
   Switch,
   useRouteMatch,
 } from 'react-router-dom'
-import { Profile } from './profile/Profile'
+import { AboutMe } from './aboutMe/AboutMe'
 import { Education } from './education/Education'
 import { Recommendations } from './recommendations/Recommendations'
 
 const routerParams = {
   profile: {
-    label: 'Profile',
-    relPath: '/profile',
-    component: Profile,
+    label: 'About Me',
+    relPath: '/aboutme',
+    component: AboutMe,
   },
   recommendations: {
     label: 'Recommendations',
@@ -28,7 +28,7 @@ const routerParams = {
   },
 }
 
-export const About = () => {
+export const Profile = () => {
   let { url, path } = useRouteMatch()
 
   // NavLinks object with NavLink highlighting style
@@ -61,7 +61,7 @@ export const About = () => {
       <div className="navlink-section-container">{navLinks}</div>
       <Switch>
         {routes}
-        <Redirect from="/about" to="/about/profile" />
+        <Redirect from="/profile" to="/profile/aboutme" />
       </Switch>
     </>
   )

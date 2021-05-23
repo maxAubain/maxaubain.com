@@ -5,8 +5,8 @@ import './style/navbar'
 
 const navLinksParams = {
   about: {
-    label: 'About',
-    path: '/about',
+    label: 'Profile',
+    path: '/profile',
   },
   portfolio: {
     label: 'Portfolio',

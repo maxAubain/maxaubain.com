@@ -1,7 +1,7 @@
 @use 'src/app/global/style/colors';
 @use 'src/app/global/style/fonts';
 
-.profile {
+.about-me {
   &.personal {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,7 @@
     padding: 0 0 25px 0;
   }
 
-  &.feature-profile {
+  &.feature-about-me {
     background-color: colors.$white;
   }
 
@@ -56,7 +56,7 @@
   @media only screen and (max-width: 420px) {
     &.headshot-container,
     &.headline-container,
-    &.feature-profile {
+    &.feature-about-me {
       width: 100%;
       flex-wrap: wrap;
       margin: 20px 0 0 0;
@@ -80,7 +80,7 @@
     &.headline-item {
       padding: 0px 100px 0px 30px;
     }
-    &.feature-profile {
+    &.feature-about-me {
       width: 100%;
       flex-wrap: wrap;
       margin: 20px 0 0 0;
@@ -95,7 +95,7 @@
 
   @media only screen and (min-width: 961px) {
     &.intro,
-    &.feature-profile {
+    &.feature-about-me {
       margin: 20px 10px 0 10px;
     }
     &.headshot-container,
@@ -105,7 +105,7 @@
     &.headline-item {
       padding: 0px 100px 0px 30px;
     }
-    &.feature-profile {
+    &.feature-about-me {
       border-radius: 5px;
     }
     &.role-image {
