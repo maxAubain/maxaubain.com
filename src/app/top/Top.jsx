@@ -5,6 +5,7 @@ import { NavBar } from './navbar/Navbar'
 import { Profile } from './profile/Profile'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
+import { Splash } from './splash/Splash'
 import './style/top'
 
 const routesParams = {
@@ -36,6 +37,7 @@ export const Top = () => {
 
   return (
     <>
+      <Splash />
       <NavBar />
       <div className="top content">
         <Switch>

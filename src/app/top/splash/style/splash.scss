@@ -1,0 +1,64 @@
+.splash {
+  &__hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('../img/DSC_1192_edit.jpg');
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--text-container {
+      color: white;
+      max-height: 260px;
+    }
+
+    &--text-top {
+      text-align: center;
+      border-bottom: 2px solid white;
+    }
+
+    &--text-bottom {
+      text-align: center;
+    }
+
+    @media only screen and (max-width: 420px) {
+      &--text-top {
+        font-size: 24px;
+        padding: 12px 24px;
+      }
+
+      &--text-bottom {
+        font-size: 18px;
+        padding: 12px 24px;
+      }
+    }
+
+    @media only screen and (min-width: 421px) and (max-width: 960px) {
+      &--text-top {
+        font-size: 32px;
+        padding: 18px 36px;
+      }
+
+      &--text-bottom {
+        font-size: 28px;
+        padding: 18px 36px;
+      }
+    }
+
+    @media only screen and (min-width: 961px) {
+      &--text-top {
+        font-size: 48px;
+        padding: 32px 48px;
+      }
+
+      &--text-bottom {
+        font-size: 32px;
+        padding: 32px 48px;
+      }
+    }
+  }
+}
