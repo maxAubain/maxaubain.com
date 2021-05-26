@@ -14,6 +14,17 @@ export const Splash = () => {
           </div>
         </div>
       </div>
+      <div
+        className="splash__button"
+        onClick={() => {
+          window.scroll({
+            top: window.innerHeight,
+            behavior: 'smooth',
+          })
+        }}
+      >
+        <div className="splash__button__content">Explore</div>
+      </div>
     </>
   )
 }

@@ -1,3 +1,5 @@
+@use 'src/app/global/style/colors';
+
 .splash {
   &__hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -59,6 +61,34 @@
         font-size: 32px;
         padding: 32px 48px;
       }
+    }
+  }
+
+  &__button {
+    position: relative;
+    min-height: 50px;
+    max-width: 200px;
+    top: -50px;
+    margin-left: 10vw;
+    background-color: colors.$light-blue;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+    color: colors.$dark-gray;
+    transition: color 0.2s;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &:hover {
+      color: colors.$orange;
+      transition: color 0.2s;
+    }
+
+    &__content {
+      width: 100%;
+      text-align: center;
     }
   }
 }
