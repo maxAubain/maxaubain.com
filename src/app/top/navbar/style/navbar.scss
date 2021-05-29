@@ -3,10 +3,11 @@
   &.container {
     display: flex;
     justify-content: center;
-    position: fixed;
+    // position: fixed;
     width: 100vw;
     background-color: colors.$light-blue;
-    border-bottom: 1px solid colors.$white;
+    // border-bottom: 1px solid colors.$white;
+    border: 1px solid blue;
   }
 
   &.floating {

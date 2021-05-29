@@ -1,63 +1,75 @@
 @use 'src/app/global/style/colors';
+$button-height: 50px;
 
 .splash {
-  &__hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('../img/DSC_1192_edit.jpg');
-    min-height: 100vh;
-    min-width: 100vw;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/DSC_1192_edit.jpg');
+  min-height: 100vh;
+  min-width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid green;
 
-    &--text-container {
-      color: white;
-      max-height: 260px;
+  &__hero-text {
+    &--outer-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - #{$button-height});
+      min-width: 100vw;
+      // border: 1px solid red;
     }
 
-    &--text-top {
+    &--inner-container {
+      color: white;
+      min-height: 260px;
+      // min-width: 100vw;
+      // border: 1px solid yellow;
+    }
+
+    &--top {
       text-align: center;
       border-bottom: 2px solid white;
     }
 
-    &--text-bottom {
+    &--bottom {
       text-align: center;
     }
 
     @media only screen and (max-width: 420px) {
-      &--text-top {
+      &--top {
         font-size: 24px;
         padding: 12px 24px;
       }
 
-      &--text-bottom {
+      &--bottom {
         font-size: 18px;
         padding: 12px 24px;
       }
     }
 
     @media only screen and (min-width: 421px) and (max-width: 960px) {
-      &--text-top {
+      &--top {
         font-size: 32px;
         padding: 18px 36px;
       }
 
-      &--text-bottom {
+      &--bottom {
         font-size: 28px;
         padding: 18px 36px;
       }
     }
 
     @media only screen and (min-width: 961px) {
-      &--text-top {
+      &--top {
         font-size: 48px;
         padding: 32px 48px;
       }
 
-      &--text-bottom {
+      &--bottom {
         font-size: 32px;
         padding: 32px 48px;
       }
@@ -66,9 +78,9 @@
 
   &__button {
     position: relative;
-    min-height: 50px;
+    min-height: $button-height;
     max-width: 200px;
-    top: -50px;
+    // top: -50px;
     margin-left: 10vw;
     background-color: colors.$light-blue;
     border-top-left-radius: 5px;
@@ -80,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    // border: 1px solid red;
 
     &:hover {
       color: colors.$orange;
