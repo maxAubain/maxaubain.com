@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
 import { NavBar } from './navbar/Navbar'
@@ -25,8 +25,8 @@ const routesParams = {
 
 export const Top = () => {
   const [topState, setTopState] = useState({
-      atSplash: true,
-      navbarTimeout: false,
+      isAtSplash: true,
+      isSplashButtonTimeoutFinished: false,
     }),
     top = { state: topState, setState: setTopState }
 
@@ -41,16 +41,27 @@ export const Top = () => {
   })
 
   let appClassName, topClassName
-  if (!top.state.atSplash) {
+  if (!top.state.isAtSplash) {
     appClassName = 'app--unhidden'
     topClassName = 'top--scroll-up'
   }
+
+  if (top.state.isAtSplash && !top.state.isSplashButtonTimeoutFinished) {
+    setTimeout(function() {
+      top.setState({
+        ...top.state,
+        isSplashButtonTimeoutFinished: true,
+      })
+    }, 2000)
+  }
+
+  // console.log(top.state)
 
   return (
     <>
       <Splash top={top} />
       <div className={`top ${topClassName}`}>
-        <NavBar />
+        <NavBar top={top} />
         <div className="top__content">
           <Switch>
             {routes}

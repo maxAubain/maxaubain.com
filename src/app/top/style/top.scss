@@ -1,26 +1,38 @@
 .top {
-  &.content {
+  position: absolute;
+  top: 100vh;
+  max-height: 0vh;
+  overflow: hidden;
+
+  &--scroll-up {
+    top: 0vh;
+    transition: top ease 2s;
+    max-height: none;
+    overflow: visible;
+  }
+
+  &__content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 100vh;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
 
   @media only screen and (max-width: 420px) {
-    &.content {
+    &__content {
       // padding-top: 50px;
     }
   }
 
   @media only screen and (min-width: 421px) and (max-width: 960px) {
-    &.content {
+    &__content {
       // padding-top: 50px;
     }
   }
 
   @media only screen and (min-width: 961px) {
-    &.content {
+    &__content {
       width: 860px;
       margin: 0 auto;
       // padding-top: 50px;
