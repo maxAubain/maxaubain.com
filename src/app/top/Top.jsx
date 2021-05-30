@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
 import { NavBar } from './navbar/Navbar'
@@ -24,7 +24,12 @@ const routesParams = {
 }
 
 export const Top = () => {
-  // Routes object
+  const [topState, setTopState] = useState({
+      atSplash: true,
+      navbarTimeout: false,
+    }),
+    top = { state: topState, setState: setTopState }
+
   const routes = Object.keys(routesParams).map(key => {
     return (
       <Route
@@ -35,17 +40,25 @@ export const Top = () => {
     )
   })
 
+  let appClassName, topClassName
+  if (!top.state.atSplash) {
+    appClassName = 'app--unhidden'
+    topClassName = 'top--scroll-up'
+  }
+
   return (
     <>
-      <Splash />
-      <NavBar />
-      <div className="top content">
-        <Switch>
-          {routes}
-          <Redirect from="/" to="/profile" />
-        </Switch>
+      <Splash top={top} />
+      <div className={`top ${topClassName}`}>
+        <NavBar />
+        <div className="top__content">
+          <Switch>
+            {routes}
+            <Redirect from="/" to="/profile" />
+          </Switch>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }
