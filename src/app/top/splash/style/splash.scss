@@ -1,5 +1,6 @@
 @use 'src/app/global/style/colors';
 $button-height: 50px;
+// $button-bottom-margin: 2vh;
 
 .splash {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -11,7 +12,14 @@ $button-height: 50px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 0vh;
   // border: 1px solid green;
+
+  &--scroll-up {
+    top: -100vh;
+    transition: top ease 2s;
+  }
 
   &__hero-text {
     &--outer-container {
@@ -26,7 +34,6 @@ $button-height: 50px;
     &--inner-container {
       color: white;
       min-height: 260px;
-      // min-width: 100vw;
       // border: 1px solid yellow;
     }
 
@@ -79,15 +86,11 @@ $button-height: 50px;
   &__button {
     position: relative;
     min-height: $button-height;
-    max-width: 200px;
-    // top: -50px;
-    margin-left: 10vw;
-    background-color: colors.$light-blue;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    max-width: 100vw;
     cursor: pointer;
     color: colors.$dark-gray;
-    transition: color 0.2s;
+    background-color: colors.$light-gray;
+    transition: background-color 0.2s;
     font-size: 24px;
     display: flex;
     flex-direction: column;
@@ -95,8 +98,8 @@ $button-height: 50px;
     // border: 1px solid red;
 
     &:hover {
-      color: colors.$orange;
-      transition: color 0.2s;
+      background-color: colors.$light-blue;
+      transition: background-color 0.2s;
     }
 
     &__content {
