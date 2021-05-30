@@ -1,8 +1,13 @@
 @use 'src/app/global/style/colors';
-$button-height: 50px;
-// $button-bottom-margin: 2vh;
+@use 'src/app/global/style/vars';
 
 .splash {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: hidden;
+  top: 0vh;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../img/DSC_1192_edit.jpg');
   min-height: 100vh;
@@ -10,10 +15,7 @@ $button-height: 50px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0vh;
+
   // border: 1px solid green;
 
   &--scroll-up {
@@ -26,7 +28,7 @@ $button-height: 50px;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: calc(100vh - #{$button-height});
+      min-height: calc(100vh - #{vars.$splash-button-height});
       min-width: 100vw;
       // border: 1px solid red;
     }
@@ -84,18 +86,25 @@ $button-height: 50px;
   }
 
   &__button {
-    position: relative;
-    min-height: $button-height;
-    max-width: 100vw;
-    cursor: pointer;
-    color: colors.$dark-gray;
-    background-color: colors.$light-gray;
-    transition: background-color 0.2s;
-    font-size: 24px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    bottom: -#{vars.$splash-button-height};
+
+    min-height: vars.$splash-button-height;
+    min-width: 100vw;
+    cursor: pointer;
+    color: colors.$dark-gray;
+    background-color: colors.$light-gray;
+    transition: background-color 0.2s, bottom 1s;
+    font-size: 24px;
+
     // border: 1px solid red;
+
+    &--unhidden {
+      bottom: 0px;
+    }
 
     &:hover {
       background-color: colors.$light-blue;

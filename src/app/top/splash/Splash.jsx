@@ -1,17 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './style/splash'
 
 export const Splash = ({ top }) => {
-  /* const scroll = () => {
-    window.scroll({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    })
-  } */
-
   const scroll = () => {
     top.setState({ ...top.state, isAtSplash: false })
-    // setSplashState({ splashClassName: 'splash--shrink' })
   }
 
   let splashClassName
@@ -19,19 +11,27 @@ export const Splash = ({ top }) => {
     splashClassName = 'splash--scroll-up'
   }
 
+  let splashButtonClassName = ''
+  if (top.state.isSplashButtonTimeoutFinished) {
+    splashButtonClassName = 'splash__button--unhidden'
+  }
+
   return (
     <div className={`splash ${splashClassName}`}>
       <div className="splash__hero-text--outer-container">
         <div className="splash__hero-text--inner-container">
           <div className="splash__hero-text--top">
-            Building web applications that get data where it needs to go.
+            Building web applications. Getting data where it needs to go.
           </div>
           <div className="splash__hero-text--bottom">
             Max Aubain, Ph.D. &middot; Full Stack Developer
           </div>
         </div>
       </div>
-      <div className="splash__button" onClick={scroll}>
+      <div
+        className={`splash__button ${splashButtonClassName}`}
+        onClick={scroll}
+      >
         <div className="splash__button__content">Let's go &#9660;</div>
       </div>
     </div>
