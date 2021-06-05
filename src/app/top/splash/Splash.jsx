@@ -17,36 +17,39 @@ export const Splash = ({ top }) => {
   }
 
   return (
-    <div className={`splash ${splashClassName}`}>
-      <div className="splash__hero-text--outer-container">
-        <div className="splash__hero-text--inner-container">
-          <div className="splash__hero-text--top">
-            <div className="splash__hero-text--top--section fontsize1">
-              Building Web Applications
+    <>
+      <div className={'splash__image'}></div>
+      <div className={`splash ${splashClassName}`}>
+        <div className="splash__hero-text--outer-container">
+          <div className="splash__hero-text--inner-container">
+            <div className="splash__hero-text--top">
+              <div className="splash__hero-text--top--section fontsize1">
+                Building Web Applications
+              </div>
+              <div className="splash__hero-text--top--section fontsize2">
+                Getting data where it needs to go.
+              </div>
             </div>
-            <div className="splash__hero-text--top--section fontsize2">
-              Getting data where it needs to go.
-            </div>
-          </div>
-          <div className="splash__hero-text--bottom">
-            <div className="splash__hero-text--bottom--section fontsize3">
-              Max Aubain, Ph.D.
-            </div>
-            <div className="splash__hero-text--bottom--section fontsize4">
-              Full Stack Developer
+            <div className="splash__hero-text--bottom">
+              <div className="splash__hero-text--bottom--section fontsize3">
+                Max Aubain, Ph.D.
+              </div>
+              <div className="splash__hero-text--bottom--section fontsize4">
+                Full Stack Developer
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        className={`splash__button__container ${splashButtonClassName}`}
-        onClick={scroll}
-      >
-        <div className="splash__button__content fontsize3">
-          Let's go &#9650;
+        <div
+          className={`splash__button__container ${splashButtonClassName}`}
+          onClick={scroll}
+        >
+          <div className="splash__button__content fontsize3">
+            Let's go &#9650;
+          </div>
+          <div className="splash__button__base"></div>
         </div>
-        <div className="splash__button__base"></div>
       </div>
-    </div>
+    </>
   )
 }

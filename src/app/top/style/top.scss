@@ -9,6 +9,7 @@
     transition: top ease 2s;
     max-height: none;
     overflow: visible;
+    background-color: white;
   }
 
   &__content {
@@ -16,6 +17,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     min-height: 100vh;
+    background-color: white;
     // border: 1px solid red;
   }
 
