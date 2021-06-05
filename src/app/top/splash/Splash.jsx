@@ -21,10 +21,16 @@ export const Splash = ({ top }) => {
       <div className="splash__hero-text--outer-container">
         <div className="splash__hero-text--inner-container">
           <div className="splash__hero-text--top">
-            Building web applications. Getting data where it needs to go.
+            <div className="splash__hero-text--top--section fontsize1">
+              Building Web Applications
+            </div>
+            <div className="splash__hero-text--top--section fontsize2">
+              Getting data where it needs to go.
+            </div>
           </div>
           <div className="splash__hero-text--bottom">
-            Max Aubain, Ph.D. &middot; Full Stack Developer
+            <div className="fontsize3">Max Aubain, Ph.D.</div>
+            <div className="fontsize4">Full Stack Developer</div>
           </div>
         </div>
       </div>
@@ -32,7 +38,9 @@ export const Splash = ({ top }) => {
         className={`splash__button ${splashButtonClassName}`}
         onClick={scroll}
       >
-        <div className="splash__button__content">Let's go &#9660;</div>
+        <div className="splash__button__content fontsize3">
+          Let's go &#9660;
+        </div>
       </div>
     </div>
   )
