@@ -6,14 +6,14 @@ export const Splash = ({ top }) => {
     top.setState({ ...top.state, isAtSplash: false })
   }
 
-  let splashClassName
+  let splashClassName = ''
   if (!top.state.isAtSplash) {
     splashClassName = 'splash--scroll-up'
   }
 
   let splashButtonClassName = ''
   if (top.state.isSplashButtonTimeoutFinished) {
-    splashButtonClassName = 'splash__button--unhidden'
+    splashButtonClassName = 'splash__button__container--unhidden'
   }
 
   return (
@@ -29,18 +29,23 @@ export const Splash = ({ top }) => {
             </div>
           </div>
           <div className="splash__hero-text--bottom">
-            <div className="fontsize3">Max Aubain, Ph.D.</div>
-            <div className="fontsize4">Full Stack Developer</div>
+            <div className="splash__hero-text--bottom--section fontsize3">
+              Max Aubain, Ph.D.
+            </div>
+            <div className="splash__hero-text--bottom--section fontsize4">
+              Full Stack Developer
+            </div>
           </div>
         </div>
       </div>
       <div
-        className={`splash__button ${splashButtonClassName}`}
+        className={`splash__button__container ${splashButtonClassName}`}
         onClick={scroll}
       >
         <div className="splash__button__content fontsize3">
-          Let's go &#9660;
+          Let's go &#9650;
         </div>
+        <div className="splash__button__base"></div>
       </div>
     </div>
   )
