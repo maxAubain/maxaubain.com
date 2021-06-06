@@ -35,18 +35,44 @@ const socialMediaIconsParams = {
   },
 }
 
-export const NavBar = () => {
-  const [navBarContCN, setNavBarContCN] = useState('navbar container')
+export const Navbar = ({ top }) => {
+  // const [navBarContCN, setNavBarContCN] = useState('navbar container')
 
-  const handleNavBarShadow = event => {
+  /* const handleNavBarShadow = event => {
     document.documentElement.scrollTop > 10
       ? setNavBarContCN('navbar container floating')
       : setNavBarContCN('navbar container')
+  } */
+
+  const [navbarState, setNavbarState] = useState({
+    navbarPosition: 'relative',
+    navbarTopVal: 0,
+    yScrollPageAbsVal: 0,
+    yScrollPageRelVal: 0,
+  })
+
+  const handleScrollCount = () => {
+    // console.log(document.documentElement.scrollTop)
+    setNavbarState({
+      ...navbarState,
+      yScrollPageAbsVal: document.documentElement.scrollTop,
+    })
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleNavBarShadow)
+    window.addEventListener('scroll', handleScrollCount)
+    return () => {
+      window.removeEventListener('scroll', handleScrollCount)
+    }
   })
+
+  useEffect(() => {
+    if (!top.state.isAtSplash) {
+      setTimeout(function() {
+        setNavbarState({ ...navbarState, navbarPosition: 'fixed' })
+      }, 2000)
+    }
+  }, [top.state.isAtSplash])
 
   const handleViewReset = () => {
     window.scrollTo({
@@ -94,8 +120,16 @@ export const NavBar = () => {
     )
   })
 
+  console.log('Navbar state: ', navbarState)
+
   return (
-    <div className={navBarContCN}>
+    <div
+      className="navbar container"
+      style={{
+        position: navbarState.navbarPosition,
+        top: `${navbarState.navbarTopVal}px`,
+      }}
+    >
       <div className="navbar navlinks">{navLinks}</div>
       <div className="navbar social">{socialMediaIcons}</div>
     </div>

@@ -62,7 +62,7 @@ export const Top = () => {
       <Splash top={top} />
       <div className={`top ${topClassName}`}>
         <Navbar top={top} />
-        <div className="top__content">
+        <div className="top__content-container">
           <Switch>
             {routes}
             <Redirect from="/" to="/profile" />
