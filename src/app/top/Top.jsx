@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
-import { NavBar } from './navbar/Navbar'
+import { Navbar } from './navbar/Navbar'
 import { Profile } from './profile/Profile'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
@@ -61,7 +61,7 @@ export const Top = () => {
     <>
       <Splash top={top} />
       <div className={`top ${topClassName}`}>
-        <NavBar top={top} />
+        <Navbar top={top} />
         <div className="top__content">
           <Switch>
             {routes}
