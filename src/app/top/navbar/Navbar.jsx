@@ -145,7 +145,7 @@ export const Navbar = ({ top }) => {
     )
   })
 
-  console.log('Navbar state: ', navbarState)
+  // console.log('Navbar state: ', navbarState)
 
   return (
     <div
