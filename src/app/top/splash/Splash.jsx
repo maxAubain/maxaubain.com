@@ -45,7 +45,7 @@ export const Splash = ({ top }) => {
           onClick={scroll}
         >
           <div className="splash__button__content fontsize3">
-            Let's go &#9650;
+            Let's go &#9660;
           </div>
           <div className="splash__button__base"></div>
         </div>
