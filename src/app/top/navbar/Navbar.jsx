@@ -5,8 +5,8 @@ import './style/navbar'
 
 const navLinksParams = {
   about: {
-    label: 'About',
-    path: '/about',
+    label: 'Profile',
+    path: '/profile',
   },
   portfolio: {
     label: 'Portfolio',
@@ -35,48 +35,99 @@ const socialMediaIconsParams = {
   },
 }
 
-export const NavBar = () => {
-  const [navBarContCN, setNavBarContCN] = useState('navbar container')
-
-  const handleNavBarShadow = event => {
-    document.documentElement.scrollTop > 10
-      ? setNavBarContCN('navbar container floating')
-      : setNavBarContCN('navbar container')
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleNavBarShadow)
+export const Navbar = ({ top }) => {
+  const [navbarState, setNavbarState] = useState({
+    navbarPosition: 'relative',
+    navbarTopVal: 0,
+    pageYScrollAbsVal: 0,
+    pageYScrollLastVal: 0,
   })
 
-  const handleViewReset = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'auto',
+  // Page yScroll tracking and update logic
+  const updateYScroll = () => {
+    const pageYScrollLastVal = navbarState.pageYScrollAbsVal
+    setNavbarState({
+      ...navbarState,
+      pageYScrollAbsVal: document.documentElement.scrollTop,
+      pageYScrollLastVal,
     })
   }
 
-  let location = useLocation()
-  useEffect(() => {}, [location])
-
-  const navLinks = Object.keys(navLinksParams).map(key => {
-    location.pathname.toString().includes(`/${key}`)
-      ? Object.assign(navLinksParams[key], {
-          className: 'navlink-current',
-        })
-      : Object.assign(navLinksParams[key], { className: 'navlink' })
-
-    return (
-      <NavLink
-        key={key}
-        className={navLinksParams[key].className}
-        to={navLinksParams[key].path}
-        onClick={handleViewReset}
-      >
-        {navLinksParams[key].label}
-      </NavLink>
-    )
+  useEffect(() => {
+    window.addEventListener('scroll', updateYScroll)
+    return () => {
+      window.removeEventListener('scroll', updateYScroll)
+    }
   })
+
+  // Update navbar position logic
+  useEffect(() => {
+    if (!top.state.isAtSplash) {
+      setTimeout(function() {
+        setNavbarState({ ...navbarState, navbarPosition: 'fixed' })
+      }, 2000)
+    }
+  }, [top.state.isAtSplash])
+
+  useEffect(() => {
+    const navbarHeight = 54, // px
+      navbarTopValDiff =
+        navbarState.pageYScrollLastVal - navbarState.pageYScrollAbsVal // negative if scrolling down
+    let navbarTopVal = navbarState.navbarTopVal
+
+    // navbarTopVal = 0 when showing
+    // if scrolling up, show navbar in amount of scroll differential
+    if (navbarTopValDiff > 0) {
+      if (Math.abs(navbarTopVal + navbarTopValDiff <= 0)) {
+        navbarTopVal = navbarTopVal + navbarTopValDiff
+      } else {
+        navbarTopVal = 0
+      }
+    }
+
+    // navbarTopVal = -navbarHeight when hidden
+    // if scrolling down, hide navbar in amount of scroll differential
+    if (navbarTopValDiff < 0) {
+      if (Math.abs(navbarTopVal + navbarTopValDiff >= -navbarHeight)) {
+        navbarTopVal = navbarTopVal + navbarTopValDiff
+      } else {
+        navbarTopVal = -navbarHeight
+      }
+    }
+
+    setNavbarState({
+      ...navbarState,
+      navbarTopVal,
+    })
+  }, [navbarState.pageYScrollAbsVal])
+
+  // Side nav elements and logic
+  const handleViewReset = () => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto',
+      })
+    },
+    location = useLocation(),
+    navLinks = Object.keys(navLinksParams).map(key => {
+      location.pathname.toString().includes(`/${key}`)
+        ? Object.assign(navLinksParams[key], {
+            className: 'navlink-current',
+          })
+        : Object.assign(navLinksParams[key], { className: 'navlink' })
+
+      return (
+        <NavLink
+          key={key}
+          className={navLinksParams[key].className}
+          to={navLinksParams[key].path}
+          onClick={handleViewReset}
+        >
+          {navLinksParams[key].label}
+        </NavLink>
+      )
+    })
 
   const socialMediaIcons = Object.keys(socialMediaIconsParams).map(key => {
     return (
@@ -94,8 +145,16 @@ export const NavBar = () => {
     )
   })
 
+  // console.log('Navbar state: ', navbarState)
+
   return (
-    <div className={navBarContCN}>
+    <div
+      className="navbar container"
+      style={{
+        position: navbarState.navbarPosition,
+        top: `${navbarState.navbarTopVal}px`,
+      }}
+    >
       <div className="navbar navlinks">{navLinks}</div>
       <div className="navbar social">{socialMediaIcons}</div>
     </div>

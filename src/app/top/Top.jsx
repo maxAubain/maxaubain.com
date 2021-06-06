@@ -1,16 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom'
 import { Footer } from './footer/Footer'
-import { NavBar } from './navbar/Navbar'
-import { About } from './about/About'
+import { Navbar } from './navbar/Navbar'
+import { Profile } from './profile/Profile'
 import { Portfolio } from './portfolio/Portfolio'
 import { EmailForm } from './contact/EmailForm'
+import { Splash } from './splash/Splash'
 import './style/top'
 
 const routesParams = {
-  about: {
-    path: '/about',
-    component: About,
+  profile: {
+    path: '/profile',
+    component: Profile,
   },
   portfolio: {
     path: '/portfolio',
@@ -23,7 +24,12 @@ const routesParams = {
 }
 
 export const Top = () => {
-  // Routes object
+  const [topState, setTopState] = useState({
+      isAtSplash: true,
+      isSplashButtonTimeoutFinished: false,
+    }),
+    top = { state: topState, setState: setTopState }
+
   const routes = Object.keys(routesParams).map(key => {
     return (
       <Route
@@ -34,16 +40,36 @@ export const Top = () => {
     )
   })
 
+  let appClassName, topClassName
+  if (!top.state.isAtSplash) {
+    appClassName = 'app--unhidden'
+    topClassName = 'top--scroll-up'
+  }
+
+  if (top.state.isAtSplash && !top.state.isSplashButtonTimeoutFinished) {
+    setTimeout(function() {
+      top.setState({
+        ...top.state,
+        isSplashButtonTimeoutFinished: true,
+      })
+    }, 2000)
+  }
+
+  // console.log(top.state)
+
   return (
     <>
-      <NavBar />
-      <div className="top content">
-        <Switch>
-          {routes}
-          <Redirect from="/" to="/about" />
-        </Switch>
+      <Splash top={top} />
+      <div className={`top ${topClassName}`}>
+        <Navbar top={top} />
+        <div className="top__content-container">
+          <Switch>
+            {routes}
+            <Redirect from="/" to="/profile" />
+          </Switch>
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </>
   )
 }

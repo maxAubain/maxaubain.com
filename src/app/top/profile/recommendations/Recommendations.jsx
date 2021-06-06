@@ -5,8 +5,8 @@ import './style/recommendations'
 
 export const Recommendations = () => {
   const recommendationHighlights = recommendationsData.map(recommendation => {
-    let paragraphs = recommendation.paragraphs.map(paragraph => {
-      return <p>{paragraph}</p>
+    let paragraphs = recommendation.paragraphs.map((paragraph, index) => {
+      return <p key={index}>{paragraph}</p>
     })
     return (
       <div key={recommendation.id} className="recommendations highlight">

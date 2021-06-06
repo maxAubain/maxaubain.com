@@ -1,12 +1,13 @@
 @use 'src/app/global/style/colors';
+
 .navbar {
   &.container {
     display: flex;
     justify-content: center;
-    position: fixed;
     width: 100vw;
-    background-color: colors.$light-blue;
-    border-bottom: 1px solid colors.$white;
+    min-height: 54px;
+    max-height: 54px;
+    background-color: colors.$light-gray;
   }
 
   &.floating {
