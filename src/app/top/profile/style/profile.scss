@@ -1,0 +1,9 @@
+.profile {
+  &__container {
+    border: 1px solid red;
+    position: relative;
+    top: 54px;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+}
