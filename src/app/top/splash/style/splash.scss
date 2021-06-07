@@ -17,7 +17,7 @@
   &__image {
     position: absolute;
     top: 0vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url('../img/DSC_1192_edit.jpg');
     min-height: 100vh;
     min-width: 100vw;
@@ -42,12 +42,13 @@
       @media only screen and (min-width: 421px) {
         margin-left: 8vw;
       }
-      // border: 1px solid red;
     }
 
     &--inner-container {
       color: white;
       min-height: 260px;
+      padding: 40px 20px;
+      background-color: rgba(0, 0, 0, 0.4);
     }
 
     &--top {
@@ -58,6 +59,7 @@
     &--bottom {
       display: flex;
       flex-direction: column;
+      text-align: center;
     }
 
     @media only screen and (max-width: 420px) {
@@ -107,9 +109,9 @@
 
       height: vars.$splash-button-height;
       min-width: 100vw;
-      color: colors.$dark-gray;
-      // background-color: colors.$light-gray;
-      transition: /* background-color 0.2s, */ bottom ease 1s;
+      color: colors.$blueteal3;
+      // background-color: colors.$blackblue1;
+      transition: color 0.2s, bottom ease 1s;
       // border: 1px solid red;
 
       &--unhidden {
@@ -117,15 +119,15 @@
       }
 
       &:hover {
-        // background-color: colors.$light-blue;
-        // transition: background-color 0.2s;
+        color: colors.$tealyellow3;
+        transition: color 0.2s;
       }
     }
 
     &__content {
       text-align: center;
       cursor: pointer;
-      background-color: colors.$light-gray;
+      background-color: colors.$blackblue1;
       padding: 10px 20px 0 20px;
       max-height: calc(#{vars.$splash-button-height} - 30px);
       border-top-right-radius: 3px;
@@ -137,7 +139,7 @@
       cursor: pointer;
       min-width: 100%;
       min-height: 30px;
-      background-color: colors.$light-gray;
+      background-color: colors.$blackblue1;
       z-index: 0;
     }
   }
