@@ -136,6 +136,7 @@ export const Navbar = ({ top }) => {
         onClick={() => {
           window.open(`${socialMediaIconsParams[key].url}`, '_blank')
         }}
+        className="navbar__social__icon"
       >
         <IconSmallPlus
           src={require(`${socialMediaIconsParams[key].image.path}`)}
@@ -149,14 +150,14 @@ export const Navbar = ({ top }) => {
 
   return (
     <div
-      className="navbar container"
+      className="navbar"
       style={{
         position: navbarState.navbarPosition,
         top: `${navbarState.navbarTopVal}px`,
       }}
     >
-      <div className="navbar navlinks">{navLinks}</div>
-      <div className="navbar social">{socialMediaIcons}</div>
+      <div className="navbar__navlinks__container">{navLinks}</div>
+      <div className="navbar__social__container">{socialMediaIcons}</div>
     </div>
   )
 }

@@ -31,10 +31,10 @@ export const Splash = ({ top }) => {
               </div>
             </div>
             <div className="splash__hero-text--bottom">
-              <div className="splash__hero-text--bottom--section fontsize3">
+              <div className="splash__hero-text--bottom--section fontsize2">
                 Max Aubain, Ph.D.
               </div>
-              <div className="splash__hero-text--bottom--section fontsize4">
+              <div className="splash__hero-text--bottom--section fontsize3">
                 Full Stack Developer
               </div>
             </div>

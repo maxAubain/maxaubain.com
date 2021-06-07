@@ -9,6 +9,7 @@ import {
 import { AboutMe } from './aboutMe/AboutMe'
 import { Education } from './education/Education'
 import { Recommendations } from './recommendations/Recommendations'
+import './style/profile'
 
 const routerParams = {
   profile: {
@@ -46,7 +47,7 @@ export const Profile = () => {
   })
 
   // Routes object
-  const routes = Object.keys(routerParams).map(key => {
+  /* const routes = Object.keys(routerParams).map(key => {
     return (
       <Route
         key={key}
@@ -54,15 +55,16 @@ export const Profile = () => {
         component={routerParams[key].component}
       />
     )
-  })
+  }) */
 
   return (
-    <>
-      <div className="navlink-section-container">{navLinks}</div>
-      <Switch>
+    <div className="profile__container">
+      content
+      {/* <div className="navlink-section-container">{navLinks}</div> */}
+      {/* <Switch>
         {routes}
         <Redirect from="/profile" to="/profile/aboutme" />
-      </Switch>
-    </>
+      </Switch> */}
+    </div>
   )
 }

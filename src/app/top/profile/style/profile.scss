@@ -1,0 +1,14 @@
+.profile {
+  &__container {
+    // position: relative;
+    // top: 54px;
+    min-height: 200vh;
+    min-width: 100vw;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('../../img/sunsetgradientbkgrndmd.png');
+    background-size: cover; // auto, cover, contain
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
